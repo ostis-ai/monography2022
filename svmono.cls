@@ -362,7 +362,7 @@ passing it to article class \MessageBreak
 %
 % \@endpart finishes the part page
 %
-\def\@endpart{\vfil\newpage
+\def\@endpart{\vfil%\newpage
    \if@twoside
        \hbox{}
        \thispagestyle{empty}
@@ -376,8 +376,8 @@ passing it to article class \MessageBreak
    \normalfont\partsize\partstyle
    #1\par}\@endpart}
 %
-\newenvironment{partbacktext}{\def\@endpart{\vfil\newpage}}
-{\thispagestyle{empty} \newpage}
+%\newenvironment{partbacktext}{\def\@endpart{\vfil\newpage}}{\thispagestyle{empty} \newpage}
+\newenvironment{partbacktext}{\def\@endpart{\vspace{5\baselineskip}}}{\thispagestyle{empty} \newpage}
 %
 % (re)define sectioning
 \setcounter{secnumdepth}{3}
