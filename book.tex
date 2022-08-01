@@ -28,6 +28,29 @@
 \usepackage{newtxtext}       % 
 \usepackage{newtxmath}       % selects Times Roman as basic font
 
+\usepackage[english,russian]{babel}
+
+% Курсив и жирность для кириллицы
+\usepackage{substitutefont}
+
+\substitutefont{T2A}{\familydefault}{Tempora-TLF}
+\makeatletter
+\input{t2atempora-tlf.fd}
+\DeclareFontShape{T2A}{Tempora-TLF}{m}{sc}{<-> ssub * Tempora-TLF/m/n
+}{}
+
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	left=20mm,
+	right=20mm,
+	top=20mm,
+	bottom=15mm,
+	heightrounded, % <- I recommend this
+	hratio=1:1,
+	vratio=1:1,
+}
+
 % see the list of further useful packages
 % in the Reference Guide
 
@@ -41,17 +64,18 @@
 
 \begin{document}
 
-\author{Author name(s)}
-\title{Book title}
-\subtitle{-- Monograph --}
+\selectlanguage{russian}
+
+\author{}
+\title{О текущем состоянии Технологии OSTIS}
+\subtitle{-- Монография --}
 \maketitle
 
 \frontmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\include{author/dedication}
-\include{author/foreword}
+%\include{author/foreword}
 \include{author/preface}
-\include{author/acknowledgement}
+%\include{author/acknowledgement}
 
 \tableofcontents
 
@@ -63,7 +87,7 @@
 \include{author/chapter}
 \include{author/appendix}
 
-\backmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\backmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \include{author/glossary}
 \include{author/solutions}
 \printindex

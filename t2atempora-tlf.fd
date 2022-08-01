@@ -1,0 +1,48 @@
+\ProvidesFile{t2atempora-tlf.fd}
+    [2015/09/13  Font definitions for T2A/Tempora-TLF.]
+
+\expandafter\ifx\csname LGCscale\endcsname\relax
+    \let\Tempora@@scale\@empty
+\else
+    \edef\Tempora@@scale{s*[\csname LGCscale\endcsname]}%
+\fi
+
+\DeclareFontFamily{T2A}{Tempora-TLF}{}
+
+\DeclareFontShape{T2A}{Tempora-TLF}{b}{it}{
+      <-> \Tempora@@scale Tempora-BoldItalic-TLF-t2a
+}{}
+
+\DeclareFontShape{T2A}{Tempora-TLF}{b}{n}{
+      <-> \Tempora@@scale Tempora-Bold-TLF-t2a
+}{}
+
+\DeclareFontShape{T2A}{Tempora-TLF}{b}{sl}{
+      <-> ssub * Tempora-TLF/b/it
+}{}
+
+\DeclareFontShape{T2A}{Tempora-TLF}{m}{n}{
+      <-> \Tempora@@scale Tempora-Regular-TLF-t2a
+}{}
+
+\DeclareFontShape{T2A}{Tempora-TLF}{m}{it}{
+      <-> \Tempora@@scale Tempora-Italic-TLF-t2a
+}{}
+
+\DeclareFontShape{T2A}{Tempora-TLF}{m}{sl}{
+      <-> ssub * Tempora-TLF/m/it
+}{}
+
+\DeclareFontShape{T2A}{Tempora-TLF}{bx}{n}{
+      <-> ssub * Tempora-TLF/b/n
+}{}
+
+\DeclareFontShape{T2A}{Tempora-TLF}{bx}{sl}{
+      <-> ssub * Tempora-TLF/b/sl
+}{}
+
+\DeclareFontShape{T2A}{Tempora-TLF}{bx}{it}{
+      <-> ssub * Tempora-TLF/b/it
+}{}
+
+\endinput
