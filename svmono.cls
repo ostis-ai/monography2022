@@ -334,6 +334,7 @@ passing it to article class \MessageBreak
 % redefinition of \part
 \renewcommand\part{\clearemptydoublepage
          \thispagestyle{empty}
+         \setcounter{chapter}{0}
          \if@twocolumn
             \onecolumn
             \@tempswatrue

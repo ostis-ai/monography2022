@@ -17,27 +17,19 @@
 %\usepackage{helvet}
 %\usepackage{courier}
 %
-\usepackage{type1cm}         
+%\usepackage{type1cm}         
+
+\usepackage[utf8]{inputenc}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[english,main=russian]{babel}
+\usepackage{substitutefont}
+\substitutefont{T2A}{\familydefault}{Tempora-TLF}
 
 \usepackage{makeidx}         % allows index generation
 \usepackage{graphicx}        % standard LaTeX graphics tool
                              % when including figure files
 \usepackage{multicol}        % used for the two-column index
 \usepackage[bottom]{footmisc}% places footnotes at page bottom
-
-\usepackage{newtxtext}       % 
-\usepackage{newtxmath}       % selects Times Roman as basic font
-
-\usepackage[english,russian]{babel}
-
-% Курсив и жирность для кириллицы
-\usepackage{substitutefont}
-
-\substitutefont{T2A}{\familydefault}{Tempora-TLF}
-\makeatletter
-\input{t2atempora-tlf.fd}
-\DeclareFontShape{T2A}{Tempora-TLF}{m}{sc}{<-> ssub * Tempora-TLF/m/n
-}{}
 
 \usepackage{geometry}
 \geometry{
@@ -46,9 +38,7 @@
 	right=20mm,
 	top=20mm,
 	bottom=15mm,
-	heightrounded, % <- I recommend this
-	hratio=1:1,
-	vratio=1:1,
+	heightrounded
 }
 
 % see the list of further useful packages
@@ -63,10 +53,9 @@
 \graphicspath{{./}{images/}}
 
 \renewcommand\thepart{\arabic{part}}
+\renewcommand{\thechapter}{\thepart.\arabic{chapter}}
 
 \begin{document}
-
-\selectlanguage{russian}
 
 \author{}
 \title{О текущем состоянии Технологии OSTIS}
@@ -82,6 +71,7 @@
 \include{author/acronym}
 
 \mainmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \include{author/part1}
 \include{author/part2}
 \include{author/part3}
@@ -89,9 +79,8 @@
 \include{author/part5}
 \include{author/part6}
 \include{author/part7}
-%\include{author/chapter}
 
-%\backmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\backmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \include{author/glossary}
 \printindex
 
