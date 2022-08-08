@@ -41,6 +41,14 @@
 	heightrounded
 }
 
+\usepackage{tocloft}
+
+\newlistentry[section]{authors}{toc}{1}
+\cftpagenumbersoff{authors}
+\cftsetindents{authors}{\cftsecindent}{0pt}
+
+\newcommand{\chapauthortoc}[1]{\addcontentsline{toc}{authors}{\textit{#1}\vspace{0.5\baselineskip}}}
+
 % see the list of further useful packages
 % in the Reference Guide
 
