@@ -45,7 +45,7 @@
 
 \newlistentry[section]{authors}{toc}{1}
 \cftpagenumbersoff{authors}
-\cftsetindents{authors}{\cftsecindent}{0pt}
+\cftsetindents{authors}{\cftchapindent}{0pt}
 
 \newcommand{\chapauthortoc}[1]{\addcontentsline{toc}{authors}{\textit{#1}\vspace{0.5\baselineskip}}}
 
@@ -62,6 +62,15 @@
 
 \renewcommand\thepart{\arabic{part}}
 \renewcommand{\thechapter}{\thepart.\arabic{chapter}}
+
+\renewcommand\cftchapnumwidth{4.5em}
+\renewcommand\cftchappresnum{Глава~}
+
+\renewcommand\cftsecnumwidth{6.8em}
+\renewcommand{\thesection}{Параграф \thechapter.\arabic{section}}
+
+\renewcommand\cftsubsecnumwidth{6em}
+\renewcommand{\thesubsection}{Пункт \arabic{part}.\arabic{chapter}.\arabic{section}.\arabic{subsection}}
 
 \begin{document}
 
