@@ -1,0 +1,23 @@
+
+\usepackage{etoolbox}
+\usepackage[
+style=ieee,
+citestyle=authoryear,
+maxnames=3
+]{biblatex}
+
+\newcommand{\scncite}[1]{
+	\hspace{-0.2em}\textit{\cite{#1}}\hspace{-0.2em}
+}
+
+\newcommand{\scnciteheader}[1]{
+	\scnheader{\cite{#1}}
+}
+
+\newcommand{\scnfullcite}[1]{
+	\scnidtf{\fullcite{#1}}
+}
+
+\newcommand{\scnciteannotation}[1]{
+	\scntext{аннотация}{\citefield{#1}{annotation}}
+}
