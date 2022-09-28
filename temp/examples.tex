@@ -1,0 +1,24 @@
+
+\section*{Примеры библиографии в тексте}
+
+Работа \scncite{Golenkov2019} посвящена основным принципам Технологии OSTIS.
+
+Работа \scncite{Wooldridge2009} описывает основные принципы многоагентных систем.
+
+\section*{Примеры рисунков}
+
+Рисунок \textit{\nameref{fig:example}} показывает, как надо оформлять рисунки. Размер рисунка можно задавать при помощи параметра scale.
+
+\begin{figure}[H]
+	\includegraphics[scale=0.5]{images/fig_example.png}
+	\caption{Пример обычного рисунка}
+	\label{fig:example}
+\end{figure}
+
+Рисунок \textit{\nameref{fig:example_scg}} показывает, как надо оформлять рисунки в SCg-коде. Параметр scale должен быть выставлен равным 0.8, для того чтобы все рисунки в SCg-коде имели одинаковый масштаб и размер идентификаторов примерно соответствовал размеру шрифта основного текста.  
+
+\begin{figure}[H]
+	\includegraphics[scale=0.8]{images/fig_example_scg.png}
+	\caption{Пример рисунка в SCg-коде}
+	\label{fig:example_scg}
+\end{figure}
