@@ -34,6 +34,7 @@
 \usepackage{nameref}
 \usepackage{ulem}
 \usepackage{float}
+\usepackage{caption}
 
 \usepackage{geometry}
 \geometry{
@@ -81,6 +82,12 @@
 \renewcommand\cftsubsecnumwidth{6em}
 \renewcommand{\thesubsection}{Пункт \arabic{part}.\arabic{chapter}.\arabic{section}.\arabic{subsection}}
 
+\DeclareCaptionFormat{monography}
+{
+\textbf{=~\textit{#3}}
+}
+\captionsetup{format=monography,singlelinecheck=false}
+
 \input{scn_biblio}
 \bibliography{biblio}
 
@@ -100,6 +107,8 @@
 \include{author/acronym}
 
 \mainmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{temp/examples}
 
 \include{author/part1}
 \include{author/part2}
