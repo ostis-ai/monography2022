@@ -255,7 +255,7 @@ sc-идентификаторов максимально упрощен для �
 
 Последним символом простого sc-идентификатора, идентифицирующего sc-узел, обозначающий понятие, являющееся классом классов (таковыми в частности, являются различного рода параметры -- длина, площадь, объем, масса) является символ \textit{циркумфлекс} ("крышка"). Однако, если отсутствует омонимичный идентификатор без этого суффикса, то указанный символ можно не приписывать.
 
-Простой строковый sc-идентификатор может рассматриваться как последовательное \uline{сокращение} sc-идентификаторов одного и того же sc-элемента с преобразованием имен собственных в имена нарицательные и наоборот.
+Простой строковый sc-идентификатор может рассматриваться как последовательное сокращение sc-идентификаторов одного и того же sc-элемента с преобразованием имен собственных в имена нарицательные и наоборот.
 
 При наличии синонимичных \textit{имен собственных} и \textit{имен нарицательных} при выборе \textit{основного sc-идентификатора} преимущество имеют \textit{имена нарицательные}. Так, например, основным идентификатором sc-узла, обозначающего \textit{SC-код}, является термин ``\textit{sc-текст}'', а термин ``\textit{SC-код}'', являющийся \textit{именем собственным}, считается \textit{неосновным часто используемым sc-идентификатором}. Подчеркнем при этом, что имя нарицательное -- это всегда имя некоторого класса сущностей (в частности, понятия). В конце этого имени может быть указан либо признак класса классов, либо признак неролевого отношения (класса связок), либо признак ролевого отношения (подмножества отношения принадлежности), либо не указано ничего. Последнее означает, что именуется класс, не являющийся ни классом классов, ни классом связок. А это, в свою очередь, означает, что именуемым классом является либо класс первичных (терминальных) сущностей, либо класс структур.
 
@@ -677,336 +677,14 @@ sc.s-коннектор, соответствующий sc.g-дуге прина
 На множестве sc-элементов задано бинарное ориентированное отношение инцидентности sc-элементов, а так же подмножество этого отношения -- отношение инцидентности входящих sc-дуг, каждая пара которого связывает sc-дугу с тем sc-элементом, в который она входит.
 В SC-коде sc-коннекторы могут соединять между собой не только sc-узел с sc-узлами, но и sc-узел с sc-коннектором и даже sc-коннектор с sc-коннектором. В последнем случае, указывая инцидентность sc-коннекторов, необходимо уточнить, какой из них является соединяемым (связываемым), а какой-соединяющим (связующим). Поэтому отношение инцидентности, заданное на множестве sc-элементов является ориентированным. Первый компонент пары этого отношения -- связующий sc-коннектор, а второй -- связуемый sc-элемент. Очевидно, что связующий sc-элемент всегда является sc-коннектором, а sc-узел может быть только связуемым.
 
-Указанные sc.s-разделители с точки зрения синтаксической структуры sc.s-предложений аналогичны \mbox{sc.s-коннекторам}, но с точки зрения их денотационной семантики в отличие от sc.s-коннекторов они не являются изображениями соответствующих sc-коннекторов
+Указанные sc.s-разделители с точки зрения синтаксической структуры sc.s-предложений аналогичны sc.s-коннекторам, но с точки зрения их денотационной семантики в отличие от sc.s-коннекторов они не являются изображениями соответствующих sc-коннекторов
 \newpage
 \scnheader{Описание изображения sc.s-коннекторов в Базовом и Расширенном алфавите}
 
-\scnheader{константная постоянная позитивная sc.s-дуга принадлежности}
-\scnidtf{базовая sc.s-дуга}
-\begin{scnrelfromlist}{изображение в базовом алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{->}}
-	\scnitem{\scnfileclass{<-}}	
-\end{scnrelfromlist}
-\begin{scnrelfromlist}{изображение в расширенном алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{$\ni$}}
-	\scnitem{\scnfileclass{$\in$}}	
-\end{scnrelfromlist}
-
-
-\scnheader{константная постоянная негативная sc.s-дуга принадлежности}
-\begin{scnrelfromlist}{изображение в базовом алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{-| >}}
-	\scnitem{\scnfileclass{< |-}}	
-\end{scnrelfromlist}
-\begin{scnrelfromlist}{изображение в расширенном алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{$\not \ni$}}
-	\scnitem{\scnfileclass{$\notin$}}	
-\end{scnrelfromlist}
-
-
-\scnheader{константная постоянная нечеткая sc.s-дуга принадлежности}
-\begin{scnrelfromlist}{изображение в базовом алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{-/ >}}
-	\scnitem{\scnfileclass{< /-}}	
-\end{scnrelfromlist}
-\begin{scnrelfromlist}{изображение в расширенном алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{/ $\ni$}}
-	\scnitem{\scnfileclass{ $\in$ /}}	
-\end{scnrelfromlist}
-
-
-\scnheader{константная постоянная нечеткая sc.s-дуга принадлежности}
-\begin{scnrelfromlist}{изображение в базовом алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{-/ >}}
-	\scnitem{\scnfileclass{< /-}}	
-\end{scnrelfromlist}
-\begin{scnrelfromlist}{изображение в расширенном алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{/ $\ni$}}
-	\scnitem{\scnfileclass{ $\in$ /}}	
-\end{scnrelfromlist}
-
-
-\scnheader{константная временная позитивная sc.s-дуга принадлежности}
-\begin{scnrelfromlist}{изображение в базовом алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{$\sim>$}}
-	\scnitem{\scnfileclass{$<\sim$}}	
-\end{scnrelfromlist}
-\begin{scnrelfromlist}{изображение в расширенном алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{$\sim\ni$}}
-	\scnitem{\scnfileclass{ $\in\sim$}}	
-\end{scnrelfromlist}
-
-\scnheader{константная временная негативная sc.s-дуга принадлежности}
-\begin{scnrelfromlist}{изображение в базовом алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{$\sim$ |>}}
-	\scnitem{\scnfileclass{<| $\sim$}}	
-\end{scnrelfromlist}
-\begin{scnrelfromlist}{изображение в расширенном алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{$\sim \not\ni$}}
-	\scnitem{\scnfileclass{ $\notin \sim$}}	
-\end{scnrelfromlist}
-
-\scnheader{константная временная нечеткая sc.s-дуга принадлежности}
-\begin{scnrelfromlist}{изображение в базовом алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{$\sim$ />}}
-	\scnitem{\scnfileclass{</ $\sim$}}	
-\end{scnrelfromlist}
-\begin{scnrelfromlist}{изображение в расширенном алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{$\sim/\ni$}}
-	\scnitem{\scnfileclass{ $\in/\sim$}}	
-\end{scnrelfromlist}
-
-\scnheader{переменная постоянная позитивная sc.s-дуга принадлежности}
-\begin{scnrelfromlist}{изображение в базовом алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{\textunderscore->}}
-	\scnitem{\scnfileclass{<-\textunderscore}}	
-\end{scnrelfromlist}
-\begin{scnrelfromlist}{изображение в расширенном алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{\textunderscore$\ni$}}
-	\scnitem{\scnfileclass{\textunderscore$\in$}}	
-\end{scnrelfromlist}
-
-\scnheader{переменная постоянная негативная sc.s-дуга принадлежности}
-\begin{scnrelfromlist}{изображение в базовом алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{\textunderscore-|>}}
-	\scnitem{\scnfileclass{<|-\textunderscore}}	
-\end{scnrelfromlist}
-\begin{scnrelfromlist}{изображение в расширенном алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{\textunderscore$\not\ni$}}
-	\scnitem{\scnfileclass{$\notin$\textunderscore}}	
-\end{scnrelfromlist}
-
-\scnheader{переменная постоянная нечеткая sc.s-дуга принадлежности}
-\begin{scnrelfromlist}{изображение в базовом алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{\textunderscore-/>}}
-	\scnitem{\scnfileclass{</-\textunderscore}}	
-\end{scnrelfromlist}
-\begin{scnrelfromlist}{изображение в расширенном алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{\textunderscore$/\ni$}}
-	\scnitem{\scnfileclass{$\in/$\textunderscore}}	
-\end{scnrelfromlist}
-
-\newpage
-\scnheader{переменная временная позитивная sc.s-дуга принадлежности}
-\begin{scnrelfromlist}{изображение в базовом алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{\textunderscore$\sim$>}}
-	\scnitem{\scnfileclass{<$\sim$\textunderscore}}	
-\end{scnrelfromlist}
-\begin{scnrelfromlist}{изображение в расширенном алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{\textunderscore$\sim\ni$}}
-	\scnitem{\scnfileclass{$\in\sim$\textunderscore}}	
-\end{scnrelfromlist}
-
-
-\scnheader{переменная временная негативная sc.s-дуга принадлежности}
-\begin{scnrelfromlist}{изображение в базовом алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{\textunderscore$\sim$|>}}
-	\scnitem{\scnfileclass{<|$\sim$\textunderscore}}	
-\end{scnrelfromlist}
-\begin{scnrelfromlist}{изображение в расширенном алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{\textunderscore$\sim\not\ni$}}
-	\scnitem{\scnfileclass{$\notin\sim$\textunderscore}}	
-\end{scnrelfromlist}
-
-\scnheader{переменная временная нечеткая sc.s-дуга принадлежности}
-\begin{scnrelfromlist}{изображение в базовом алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{\textunderscore$\sim$/>}}
-	\scnitem{\scnfileclass{</$\sim$\textunderscore}}	
-\end{scnrelfromlist}
-\begin{scnrelfromlist}{изображение в расширенном алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{\textunderscore$\sim/\ni$}}
-	\scnitem{\scnfileclass{$\in/\sim$\textunderscore}}	
-\end{scnrelfromlist}
-
-
-\scnheader{метапеременная постоянная позитивная sc.s-дуга принадлежности}
-\begin{scnrelfromlist}{изображение в базовом алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{\textunderscore\textunderscore->}}
-	\scnitem{\scnfileclass{<-\textunderscore\textunderscore}}	
-\end{scnrelfromlist}
-\begin{scnrelfromlist}{изображение в расширенном алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{\textunderscore\textunderscore$\ni$}}
-	\scnitem{\scnfileclass{$\in$\textunderscore\textunderscore}}	
-\end{scnrelfromlist}
-
-\scnheader{метапеременная постоянная негативная sc.s-дуга принадлежности}
-\begin{scnrelfromlist}{изображение в базовом алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{\textunderscore\textunderscore-|>}}
-	\scnitem{\scnfileclass{<|-\textunderscore\textunderscore}}	
-\end{scnrelfromlist}
-\begin{scnrelfromlist}{изображение в расширенном алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{\textunderscore\textunderscore$\not\ni$}}
-	\scnitem{\scnfileclass{$\notin$\textunderscore\textunderscore}}	
-\end{scnrelfromlist}
-
-\scnheader{метапеременная постоянная нечеткая sc.s-дуга принадлежности}
-\begin{scnrelfromlist}{изображение в базовом алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{\textunderscore\textunderscore-/>}}
-	\scnitem{\scnfileclass{</-\textunderscore\textunderscore}}	
-\end{scnrelfromlist}
-\begin{scnrelfromlist}{изображение в расширенном алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{\textunderscore\textunderscore$/\ni$}}
-	\scnitem{\scnfileclass{$\in$/\textunderscore\textunderscore}}	
-\end{scnrelfromlist}
-
-\scnheader{метапеременная временная позитивная sc.s-дуга принадлежности}
-\begin{scnrelfromlist}{изображение в базовом алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{\textunderscore\textunderscore$\sim$>}}
-	\scnitem{\scnfileclass{<$\sim$\textunderscore\textunderscore}}	
-\end{scnrelfromlist}
-\begin{scnrelfromlist}{изображение в расширенном алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{\textunderscore\textunderscore$\sim\ni$}}
-	\scnitem{\scnfileclass{$\in\sim$\textunderscore\textunderscore}}	
-\end{scnrelfromlist}
-
-\scnheader{метапеременная временная негативная sc.s-дуга принадлежности}
-\begin{scnrelfromlist}{изображение в базовом алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{\textunderscore\textunderscore$\sim$ |>}}
-	\scnitem{\scnfileclass{<| $\sim$\textunderscore\textunderscore}}	
-\end{scnrelfromlist}
-\begin{scnrelfromlist}{изображение в расширенном алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{\textunderscore\textunderscore$\sim\not\ni$}}
-	\scnitem{\scnfileclass{$\notin\sim$\textunderscore\textunderscore}}	
-\end{scnrelfromlist}
-
-\scnheader{метапеременная временная нечеткая sc.s-дуга принадлежности}
-\begin{scnrelfromlist}{изображение в базовом алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{\textunderscore\textunderscore$\sim$/>}}
-	\scnitem{\scnfileclass{</$\sim$\textunderscore\textunderscore}}	
-\end{scnrelfromlist}
-\begin{scnrelfromlist}{изображение в расширенном алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{\textunderscore\textunderscore$\sim/\ni$}}
-	\scnitem{\scnfileclass{$\in/\sim$\textunderscore\textunderscore}}	
-\end{scnrelfromlist}
-
-\scnheader{sc.s-ребро общего вида}
-\begin{scnrelfromlist}{изображение в базовом алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{<>}}
-\end{scnrelfromlist}
-\begin{scnrelfromlist}{изображение в расширенном алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{$\leftrightarrow$}}	
-\end{scnrelfromlist}
-
-\scnheader{sc.s-дуга общего вида}
-\begin{scnrelfromlist}{изображение в базовом алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{>>}}
-	\scnitem{\scnfileclass{<<}}
-\end{scnrelfromlist}
-\begin{scnrelfromlist}{изображение в расширенном алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{$\rightarrow$}}
-	\scnitem{\scnfileclass{$\leftarrow$}}	
-\end{scnrelfromlist}
-
-
-\scnheader{константное постоянное sc.s-ребро общего вида}
-\begin{scnrelfromlist}{изображение в базовом алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{<=>}}
-\end{scnrelfromlist}
-\begin{scnrelfromlist}{изображение в расширенном алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{$\Leftrightarrow$}}	
-\end{scnrelfromlist}
-
-\scnheader{константная постоянная sc.s-дуга общего вида}
-\begin{scnrelfromlist}{изображение в базовом алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{=>}}
-	\scnitem{\scnfileclass{<=}}
-\end{scnrelfromlist}
-\begin{scnrelfromlist}{изображение в расширенном алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{$\Rightarrow$}}	
-	\scnitem{\scnfileclass{$\Leftarrow$}}
-\end{scnrelfromlist}
-
-\scnheader{константное временное sc.s-ребро общего вида}
-\begin{scnrelfromlist}{изображение в базовом алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{$\sim<=>$}}
-\end{scnrelfromlist}
-\begin{scnrelfromlist}{изображение в расширенном алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{$\sim\Leftrightarrow$}}	
-\end{scnrelfromlist}
-
-\scnheader{константная временная sc.s-дуга общего вида}
-\begin{scnrelfromlist}{изображение в базовом алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{$\sim=>$}}
-	\scnitem{\scnfileclass{$<=\sim$}}
-\end{scnrelfromlist}
-\begin{scnrelfromlist}{изображение в расширенном алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{$\sim\Rightarrow$}}	
-	\scnitem{\scnfileclass{$\Leftarrow\sim$}}
-\end{scnrelfromlist}
-
-\scnheader{переменное постоянное sc.s-ребро общего вида}
-\begin{scnrelfromlist}{изображение в базовом алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{$\textunderscore<=>$}}
-\end{scnrelfromlist}
-\begin{scnrelfromlist}{изображение в расширенном алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{$\textunderscore\Leftrightarrow$}}	
-\end{scnrelfromlist}
-
-\scnheader{переменная постоянная sc.s-дуга общего вида}
-\begin{scnrelfromlist}{изображение в базовом алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{$\textunderscore=>$}}
-	\scnitem{\scnfileclass{$<=\textunderscore$}}
-\end{scnrelfromlist}
-\begin{scnrelfromlist}{изображение в расширенном алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{$\textunderscore\Rightarrow$}}	
-	\scnitem{\scnfileclass{$\Leftarrow\textunderscore$}}
-\end{scnrelfromlist}
-
-\scnheader{переменное временное sc.s-ребро общего вида}
-\begin{scnrelfromlist}{изображение в базовом алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{$\textunderscore\sim<=>$}}
-\end{scnrelfromlist}
-\begin{scnrelfromlist}{изображение в расширенном алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{$\textunderscore\sim\Leftrightarrow$}}	
-\end{scnrelfromlist}
-
-\scnheader{переменная временная sc.s-дуга общего вида}
-\begin{scnrelfromlist}{изображение в базовом алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{$\textunderscore\sim=>$}}
-	\scnitem{\scnfileclass{$<=\sim\textunderscore$}}
-\end{scnrelfromlist}
-\begin{scnrelfromlist}{изображение в расширенном алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{$\textunderscore\sim\Rightarrow$}}	
-	\scnitem{\scnfileclass{$\Leftarrow\sim\textunderscore$}}
-\end{scnrelfromlist}
-
-\scnheader{метапеременное постоянное sc.s-ребро общего вида}
-\begin{scnrelfromlist}{изображение в базовом алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{$\textunderscore\textunderscore<=>$}}
-\end{scnrelfromlist}
-\begin{scnrelfromlist}{изображение в расширенном алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{$\textunderscore\textunderscore\Leftrightarrow$}}	
-\end{scnrelfromlist}
-
-\scnheader{метапеременная постоянная sc.s-дуга общего вида}
-\begin{scnrelfromlist}{изображение в базовом алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{$\textunderscore\textunderscore=>$}}
-	\scnitem{\scnfileclass{$<=\textunderscore\textunderscore$}}
-\end{scnrelfromlist}
-\begin{scnrelfromlist}{изображение в расширенном алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{$\textunderscore\textunderscore\Rightarrow$}}
-	\scnitem{\scnfileclass{$\Leftarrow\textunderscore\textunderscore$}}	
-\end{scnrelfromlist}
-
-
-\scnheader{метапеременное временное sc.s-ребро общего вида}
-\begin{scnrelfromlist}{изображение в базовом алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{$\textunderscore\textunderscore\sim<=>$}}
-\end{scnrelfromlist}
-\begin{scnrelfromlist}{изображение в расширенном алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{$\textunderscore\textunderscore\sim\Leftrightarrow$}}	
-\end{scnrelfromlist}
-
-\scnheader{метапеременная временная sc.s-дуга общего вида}
-\begin{scnrelfromlist}{изображение в базовом алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{$\textunderscore\textunderscore\sim=>$}}
-	\scnitem{\scnfileclass{$<=\sim\textunderscore\textunderscore$}}
-\end{scnrelfromlist}
-\begin{scnrelfromlist}{изображение в расширенном алфавите sc.s-коннекторов}
-	\scnitem{\scnfileclass{$\textunderscore\textunderscore\sim\Rightarrow$}}
-	\scnitem{\scnfileclass{$\Leftarrow\sim\textunderscore\textunderscore$}}	
-\end{scnrelfromlist}
-
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.3]{images/intro/scs_membership_connectors_0.png}
+\end{figure}
 
 \scnheader{знак равенства}
 \scneqfileclass{=}
@@ -1099,166 +777,29 @@ sc.s-коннектор, соответствующий sc.g-дуге прина
 \scnidtf{последовательность \textit{sc.s-предложений}, разделяемых \textit{двойными точками с запятой}}
 \textit{sc.s-предложение} является минимальным sc.s-текстом. Смысл sc.s-текста (а также \textit{sc.s-текста, включенного в структуру} не зависит от порядка \textit{\mbox{sc.s-предложений}} в этих sc-текстах. Т.е. перестановка \textit{\mbox{sc.s-предложений}} в рамках таких \mbox{sc.s-текстов} смысла этих \mbox{sc.s-текстов} не меняет (т.е. приводит к семантически эквивалентным \mbox{sc.s-текстам}), но сильно влияет на трудоемкость человеческого восприятия (на "читабельность") этих текстов.
 
+\newpage
 \subsection{Денотационная семантика языка внешнего линейного представления информационных конструкций внутреннего языка ostis-систем}
 
 \scnheader{Таблица. Алфавит sc.s-коннекторов, соответствующих sc.g-дугам принадлежности}
-\scneqtable{
-	\begin{longtable}[l]{|m{4.6cm}|m{3.5cm}|m{2cm}|m{2cm}|m{2cm}|m{2cm}|}
-		\hline
-		\multicolumn{1}{|c}{\parbox[c]{4.6cm}{Класс \mbox{\textit{sc-элементов}}}} &
-		\multicolumn{1}{|c}{\parbox[c]{3.5cm}{Изображение \textit{\mbox{sc.g-коннектора}}}} &
-		\multicolumn{2}{|c}{\parbox[c]{4cm}{Изображение \textit{\mbox{sc.s-коннектора}} в Расширенном алфавите}} &
-		\multicolumn{2}{|c|}{\parbox[c]{4cm}{Изображение \textit{\mbox{sc.s-коннектора}} в Базовом алфавите}}
-		\hline
-		\endhead
-		
-		\parbox[|m]{4.6cm}{\textit{ \\ константная постоянная позитивная sc-дуга принадлежности \\}} & \parbox[|m]{3.5cm}{\centering\includegraphics[width=0.8\linewidth]{images/intro/scg/arcs/const/scg_const_perm_positive2.png}} & \parbox[|c]{2cm}{\centering\ni} & \parbox[|m]{2cm}{\centering\in} & \parbox[|c]{2cm}{\centering->} & \parbox[|m|]{2cm}{\centering<-} \\
-		\hline
-		
-		\parbox[m|]{4.6cm}{\textit{\\ константная постоянная негативная sc-дуга принадлежности \\}} & \parbox[m|]{3.5cm}{\centering \includegraphics[width=0.8\linewidth]{images/intro/scg/arcs/const/scg_const_perm_negative2.png}} & \parbox[m]{2cm}{\centering \not\ni} & \parbox[m|]{2cm}{\centering\notin} & \parbox[m|]{2cm}{\centering-|>} & \parbox[m]{2cm}{\centering<|-} \\
-		\hline
-		
-		\parbox[m]{4.6cm}{\textit{\\ константная постоянная нечеткая sc-дуга принадлежности \\}} & \parbox[m]{3.5cm}{\centering\includegraphics[width=0.8\linewidth]{images/intro/scg/arcs/const/scg_const_perm_fuzzy2.png}} & \parbox[m]{2cm}{\centering / \ni} & \parbox[m]{2cm}{\centering \in /} & \parbox[m]{2cm}{\centering -/>} & \parbox[m]{2cm}{\centering </-} \\
-		\hline
-		
-		\parbox[m]{4.6cm}{\textit{\\ константная временная позитивная sc-дуга принадлежности \\}} & \parbox[m]{3.5cm}{\centering \includegraphics[width=0.8\linewidth]{images/intro/scg/arcs/const/scg_const_temp_positive2.png}} & \parbox[m]{2cm}{\centering \sim \ni} & \parbox[m]{2cm}{\centering \in \sim} & \parbox[m]{2cm}{\centering \sim>} & \parbox[m]{2cm}{\centering <\sim} \\
-		\hline
-		
-		\parbox[m]{4.6cm}{\textit{\\ константная временная негативная sc-дуга принадлежности \\}} & \parbox[m]{3.5cm}{\centering \includegraphics[width=0.8\linewidth]{images/intro/scg/arcs/const/scg_const_temp_negative2.png}} & \parbox[m]{2cm}{\centering \sim \not\ni} & \parbox[m]{2cm}{\centering \notin \sim} & \parbox[m]{2cm}{\centering \sim|>} & \parbox[m]{2cm}{\centering <|\sim} \\
-		\hline
-		
-		\parbox[m]{4.6cm}{\textit{\\ константная временная нечеткая sc-дуга принадлежности \\}} & \parbox[m]{3.5cm}{\centering \includegraphics[width=0.8\linewidth]{images/intro/scg/arcs/const/scg_const_temp_fuzzy2.png}} & \parbox[m]{2cm}{\centering \sim / \ni}  & \parbox[m]{2cm}{\centering \in/\sim} & \parbox[m]{2cm}{\centering \sim/>} & \parbox[m]{2cm}{\centering </\sim} \\
-		\hline
-		
-		\parbox[m]{4.6cm}{\textit{\\ переменная постоянная позитивная sc-дуга принадлежности \\}} & \parbox[m]{3.5cm}{\centering \includegraphics[width=0.8\linewidth]{images/intro/scg/arcs/var/scg_var_perm_positive2.png}} & \parbox[m]{2cm}{\centering \textunderscore \ni} & \parbox[m]{2cm}{\centering \textunderscore \in} & \parbox[m]{2cm}{\centering \textunderscore->} & \parbox[m]{2cm}{\centering <-\textunderscore} \\
-		\hline
-		
-		\parbox[m]{4.6cm}{\textit{\\ переменная постоянная негативная sc-дуга принадлежности \\}} & \parbox[m]{3.5cm}{\centering \includegraphics[width=0.8\linewidth]{images/intro/scg/arcs/var/scg_var_perm_negative2.png}} & \parbox[m]{2cm}{\centering \textunderscore \not\ni} & \parbox[m]{2cm}{\centering \notin \textunderscore} & \parbox[m]{2cm}{\centering \textunderscore-|>} & \parbox[m]{2cm}{\centering <|-\textunderscore} \\
-		\hline
-		
-		\parbox[m]{4.6cm}{\textit{\\ переменная постоянная нечеткая sc-дуга принадлежности \\}} & \parbox[m]{3.5cm}{\centering \includegraphics[width=0.8\linewidth]{images/intro/scg/arcs/var/scg_var_perm_fuzzy2.png}} & \parbox[m]{2cm}{\centering \textunderscore /\ni} & \parbox[m]{2cm}{\centering \in/\textunderscore} & \parbox[m]{2cm}{\centering \textunderscore-/>} & \parbox[m]{2cm}{\centering </-\textunderscore} \\
-		\hline
-		
-		\parbox[m]{4.6cm}{\textit{\\ переменная временная позитивная sc-дуга принадлежности \\}} & \parbox[m]{3.5cm}{\centering \includegraphics[width=0.8\linewidth]{images/intro/scg/arcs/var/scg_var_temp_positive2.png}} & \parbox[m]{2cm}{\centering \textunderscore \sim \ni} & \parbox[m]{2cm}{\centering \in \sim \textunderscore} & \parbox[m]{2cm}{\centering \textunderscore \sim >} & \parbox[m]{2cm}{\centering < \sim \textunderscore} \\
-		\hline
-		
-		\parbox[m]{4.6cm}{\textit{\\ переменная временная негативная sc-дуга принадлежности \\}} & \parbox[m]{3.5cm}{\centering \includegraphics[width=0.8\linewidth]{images/intro/scg/arcs/var/scg_var_temp_negative2.png}} & \parbox[m]{2cm}{\centering \textunderscore \sim \not$\ni$} & \parbox[c]{2cm}{\centering \notin \sim \textunderscore} & \parbox[m]{2cm}{\centering \textunderscore \sim |>} & \parbox[m]{2cm}{\centering <| \sim \textunderscore} \\
-		\hline
-		
-		\parbox[m]{4.6cm}{\textit{\\переменная временная нечеткая sc-дуга принадлежности\\}} & \parbox[m]{3.5cm}{\centering \includegraphics[width=0.8\linewidth]{images/intro/scg/arcs/var/scg_var_temp_fuzzy2.png}} & \parbox[m]{2cm}{\centering \textunderscore \sim / \ni} & \parbox[m]{2cm}{\centering \in/\sim\textunderscore} & \parbox[m]{2cm}{\centering \textunderscore \sim />} & \parbox[m]{2cm}{\centering </\sim \textunderscore} \\
-		\hline
-		
-		\parbox[m]{4.6cm}{\textit{\\метапеременная постоянная позитивная sc-дуга принадлежности\\}} & \parbox[m]{3.5cm}{\centering \includegraphics[width=0.8\linewidth]{images/intro/scg/arcs/meta/scg_metavar_perm_positive2.png}} & \parbox[m]{2cm}{\centering\textunderscore \textunderscore\ni} & \parbox[m]{2cm}{\centering\in\textunderscore\textunderscore} & \parbox[m]{2cm}{\centering\textunderscore\textunderscore->} & \parbox[m]{2cm}{\centering <-\textunderscore\textunderscore} \\
-		\hline
-		
-		\parbox[m]{4.6cm}{\textit{\\ метапеременная постоянная негативная sc-дуга принадлежности \\}} & \parbox[m]{3.5cm}{\centering \includegraphics[width=0.8\linewidth]{images/intro/scg/arcs/meta/scg_metavar_perm_negative2.png}} & \parbox[m]{2cm}{\centering \textunderscore\textunderscore \not\ni} & \parbox[m]{2cm}{\centering \notin\textunderscore\textunderscore} & \parbox[m]{2cm}{\centering \textunderscore\textunderscore-|>} & \parbox[m]{2cm}{\centering <|-\textunderscore\textunderscore} \\
-		\hline
-		
-		\parbox[m]{4.6cm}{\textit{\\ метапеременная постоянная нечеткая sc-дуга принадлежности \\}} & \parbox[m]{3.5cm}{\centering \includegraphics[width=0.8\linewidth]{images/intro/scg/arcs/meta/scg_metavar_perm_fuzzy2.png}} & \parbox[m]{2cm}{\centering\textunderscore\textunderscore/\ni} & \parbox[m]{2cm}{\centering\in/\textunderscore\textunderscore} & \parbox[m]{2cm}{\centering\textunderscore\textunderscore-/>} & \parbox[m]{2cm}{\centering </-\textunderscore\textunderscore} \\
-		\hline
-		
-		\parbox[m]{4.6cm}{\textit{\\ метапеременная временная позитивная sc-дуга принадлежности \\}} & \parbox[m]{3.5cm}{\centering \includegraphics[width=0.8\linewidth]{images/intro/scg/arcs/meta/scg_metavar_temp_positive2.png}} & \parbox[m]{2cm}{\centering\textunderscore\textunderscore\sim\ni} & \parbox[m]{2cm}{\centering\in\sim\textunderscore\textunderscore} & \parbox[m]{2cm}{\centering\textunderscore\textunderscore\sim>} & \parbox[m]{2cm}{\centering <\sim\textunderscore\textunderscore} \\
-		\hline
-		
-		\parbox[m]{4.6cm}{\textit{\\ метапеременная временная негативная sc-дуга принадлежности \\}} & \parbox[m]{3.5cm}{\centering \includegraphics[width=0.8\linewidth]{images/intro/scg/arcs/meta/scg_metavar_temp_negative2.png}} & \parbox[m]{2cm}{\centering \textunderscore\textunderscore\sim \not\ni} & \parbox[m]{2cm}{\centering\notin\sim\textunderscore\textunderscore} & \parbox[m]{2cm}{\centering\textunderscore\textunderscore\sim|>} & \parbox[m]{2cm}{\centering <|\sim\textunderscore\textunderscore} \\
-		\hline
-		
-		\parbox[m]{4.6cm}{\textit{\\ метапеременная временная нечеткая sc-дуга принадлежности \\}} & \parbox[m]{3.5cm}{\centering \includegraphics[width=0.8\linewidth]{images/intro/scg/arcs/meta/scg_metavar_temp_fuzzy2.png}} & \parbox[m]{2cm}{\centering \textunderscore\textunderscore\sim/\ni} & \parbox[m]{2cm}{\centering\in/\sim\textunderscore\textunderscore} & \parbox[m]{2cm}{\centering\textunderscore\textunderscore\sim/>} & \parbox[m]{2cm}{\centering</\sim\textunderscore\textunderscore} \\
-		\hline
-	\end{longtable}
-}
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.8]{images/intro/scs_membership_connectors.pdf}
+\end{figure}
+
+
+
 %---------------------------------------------
 \scnheader{Таблица. Алфавит sc.s-коннекторов, соответствующих sc.g-коннекторам, которые не являются sc.g-дугами принадлежности}
 
-\scneqtable{
-	\begin{longtable}[l]{|m{6.2cm}|m{2.5cm}|m{2.5cm}|m{2.5cm}|m{2.5cm}|}
-		\hline
-		\multicolumn{1}{|c}{\parbox[c]{6.2cm}{Изображение \textit{\mbox{sc-коннектора}} в SCg}} &
-		\multicolumn{2}{|c}{\parbox[c]{5cm}{Изображение \textit{\mbox{sc.s-коннектора}} в Расширенном алфавите}} &
-		\multicolumn{2}{|c|}{\parbox[c]{5cm}{Изображение \textit{\mbox{sc.s-коннектора}} в Базовом алфавите}}
-		\hline
-		\endhead
-		
-		\parbox[|c]{6.2cm}{\\\centering\includegraphics[width=0.8\linewidth]{images/intro/scs/sc.s-connectors/noorient.png}\\} & \multicolumn{2}{c|}{ \parbox[c]{5cm}{\centering\leftrightarrow}} & \multicolumn{2}{c|}{ \parbox[c]{5cm}{\centering<>}} \\
-		\hline
-		
-		\parbox[c]{6.2cm}{\\\centering\includegraphics[width=0.8\linewidth]{images/intro/scs/sc.s-connectors/orient.png} \\} &\parbox[c]{2.5cm}{\\\centering\rightarrow\\} & \parbox[c]{2.5cm}{\\\centering\leftarrow\\} & \parbox[c]{2.5cm}{\\\centering >>\\} & \parbox[c|]{2.5cm}{\\\centering <<\\} \\
-		\hline
-		
-		\parbox[c]{6.2cm}{\\\centering\includegraphics[width=0.8\linewidth]{images/intro/scs/sc.s-connectors/constPermNoorien.png}\\} & \multicolumn{2}{c|}{\parbox[c]{5cm}{\centering\Leftrightarrow}} & \multicolumn{2}{c|}{\parbox[c]{5cm}{\centering<=>}} \\
-		\hline
-		
-		\parbox[c]{6.2cm}{\\\centering\includegraphics[width=0.8\linewidth]{images/intro/scs/sc.s-connectors/constPermOrient.png}\\} & \parbox[c]{2.5cm}{\centering\Rightarrow} & \parbox[c]{2.5cm}{\centering\Leftarrow} & \parbox[c]{2.5cm}{\centering =>} & \parbox[c|]{2.5cm}{\centering <=} \\
-		\hline
-		
-		\parbox[c]{6.2cm}{\\\centering\includegraphics[width=0.8\linewidth]{images/intro/scs/sc.s-connectors/constTempNoorien.png}\\} & \multicolumn{2}{c|}{\parbox[c]{5cm}{\centering\sim\Leftrightarrow}} & \multicolumn{2}{c|}{\parbox[c|]{5cm}{\centering\sim<=>}} \\
-		\hline
-		
-		\parbox[c]{6.2cm}{\\\centering \includegraphics[width=0.8\linewidth]{images/intro/scs/sc.s-connectors/constTempOrient.png}\\} & \parbox[c]{2.5cm}{\centering\sim\Rightarrow} & \parbox[c]{2.5cm}{\centering\Leftarrow\sim} & \parbox[c]{2.5cm}{\centering\sim=>} & \parbox[c|]{2.5cm}{\centering <=\sim} \\
-		\hline
-		
-		\parbox[c]{6.2cm}{\\\centering\includegraphics[width=0.8\linewidth]{images/intro/scs/sc.s-connectors/varPermNoorien.png}\\} & \multicolumn{2}{c|}{\parbox[c]{5cm}{\centering\textunderscore\Leftrightarrow}} & \multicolumn{2}{c|}{\parbox[c|]{5cm}{\centering\textunderscore<=>}} \\
-		\hline
-		
-		\parbox[c]{6.2cm}{\\\centering\includegraphics[width=0.8\linewidth]{images/intro/scs/sc.s-connectors/varPermOrient.png}\\} & \parbox[c]{2.5cm}{\centering\textunderscore\Rightarrow} & \parbox[c]{2.5cm}{\centering\Leftarrow\textunderscore} & \parbox[c]{2.5cm}{\centering\textunderscore=>} & \parbox[c|]{2.5cm}{\centering <=\textunderscore} \\
-		\hline
-		
-		\parbox[c]{6.2cm}{\\\centering\includegraphics[width=0.8\linewidth]{images/intro/scs/sc.s-connectors/varTempNoorien.png}\\} & \multicolumn{2}{c|}{\parbox[c]{5cm}{\centering\textunderscore\sim\Leftrightarrow}} & \multicolumn{2}{c|}{\parbox[c]{5cm}{\centering\textunderscore\sim<=>}} \\
-		\hline
-		
-		\parbox[c]{6.2cm}{\\\centering\includegraphics[width=0.8\linewidth]{images/intro/scs/sc.s-connectors/varTempOrient.png}\\} & \parbox[c]{2.5cm}{\centering\textunderscore\sim\Rightarrow} & \parbox[c]{2.5cm}{\centering\Leftarrow\sim\textunderscore} & \parbox[c]{2.5cm}{\centering\textunderscore\sim=>} & \parbox[c|]{2.5cm}{\centering <=\sim\textunderscore} \\
-		\hline
-		
-		\parbox[c]{6.2cm}{\\\centering\includegraphics[width=0.8\linewidth]{images/intro/scs/sc.s-connectors/metaPermNoorien.png}\\} & \multicolumn{2}{c|}{\parbox[c]{5cm}{\centering\textunderscore\textunderscore\Leftrightarrow}} & \multicolumn{2}{c|}{\parbox[c|]{5cm}{\centering\textunderscore\textunderscore<=>}} \\
-		\hline
-		
-		\parbox[c]{6.2cm}{\\\centering\includegraphics[width=0.8\linewidth]{images/intro/scs/sc.s-connectors/metaPermOrient.png}\\} & \parbox[c]{2.5cm}{\centering\textunderscore\textunderscore\Rightarrow} & \parbox[c]{2.5cm}{\centering\Leftarrow\textunderscore\textunderscore} & \parbox[c]{2.5cm}{\centering\textunderscore\textunderscore=>} & \parbox[c|]{2.5cm}{\centering <=\textunderscore\textunderscore} \\
-		\hline
-		
-		\parbox[c]{6.2cm}{\\\centering\includegraphics[width=0.8\linewidth]{images/intro/scs/sc.s-connectors/metaTempNoorien.png}\\} & \multicolumn{2}{c|}{\parbox[c]{5cm}{\centering\textunderscore\textunderscore\sim\Leftrightarrow}} & \multicolumn{2}{c|}{\parbox[c]{5cm}{\centering\textunderscore\textunderscore\sim<=>}} \\
-		\hline
-		
-		\parbox[c]{6.2cm}{\\\centering\includegraphics[width=0.8\linewidth]{images/intro/scs/sc.s-connectors/metaTempOrient.png}\\} & \parbox[c]{2.5cm}{\centering\textunderscore\textunderscore\sim\Rightarrow} & \parbox[c]{2.5cm}{\centering\Leftarrow\sim\textunderscore\textunderscore} & \parbox[c]{2.5cm}{\centering\textunderscore\textunderscore\sim\Rightarrow} & \parbox[c|]{2.5cm}{\centering\Leftarrow\sim\textunderscore\textunderscore} \\
-		\hline
-		
-		\parbox[c]{6.2cm}{\\\centering\includegraphics[width=0.8\linewidth]{images/intro/scs/sc.s-connectors/examples/scs_transf_inclusion_const.png}\\} & \parbox[c]{2.5cm}{\centering\supseteq} & \parbox[c]{2.5cm}{\centering\subseteq} & \multicolumn{2}{c|}{\parbox[c]{5cm}{}} \\
-		\hline
-		
-		\parbox[c]{6.2cm}{\\\centering\includegraphics[width=0.8\linewidth]{images/intro/scs/sc.s-connectors/examples/scs_transf_inclusion_meta.png}\\} & \parbox[c]{2.5cm}{\centering\textunderscore\supseteq} & \parbox[c]{2.5cm}{\centering\subseteq\textunderscore} & \multicolumn{2}{c|}{\parbox[c|]{5cm}{\centering}} \\
-		\hline
-		
-		\parbox[c]{6.2cm}{\\\centering\includegraphics[width=0.8\linewidth]{images/intro/scs/sc.s-connectors/examples/scs_transf_strict_inclusion_const.png}\\} & \parbox[c]{2.5cm}{\centering\supset} & \parbox[c]{2.5cm}{\centering\subset} & \multicolumn{2}{c|}{\parbox[c|]{5cm}{}} \\
-		\hline
-		
-		\parbox[c]{6.2cm}{\\\centering\includegraphics[width=0.8\linewidth]{images/intro/scs/sc.s-connectors/examples/scs_transf_strict_inclusion_meta.png}\\} & \parbox[c]{2.5cm}{\centering\textunderscore\supset} & \parbox[c]{2.5cm}{\centering\subset\textunderscore} & \multicolumn{2}{c|}{\parbox[c|]{5cm}{}} \\
-		\hline
-		
-		\parbox[c]{6.2cm}{\\\centering\includegraphics[width=0.8\linewidth]{images/intro/scs/sc.s-connectors/examples/scs_transf_value_order_const.png}\\} & \parbox[c]{2.5cm}{\centering\geq} & \parbox[c]{2.5cm}{\centering\leq} & \multicolumn{2}{c|}{\parbox[c|]{5cm}{}} \\
-		\hline
-		
-		\parbox[c]{6.2cm}{\\\centering\includegraphics[width=0.8\linewidth]{images/intro/scs/sc.s-connectors/examples/scs_transf_value_order_var.png}\\} & \parbox[c]{2.5cm}{\centering\textunderscore\geq} & \parbox[c]{2.5cm}{\centering\textunderscore\leq} & \multicolumn{2}{c|}{\parbox[c]{5cm}{}}  \\
-		\hline
-		
-		\parbox[c]{6.2cm}{\\\centering\includegraphics[width=0.8\linewidth]{images/intro/scs/sc.s-connectors/examples/scs_transf_value_strict_order_const.png}\\} & \parbox[c]{2.5cm}{\centering >} & \parbox[c]{2.5cm}{\centering <} & \multicolumn{2}{c|}{\parbox[c]{5cm}{}} \\
-		\hline
-		
-		\parbox[c]{6.2cm}{\\\centering\includegraphics[width=0.8\linewidth]{images/intro/scs/sc.s-connectors/examples/scs_transf_value_strict_order_var.png}\\} & \parbox[c]{2.5cm}{\centering\textunderscore>} & \parbox[c]{2.5cm}{\centering <\textunderscore} & \multicolumn{2}{c|}{\parbox[c]{5cm}{}} \\
-		\hline
-		
-		\parbox[c]{6.2cm}{\\\centering\includegraphics[width=0.8\linewidth]{images/intro/scs/sc.s-connectors/examples/scs_transf_external_idtf_const.png}\\} & \multicolumn{2}{c|}{\parbox[c]{5cm}{\centering :=}} & \multicolumn{2}{c|}{\parbox[c]{5cm}{}} \\
-		\hline
-		
-		\parbox[c]{6.2cm}{\\\centering\includegraphics[width=0.8\linewidth]{images/intro/scs/sc.s-connectors/examples/scs_transf_external_idtf_var.png}\\} & \multicolumn{2}{c|}{\parbox[c]{5cm}{\centering\textunderscore:=}} & \multicolumn{2}{c|}{\parbox[c]{5cm}{}} \\
-		\hline
-		
-		\parbox[c]{6.2cm}{\\\centering\includegraphics[width=0.8\linewidth]{images/intro/scs/sc.s-connectors/examples/scs_transf_synonymy_const.png}\\} & \multicolumn{2}{c|}{\parbox[c]{5cm}{\centering =}} & \multicolumn{2}{c|}{\parbox[c]{5cm}{}} \\
-		\hline
-		
-		\parbox[c]{6.2cm}{\\\centering\includegraphics[width=0.8\linewidth]{images/intro/scs/sc.s-connectors/examples/scs_transf_insertion_const.png}\\} & \parbox[c]{2.5cm}{\centering\supset=} & \parbox[c]{2.5cm}{\centering = \subset} &  \multicolumn{2}{c|}{\parbox[c]{5cm}{}}  \\
-		\hline
-	\end{longtable}
-}
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{images/intro/scs_non_membership_connectors_1.png}
+\end{figure}
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{images/intro/scs_non_membership_connectors_2.png}
+\end{figure}
 
 \scnheader{Примеры синтаксической трансформации sc.s-предложений с использованием Расширенного алфавита sc.s-коннекторов}
 \bigskip
@@ -1275,279 +816,34 @@ sc.s-коннектор, соответствующий sc.g-дуге прина
 
 
 \newpage
-\bigskip
-\scnfilelong{\textbf{\textit{si}}~$\textunderscore\Rightarrow$~\textit{включение*}::~\textbf{\textit{sj}}}
-\scnrelfrom{синтаксическая трансформация}{
-	\scnfilelong{\textbf{\textit{si}}~$\textunderscore\supseteq$~\textbf{\textit{sj}}}}
-\begin{scnindent}
-	\scnrelboth{семантическая эквивалентность}{
-		\begin{figure}[h]
-			\centering
-			\includegraphics[scale=0.8]{images/intro/scs/sc.s-connectors/examples/scs_transf_inclusion_var.png}
-	\end{figure}}
-\end{scnindent}
-
-\bigskip
-\scnfilelong{\textbf{\textit{si}}~$\textunderscore\textunderscore\Rightarrow$~\textit{включение*}:::~\textbf{\textit{sj}}}
-\scnrelfrom{синтаксическая трансформация}{
-	\scnfilelong{\textbf{\textit{si}}~$\textunderscore\textunderscore\supseteq$~\textbf{\textit{sj}}}}
-\begin{scnindent}
-	\scnrelboth{семантическая эквивалентность}{
-		\begin{figure}[h]
-			\centering
-			\includegraphics[scale=0.8]{images/intro/scs/sc.s-connectors/examples/scs_transf_inclusion_meta.png}
-	\end{figure}}
-\end{scnindent}
 
 
-\bigskip
-\scnfilelong{\textbf{\textit{si}}~$\Rightarrow$~\textit{строгое включение*}:~\textbf{\textit{sj}}}
-\scnrelfrom{синтаксическая трансформация}{
-	\scnfilelong{\textbf{\textit{si}}~$\supset$~\textbf{\textit{sj}}}}
-\begin{scnindent}
-	\scnrelboth{семантическая эквивалентность}{
-		\begin{figure}[h]
-			\centering
-			\includegraphics[scale=0.8]{images/intro/scs/sc.s-connectors/examples/scs_transf_strict_inclusion_const.png}
-	\end{figure}}
-\end{scnindent}
-
-
-\bigskip
-\scnfilelong{\textbf{\textit{si}}~$\textunderscore\Rightarrow$~\textit{строгое включение*}::~\textbf{\textit{sj}}}
-\scnrelfrom{синтаксическая трансформация}{
-	\scnfilelong{\textbf{\textit{si}}~$\textunderscore\supset$~\textbf{\textit{sj}}}}
-\begin{scnindent}
-	\scnrelboth{семантическая эквивалентность}{
-		\begin{figure}[h]
-			\centering
-			\includegraphics[scale=0.8]{images/intro/scs/sc.s-connectors/examples/scs_transf_strict_inclusion_var.png}
-	\end{figure}}
-\end{scnindent}
-\newpage
-\bigskip
-\scnfilelong{\textbf{\textit{si}}~$\textunderscore\textunderscore\Rightarrow$~\textit{строгое включение*}:::~\textbf{\textit{sj}}}
-\scnrelfrom{синтаксическая трансформация}{
-	\scnfilelong{\textbf{\textit{si}}~$\textunderscore\textunderscore\supset$~\textbf{\textit{sj}}}}
-\begin{scnindent}
-	\scnrelboth{семантическая эквивалентность}{
-		\begin{figure}[h]
-			\centering
-			\includegraphics[scale=0.8]{images/intro/scs/sc.s-connectors/examples/scs_transf_strict_inclusion_meta.png}
-	\end{figure}}
-\end{scnindent}
-
-\bigskip
-\scnfilelong{\textbf{\textit{si}}~$\Rightarrow$~\textit{порядок величин*}:~\textbf{\textit{sj}}}
-\scnrelfrom{синтаксическая трансформация}{
-	\scnfilelong{\textbf{\textit{si}}~$\geq$~\textbf{\textit{sj}}}}
-\begin{scnindent}
-	\scnrelboth{семантическая эквивалентность}{
-		\begin{figure}[h]
-			\centering
-			\includegraphics[scale=0.8]{images/intro/scs/sc.s-connectors/examples/scs_transf_value_order_const.png}
-	\end{figure}}
-\end{scnindent}
-
-\bigskip
-\scnfilelong{\textbf{\textit{si}}~$\textunderscore\Rightarrow$~\textit{порядок величин*}::~\textbf{\textit{sj}}}
-\scnrelfrom{синтаксическая трансформация}{
-	\scnfilelong{\textbf{\textit{si}}~$\textunderscore\geq$~\textbf{\textit{sj}}}}
-\begin{scnindent}
-	\scnrelboth{семантическая эквивалентность}{
-		\begin{figure}[h]
-			\centering
-			\includegraphics[scale=0.8]{images/intro/scs/sc.s-connectors/examples/scs_transf_value_order_var.png}
-	\end{figure}}
-\end{scnindent}
-
-\bigskip
-\scnfilelong{\textbf{\textit{si}}~$\textunderscore\textunderscore\Rightarrow$~\textit{порядок величин*}:::~\textbf{\textit{sj}}}
-\scnrelfrom{синтаксическая трансформация}{
-	\scnfilelong{\textbf{\textit{si}}~$\textunderscore\textunderscore\geq$~\textbf{\textit{sj}}}}
-\begin{scnindent}
-	\scnrelboth{семантическая эквивалентность}{
-		\begin{figure}[h]
-			\centering
-			\includegraphics[scale=0.8]{images/intro/scs/sc.s-connectors/examples/scs_transf_value_order_meta.png}
-	\end{figure}}
-\end{scnindent}
+\begin{figure}[h]
+	\includegraphics[scale=0.5]{images/intro/scs/sc.s-connectors/examples/example_1.png}
+\end{figure}
 
 \newpage
-\bigskip
-\scnfilelong{\textbf{\textit{si}}~$\Rightarrow$~\textit{строгий порядок величин*}:~\textbf{\textit{sj}}}
-\scnrelfrom{синтаксическая трансформация}{
-	\scnfilelong{\textbf{\textit{si}}~$>$~\textbf{\textit{sj}}}}
-\begin{scnindent}
-	\scnrelboth{семантическая эквивалентность}{
-		\begin{figure}[h]
-			\centering
-			\includegraphics[scale=0.8]{images/intro/scs/sc.s-connectors/examples/scs_transf_value_strict_order_const.png}
-	\end{figure}}
-\end{scnindent}
-
-
-\bigskip
-\scnfilelong{\textbf{\textit{si}}~$\textunderscore\Rightarrow$~\textit{строгий порядок величин*}::~\textbf{\textit{sj}}}
-\scnrelfrom{синтаксическая трансформация}{
-	\scnfilelong{\textbf{\textit{si}}~$\textunderscore>$~\textbf{\textit{sj}}}}
-\begin{scnindent}
-	\scnrelboth{семантическая эквивалентность}{
-		\begin{figure}[h]
-			\centering
-			\includegraphics[scale=0.8]{images/intro/scs/sc.s-connectors/examples/scs_transf_value_strict_order_var.png}
-	\end{figure}}
-\end{scnindent}
-
-\bigskip
-\scnfilelong{\textbf{\textit{si}}~$\textunderscore\textunderscore\Rightarrow$~\textit{строгий порядок величин*}:::~\textbf{\textit{sj}}}
-\scnrelfrom{синтаксическая трансформация}{
-	\scnfilelong{\textbf{\textit{si}}~$\textunderscore\textunderscore>$~\textbf{\textit{sj}}}}
-\begin{scnindent}
-	\scnrelboth{семантическая эквивалентность}{
-		\begin{figure}[h]
-			\centering
-			\includegraphics[scale=0.8]{images/intro/scs/sc.s-connectors/examples/scs_transf_value_strict_order_meta.png}
-	\end{figure}}
-\end{scnindent}
-
-\bigskip
-\scnfilelong{\textbf{\textit{si}}~$\Rightarrow$~\textit{внешний идентификатор*}:~\textbf{\textit{sj}}}
-\scnrelfrom{синтаксическая трансформация}{
-	\scnfilelong{\textbf{\textit{si}}~$:=$~\textbf{\textit{sj}}}}
-\begin{scnindent}
-	\scnrelboth{семантическая эквивалентность}{
-		\begin{figure}[h]
-			\centering
-			\includegraphics[scale=0.8]{images/intro/scs/sc.s-connectors/examples/scs_transf_external_idtf_const.png}
-	\end{figure}}
-\end{scnindent}
+\begin{figure}[h]
+	\includegraphics[scale=0.5]{images/intro/scs/sc.s-connectors/examples/example_2.png}
+\end{figure}
 
 \newpage
-\bigskip
-\scnfilelong{\textbf{\textit{si}}~$\textunderscore\Rightarrow$~\textit{внешний идентификатор*}::~\textbf{\textit{sj}}}
-\scnrelfrom{синтаксическая трансформация}{
-	\scnfilelong{\textbf{\textit{si}}~$\textunderscore:=$~\textbf{\textit{sj}}}}
-\begin{scnindent}
-	\scnrelboth{семантическая эквивалентность}{
-		\begin{figure}[h]
-			\centering
-			\includegraphics[scale=0.8]{images/intro/scs/sc.s-connectors/examples/scs_transf_external_idtf_var.png}
-	\end{figure}}
-\end{scnindent}
+\begin{figure}[h]
+	\includegraphics[scale=0.5]{images/intro/scs/sc.s-connectors/examples/example_3.png}
+\end{figure}
 
-\bigskip
-\scnfilelong{\textbf{\textit{si}}~$\textunderscore\textunderscore\Rightarrow$~\textit{внешний идентификатор*}:::~\textbf{\textit{sj}}}
-\scnrelfrom{синтаксическая трансформация}{
-	\scnfilelong{\textbf{\textit{si}}~$\textunderscore\textunderscore:=$~\textbf{\textit{sj}}}}
-\begin{scnindent}
-	\scnrelboth{семантическая эквивалентность}{
-		\begin{figure}[h]
-			\centering
-			\includegraphics[scale=0.8]{images/intro/scs/sc.s-connectors/examples/scs_transf_external_idtf_meta.png}
-	\end{figure}}
-\end{scnindent}
+\newpage
+\begin{figure}[h]
+	\includegraphics[scale=0.5]{images/intro/scs/sc.s-connectors/examples/example_4.png}
+\end{figure}
 
-\bigskip
-\scnfilelong{\textbf{\textit{si}}~$\Leftrightarrow$~\textit{синонимия*}:~\textbf{\textit{sj}}}
-\scnrelfrom{синтаксическая трансформация}{
-	\scnfilelong{\textbf{\textit{si}}~$=$~\textbf{\textit{sj}}}}
-\begin{scnindent}
-	\scnrelboth{семантическая эквивалентность}{
-		\begin{figure}[h]
-			\centering
-			\includegraphics[scale=0.8]{images/intro/scs/sc.s-connectors/examples/scs_transf_synonymy_const.png}
-	\end{figure}}
-\end{scnindent}
-
-\bigskip
-\scnfilelong{\textbf{\textit{si}}~$\Rightarrow$~\textit{погружение*}:~\textbf{\textit{sj}}}
-\scnrelfrom{синтаксическая трансформация}{
-	\scnfilelong{\textbf{\textit{si}}~$\supset=$~\textbf{\textit{sj}}}}
-\begin{scnindent}
-	\scnrelboth{семантическая эквивалентность}{
-		\begin{figure}[h]
-			\centering
-			\includegraphics[scale=0.8]{images/intro/scs/sc.s-connectors/examples/scs_transf_insertion_const.png}
-	\end{figure}}
-\end{scnindent}
-
-Аналогичным образом может быть описана трансформация предложений, содержащих любые классы \mbox{sc.s-коннекторов}, за исключением тех классов sc.s-коннекторов, которые соответствуют классам \mbox{sc-коннекторов}, входящим в Ядро SC-кода.
+Аналогичным образом может быть описана трансформация предложений, содержащих любые классы sc.s-коннекторов, за исключением тех классов sc.s-коннекторов, которые соответствуют классам sc-коннекторов, входящим в Ядро SC-кода.
 
 В общем случае \textit{sc-элементы}, инцидентные \textit{sc-коннекторам}, классы которых описаны в данном примере, могут быть как \textit{sc-константами}, так и \textit{sc-переменными} (в том числе \textit{sc-метапеременными}). При этом как \textit{переменному sc-коннектору} может соответствовать \textit{константный sc-узел}, так и \textit{константному sc-коннектору} может соответствовать \textit{переменный sc-узел} (например, если возникает необходимость переменному sc-узлу приписать \textit{внешний идентификатор*}). Последняя ситуация встречается не очень часто и возникает в случае, когда область определения соответствующего \textit{отношения} имеет непустое пересечение с классом \textit{sc-переменных}.
 
 
 \scnheader{Описание примеров выполнения операций, заданных на множестве sc.s-предложений}
-\bigskip
-\scnfilelong{\textit{треугольник $\ni$ Треугк(ТчкВ\char59ТчкС\char59ТчкD)}\char59\char59}
-\scnrelfrom{Операция конверсии sc.s-предложения}{\scnfilelong{\textit{Треугк(ТчкВ\char59ТчкС\char59ТчкD) $\in$ треугольник}\char59\char59}}
-\begin{scnindent}
-	\scnrelboth{семантическая эквивалентность}{
-		\begin{figure}[h]
-			\centering
-			\includegraphics[scale=0.8]{images/intro/scs/conversion.png}
-	\end{figure}}
-\end{scnindent}
 
-\bigskip\bigskip
-
-{\scnfilelong{\textit{треугольник $\ni$ Треугк(ТчкВ\char59ТчкС\char59ТчкD)\char59\char59
-			\newline
-			Треугк(ТчкВ\char59ТчкС\char59ТчкD) $\Rightarrow$ сторона*:включение*: Отр(ТчкВ\char59ТчкC)\char59\char59}}}
-\scnrelfrom{Операция присоединения sc.s-предложения}{\scnfilelong{\textit{треугольник $\ni$ Треугк(ТчкВ\char59ТчкС\char59ТчкD) (* $\Rightarrow$ сторона*:включение*:Отр(ТчкВ\char59ТчкС)\char59\char59*) }\char59\char59}}
-\begin{scnindent}
-	\scnrelboth{семантическая эквивалентность}{
-		\begin{figure}[h]
-			\centering
-			\includegraphics[scale=0.8]{images/intro/scs/joining_sentences.png}
-	\end{figure}}
-\end{scnindent}
-
-
-\bigskip\bigskip
-
-\scnfilelong{\textit{сторона* $\ni$ (Треугк(ТчкВ\char59Тчк С\char59ТчкD) $\Rightarrow$ Отр(ТчкВ\char59ТчкС))\char59\char59
-		\newline
-		сторона* $\ni$ (Треугк(ТчкВ\char59Тчк С\char59ТчкD) $\Rightarrow$ Отр(ТчкC\char59ТчкD))\char59\char59}}
-\scnrelfrom{Операция слияния sc.s-предложений}{\scnfilelong{\textit{сторона* $\ni$ ((Треугк(ТчкВ\char59ТчкС\char59ТчкD) $\Rightarrow$ Отр(ТчкВ\char59ТчкС))\char59(Треуг(ТчкВ\char59ТчкС\char59ТчкD) $\Rightarrow$ Отр(ТчкC\char59ТчкD)))\char59\char59}}}
-\begin{scnindent}
-	\scnrelfrom{синтаксическая трансформация}{\scnfilelong{\textit{Треугк(ТчкВ\char59ТчкС\char59ТчкD)}$\Rightarrow$\textit{сторона*}: \textit{Отр(ТчкВ\char59ТчкС)}\char59\textit{Отр(ТчкС\char59ТчкD)}\char59\char59}}
-	\scnrelboth{семантическая эквивалентность}{
-		\begin{figure}[h]
-			\centering
-			\includegraphics[scale=0.8]{images/intro/scs/joining_sentence.png}
-	\end{figure}}
-\end{scnindent}
-
-\newpage
-
-{\scnfilelong{\textit{Треугк(ТчкВ\char59ТчкС\char59ТчкD) $\Rightarrow$ сторона*:включение*:Отр(ТчкВ\char59ТчкС)\char59\char59}}}
-\scnrelfrom{Операция разложения sc.s-предложений на простые sc.s-предложения}{\scnfilelong{\textit{сторона* $\ni$ (Треугк(ТчкВ\char59ТчкС\char59ТчкD) $\Rightarrow$ Отр(ТчкВ\char59ТчкС))\char59\char59
-			\newline включение* $\ni$ (Треугк(ТчкВ\char59ТчкС\char59ТчкD) $\Rightarrow$ Отр(ТчкВ\char59ТчкС))\char59\char59}}}
-\begin{scnindent}
-	\scnrelboth{семантическая эквивалентность}{
-		\begin{figure}[h]
-			\centering
-			\includegraphics[scale=0.8]{images/intro/scs/dividing_sentences.png}
-	\end{figure}}
-\end{scnindent}
-
-\bigskip\bigskip
-{\scnfilelong{\textit{треугольник $\ni$ Треугк(ТчкВ\char59ТчкC\char59ТчкD)}}}
-\scnrelfrom{Операция разложения sc.s-предложений на простые sc.s-предложения с sc.s-разделителем, изображающим связь инцидентности sc-элементов}{\scnfilelong{\textit{треугольник |- ai >| Треугк(ТчкВ\char59ТчкС\char59ТчкD)\char59\char59
-			\newline
-			константный постоянный sc-узел, обозначающий класс $\ni$ треугольник\char59\char59
-			\newline
-			константная постоянная позитивная sc-дуга принадлежности $\ni$ ai\char59\char59
-			\newline
-			константный постоянный sc-узел общего вида $\ni$ Треугк(ТчкВ\char59ТчкC\char59ТчкD)\char59\char59}}}
-\begin{scnindent}
-	\scnrelboth{семантическая эквивалентность}{
-		\begin{figure}[h]
-			\centering
-			\includegraphics[scale=0.8]{images/intro/scs/dividing_sentences_incident.png}
-	\end{figure}}
-\end{scnindent}	
 
 С семантической точки зрения \textit{sc.s-предложение} представляет собой описание некоторого \uline{маршрута} в соответствующем sc-тексте, который является графовой структурой специального вида и структура которого описывается (изображается) с помощью \textit{sc.s-предложений}. Указанный маршрут "проводится"\ по sc-коннекторам и по связям инцидентности sc-элементов, если маршрут проходит через инцидентные sc-коннекторы. В описании указанного маршрута могут дополнительно указываться множества (чаще всего отношения), которым принадлежат sc-коннекторы, входящие в описываемый маршрут. Кроме того, указанный маршрут в начале и/или в конце может иметь разветвления, когда какой-либо sc-элемент \uline{одинаково} инцидентен нескольким \uline{однотипным} sc-коннекторам, соединяющим указанный sc-элемент с некоторыми другими sc-элементами.
 
@@ -1614,7 +910,7 @@ sc.s-коннектор, соответствующий sc.g-дуге прина
 В \textit{Четвертом направлении расширения Ядра SCs-кода} осуществляется переход от использования только \textit{простых sc.s-предложений} к использованию также \textit{sc.s-предложений}, построенных с помощью \textit{\mbox{Операции} присоединения sc.s-предложения*}. В результате этого, благодаря "склеиванию"\ одинаковых \textit{\mbox{sc-идентификаторов}}, а также "склеиванию"\ синтаксически эквивалентных \textit{\mbox{sc.s-коннекторов}} с одинаковыми \textit{\mbox{sc.s-модификаторами}} (несмотря на то, что эти "склеиваемые"\ \textit{sc.s-коннекторы} соответствуют \uline{разным} \mbox{sc-коннекторам}), существенно сокращается число копий используемых \textit{\mbox{sc-идентификаторов}} и \textit{\mbox{sc.s-коннекторов}} с их \textit{\mbox{sc.s-модификаторами}}.
 
 \scnheader{Пятое направление расширения Ядра SCs-кода}
-В \textit{Пятом направлении расширения Ядра SCs-кода} разрешается использование \textit{присоединенных \mbox{sc.s-предложений}}. В результате этого \textit{sc.s-тексты} становятся более компактными и удобными для восприятия за счет снижения числа дублируемых \textit{sc-идентификаторов} и более широких возможностей их структуризации.}
+В \textit{Пятом направлении расширения Ядра SCs-кода} разрешается использование \textit{присоединенных \mbox{sc.s-предложений}}. В результате этого \textit{sc.s-тексты} становятся более компактными и удобными для восприятия за счет снижения числа дублируемых \textit{sc-идентификаторов} и более широких возможностей их структуризации.
 
 \section{Язык внешнего форматированного представления информационных конструкций внутреннего языка ostis-систем -- SCn-код (Semantic Code natural)}
 
@@ -1633,21 +929,10 @@ SCn-код - язык, каждый \textit{текст} которого зад�
 
 Благодаря тому, что в состав sc.n-текстов могут входить и sc.s-тексты, и sc.g-тексты (ограниченные sc.n-контуром), SCn-код можно считать интегратором различных внешних языков представления знаний.  Это дает возможность при визуализации и разработке базы знаний ostis-системы недостатки одного из предлагаемых вариантов внешнего представления sc-текстов (SCg-кода, SCs-кода, SCn-кода) компенсировать достоинствами других вариантов.
 
-\begin{scnset}
-	\scnitem{SCn-код}
-	\scnitem{SCs-код}	
-\end{scnset}
-\scnrelfrom{описание связи}{\scnstartsetlocal\\
-	\scnheaderlocal{SCn-код}
-	\scnrelfrom{синтаксическое расширение;синтаксическое ядро языка}{SCs-код}
-	\scnendstruct
-}
-
 Важной особенностью SCn-кода является "двухмерный"{} характер его текстов. Это проявляется в том, что для каждого фрагмента текста SCn-кода важное значение имеет величина отступа от левого края \textit{строчки}.
 
 В тексте \textit{SCn-кода} в отличие от текста \textit{SCs-кода} для каждого фрагмента текста важное значение имеет не только то, как этот фрагмент связан с другими фрагментами "по горизонтали"{}(какой фрагмент находится \uline{левее} и какой \uline{правее} на одной и той же \textit{строчке}), но и то, как он связан с другими фрагментами "по вертикали"{}(какой фрагмент находится \uline{выше} на предыдущей \textit{строчке} и какой находится \uline{ниже} на следующей \textit{строчке}). Так, например, если в тексте \textit{SCn-кода} некоторый \textit{sc-идентификатор}(внешний идентификатор \textit{sc-элемента}) размещен сразу после вертикальной табуляционной линии и точно \uline{под ним} размещен некоторый \textit{sc.s-коннектор}, то это означает, что указанный \textit{sc-элемент} инцидентен \textit{sc-коннектору}, изображенному указанным \textit{sc.s-коннектором}.
-
-Для того, чтобы обеспечить точное задание(формулировку) правил двухмерной инцидентности элементов(элементарных фрагментов) sc.n-текстов, вводится понятие \textit{\textbf{страницы} sc.n-текста}, понятие \textit{\textbf{строчки} sc.n-текста}, а также используется специальная \uline{разметка}, представляющая собой вертикальные табуляционные линии, расстояние между которыми примерно равняется максимальной длине sc.s-коннектора (обычно это расстояние равно ширине 4-5 символов).
+Для того, чтобы обеспечить точное задание(формулировку) правил двухмерной инцидентности элементов(элементарных фрагментов) sc.n-текстов, вводится понятие страницы sc.n-текста, понятие строчки sc.n-текста, а также используется специальная разметка, представляющая собой вертикальные табуляционные линии, расстояние между которыми примерно равняется максимальной длине sc.s-коннектора (обычно это расстояние равно ширине 4-5 символов).
 
 \subsection{Синтаксис языка внешнего форматированного представления информационных конструкций внутреннего языка ostis-систем}
 
@@ -1712,7 +997,7 @@ SCn-код - язык, каждый \textit{текст} которого зад�
 \scnidtf{ограничитель изображения файла \uline{ostis-системы}, используемый в \uline{sc.n-предложениях}}
 С формальной точки зрения \textit{sc.n-рамка} всегда представляет собой \uline{одну} \textit{строчку sc.n-текста}. Это означает, что \textit{sc.n-рамка} не может быть синтаксически разделена на части в рамках того \textit{sc.n-текста}, в котором она используется, и внутрь нее не могут вставляться, например, \textit{присоединенные sc.n-предложения} или какой-либо другой текст (за исключением случаев, когда \textit{sc.n-рамка} содержит \textit{sc.n-текст}, но в этом случае указанный \textit{sc.n-текст} все равно будет рассматриваться как целостный внешний файл, а не как фрагмент окружающего его \textit{sc.n-текста}).
 
-Понятие \textit{sc.n-предложения} является естественным обобщением понятия \textit{sc.s-предложения}. Более того, \uline{аналогичным} для \textit{sc.s-предложений} образом вводятся понятия:
+Понятие \textit{sc.n-предложения} является естественным обобщением понятия \textit{sc.s-предложения}. Более того, аналогичным для \textit{sc.s-предложений} образом вводятся понятия:
 \begin{itemize}
 	%\item \textit{тривиального sc.n-предложения}
 	\item \textit{простого sc.n-предложения}
