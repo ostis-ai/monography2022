@@ -180,3 +180,4 @@ if (defined $ENV{'CHKTEX_OPTIONS'}) {
 	}
     }
 }
+ensure_path( 'TEXINPUTS', './scn//' );
