@@ -743,9 +743,10 @@ passing it to article class \MessageBreak
 \renewcommand\theenumii{\@alph\c@enumii}
 
 % labels of itemize
-\renewcommand\labelitemi{\textbullet}
-\renewcommand\labelitemii{\textendash}
-\let\labelitemiii=\labelitemiv
+\renewcommand\labelitemi{\scriptsize$\square$}
+\renewcommand\labelitemii{\scriptsize$\square\square$}
+\renewcommand\labelitemiii{\scriptsize$\square\square\square$}
+\let\labelitemiv=\labelitemiii
 
 % labels of description
 \renewcommand*\descriptionlabel[1]{\hspace\labelsep #1\hfil}
@@ -1165,13 +1166,13 @@ to\z@{\kern0.55\wd0\vrule\@height0.45\ht0\hss}\box0}}}}
   \noalign{\ifnum0=`}\fi\hrule \@height2\arrayrulewidth \futurelet
    \reserved@a\@xhline}
 
-\setlength \labelsep     {5\p@}
-\setlength\leftmargini   {17\p@}
-\setlength\leftmargin    {\leftmargini}
-\setlength\leftmarginii  {\leftmargini}
-\setlength\leftmarginiii {\leftmargini}
-\setlength\leftmarginiv  {\leftmargini}
-\setlength\labelwidth    {\leftmargini}
+\setlength\labelsep{5\p@}
+\setlength\leftmargini{1.2em}
+\setlength\leftmargin{\leftmargini}
+\setlength\leftmarginii{1.8em}
+\setlength\leftmarginiii{2.4em}
+\setlength\leftmarginiv{\leftmargini}
+\setlength\labelwidth{\leftmargini}
 \addtolength\labelwidth{-\labelsep}
 
 \def\@listI{\leftmargin\leftmargini
