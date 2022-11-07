@@ -776,6 +776,13 @@ passing it to article class \MessageBreak
         \topsep=6\p@
         \itemsep=\parskip \advance\itemsep by -\parsep}}
 %
+\def\describelabel#1{#1\hfil}
+\def\@describe[#1]{\labelsep=12pt\relax
+\relax\ifnum\@listdepth=0
+\setitemindent{#1}\else\ifnum\@listdepth=1
+\setitemitemindent{#1}\fi\fi
+\list{--}{\let\makelabel\describelabel}}
+%
 % adjusted environment "description"
 % if an optional parameter (at the first two levels of lists)
 % is present, its width is considered to be the widest mark
@@ -785,13 +792,6 @@ passing it to article class \MessageBreak
 \leftmargini=12pt\relax  %!!!!!!!!!
 \leftmargin=12pt\relax  %!!!!!!!!!
           \itemindent-\leftmargin \let\makelabel\descriptionlabel}}}
-%
-\def\describelabel#1{#1\hfil}
-\def\@describe[#1]{\labelsep=12pt\relax
-\relax\ifnum\@listdepth=0
-\setitemindent{#1}\else\ifnum\@listdepth=1
-\setitemitemindent{#1}\fi\fi
-\list{--}{\let\makelabel\describelabel}}
 %
 \def\itemize{%
   \ifnum \@itemdepth >\thr@@\@toodeep\else
@@ -827,8 +827,19 @@ passing it to article class \MessageBreak
 \newdimen\verbatimindent \verbatimindent\parindent
 \def\verbatim{\advance\@totalleftmargin by\verbatimindent
 \@verbatim \frenchspacing\@vobeyspaces \@xverbatim}
-
 %
+\RequirePackage{eqparbox}
+\RequirePackage{enumitem}
+\renewenvironment{description}{
+\newcommand\abbrlabel[2][l]{\eqmakebox[listlabel@\EnumitemId][##1]{##2}}
+  \begin{itemize}[
+      labelwidth=\eqboxwidth{listlabel@\EnumitemId},
+      leftmargin=!,
+      format=\abbrlabel%
+    ]
+}{
+  \end{itemize}
+}
 %  special signs and characters
 \newcommand{\D}{\mathrm{d}}
 \newcommand{\E}{\mathrm{e}}
