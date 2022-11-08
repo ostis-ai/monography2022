@@ -22,8 +22,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T2A,T1]{fontenc}
 \usepackage[english,main=russian]{babel}
-\usepackage{substitutefont}
-\substitutefont{T2A}{\familydefault}{Tempora-TLF}
+\renewcommand{\familydefault}{Tempora-TLF}
 
 \usepackage{makeidx}         % allows index generation
 \usepackage{graphicx}        % standard LaTeX graphics tool
@@ -39,12 +38,12 @@
 
 \usepackage{geometry}
 \geometry{
-	a4paper,
-	left=20mm,
-	right=20mm,
-	top=20mm,
-	bottom=15mm,
-	heightrounded
+  a4paper,
+  left=20mm,
+  right=20mm,
+  top=20mm,
+  bottom=15mm,
+  heightrounded
 }
 
 \usepackage{tocloft}
