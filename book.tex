@@ -57,7 +57,13 @@
 \cftpagenumbersoff{authors}
 \cftsetindents{authors}{\cftchapindent}{0pt}
 
+\newlistentry[section]{authorssec}{toc}{1}
+\cftpagenumbersoff{authorssec}
+\cftsetindents{authorssec}{\cftsecindent}{0pt}
+
 \newcommand{\chapauthortoc}[1]{\addcontentsline{toc}{authors}{\textit{#1}\vspace{0.5\baselineskip}}}
+
+\newcommand{\secauthortoc}[1]{\addcontentsline{toc}{authorssec}{\textit{#1}\vspace{0.5\baselineskip}}}
 
 % see the list of further useful packages
 % in the Reference Guide
