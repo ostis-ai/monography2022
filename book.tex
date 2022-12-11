@@ -77,19 +77,20 @@
 \graphicspath{{./}{images/}}
 
 \renewcommand\thepart{\arabic{part}}
-\renewcommand{\thechapter}{\thepart.\arabic{chapter}}
+\renewcommand{\thechapter}{\arabic{part}.\arabic{chapter}.}
 
-\renewcommand\cftchapnumwidth{4.5em}
+\renewcommand\cftchapnumwidth{4.7em}
 \renewcommand\cftchappresnum{Глава~}
 
 %\renewcommand\cftsecnumwidth{6.8em}
 %\renewcommand{\thesection}{Параграф \thechapter.\arabic{section}}
 
-\renewcommand\cftsecnumwidth{3.2em}
-\renewcommand{\thesection}{\S~\thechapter.\arabic{section}}
+\renewcommand\cftsecnumwidth{3.4em}
+\renewcommand{\thesection}{\S~\arabic{part}.\arabic{chapter}.\arabic{section}.}
 
-\renewcommand\cftsubsecnumwidth{6em}
-\renewcommand{\thesubsection}{Пункт \arabic{part}.\arabic{chapter}.\arabic{section}.\arabic{subsection}}
+\cftsetindents{subsection}{4.9em}{6.2em}
+%\renewcommand\cftsubsecnumwidth{6em}
+\renewcommand{\thesubsection}{Пункт \arabic{part}.\arabic{chapter}.\arabic{section}.\arabic{subsection}.}
 
 \DeclareCaptionFormat{monography}
 {
