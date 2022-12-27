@@ -309,7 +309,7 @@ passing it to article class \MessageBreak
 \newcommand{\partnumstyle}{\bfseries\boldmath}
 \newcommand{\partsize}{\LARGE}
 \newcommand{\partstyle}{\bfseries\boldmath}
-\newcommand{\chapnumsize}{\Large}
+\newcommand{\chapnumsize}{\LArge}
 \newcommand{\chapnumstyle}{\bfseries\boldmath}
 \newcommand{\chapsize}{\LArge}
 \newcommand{\chapstyle}{\bfseries\boldmath}
