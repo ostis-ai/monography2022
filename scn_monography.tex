@@ -38,6 +38,8 @@
 %\renewcommand\cftsubsecnumwidth{6em}
 \renewcommand{\thesubsection}{Пункт \arabic{part}.\arabic{chapter}.\arabic{section}.\arabic{subsection}.}
 
+\renewcommand{\thesubsubsection}{Подпункт \arabic{part}.\arabic{chapter}.\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
+
 \DeclareCaptionFormat{monography}
 {
 	\textbf{=~\textit{#3}}
@@ -51,6 +53,8 @@
 \setlist[textitemize,1]{labelsep=\tabsize-\bulletsize,leftmargin=\tabsize,itemsep=-0.5em,before=\vspace{-0.5em},label=$\bullet$}
 \setlist[textitemize,2]{labelsep=\tabsize-\bulletsize,leftmargin=\tabsize,itemsep=-0.5em,before=\vspace{-0.5em},after=\vspace{0.5em},label=$\bullet$}
 \setlist[textitemize,3]{labelsep=\tabsize-\bulletsize,leftmargin=\tabsize,itemsep=-0.5em,before=\vspace{-0.5em},after=\vspace{0.5em},label=$\bullet$}
+
+\setlist[enumerate]{labelsep=\tabsize-0.7em,leftmargin=\tabsize,itemsep=-0.5em,before=\vspace{-0.5em}}
 
 \newcommand{\scnfigure}[4]{
 \begin{figure}[h]
