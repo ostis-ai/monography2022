@@ -35,6 +35,8 @@
 \usepackage{float}
 \usepackage{caption}
 \usepackage{parskip}
+\usepackage[]{algorithm2e}
+\usepackage{enumitem}
 
 \usepackage{geometry}
 \geometry{
@@ -50,14 +52,7 @@
 
 \usepackage{scn}
 \input{scn_alias}
-
-\usepackage[]{algorithm2e}
-
-\newlistentry[section]{authors}{toc}{1}
-\cftpagenumbersoff{authors}
-\cftsetindents{authors}{\cftchapindent}{0pt}
-
-\newcommand{\chapauthortoc}[1]{\addcontentsline{toc}{authors}{\textit{#1}\vspace{0.5\baselineskip}}}
+\input{scn_monography}
 
 % see the list of further useful packages
 % in the Reference Guide
@@ -69,29 +64,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \graphicspath{{./}{images/}}
-
-\renewcommand\thepart{\arabic{part}}
-\renewcommand{\thechapter}{\thepart.\arabic{chapter}}
-
-\renewcommand\cftchapnumwidth{4.5em}
-\renewcommand\cftchappresnum{Глава~}
-
-%\renewcommand\cftsecnumwidth{6.8em}
-%\renewcommand{\thesection}{Параграф \thechapter.\arabic{section}}
-
-\renewcommand\cftsecnumwidth{3.2em}
-\renewcommand{\thesection}{\S~\thechapter.\arabic{section}}
-
-\renewcommand\cftsubsecnumwidth{6em}
-\renewcommand{\thesubsection}{Пункт \arabic{part}.\arabic{chapter}.\arabic{section}.\arabic{subsection}}
-
-\DeclareCaptionFormat{monography}
-{
-\textbf{=~\textit{#3}}
-}
-\captionsetup{format=monography,singlelinecheck=false}
-
-\setlength{\parindent}{0pt}
 
 \input{scn_biblio}
 \bibliography{biblio}
@@ -106,6 +78,8 @@
 \frontmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \include{author/preface}
+
+\include{author/preface_auth}
 
 \tableofcontents
 
@@ -124,8 +98,11 @@
 \include{author/part7}
 
 %\backmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{bibliography}
+
+\include{author/conclusion}
+
 \include{author/glossary}
+\include{bibliography}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
