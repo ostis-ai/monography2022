@@ -6,8 +6,81 @@
 \abstract{Аннотация к главе.}
 
 \section{SC-код (Semantic Computer Code)}
-\section{Синтаксис SC-кода}
 \section{Базовая денотационная семантика SC-кода}
+
+\scnheader{Структурная классификация sc-элементов}
+\scnstartstruct
+
+\scnheader{sc-элемент}
+\begin{scnrelfromset}{разбиение}
+	\scnitem{sc-множество}
+	\begin{scnindent}
+	\begin{scnrelfromset}{разбиение}
+		\scnitem{sc-связка}
+		\begin{scnindent}
+		\begin{scnrelfromset}{разбиение}
+			\scnitem{sc-синглетон}
+			\scnitem{sc-пара}
+			\begin{scnindent}
+			\begin{scnrelfromset}{разбиение}
+				\scnitem{неориентированная sc-пара}
+				\scnitem{ориентированная sc-пара}
+				\begin{scnindent}
+				\begin{scnrelfromset}{разбиение}
+					\scnitem{\scnkeyword{sc-пара принадлежности}}
+					\scnitem{sc-пара, не являющаяся парой принадлежности}
+				\end{scnrelfromset}
+				\end{scnindent}
+			\end{scnrelfromset}
+			\end{scnindent}
+			\scnitem{sc-связка, не являющаяся синглетоном и парой}
+		\end{scnrelfromset}
+		\end{scnindent}
+		\scnitem{sc-класс}
+		\scnitem{sc-структура}							
+	\end{scnrelfromset}
+	\end{scnindent}
+	\scnitem{sc-внешняя сущность}
+	\begin{scnindent}
+	\begin{scnrelfromset}{разбиение}
+		\scnitem{внутренний файл}
+		\scnitem{внешняя сущность, не являющаяся внутренним файлом}
+	\end{scnrelfromset}
+	\end{scnindent}	
+\end{scnrelfromset}
+
+\bigskip
+
+\scnheader{sc-пара принадлежности}
+\begin{scnrelfromset}{разбиение}
+\scnitem{sc-пара нечеткой принадлежности}
+\scnitem{sc-пара позитивной принадлежности}
+\begin{scnindent}
+	\scnsuperset{sc-пара константной постоянной позитивной принадлежности}
+	\begin{scnindent}
+		\begin{scnreltoset}{пересечение}
+			\scnitem{sc-константа}
+			\scnitem{постоянная сущность}
+			\scnitem{sc-пара позитивной принадлежности}	
+		\end{scnreltoset}
+	\end{scnindent}
+	\scnsuperset{sc-пара константной временной позитивной принадлежности}
+	\begin{scnindent}
+		\begin{scnreltoset}{пересечение}
+			\scnitem{sc-константа}
+			\scnitem{временная сущность}
+			\scnitem{sc-пара позитивной принадлежности}	
+		\end{scnreltoset}
+	\end{scnindent}
+\end{scnindent}
+\scnitem{sc-пара негативной принадлежности}
+\end{scnrelfromset}
+
+\bigskip
+
+\scnendstruct \scnsourcecommentinline{Завершили представление \textit{Структурной классификации sc-элементов}}
+
+\section{Синтаксис SC-кода}
 \section{Смысловое пространство ostis-систем}
 
 %\input{author/references}
