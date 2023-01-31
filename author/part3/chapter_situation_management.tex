@@ -17,7 +17,6 @@
 
 \begin{scnrelfromlist}{подраздел}
 	\scnitem{\ref{sec_ps_problems}~\nameref{sec_ps_problems}}
-	\scnitem{\ref{sec_ps_proposed_approach}~\nameref{sec_ps_proposed_approach}}	
 	\scnitem{\ref{sec_ps_actions}~\nameref{sec_ps_actions}}	\scnitem{\ref{sec_ps_agents}~\nameref{sec_ps_agents}}
 	\scnitem{\ref{sec_ps_sync}~\nameref{sec_ps_sync}}
 	\scnitem{\ref{sec_ps_scp}~\nameref{sec_ps_scp}}
@@ -148,7 +147,15 @@
 \section{Современное состояние, проблемы в области разработки гибридных решателей задач и предлагаемый подход к их решению}
 \label{sec_ps_problems}
 
+\begin{SCn}
+\begin{scnrelfromlist}{подраздел}
+	\scnitem{\ref{subsec_ps_req}~\nameref{subsec_ps_req}}
+	\scnitem{\ref{subsec_ps_proposed_approach}~\nameref{subsec_ps_proposed_approach}}
+\end{scnrelfromlist}
+\end{SCn}
+
 \subsection{Современное состояние технологий разработки решателей задач и требования, предъявляемые к гибридным решателям задач}
+\label{subsec_ps_req}
 
 Существующее многообразие подходов к решению задач в компьютерных системах можно разделить на два класса:
 \begin{textitemize}
@@ -226,7 +233,7 @@
 Таким образом, можно сказать, что существует ряд конкретных разработок в направлении построения комплексных технологий разработки интеллектуальных систем различных классов, в том числе с использованием библиотек многократно используемых компонентов, однако проблема разработки комплексной технологии построения гибридных решателей задач в рамках рассмотренных подходов не решена. Во многом это обусловлено отсутствием унифицированной формальной основы для представления любых видов знаний, в том числе различного рода программ, отсутствием строгих принципов, регламентирующих процесс построения решателей задач, а также средств поддержки разработчиков таких решателей и их компонентов.
 
 \subsection{Предлагаемый подход к разработке гибридных решателей задач ostis-систем и обработке информации в ostis-системах}
-\label{sec_ps_proposed_approach}
+\label{subsec_ps_proposed_approach}
 
 Рассмотрим принципы, лежащие в основе предлагаемого подхода к разработке гибридных решателей задач:
 
@@ -1101,6 +1108,10 @@ Sc-элементы, попавшие во множество удаляемых
 \label{sec_ps_scp}
 
 \begin{SCn}
+\begin{scnrelfromlist}{подраздел}
+	\scnitem{\ref{subsec_scp_denot}~\nameref{subsec_scp_denot}}
+	\scnitem{\ref{subsec_scp_oper}~\nameref{subsec_scp_oper}}
+\end{scnrelfromlist}
 \begin{scnrelfromlist}{ключевой знак}
 	\scnitem{Язык SCP}
 	\scnitem{Абстрактная scp-машина}
@@ -1328,6 +1339,7 @@ Sc-элементы, попавшие во множество удаляемых
 \end{figure}
 
 \subsection{Денотационная семантика Базового языка программирования ostis-систем}
+\label{subsec_scp_denot}
 
 \begin{SCn}
 \begin{scnrelfromlist}{ключевое понятие}
@@ -1604,6 +1616,7 @@ Sc-элементы, попавшие во множество удаляемых
 \end{figure}
 
 \subsection{Операционная семантика Базового языка программирования ostis-систем}
+\label{subsec_scp_oper}
 
 \begin{SCn}
 \begin{scnrelfromlist}{ключевой знак}
