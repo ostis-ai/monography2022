@@ -305,7 +305,7 @@ passing it to article class \MessageBreak
 \setcounter{totalnumber}{6}
 %
 % size and style of headings
-\newcommand{\partnumsize}{\LArge}
+\newcommand{\partnumsize}{\LARGE}
 \newcommand{\partnumstyle}{\bfseries\boldmath}
 \newcommand{\partsize}{\LARGE}
 \newcommand{\partstyle}{\bfseries\boldmath}
@@ -411,11 +411,13 @@ passing it to article class \MessageBreak
 
 \newif\if@mainmatter \@mainmattertrue
 \newcommand\frontmatter{\startnewpage
-            \@mainmatterfalse\pagenumbering{roman}
-            \setcounter{page}{5}}
+            \@mainmatterfalse\pagenumbering{arabic}
+            \setcounter{page}{3}}
 %
+%\newcommand\mainmatter{\clearemptydoublepage
+%       \@mainmattertrue\pagenumbering{arabic}}
 \newcommand\mainmatter{\clearemptydoublepage
-       \@mainmattertrue\pagenumbering{arabic}}
+	       \@mainmattertrue}
 %
 \newcommand\backmatter{\clearemptydoublepage\@mainmatterfalse}
 

@@ -50,6 +50,10 @@
 
 \usepackage{tocloft}
 
+\makeatletter
+\def\input@path{{scn//}}
+\makeatother
+
 \usepackage{scn}
 \input{scn_alias}
 \input{scn_monography}
@@ -77,13 +81,11 @@
 
 \frontmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\tableofcontents
+
 \include{author/preface}
 
 \include{author/preface_auth}
-
-\tableofcontents
-
-\include{author/acronym}
 
 \mainmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
