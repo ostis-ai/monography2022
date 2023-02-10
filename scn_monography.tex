@@ -56,6 +56,12 @@
 
 \setlist[enumerate]{labelsep=\tabsize-0.7em,leftmargin=\tabsize,itemsep=-0.5em,before=\vspace{-0.5em}}
 
+\newlist{scnitemize}{itemize}{3}
+\setlist[scnitemize,1]{labelsep=\tabsize-\bulletsize,leftmargin=\tabsize,label=$\bullet$}
+\setlist[scnitemize,2]{labelsep=\tabsize-\bulletsize,leftmargin=\tabsize,after=\vspace{0.5em},label=$\bullet$}
+\setlist[scnitemize,3]{labelsep=\tabsize-\bulletsize,leftmargin=\tabsize,after=\vspace{0.5em},label=$\bullet$}
+
+
 \newcommand{\scnfigure}[4]{
 \begin{figure}[h]
 	\centering
