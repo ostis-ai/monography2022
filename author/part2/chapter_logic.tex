@@ -91,6 +91,43 @@
 	\item \textit{неатомарное высказывание}, все элементы которого также являются \textbf{\textit{фактографическими высказываниями}}.
 \end{itemize}
 
+
+\begin{SCn}
+\scnheader{высказывание*}
+\scnidtf{Бинарное ориентированное отношение, каждая \textit{пара} которого связывает (1) знак некоторой \textit{предметной области} и (2) знак некоторой \textit{логической формулы}.}
+\begin{scnrelfromset}{разбиение}
+	\scnitem{ложное высказывание}
+	\scnitem{высказывание неизвестной истинности\\
+		\begin{scnindent}
+			\scnsuperset{гипотеза}
+	\end{scnindent}}
+	\scnitem{истинное высказывание}	
+\end{scnrelfromset}
+
+\scntext{предъявляемое требование*:}{Все \textit{sc-элементы}, входящие в состав \textit{предметной области}, описываемой высказыванием, (включая и \textit{sc-переменные}, которые, хоть и редко, но могут входить в состав некоторых \textit{предметных областей}) \textit{sc-элементами} для всех высказываний, соответствующих этой \textit{предметной области}.}
+
+\scntext{предъявляемое требование*:}{Все \textit{sc-константы}, входящие в состав всех \textit{атомарных логических формул}, входящих в состав всех \textit{высказываний}, описывающих некоторую \textit{предметную область} должны входить в состав описываемой \textit{предметной области}.}
+
+\scnheader{следует отличать*}
+\begin{scnhaselementset}
+	\scnitem{высказывание*}
+	\begin{scnindent}
+		\scniselement{бинарное ориентированное отношение}
+		\scnidtf{быть высказыванием описывающим заданную предметную область}
+		\begin{scnindent}
+			\scniselement{логическая формула}
+			\scnidtf{Второй домен отношения "быть высказыванием".}
+			\scnrelfrom{сокращение}{быть высказыванием}
+		\end{scnindent}
+	\end{scnindent}
+	\scnitem{высказывание}
+	\begin{scnindent}
+		\scniselement{логическая формула}
+		\scnidtf{Второй домен отношения "быть высказыванием".}
+	\end{scnindent}
+\end{scnhaselementset}
+\end{SCn}
+
 \begin{SCn}
 \scnheader{логическая формула}
 \begin{scnrelfromset}{разбиение}
@@ -142,6 +179,12 @@
 \scniselement{транзитивное отношение}
 %\scnrelfrom{описание примера}{\scnfileitem{figures/sd_logical_formulas/subformula.png}}
 \end{SCn}
+
+\begin{figure}[http]
+	\includegraphics[scale=0.8]{author/part2/figures/logic/subformula.png}
+	\caption{Формализация примера подформулы}
+	\label{fig:modus_ponens}
+\end{figure}
 
 Утверждение -- это \textit{семантическая окрестность} некоторой \textit{логической формулы}, в которую входит полный текст этой \textit{логической формулы}, а также факт принадлежности этой \textit{логической формулы} некоторой \textit{формальной теории}.
 
@@ -195,8 +238,12 @@
 % Вагин, дедукция и обобщение в системах принятия решений
 Общезначимая логическая формула -- это \textit{логическая формула}, для которой не существует \textit{формальной теории}, в рамках которой она была бы ложной с учетом истинности и ложности всех ее \textit{подформул*} в рамках этой же \textit{формальной теории}.
 
+\begin{figure}[http]
+\includegraphics[scale=0.8]{author/part2/figures/logic/valid_formula.png}
+\caption{Формализация закона тождества}
+\label{fig:valid_formula}
+\end{figure}
 
-%\scnfilescg{figures/sd_logical_formulas/valid_formula.png}} :=[закон тождества]
 \begin{SCn}
 \scnheader{противоречивая логическая формула}
 \scnidtf{тождественно ложная логическая формула}
@@ -206,7 +253,11 @@
 % Вагин, дедукция и обобщение в системах принятия решений
 Противоречивая логическая формула -- это \textit{логическая формула}, для которой не существует \textit{формальной теории}, в рамках которой она была бы истинной с учетом истинности и ложности всех ее \textit{подформул*} в рамках этой же \textit{формальной теории}.
 
-%\scnfilescg{figures/sd_logical_formulas/contradiction_formula.png}} :[закон противоречия]
+\begin{figure}[http]
+	\includegraphics[scale=0.8]{author/part2/figures/logic/contradiction_formula.png}
+	\caption{Формализация закона противоречия}
+	\label{fig:contradiction_formula}
+\end{figure}
 
 \begin{SCn}
 \scnheader{нейтральная логическая формула}
@@ -215,7 +266,12 @@
 
 Нейтральная логическая формула -- это \textit{логическая формула}, для которой существует хотя бы одна \textit{формальная теория}, в рамках которой эта формула ложна, и хотя бы одна \textit{формальная теория}, в рамках которой эта формула истинна.
 
-%\scnfilescg{figures/sd_logical_formulas/neutral_formula.png}}
+\begin{figure}[http]
+	\includegraphics[scale=0.8]{author/part2/figures/logic/neutral_formula.png}
+	\caption{Формализация нейтральной логической формулы}
+	\label{fig:neutral_formula}
+\end{figure}
+
 В евклидовой геометрии в плоскости через точку, не лежащую на данной прямой, можно провести одну и только одну прямую, параллельную данной. В геометрии Лобачевского данный постулат является ложным.
 В сферической геометрии все прямые пересекаются.
 
@@ -263,14 +319,27 @@
 \scnsubset{логическая связка*}
 \scniselement{неориентированное отношение}
 \scniselement{класс связок разной мощности}
+\scniselement{неунарное отношение}
+\scnrelfrom{область определения}{логическая формула}
 \end{SCn}
 
 Конъюнкция* -- это множество конъюнктивных \textit{высказываний}, каждое из которых истинно в рамках некоторой \textit{формальной теории} только в том случае, когда все его компоненты истинны в рамках этой же \textit{формальной теории}.
 
 Конъюнкция* атомарных формул может быть заменена на атомарную формулу, полученную путём объединения исходных атомарных формул.
-%\scnfilescg{figures/sd_logical_formulas/conjunction_triangles.png}
-%\scnexplanation{Данные конструкции эквивалентны по принципу $\exists x T(x) \land \exists x PT(x) \ \Longrightarrow \ \exists x (T(x) \land PT(x))$}
-%\scnrelfrom{описание примера}{\scnfilescg{figures/sd_logical_formulas/conjunction.png}}
+
+\begin{figure}[http]
+	\includegraphics[scale=0.8]{author/part2/figures/logic/conjunction.png}
+	\caption{Формализация примера конъюнкции}
+	\label{fig:conjunction}
+\end{figure}
+
+\begin{figure}[http]
+	\includegraphics[scale=0.8]{author/part2/figures/logic/conjunction_triangles.png}
+	\caption{Формализация примера конъюнкции в геометрии}
+	\label{fig:conjunction_triangles}
+	\scnexplanation{Данные конструкции эквивалентны по принципу $\exists x T(x) \land \exists x PT(x) \ \Longrightarrow \ \exists x (T(x) \land PT(x))$}
+\end{figure}
+
 \begin{SCn}
 \scnheader{дизъюнкция*}
 \scnidtf{логическое или*}
@@ -279,19 +348,33 @@
 \scnsubset{логическая связка*}
 \scniselement{неориентированное отношение}
 \scniselement{класс связок разной мощности}
+\scniselement{неунарное отношение}
+\scnrelfrom{область определения}{логическая формула}
 \end{SCn}
 
 Дизъюнкция* -- это множество дизъюнктивных \textit{высказываний}, каждое из которых истинно в рамках некоторой \textit{формальной теории} только в том случае, когда хотя бы один его компонент является истинным в рамках этой же \textit{формальной теории}.
-%\scnfilescg{figures/sd_logical_formulas/disjunction.png}
+
+\begin{figure}[http]
+	\includegraphics[scale=0.8]{author/part2/figures/logic/disjunction.png}
+	\caption{Формализация примера дизъюнкции}
+	\label{fig:disjunction}
+\end{figure}
 
 \begin{SCn}
 \scnheader{отрицание*}
 \scnsubset{логическая связка*}
 \scnsubset{синглетон}
+\scniselement{унарное отношение}
+\scnrelfrom{область определения}{логическая формула}
 \end{SCn}
 
 Отрицание* -- это множество \textit{высказываний} об отрицании, каждое из которых истинно в рамках некоторой \textit{формальной теории} только в том случае, когда его единственный элемент является ложным в рамках этой же \textit{формальной теории}.
-%\scnfilescg{figures/sd_logical_formulas/negation.png}}
+
+\begin{figure}[http]
+	\includegraphics[scale=0.8]{author/part2/figures/logic/negation.png}
+	\caption{Формализация примера отрицания}
+	\label{fig:negation}
+\end{figure}
 
 \begin{SCn}
 \scnheader{строгая дизъюнкция*}
@@ -304,12 +387,28 @@
 \end{SCn}
 
 Строгая дизъюнкция* -- это множество строго дизъюнктивных \textit{высказываний}, каждое из которых истинно в рамках некоторой \textit{формальной теории} только в том случае, когда ровно один его компонент является истинным в рамках этой же \textit{формальной теории}.
-%\scnfilescg{figures/sd_logical_formulas/strictDisjunction.png}
-%\scnfilescg{figures/sd_logical_formulas/strict_disjunction_triangle.png}
-%\scnexplanation{Данная неатомарная логическая формула содержит следующую информацию: для любых переменных \_triangle если \_triangle является треугольником, то \_triangle является или тупоугольным треугольником, или остроугольным треугольником, или прямоугольным треугольником.}
+
+\begin{figure}[http]
+	\includegraphics[scale=0.8]{author/part2/figures/logic/strict_disjunction_triangle.png}
+	\caption{Формализация примера строгой дизъюнкции в геометрии}
+	\label{fig:strict_disjunction_triangle}
+	\scnexplanation{Данная неатомарная логическая формула содержит следующую информацию: для любых переменных \_triangle если \_triangle является треугольником, то \_triangle является или тупоугольным треугольником, или остроугольным треугольником, или прямоугольным треугольником.}
+\end{figure}
+
+\begin{figure}[http]
+	\includegraphics[scale=0.8]{author/part2/figures/logic/strictDisjunction.png}
+	\caption{Формализация примера строгой дизъюнкции}
+	\label{fig:strict_disjunction}
+\end{figure}
+
 
 Строгая дизъюнкция* может быть представлена как \textit{дизъюнкция} \textit{конъюнкции} \textit{отрицания} первой логической формулы и второй логической формулы и \textit{конъюнкции} первой логической формулы и \textit{отрицания} второй логической формулы. Также она может быть представлена и ввиде \textit{конъюнкции} \textit{дизъюнкций} двух логических формул и их \textit{отрицаний}.
-%\scnfilescg{figures/sd_logical_formulas/strict_disjunction_representation.png}
+
+\begin{figure}[http]
+	\includegraphics[scale=0.8]{author/part2/figures/logic/strict_disjunction_representation.png}
+	\caption{Формализация примера строгой дизъюнкции}
+	\label{fig:strict_disjunction_representation}
+\end{figure}
 
 \begin{SCn}
 \scnheader{импликация*}
@@ -317,6 +416,7 @@
 \scnsubset{логическая связка*}
 \scniselement{бинарное отношение}
 \scniselement{ориентированное отношение}
+\scnrelfrom{область определения}{логическая формула}
 \end{SCn}
 
 Импликация* -- это множество импликативных \textit{неатомарных высказываний}, каждое из которых состоит из посылки (первый компонент \textit{высказывания}) и следствия (второй компонент \textit{высказывания}).
@@ -325,12 +425,25 @@
 
 По умолчанию на все переменные, входящие в обе части высказывания об \textbf{\textit{импликации*}} (или хотя бы одну из \textit{подформул*} каждой части) неявно накладывается квантор \textit{всеобщности*}, при условии, что эти переменные не связаны другим \textit{квантором}, указанным явно.
 
-%\scnfilescg{figures/sd_logical_formulas/implication.png}}
+\begin{figure}[http]
+\includegraphics[scale=0.8]{author/part2/figures/logic/implication.png}
+\caption{Формализация примера импликации}
+\label{fig:implication}
+\end{figure}
 Импликация* может быть представлена как \textit{дизъюнкция} \textit{отрицания} первой логической формулы и второй логической формулы или же как \textit{отрицание} \textit{конъюнкции} первой логической формулы и \textit{отрицания} второй логической формулы.
 
-%\scnfilescg{figures/sd_logical_formulas/implication_representation.png}
-%\scnfilescg{figures/sd_logical_formulas/implication_triangle.png}
-%Данная неатомарная логическая формула содержит следующую информацию: для любых переменных \_triangle и \_angle если \_triangle является прямоугольным треугольником, то синус его внутреннего угла \_angle равен единице.
+\begin{figure}[http]
+	\includegraphics[scale=0.8]{author/part2/figures/logic/implication_representation.png}
+	\caption{Формализация примера импликации}
+	\label{fig:implication_representation}
+\end{figure}
+
+\begin{figure}[http]
+	\includegraphics[scale=0.8]{author/part2/figures/logic/implication_triangle.png}
+	\caption{Формализация примера импликации}
+	\label{fig:implication_triangle}
+	\scnexplanation{Данная неатомарная логическая формула содержит следующую информацию: для любых переменных \_triangle и \_angle если \_triangle является прямоугольным треугольником, то синус его внутреннего угла \_angle равен единице.}
+\end{figure}
 
 \begin{SCn}
 \scnheader{если\scnrolesign}
@@ -356,15 +469,26 @@
 \scnsubset{логическая связка*}
 \scniselement{бинарное отношение}
 \scniselement{неориентированное отношение}
+\scnrelfrom{область определения}{логическая формула}
 \end{SCn}
 
 Эквиваленция* -- это множество \textit{высказываний} об эквивалентности, каждое из которых истинно в рамках некоторой \textit{формальной теории} только в тех случаях, когда оба его компонента одновременно либо истинны в рамках этой же \textit{формальной теории}, либо ложны.
 
 По умолчанию на все переменные, входящие в обе части высказывания об \textbf{\textit{эквиваленции*}} (или хотя бы одну из \textit{подформул*} каждой части) неявно накладывается квантор \textit{всеобщности*}, при условии, что эти переменные не связаны другим \textit{квантором}, указанным явно.
-%\scnfilescg{figures/sd_logical_formulas/equivalent.png}
+
+\begin{figure}[http]
+	\includegraphics[scale=0.8]{author/part2/figures/logic/equivalent.png}
+	\caption{Формализация примера эквиваленции}
+	\label{fig:equivalent}
+\end{figure}
 
 Эквиваленция* двух логических формул может быть представлена как \textit{дизъюнкция} \textit{конъюнкции} этих двух логическх формул и \textit{конъюнкции} \textit{отрицаний} этих двух логических формул.
-%\scnfilescg{figures/sd_logical_formulas/equivalence_representation.png}
+
+\begin{figure}[http]
+	\includegraphics[scale=0.8]{author/part2/figures/logic/equivalence_representation.png}
+	\caption{Формализация примера эквиваленции}
+	\label{fig:equivalence_representation}
+\end{figure}
 
 \begin{SCn}
 \scnheader{квантор}
@@ -392,7 +516,11 @@
 
 Квантор \textbf{\textit{всеобщности*}} зачастую обозначается "$\forall$" \ и читается как "для всех"{}, "для каждого"{}, "для любого"{} или "все"{}, "каждый"{}, "любой".
 
-%\scnfilescg{figures/sd_logical_formulas/universality.png}}
+\begin{figure}[http]
+\includegraphics[scale=0.8]{author/part2/figures/logic/universality.png}
+\caption{Формализация примера всеобщности}
+\label{fig:universality}
+\end{figure}
 
 \begin{SCn}
 \scnheader{формула существования}
@@ -415,7 +543,11 @@
 
 квантор \textbf{\textit{существования*}} зачастую обозначается "$\exists$" \ и читается как "существует"{}, "для некоторого"{}, "найдется".
 
-%\scnfilescg{figures/sd_logical_formulas/non_atomicExistence.png}}
+\begin{figure}[http]
+\includegraphics[scale=0.8]{author/part2/figures/logic/non_atomicExistence.png}
+\caption{Формализация примера неатомарного существования}
+\label{fig:non_atomic_existence}
+\end{figure}
 
 \begin{SCn}
 \scnheader{число значений переменной}
