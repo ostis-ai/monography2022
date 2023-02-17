@@ -1,13 +1,13 @@
 \section*{Правила оформления scn-текста}
 
-Для оформления списков внутри естественно-языкового файла, находящегося в рамках формального sc.n-текста, то необходимо использовать
+Для оформления списков внутри естественно-языкового файла, находящегося в рамках формального sc.n-текста, необходимо использовать окружение scnitemize:
 \begin{lstlisting}              
 \begin{scnitemize}
 	\item text
 \end{scnitemize}
 \end{lstlisting}  
 
-Для оформления списков в рамках естественного-языкового текста (не SCn), то следует использовать:
+Для оформления списков в рамках естественного-языкового текста (не SCn), следует использовать окружение textitemize:
 \begin{lstlisting}              
 \begin{textitemize}
 	\item text
@@ -47,8 +47,7 @@ text\textasciicircum
 
 	текст\scnrolesign
 	
-	текст\textasciicircum
-
+	текст\scnsupergroupsign
 
 Рассмотрим примерную структуру описания scn-конструкции. Пример исходного кода:
 
@@ -124,7 +123,7 @@ text\textasciicircum
 	\scniselement{принадлежность}
 	\scnhaselement{принадлежность}
 	\scnsuperset{строгое надмножество --- <<включает в себя>>}
-	\scnsubset{cрогое подмножество --- <<включено в>>}
+	\scnsubset{cтрогое подмножество --- <<включено в>>}
 	\scnidtfdef{определение}
 	\scndefinition{определение}
 	\scnidtfexp{пояснение}
@@ -180,6 +179,8 @@ text\textasciicircum
 	\scnrelfrom{второй домен}{текст}
 \end{SCn}
 
+Пример исходного кода:
+
 \begin{lstlisting}
 \begin{SCn}
 	\scnheader{relation*}
@@ -187,22 +188,18 @@ text\textasciicircum
 \end{SCn}
 \end{lstlisting}
 
+Результат компиляции:
+
 \begin{SCn}
 	\scnheader{отношение*}
 	\scnrelto{второй домен}{текст}
 \end{SCn}
 
-Результат компиляции:
-
-текст\scnrolesign
-
-текст\textasciicircum
-
-Следует отличать:
+Пример исходного кода (следует отличать):
 
 \begin{lstlisting}
 \begin{SCn}
-	\scnheader{should be distinguished}
+	\scnheader{should be distinguished*}
 	\begin{scnhaselementset}
 		\scnitem{text}
 		\scnitem{text}
@@ -210,10 +207,10 @@ text\textasciicircum
 \end{SCn}
 \end{lstlisting}
 
-В результате:
+Результат компиляции:
 
 \begin{SCn}
-	\scnheader{следует отличать}
+	\scnheader{следует отличать*}
 	\begin{scnhaselementset}
 		\scnitem{текст}
 		\scnitem{текст}
