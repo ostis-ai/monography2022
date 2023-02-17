@@ -1,0 +1,223 @@
+\section*{Правила оформления scn-текста}
+
+Для оформления списков внутри естественно-языкового файла, находящегося в рамках формального sc.n-текста, то необходимо использовать
+\begin{lstlisting}              
+\begin{scnitemize}
+	\item text
+\end{scnitemize}
+\end{lstlisting}  
+
+Для оформления списков в рамках естественного-языкового текста (не SCn), то следует использовать:
+\begin{lstlisting}              
+\begin{textitemize}
+	\item text
+\end{textitemize}
+\end{lstlisting}  
+
+Использование \textbf{шрифтов}
+
+\begin{lstlisting}
+\underline{text} or \uline{text}
+\textit{text}
+\emph{text}
+\textbf{text}
+\textup{text}
+\end{lstlisting}
+
+Результат компиляции:
+
+\underline{подчеркивание} или \uline{подчер\-кивание}
+
+\textit{курсив}
+
+\emph{выделенный шрифт}
+
+\textbf{полужирный}
+
+\textup{прямой шрифт}
+
+Использование \textbf{символов}
+
+\begin{lstlisting}
+text\scnrolesign
+text\textasciicircum
+\end{lstlisting}
+
+Результат компиляции:
+
+	текст\scnrolesign
+	
+	текст\textasciicircum
+
+
+Рассмотрим примерную структуру описания scn-конструкции. Пример исходного кода:
+
+\begin{lstlisting}              
+\begin{SCn}
+	\scnheader{header}
+	\scnidtftext{frequently used sc-identifier}{text}
+	\scnidtf{text}
+	\scniselement{text}
+	\scnhaselement{text}
+	\scnsuperset{text}
+	\scnsubset{text}
+	\scnidtfdef{text}
+	\scndefinition{text}
+	\scnidtfexp{text}
+	\scnexplanation{text}
+	\scntext{text}
+	{Text
+		\begin{textitemize}
+			\item text;
+			\item text
+		\end{textitemize}
+	}
+	\scnnote{text}
+	\scncomment{text}
+	%dividing
+	\begin{scnsubdividing}
+		\scnitem{text}
+		\scnitem{text}
+		%nesting change
+		\begin{scnindent}
+			\scnidtf{text}
+			\scneq{\textup{(} text \textup{)}}
+			\begin{scneqtoset}
+				\scnitem{text}
+				\scnitem{text}
+			\end{scneqtoset}
+		\end{scnindent} 
+	\end{scnsubdividing}
+	\scnrelfrom{dividing}{attribute}
+	\begin{scnindent}
+		\begin{scneqtoset}
+			\scnitem{text}
+			\scnitem{text}
+		\end{scneqtoset}
+	\end{scnindent} 
+	\begin{scnrelfromset}{relation}
+		\scnitem{text}
+		\scnitem{text}
+	\end{scnrelfromset}
+	\begin{scnrelfromset}{relation}
+		\scnfileitem{text}
+		\scnfileitem{text}
+	\end{scnrelfromset}
+	\begin{scnrelfromlist}{note}
+		\scnfileitem{text}
+		\scnfileitem{text}
+	\end{scnrelfromlist}
+	\scnrelboth{analog}{dividing*}
+	\begin{scnrelfromlistcustom}{principles underlying}
+		\scnitemcustom{text}
+		\scnitemcustom{text}
+	\end{scnrelfromlistcustom}
+	\scnrelfrom{second domain}{text}
+\end{SCn}
+\end{lstlisting} 
+
+Результат компиляции:
+	\begin{SCn}
+	\scnheader{ключевой sc-элемент}
+	\scnidtftext{часто используемый sc-идентификатор}{text}
+	\scnidtf{синонимичный идентификатор}
+	\scniselement{принадлежность}
+	\scnhaselement{принадлежность}
+	\scnsuperset{строгое надмножество --- <<включает в себя>>}
+	\scnsubset{cрогое подмножество --- <<включено в>>}
+	\scnidtfdef{определение}
+	\scndefinition{определение}
+	\scnidtfexp{пояснение}
+	\scnexplanation{пояснение}
+	\scntext{пояснение}
+	{Текст
+		\begin{textitemize}
+			\item текст;
+			\item текст.
+		\end{textitemize}
+	}
+	\scnnote{примечание}
+	\scncomment{комментарий}
+	%разбиение
+	\begin{scnsubdividing}
+		\scnitem{текст}
+		\scnitem{текст}
+		%изменение вложенности
+		\begin{scnindent}
+			\scnidtf{текст}
+			\scneq{\textup{(} текст \textup{)}}
+			\begin{scneqtoset}
+				\scnitem{текст}
+				\scnitem{текст}
+			\end{scneqtoset}
+		\end{scnindent} 
+	\end{scnsubdividing}
+	%отношение разбиение с признаком
+	\scnrelfrom{разбиение}{Признак}
+	\begin{scnindent}
+		\begin{scneqtoset}
+			\scnitem{текст}
+			\scnitem{текст}
+		\end{scneqtoset}
+	\end{scnindent} 
+	\begin{scnrelfromset}{отношение}
+		\scnitem{текст}
+		\scnitem{текст}
+	\end{scnrelfromset}
+	\begin{scnrelfromset}{отношение}
+		\scnfileitem{текст}
+		\scnfileitem{текст}
+	\end{scnrelfromset}
+	\begin{scnrelfromlist}{примечание}
+		\scnfileitem{текст}
+		\scnfileitem{текст}
+	\end{scnrelfromlist}
+	\scnrelboth{аналог}{разбиение*}
+	\begin{scnrelfromlistcustom}{принципы, лежащие в основе}
+		\scnitemcustom{текст}
+		\scnitemcustom{текст}
+	\end{scnrelfromlistcustom}
+	\scnrelfrom{второй домен}{текст}
+\end{SCn}
+
+\begin{lstlisting}
+\begin{SCn}
+	\scnheader{relation*}
+	\scnrelto{second domain}{text}
+\end{SCn}
+\end{lstlisting}
+
+\begin{SCn}
+	\scnheader{отношение*}
+	\scnrelto{второй домен}{текст}
+\end{SCn}
+
+Результат компиляции:
+
+текст\scnrolesign
+
+текст\textasciicircum
+
+Следует отличать:
+
+\begin{lstlisting}
+\begin{SCn}
+	\scnheader{should be distinguished}
+	\begin{scnhaselementset}
+		\scnitem{text}
+		\scnitem{text}
+	\end{scnhaselementset}
+\end{SCn}
+\end{lstlisting}
+
+В результате:
+
+\begin{SCn}
+	\scnheader{следует отличать}
+	\begin{scnhaselementset}
+		\scnitem{текст}
+		\scnitem{текст}
+	\end{scnhaselementset}
+\end{SCn}
+	
+\newpage
