@@ -16,3 +16,4 @@ book.pdf
 *.run.xml
 *.idea
 out/
+*.out
