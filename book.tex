@@ -58,6 +58,18 @@
 	urlcolor=green % цвет ссылок на ресурсы в сети
 }
 
+\usepackage{listings}             % Подключаем пакет listings
+\lstset
+{
+	language=[LaTeX]TeX,
+	breaklines=true,
+	basicstyle=\tt\scriptsize,
+	keywordstyle=\color{red},
+	morekeywords={uline, scnheader},
+	identifierstyle=\color{black},
+	commentstyle=\color{gray},
+}
+
 \usepackage{tocloft}
 
 \makeatletter
@@ -101,6 +113,8 @@
 \mainmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \include{temp/examples}
+
+\include{latex_scn_text}
 
 \include{author/part1}
 \include{author/part2}
