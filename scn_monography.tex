@@ -1,4 +1,66 @@
 
+\renewenvironment{SCn}{%
+	\setcounter{hind}{0}% 
+	\setlength{\parskip}{0em}
+	\begin{flushleft}
+	}{%
+	\vspace{0.5\baselineskip}
+	\end{flushleft}
+}
+
+\newlistentry[section]{authors}{toc}{1}
+\cftpagenumbersoff{authors}
+\cftsetindents{authors}{\cftchapindent}{0pt}
+
+\newlistentry[section]{authorssec}{toc}{1}
+\cftpagenumbersoff{authorssec}
+\cftsetindents{authorssec}{\cftsecindent}{0pt}
+
+\newcommand{\chapauthortoc}[1]{\addcontentsline{toc}{authors}{\textit{#1}\vspace{0.5\baselineskip}}}
+
+\newcommand{\secauthortoc}[1]{\addcontentsline{toc}{authorssec}{\textit{#1}\vspace{0.5\baselineskip}}}
+
+\renewcommand{\tabsize}{2em}
+
+\renewcommand\thepart{\arabic{part}.}
+\renewcommand{\thechapter}{\arabic{part}.\arabic{chapter}.}
+
+\renewcommand\cftchapnumwidth{4.7em}
+\renewcommand\cftchappresnum{Глава~}
+
+%\renewcommand\cftsecnumwidth{6.8em}
+%\renewcommand{\thesection}{Параграф \thechapter.\arabic{section}}
+
+\renewcommand\cftsecnumwidth{3.4em}
+\renewcommand{\thesection}{\S~\arabic{part}.\arabic{chapter}.\arabic{section}.}
+
+\cftsetindents{subsection}{4.9em}{6.2em}
+%\renewcommand\cftsubsecnumwidth{6em}
+\renewcommand{\thesubsection}{Пункт \arabic{part}.\arabic{chapter}.\arabic{section}.\arabic{subsection}.}
+
+\renewcommand{\thesubsubsection}{Подпункт \arabic{part}.\arabic{chapter}.\arabic{section}.\arabic{subsection}.\arabic{subsubsection}}
+
+\DeclareCaptionFormat{monography}
+{
+	\textbf{=~\textit{#3}}
+}
+\captionsetup{format=monography,singlelinecheck=false}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+
+\newlist{textitemize}{itemize}{3}
+\setlist[textitemize,1]{labelsep=\tabsize-\bulletsize,leftmargin=\tabsize,itemsep=-0.5em,before=\vspace{-0.5em},label=$\bullet$}
+\setlist[textitemize,2]{labelsep=\tabsize-\bulletsize,leftmargin=\tabsize,itemsep=-0.5em,before=\vspace{-0.5em},after=\vspace{0.5em},label=$\bullet$}
+\setlist[textitemize,3]{labelsep=\tabsize-\bulletsize,leftmargin=\tabsize,itemsep=-0.5em,before=\vspace{-0.5em},after=\vspace{0.5em},label=$\bullet$}
+
+\setlist[enumerate]{labelsep=\tabsize-0.7em,leftmargin=\tabsize,itemsep=-0.5em,before=\vspace{-0.5em}}
+
+\newlist{scnitemize}{itemize}{3}
+\setlist[scnitemize,1]{labelsep=\tabsize-\bulletsize,leftmargin=\tabsize,label=$\bullet$}
+\setlist[scnitemize,2]{labelsep=\tabsize-\bulletsize,leftmargin=\tabsize,after=\vspace{0.5em},label=$\bullet$}
+\setlist[scnitemize,3]{labelsep=\tabsize-\bulletsize,leftmargin=\tabsize,after=\vspace{0.5em},label=$\bullet$}
+
 
 \newcommand{\scnfigure}[4]{
 \begin{figure}[h]

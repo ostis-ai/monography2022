@@ -35,6 +35,8 @@
 \usepackage{float}
 \usepackage{caption}
 \usepackage{parskip}
+\usepackage[]{algorithm2e}
+\usepackage{enumitem}
 
 \usepackage{geometry}
 \geometry{
@@ -46,24 +48,38 @@
   heightrounded
 }
 
+\usepackage{hyperref}
+\usepackage{comment}
+\hypersetup{
+	unicode=true, % закладки в тексте юникоде
+	colorlinks=true, % цветные ссылки
+	linkcolor=blue, % цвет гиперссылок внутри документа
+	citecolor=red, % цвет библиографических ссылок
+	urlcolor=green % цвет ссылок на ресурсы в сети
+}
+
+\usepackage{listings}             % Подключаем пакет listings
+\lstset
+{
+	language=[LaTeX]TeX,
+	breaklines=true,
+	basicstyle=\tt\scriptsize,
+	keywordstyle=\color{red},
+	morekeywords={uline, scnheader},
+	identifierstyle=\color{black},
+	commentstyle=\color{gray},
+}
+
 \usepackage{tocloft}
 
+\makeatletter
+\def\input@path{{scn//}}
+\makeatother
+
 \usepackage{scn}
+\usepackage{hyperref}
 \input{scn_alias}
-
-\usepackage[]{algorithm2e}
-
-\newlistentry[section]{authors}{toc}{1}
-\cftpagenumbersoff{authors}
-\cftsetindents{authors}{\cftchapindent}{0pt}
-
-\newlistentry[section]{authorssec}{toc}{1}
-\cftpagenumbersoff{authorssec}
-\cftsetindents{authorssec}{\cftsecindent}{0pt}
-
-\newcommand{\chapauthortoc}[1]{\addcontentsline{toc}{authors}{\textit{#1}\vspace{0.5\baselineskip}}}
-
-\newcommand{\secauthortoc}[1]{\addcontentsline{toc}{authorssec}{\textit{#1}\vspace{0.5\baselineskip}}}
+\input{scn_monography}
 
 % see the list of further useful packages
 % in the Reference Guide
@@ -75,30 +91,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \graphicspath{{./}{images/}}
-
-\renewcommand\thepart{\arabic{part}.}
-\renewcommand{\thechapter}{\arabic{part}.\arabic{chapter}.}
-
-\renewcommand\cftchapnumwidth{4.7em}
-\renewcommand\cftchappresnum{Глава~}
-
-%\renewcommand\cftsecnumwidth{6.8em}
-%\renewcommand{\thesection}{Параграф \thechapter.\arabic{section}}
-
-\renewcommand\cftsecnumwidth{3.4em}
-\renewcommand{\thesection}{\S~\arabic{part}.\arabic{chapter}.\arabic{section}.}
-
-\cftsetindents{subsection}{4.9em}{6.2em}
-%\renewcommand\cftsubsecnumwidth{6em}
-\renewcommand{\thesubsection}{Пункт \arabic{part}.\arabic{chapter}.\arabic{section}.\arabic{subsection}.}
-
-\DeclareCaptionFormat{monography}
-{
-\textbf{=~\textit{#3}}
-}
-\captionsetup{format=monography,singlelinecheck=false}
-
-\setlength{\parindent}{0pt}
 
 \input{scn_biblio}
 \bibliography{biblio}
@@ -112,15 +104,17 @@
 
 \frontmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\include{author/preface}
-
 \tableofcontents
 
-\include{author/acronym}
+\include{author/preface}
+
+\include{author/preface_auth}
 
 \mainmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \include{temp/examples}
+
+\include{latex_scn_text}
 
 \include{author/part1}
 \include{author/part2}
@@ -131,6 +125,9 @@
 \include{author/part7}
 
 %\backmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{author/conclusion}
+
 \include{author/glossary}
 \include{bibliography}
 
