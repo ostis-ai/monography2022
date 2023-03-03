@@ -35,8 +35,19 @@
 \usepackage{multicol}        % used for the two-column index
 \usepackage[bottom]{footmisc}% places footnotes at page bottom
 
-\usepackage{nameref}
+%красивое подчеркивание текста
+\usepackage{contour}
 \usepackage[normalem]{ulem}
+
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+
+\newcommand{\myuline}[1]{%
+	\uline{\phantom{#1}}%
+	\llap{\contour{white}{#1}}%
+}
+
+\usepackage{nameref}
 \usepackage{float}
 \usepackage{caption}
 \usepackage{parskip}
