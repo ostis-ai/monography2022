@@ -351,7 +351,7 @@ passing it to article class \MessageBreak
         #1}\else
         \addcontentsline{toc}{part}{#1}\fi
    \markboth{}{}
-   {\raggedleft
+   {\raggedright
     \hyphenpenalty \@M
     \interlinepenalty\@M
     \ifnum \c@secnumdepth >-2\relax
@@ -373,7 +373,7 @@ passing it to article class \MessageBreak
      \twocolumn
    \fi}
 %
-\def\@spart#1{{\raggedleft
+\def\@spart#1{{\raggedright
    \normalfont\partsize\partstyle
    #1\par}\@endpart}
 %
