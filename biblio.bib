@@ -278,7 +278,8 @@
 	pages        = {133--145},
 	language     = {english},
 	editor       = {V. Golenkov},
-	shorthand    = {Golovko V..IntegANNKB-2018art}
+	shorthand    = {Golovko.V..IntegrationANNKB-2018},
+	annotation   = {Integration of artificial neural networks and knowledge bases}
 }
 
 @article{Glorot2010,
@@ -289,8 +290,8 @@ pages = {249-256},
 title = {Understanding the difficulty of training deep feedforward neural networks},
 volume = {9},
 journal = {Journal of Machine Learning Research - Proceedings Track},
-shorthand = {Glorot.X..UnderstandingTrDFNN-2010art},
-abstract = {Изучается влияние функций активации и способа инициализации параметров НС на процесс ее обучения. Авторами предлагается новая схема инициализации, которая обеспечивается более быструю сходимость метода обучения} 
+shorthand = {Glorot.X..UnderDTDFNN-2010art},
+annotation = {The text discusses the successful training of deep neural networks with new initialization or training mechanisms since 2006, showing the superiority of deeper architectures. The author's objective is to understand why standard gradient descent from random initialization performs poorly with deep neural networks and to design better algorithms in the future. The text examines the influence of non-linear activation functions, finding that the logistic sigmoid activation is unsuitable for deep networks with random initialization due to saturation. The text proposes a new non-linearity that saturates less and a new initialization scheme that brings faster convergence. The author also studies how activations and gradients vary across layers and during training, suggesting that training may be more difficult when the singular values of the Jacobian associated with each layer are far from 1} 
 }
 
 @misc{He2015,
@@ -300,8 +301,8 @@ abstract = {Изучается влияние функций активации 
       eprint={1502.01852},
       archivePrefix={arXiv},
       primaryClass={cs.CV},
-      shorthand = {He.K..DelvingDeepRect-2015art},
-      abstract = {Предлагается новый способ инициализации параметров нейронов сети, исследуется его влияние на обучение экстремально глубоких нейросетевых моделей} 
+      shorthand = {He.K..DelviDRSHLPIC-2015art},
+      annotation = {This text discusses the use of rectified activation units, or rectifiers, in neural networks for image classification. The authors propose a Parametric Rectified Linear Unit (PReLU) that generalizes the traditional rectified unit and improves model fitting without added computational cost or overfitting risk. They also derive a robust initialization method that considers rectifier nonlinearities, enabling the training of extremely deep rectified models directly from scratch. The authors achieve a 4.94\% top-5 test error on the ImageNet 2012 classification dataset with their PReLU networks, a 26\% relative improvement over the previous ILSVRC 2014 winner, and the first to surpass human-level performance on this visual recognition challenge.} 
 }
 
 @article{Ansari2018,
@@ -1473,7 +1474,8 @@ abstract = {Изучается влияние функций активации 
 	author       = {Duchi, J. and Hazan, E. and Singer, Y.},
 	year         = 2011,
 	journal      = {Journal of Machine Learning Research},
-	shorthand    = {Duchi J..AdaptSMfOLaSO-2011art}
+	shorthand    = {Duchi J..AdaptSMOLSO-2011art},
+	annotation   = {The paper presents a new family of subgradient methods that incorporate knowledge of the data's geometry observed in earlier iterations for more informative gradient-based learning. The authors describe an apparatus for adaptively modifying the proximal function and give several efficient algorithms for empirical risk minimization problems with common regularization functions and domain constraints. They show through experimental studies that the adaptive subgradient methods outperform state-of-the-art, non-adaptive subgradient algorithms. The text concludes that their paradigm allows for finding predictive but rarely seen features and simplifies setting a learning rate, resulting in regret guarantees as good as the best proximal function chosen in hindsight}
 }
 
 @book{Dutta1993,
@@ -1946,7 +1948,8 @@ abstract = {Изучается влияние функций активации 
 	journal      = {Nature News},
 	volume       = {538},
 	number       = {7623},
-	shorthand    = {Castelvecchi В.AIBlackBox-2016art}
+	shorthand    = {Castelvecchi В.CanWOBBAI-2016art},
+	annotation   = {Machine learning is becoming ubiquitous in basic research as well as in industry. But for scientists to trust it, they first need to understand what the machines are doing}
 }
 
 @article{Gatt2017,
@@ -2564,7 +2567,7 @@ abstract = {Изучается влияние функций активации 
 	pages        = {91--102},
 	language     = {russian},
 	shorthand    = {Головко.В.А..ИнтеграцияИНСБЗ-2019ст},
-	annotation   = {В работе описываются принципы построения систем принятия решений на основе интеграции нейросетевых и семантических моделей.}
+	annotation   = {В работе описываются принципы построения систем принятия решений на основе интеграции нейросетевых и семантических моделей}
 }
 
 $91$
@@ -2603,7 +2606,7 @@ $91$
 	isbn         = {9785970605547},
 	numpages     = {652},
 	language     = {russian},
-	shorthand    = {Гудфеллоу Я..ГлубОбуч-2017кн},
+	shorthand    = {Гудфеллоу Я..ГлубоО-2017кн},
 	annotation   = {Рассмотрены основы дисциплин, необходимых для понимания глубокого обучения. Описываются различные приложения глубокого обучения, а также основные приемы глубокого обучения}
 }
 
@@ -3123,7 +3126,7 @@ $91$
 	isbn         = 5845908906,
 	numpages     = 1104,
 	language     = {russian},
-	shorthand    = {Хайкин С..НейрСети-2006кн},
+	shorthand    = {Хайкин С.НейроСПК-2006кн},
 	annotation   = {Рассмотрены основные парадигмы искусственных нейронных сетей. Дается строгое математическое обоснование всех нейросетевых парадигм, примеры множества практических задач}
 }
 
@@ -3844,7 +3847,8 @@ $100$
 	year         = 2014,
 	url          = {https://arxiv.org/pdf/1412.6980.pdf},
 	language     = {english},
-	shorthand    = {Kingma D..Adam-2014art}
+	shorthand    = {Kingma D..AdamMSO-2014art},
+	annotation   = {The text introduces Adam, an algorithm for first-order gradient-based optimization of stochastic objective functions based on adaptive estimates of lower-order moments. Adam is computationally efficient, has low memory requirements, is invariant to diagonal rescaling of the gradients, and is suitable for problems that are large in terms of data and/or parameters. The algorithm is also appropriate for non-stationary objectives and problems with very noisy and/or sparse gradients. The hyperparameters require little tuning and have intuitive interpretations. The authors discuss connections to related algorithms, analyze the theoretical convergence properties of the algorithm, and provide a regret bound on the convergence rate that is comparable to the best-known results. Empirical results demonstrate that Adam works well in practice and compares favorably to other stochastic optimization methods. The text also discusses AdaMax, a variant of Adam based on the infinity norm}
 }
 
 @article{Kleschev2001,
@@ -4417,6 +4421,7 @@ $105    In Proc. of On the Move to Meaningful Internet Systems 2008: OTM Worksho
 	editor       = {Golenkov, Vladimir and Krasnoproshin, Viktor and Golovko, Vladimir and Shunkevich, Daniil},
 	shorthand    = {Li W..SemanticAtUAViITS-2022art},
 	annotation   = {A semantic approach to develop a problem solver for automatic verification of user answers in intelligent tutoring systems built on OSTIS Technology is proposed in this article.}
+}
 
 @misc{Ribeiro2016,
     doi = {10.48550/ARXIV.1602.04938},
@@ -4427,7 +4432,8 @@ $105    In Proc. of On the Move to Meaningful Internet Systems 2008: OTM Worksho
     publisher = {arXiv},
     year = {2016},
     copyright = {arXiv.org perpetual, non-exclusive license},
-    shorthand    = {Ribeiro M.T..WhyShouldITrustYou-2016art}
+    shorthand    = {Ribeiro M.T..WhySITYEPAC-2016art},
+    annotation = {In this work, we propose LIME, a novel explanation technique that explains the predictions of any classifier in an interpretable and faithful manner, by learning an interpretable model locally around the prediction. We also propose a method to explain models by presenting representative individual predictions and their explanations in a non-redundant way, framing the task as a submodular optimization problem. We demonstrate the flexibility of these methods by explaining different models for text (e.g. random forests) and image classification (e.g. neural networks)} 
 }
 
 @article{Lim2015,
@@ -5068,7 +5074,8 @@ $88$
 	month        = nov,
 	url          = {https://arxiv.org/pdf/1711.03902.pdf},
 	note         = {(accessed 2020, Jun)},
-	shorthand    = {Besold T.R..NeuralSymbolic-2017art}
+	shorthand    = {Besold T.R..NeuraSLRSI-2017art},
+	annotation   = {This joint survey reviews the personal ideas and views of several researchers on neural-symbolic learning and reasoning}
 }
 
 @article{Garcez2015,
@@ -5077,7 +5084,8 @@ $88$
     journal = {In: McCallum, A., Gabrilovich, E., Guha, R., Murphy, K. (eds.) Proceedings of the AAAI 2015 Propositional Rule Extraction under Background Knowledge 11 Spring Symposium on Knowledge Representation and Reasoning: Integrating Symbolic and Neural Approaches. AAAI Press Technical Report},
     volume = {SS-15-03},
     year = {2015},
-    shorthand    = {Garcez A..NeuralSymbolic-2015art}
+    shorthand    = {Garcez A..NeuraSLRCC-2015art},
+    annotation = {Neural-symbolic computation aims at integrating robust connectionist learning algorithms with sound symbolic reasoning. The recent impact of neural learning, in particular of deep networks, has led to the creation of new representations that have, so far, not really been used for reasoning. Results on neural-symbolic computation have shown to offer powerful alternatives for knowledge representation, learning and inference in neural computation. This paper presents key challenges and contributions of neural-symbolic computation to this area} 
 }
 
 @InProceedings{Kroshchanka2022,
@@ -5089,7 +5097,8 @@ $88$
     publisher = {Springer International Publishing},
     address = {Cham},
     pages = {282--309},
-    shorthand = {Kroshchanka A..NeuralSymbolicApproachToCV-2022art}
+    shorthand = {Kroshchanka A..NeuraSACV-2022art},
+    annotation = {The paper presents a general computer vision model based on neural-symbolic artificial intelligence capable of performing semantic analysis of a video stream. The proposed approach integrates artificial neural networks (ANN) with the knowledge base on the basis of an ontological approach. In this case, the knowledge base interacts with the neural networks as with agents and the results of their functioning are used for further semantic analysis. The problems of object detection and recognition of images, as well as emotions, are considered as tasks of computer vision. The features, advantages and prospects of using this model are described. Its implementation is considered on the example of an intelligent module that includes the FaceNet and eXnet neural network models for face identification and emotion recognition in the conversational modeling system} 
 }
 
 @article{NeumanMachine,
@@ -6538,7 +6547,8 @@ $60$
     url = {https://proceedings.neurips.cc/paper/2017/file/ 8a20a8621978632d76c43dfd28b67767-Paper.pdf},
     volume = {30},
     year = {2017},
-    shorthand = {Lundberg S.M..AUnifiedApproachToIMP-2017art}
+    shorthand = {Lundberg S.M..UnifiAIMP-2017art},
+    annotation = {We present a unified framework for interpreting predictions, SHAP (SHapley Additive exPlanations). SHAP assigns each feature an importance value for a particular prediction. Its novel components include: (1) the identification of a new class of additive feature importance measures, and (2) theoretical results showing there is a unique solution in this class with a set of desirable properties. The new class unifies six existing methods, notable because several recent methods in the class lack the proposed desirable properties. Based on insights from this unification, we present new methods that show improved computational performance and/or better consistency with human intuition than previous approaches} 
 }
 
 @article{Sherif1988,
@@ -6810,7 +6820,8 @@ $60$
 	pages        = 690,
 	editor       = {В.В. Голенков},
 	language     = {russian},
-	shorthand    = {Голенков В.В..СтандОТОППиЭССГИКС-2021кн}
+	shorthand    = {Голенков В.В..СтандОТОППиЭССГИКС-2021кн},
+	annotation   = {В книге представлена документация текущей версии стандарта открытой технологии онтологического проектирования, производства и эксплуатации семантически совместимых гибридных интеллектуальных компьютерных систем (Технологии OSTIS). Описание Технологии OSTIS (Open Semantic Technology for Intelligent Systems) представлено в виде раздела базы знаний ostis-системы (системы, построенной по Технологии OSTIS) на внутреннем языке ostis-системы и обладает достаточной полнотой для использования этой технологии разработчиками интеллектуальных компьютерных систем. Предложена стандартизация интеллектуальных компьютерных систем, а также стандартизация методов и средств их проектирования, что является важнейшим фактором, обеспечивающим семантическую совместимость интеллектуальных компьютерных систем и их компонентов}
 }
 
 @book{Stefanuk,
