@@ -63,7 +63,7 @@
 
 \end{SCn}
 
-\section*{Введение в Главу \ref{chapter_lang}}
+\section*{Введение в Главу~\ref{chapter_lang}}
 
 Проблема совместимости результатов исследований также остро стоит и в лингвистике -- науке, в которой существует множество различных теорий, часто несовместимых друг с другом.
 В лингвистических исследованиях используются разные варианты разметки данных, нет одного подхода к структуризации корпусов текстов и различаются способы представления данных в них~\cite{Farrar2002ACO},~\cite{Chiarcos2012}.
@@ -293,11 +293,11 @@
     \end{scnindent}
 \end{SCn}
 
-Пример формализации части приведенных выше отношений на языке sc.g приведен на рисунке~\ref{fig:lexeme_example}.
+Пример формализации части приведенных выше отношений на языке sc.g приведен на рисунке~\textit{\nameref{fig:lexeme_example}}.
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.4\textwidth]{images/part2/chapter_lang/lexeme_example.png}
+    \includegraphics[scale=0.8]{images/part2/chapter_lang/lexeme_example}
     \caption{Пример спецификации лексемы в базе знаний.}
     \label{fig:lexeme_example}
 \end{figure}
@@ -402,13 +402,20 @@
 
 \end{SCn}
 
-Пример синтаксической структуры предложения, записанный с применением введенных выше понятий представлен на рисунке~\ref{pic_tree}.
+Пример синтаксической структуры предложения, записанный с применением введенных выше понятий представлен на рисунках~\textit{\nameref{fig:pic_syntactic_tree_part_1}} и~\textit{\nameref{fig:pic_syntactic_tree_part_2}}.
 
 \begin{figure*}[h]
     \centering
-    \includegraphics[width=\textwidth]{images/part2/chapter_lang/syntactic.png}
-    \caption{Пример синтаксической структуры предложения.}
-    \label{pic_tree}
+    \includegraphics[scale=0.8]{images/part2/chapter_lang/syntactic_structure_part_1}
+    \caption{Пример синтаксической структуры предложения. Первая часть.}
+    \label{fig:pic_syntactic_tree_part_1}
+\end{figure*}
+
+\begin{figure*}[h]
+    \centering
+    \includegraphics[scale=0.8]{images/part2/chapter_lang/syntactic_structure_part_2}
+    \caption{Пример синтаксической структуры предложения. Вторая часть.}
+    \label{fig:pic_syntactic_tree_part_2}
 \end{figure*}
 
 Структуры синтаксических групп не являются произвольными -- элементы внутри группы могут граничить только с определенными множествами элементов.
@@ -470,11 +477,11 @@
 \end{textitemize}
 
 В формальном виде данные правила можно представить следующим образом (см.
-рисунок~\ref{fig:pic_tree_structure_rule}).
+рисунок~\textit{\nameref{fig:pic_tree_structure_rule}}).
 
 \begin{figure*}[h]
     \centering
-    \includegraphics[width=0.8\textwidth]{images/part2/chapter_lang/tree_structure_rule.png}
+    \includegraphics[scale=0.8]{images/part2/chapter_lang/tree_structure_rule}
     \caption{Пример правила структуры синтаксической группы.}
     \label{fig:pic_tree_structure_rule}
 \end{figure*}
@@ -494,7 +501,7 @@
 
 Правило комплемента: X' -> X (WP)
 
-Формальное представление данных правил аналогично приведенному на рисунке~\ref{fig:pic_tree_structure_rule}.
+Формальное представление данных правил аналогично приведенному на рисунке~\textit{\nameref{fig:pic_tree_structure_rule}}.
 
 \section{Формализация денотационной семантики естественных языков}
 \label{section_natural_language_denotational_semantics_formalization}
@@ -514,7 +521,7 @@
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{images/part2/chapter_lang/d_sem_1}
+    \includegraphics[scale=0.8]{images/part2/chapter_lang/d_sem_1}
     \caption{Правило интерпретации вершины группы прилагательного и вершины именной группы}
     \label{fig:d_sem_1}
 \end{figure}
@@ -531,7 +538,7 @@
 
 \begin{figure*}[h]
     \centering
-    \includegraphics[width=0.8\textwidth]{images/part2/chapter_lang/d_sem_2.png}
+    \includegraphics[scale=0.8]{images/part2/chapter_lang/d_sem_2}
     \caption{Правило интерпретации максимальной проекции вершины именной группы}
     \label{fig:d_sem_2}
 \end{figure*}
@@ -543,7 +550,7 @@
 
 \begin{figure*}[h]
     \centering
-    \includegraphics[width=0.8\textwidth]{images/part2/chapter_lang/d_sem_3.png}
+    \includegraphics[scale=0.8]{images/part2/chapter_lang/d_sem_3}
     \caption{Правило интерпретации максимальной проекции вершины глагольной группы, содержащей непереходный глагол}
     \label{fig:d_sem_3}
 \end{figure*}
@@ -554,7 +561,7 @@
 
 \begin{figure*}[h]
     \centering
-    \includegraphics[width=0.8\textwidth]{images/part2/chapter_lang/d_sem_4.png}
+    \includegraphics[scale=0.8]{images/part2/chapter_lang/d_sem_4}
     \caption{Правило интерпретации максимальной проекции вершины группы детерминанта}
     \label{d_sem_4}
 \end{figure*}
@@ -565,7 +572,7 @@
 
 \begin{figure*}[h]
     \centering
-    \includegraphics[width=0.8\textwidth]{images/part2/chapter_lang/d_sem_5.png}
+    \includegraphics[scale=0.8]{images/part2/chapter_lang/d_sem_5}
     \caption{Правило интерпретации промежуточной проекции вершины временной группы}
     \label{fig:d_sem_5}
 \end{figure*}
@@ -575,7 +582,7 @@
 
 \begin{figure*}[h]
     \centering
-    \includegraphics[width=0.8\textwidth]{images/part2/chapter_lang/d_sem_6.png}
+    \includegraphics[scale=0.8]{images/part2/chapter_lang/d_sem_6}
     \caption{Правило интерпретации максимальной проекции вершины временной группы}
     \label{fig:d_sem_6}
 \end{figure*}
@@ -586,7 +593,7 @@
 
 \begin{figure*}[h]
     \centering
-    \includegraphics[width=0.8\textwidth]{images/part2/chapter_lang/d_sem_7.png}
+    \includegraphics[scale=0.8]{images/part2/chapter_lang/d_sem_7}
     \caption{Правило интерпретации предложения с переходным глаголом}
     \label{fig:d_sem_7}
 \end{figure*}

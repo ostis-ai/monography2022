@@ -5,9 +5,7 @@
 
 %\begin{textitemize}
 %    \item расписать сопоставление токенов с лексемами;
-%    \item перерисоват ькартинки, чать из них предназначалась для размещения в колонке;
 %    \item расписать синтаксический анализ, как находятся составляющие,
-%    \item пройтись по подсказкам от плагина, поправит форматирование,
 %    \item формализовать пр. о..
 %\end{textitemize}
 %Список вопросов:
@@ -123,7 +121,7 @@
 Упрощенный пример такой конструкции приведен на рисунке \textit{\nameref{fig:message_intents}}.
 
 \begin{figure}[h]
-    \centerline{\includegraphics[width=\linewidth]{images/part4/chapter_nl_interfaces/message_intents.png}}
+    \centerline{\includegraphics[scale=0.55]{images/part4/chapter_nl_interfaces/message_intents}}
     \caption{Пример формализованного смысла сообщения}
     \label{fig:message_intents}
 \end{figure}
@@ -204,18 +202,18 @@
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.4\textwidth]{images/part4/chapter_nl_interfaces/agent_spec.png}
+    \includegraphics[scale=0.8]{images/part4/chapter_nl_interfaces/agent_spec}
     \caption{Пример спецификации агента.}
     \label{fig:agent_spec}
 \end{figure}
 
-При анализе сообщения на естественном языке используются средства введенные в Главе \ref{chapter_lang}
+При анализе сообщения на естественном языке используются средства введенные в Главе~\ref{chapter_lang}
 
 \section{Лексический анализ естественно-языковых сообщений, входящих в ostis-систему}
 \label{section_natural_language_messages_lexical_analysis}
 
 %todo: выглядит странно, лексическй анализ основывается на том. что было в синтаксисе т. к. там мы это просто объединили. мб объединить и здесь лучше?
-Этап лексического анализа основывается на средствах введенных в подразделе \ref{section_natural_language_syntax_formalization}.
+Этап лексического анализа основывается на средствах введенных в подразделе~\ref{section_natural_language_syntax_formalization}.
 
 \begin{SCn}
 
@@ -236,7 +234,7 @@
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.4\textwidth]{images/part4/chapter_nl_interfaces/lexical.png}
+    \includegraphics[scale=0.8]{images/part4/chapter_nl_interfaces/lexical}
     \caption{Пример результата лексического анализа.}
     \label{fig:lexical_result}
 \end{figure}
@@ -244,14 +242,7 @@
 Для осуществления лексического анализа, в базе знаний системы также должен присутствовать словарь, содержащий лексемы и их различные формы.
 
 Под лексемой понимается единица словарного состава языка, которая представляет собой множество всех форм некоторого слова.
-Пример спецификации лексемы в базе знаний приведен на рисунке \textit{\nameref{fig:lexeme_example}}.
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.4\textwidth]{images/part4/chapter_nl_interfaces/lexeme_example.png}
-    \caption{Пример спецификации лексемы в базе знаний.}
-    \label{fig:lexeme_example}
-\end{figure}
+Пример спецификации лексемы в базе знаний приведен на рисунке \textit{\nameref{fig:lexeme_example}}, в подразделе~\ref{section_natural_language_syntax_formalization}.
 
 \section{Cинтаксический анализ естественно-языковых сообщений, входящих в ostis-систему}
 \label{section_natural_language_messages_syntax_analysis}
@@ -259,15 +250,7 @@
 Агент синтаксического анализа выполняет переход от размеченного на лексемы текста к его синтаксической структуре.
 При этом из-за невозможности разрешения структурной неоднозначности на этапе синтаксического анализа, его результатом в общем случае будет являться множество потенциальных синтаксических структур.
 
-Пример одной синтаксической структуры представлен на рисунке \textit{\nameref{fig:syntactic_result}}.
-
-\begin{figure*}[h]
-    \centering
-    \includegraphics[width=\textwidth]{images/part4/chapter_nl_interfaces/syntactic.png}
-    \caption{Пример синтаксической структуры.}
-    \label{fig:syntactic_result}
-\end{figure*}
-
+Данный этап также основывается на средствах введенных в подразделе~\ref{section_natural_language_syntax_formalization}, в котором приведен пример одной синтаксической структуры, представленный на рисунках~\textit{\nameref{fig:pic_syntactic_tree_part_1}} и~\textit{\nameref{fig:pic_syntactic_tree_part_2}}.
 
 \section{Понимание естественно-языковых сообщений, входящих в ostis-систему}
 \label{section_natural_language_messages_understanding}
@@ -293,12 +276,12 @@
 
 \textit{Потенциально эквивалентная структура*} -- бинарное ориентированное отношение, связывающее структуру и множество структур, которые потенциально могут быть эквивалентны ей, однако для достоверного определения факта требуются дополнительные действия.
 
-При этом, переход от результата синтаксического анализа к потенциально эквивалентным сообщению структурам осуществляется по правилам, представленным в подразделе \ref{section_natural_language_syntax_formalization}.
+При этом, переход от результата синтаксического анализа к потенциально эквивалентным сообщению структурам осуществляется по правилам, представленным в подразделе \ref{section_natural_language_denotational_semantics_formalization}.
 Пример одного из правил представлен на рисунке \textit{\nameref{fig:transition_to_semanic_rule}}.
 
 \begin{figure*}[h]
     \centering
-    \includegraphics[width=0.7\textwidth]{images/part4/chapter_nl_interfaces/d_sem_3.png}
+    \includegraphics[scale=0.8]{images/part4/chapter_nl_interfaces/d_sem_3}
     \caption{Пример правила перехода от синтаксической структуры к семантике.}
     \label{fig:transition_to_semanic_rule}
 \end{figure*}
@@ -309,7 +292,7 @@
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.45\textwidth]{images/part4/chapter_nl_interfaces/messsage_meaning_variants.png}
+    \includegraphics[scale=0.8]{images/part4/chapter_nl_interfaces/messsage_meaning_variants}
     \caption{Пример конструкции, описывающей потенциальные смыслы сообщения.}
     \label{fig:messsage_meaning_variants}
 \end{figure}
@@ -325,7 +308,7 @@
 
     \scnheader{контекст диалога}
     \scnsubset{контекст}
-    \scnrelfrom{subdividing}{\scnkeyword{Типология контекстов диалога по глобальности\scnsupergroupsign}}
+    \scnrelfrom{разбиение}{\scnkeyword{Типология контекстов диалога по глобальности\scnsupergroupsign}}
     \begin{scnindent}
         \begin{scneqtoset}
             \scnitem{тематический контекст}
@@ -354,7 +337,7 @@
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.4\textwidth]{images/part4/chapter_nl_interfaces/context_in_KB.png}
+    \includegraphics[scale=0.3]{images/part4/chapter_nl_interfaces/context_in_KB}
     \caption{Соотношение контекстов с согласованной частью баз знаний.}
     \label{fig:context_in_KB}
 \end{figure}
@@ -362,7 +345,7 @@
 \begin{SCn}
 
     \scnheader{контекст диалога}
-    \scnrelfrom{subdividing}{\scnkeyword{Типология контекство по сроку достоверности знаний\scnsupergroupsign}}
+    \scnrelfrom{разбиение}{\scnkeyword{Типология контекство по сроку достоверности знаний\scnsupergroupsign}}
     \begin{scnindent}
         \begin{scneqtoset}
             \scnitem{неизменяемый в ходе работы системы контекст диалога}
@@ -380,14 +363,14 @@
 
 
     \scnheader{изменяемый в ходе работы системы контекст диалога}
-    \scnrelfrom{subdividing}{\scnkeyword{Типология изменяемых в ходе работы системы контекстов по источнику знаний\scnsupergroupsign}}
+    \scnrelfrom{разбиение}{\scnkeyword{Типология изменяемых в ходе работы системы контекстов по источнику знаний\scnsupergroupsign}}
     \begin{scnindent}
         \begin{scneqtoset}
             \scnitem{контекст диалога, содержащий знания из внешних источников}
             \scnitem{контекст диалога, содержащий знания, полученные в ходе диалога}
         \end{scneqtoset}
     \end{scnindent}
-    \scnrelfrom{subdividing}{\scnkeyword{Типология изменяемых контекстов по степени их достоверности\scnsupergroupsign}}
+    \scnrelfrom{разбиение}{\scnkeyword{Типология изменяемых контекстов по степени их достоверности\scnsupergroupsign}}
     \begin{scnindent}
         \begin{scneqtoset}
             \scnitem{достоверный контекст диалога}
@@ -404,7 +387,7 @@
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\textwidth]{images/part4/chapter_nl_interfaces/user_context.png}
+    \includegraphics[scale=0.8]{images/part4/chapter_nl_interfaces/user_context}
     \caption{Пример спецификации контекстов.}
     \label{fig:user_context}
 \end{figure}
@@ -417,7 +400,7 @@
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.45\textwidth]{images/part4/chapter_nl_interfaces/relevant_contexts.png}
+    \includegraphics[scale=0.8]{images/part4/chapter_nl_interfaces/relevant_contexts}
     \caption{Пример сообщения, всем вариантам значения которого сопоставлен контекст.}
     \label{fig:relevant_contexts}
 \end{figure}
@@ -428,7 +411,7 @@
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.35\textwidth]{images/part4/chapter_nl_interfaces/message_equivalent_structure.png}
+    \includegraphics[scale=0.8]{images/part4/chapter_nl_interfaces/message_equivalent_structure}
     \caption{Пример конструкции, описывающей эквивалентную сообщению структуру.}
     \label{fig:message_equivalent_structure}
 \end{figure}
@@ -440,14 +423,14 @@
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.4\textwidth]{images/part4/chapter_nl_interfaces/context_1.png}
+    \includegraphics[scale=0.8]{images/part4/chapter_nl_interfaces/context_1}
     \caption{Пример контекста до погружения сообщения.}
     \label{fig:context_before_update}
 \end{figure}
 
 \begin{figure*}[h]
     \centering
-    \includegraphics[width=0.7\textwidth]{images/part4/chapter_nl_interfaces/context_2.png}
+    \includegraphics[scale=0.8]{images/part4/chapter_nl_interfaces/context_2}
     \caption{Пример контекста после погружения сообщения.}
     \label{fig:updated_context}
 \end{figure*}
@@ -470,7 +453,7 @@
 Модульная схема (рисунок \textit{\nameref{fig:schema-natural-interface}})современных вопросно-ответных систем, основанных на знаниях описывает общий автоматизированный процесс информационного взаимодействия между текстами естественного языка (особенно вопросительными предложениями), предоставляемыми человеческими пользователями и базами знаний интеллектуальных систем.
 
 \begin{figure}[H]
-	\includegraphics[scale=0.8,width=1.0\textwidth]{images/part4/chapter_chinese/schema1.png}
+	\includegraphics[scale=0.8,width=1.0\textwidth]{images/part4/chapter_chinese/schema1}
 	\caption{Модульная схема вопросно-ответных систем, основанных на знаниях}
 	\label{fig:schema-natural-interface}
 \end{figure}
@@ -588,7 +571,7 @@ commonsense knowledge).
 Системы, построенные по указанной Технологии OSTIS, названы ostis-системами.
 
 \begin{figure}[H]
-	\includegraphics[scale=0.8,width=1.0\textwidth]{images/part4/chapter_chinese/structure_interface.png}
+	\includegraphics[scale=0.8,width=1.0\textwidth]{images/part4/chapter_chinese/structure_interface}
 	\caption{Общая структура sc-модели естественно-языковых интерфейсов ostis-систем}
 	\label{fig:structure-sc-model-natural-interface}
 \end{figure}
@@ -725,7 +708,7 @@ depedent).
 В виде логических утверждений могут быть построены правила или шаблоны для приобретения фактографических знаний и генерации текстов, которые могут использоваться решателями задач для решения конкретных задач в естественно-языковых интерфейсах.
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.8]{images/part4/chapter_chinese/ruleGeneration.png}
+	\includegraphics[scale=0.8]{images/part4/chapter_chinese/ruleGeneration}
 	\caption{Логическое утверждение про генерации предложения на основе шаблона}
 	\label{fig:template-generation}
 \end{figure}
@@ -968,7 +951,7 @@ depedent).
 На рисунке \textit{\nameref{fig:method-interface}} представлен перечень таких этапов с указанием последовательности их выполнения.
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.8,width=1.0\textwidth]{images/part4/chapter_chinese/method.png}
+	\includegraphics[scale=0.8,width=1.0\textwidth]{images/part4/chapter_chinese/method}
 	\caption{Этапы процесса разработки естественно-языкового интерфейса}
 	\label{fig:method-interface}
 \end{figure}
@@ -1092,7 +1075,7 @@ depedent).
 Содержимое такого узла демонстрирует предложение китайского языка, которое относится к области дискретной математики и описывает: \begin{CJK}{UTF8}{gbsn}«从结构形式化的角度 (с точки зрения формализации структуры) ，结构(структуру) 可以 (можно) 划分 (разделить) 为 (на) 形式化的结构 (формальную структуру) 和 (и) 非形式化的结构 (неформальную структуру) 。». \end{CJK}
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.8]{images/part4/chapter_chinese/chinese_sentence.png}
+	\includegraphics[scale=0.8]{images/part4/chapter_chinese/chinese_sentence}
 	\caption{Представление предложения китайского языка в ostis-системе}
 	\label{fig:chinese-sentence-sc}
 \end{figure}
@@ -1100,7 +1083,7 @@ depedent).
 \textbf{\textit{Шаг 1:}} Декомпозиция предложения китайского языка на отдельные единицы сегментаций, а также помечаются данные единицы сегментаций стандартными категориями частей речи в китайском языке (рисунок \textit{\nameref{fig:segment-chinese}}).
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.6]{images/part4/chapter_chinese/segment_chinese_sentence.png}
+	\includegraphics[scale=0.6]{images/part4/chapter_chinese/segment_chinese_sentence}
 	\caption{Результат разделения и разметки отдельных единиц сегментации}
 	\label{fig:segment-chinese}
 \end{figure}
@@ -1116,7 +1099,7 @@ depedent).
 Таким образом, синтаксический анализ китайского языка позволяет создать основу для извлечения фактографических знаний из предложений китайского языка.
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.6]{images/part4/chapter_chinese/syntac_structure.png}
+	\includegraphics[scale=0.6]{images/part4/chapter_chinese/syntac_structure}
 	\caption{Результат синтаксического анализа предложения китайского языка}
 	\label{fig:syntac-structure}
 \end{figure}
@@ -1128,7 +1111,7 @@ depedent).
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.7]{images/part4/chapter_chinese/generated_sc_structure.png}
+	\includegraphics[scale=0.7]{images/part4/chapter_chinese/generated_sc_structure}
 	\caption{Результирующий построенный фрагмент в базе знаний}
 	\label{fig:generated-structure}
 \end{figure}
@@ -1158,7 +1141,7 @@ depedent).
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.7]{images/part4/chapter_chinese/fragment_knowledge_base.png}
+	\includegraphics[scale=0.7]{images/part4/chapter_chinese/fragment_knowledge_base}
 	\caption{Фрагмент (sc-структура) базы знаний ИСС по дискретной математике}
 	\label{fig:knowledge-base-fragment}
 \end{figure}
@@ -1166,7 +1149,7 @@ depedent).
 \textbf{\textit{Шаг 2:}} Данный фрагмент разделяется на стандартные базовые sc-конструкции, из которых выбираются проектные sc-конструкции для генерации результирующих текстов китайского языка, которые можно переводиться в ``message triple''. У каждого sc-элемента sc-конструкций есть конкретная единица сегментации китайского языка, соответствующая идентификатору каждого sc-элемента. Проектная sc-конструкция (принадлежащая к стандартной базовой sc-конструкции) показана на SCg-коде (рисунок \textit{\nameref{fig:candidate-sc-construction}}).
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.8]{images/part4/chapter_chinese/candidate_sc_structure.png}
+	\includegraphics[scale=0.8]{images/part4/chapter_chinese/candidate_sc_structure}
 	\caption{Выбранная проектная sc-конструкция}
 	\label{fig:candidate-sc-construction}
 \end{figure}
@@ -1174,7 +1157,7 @@ depedent).
 \textbf{\textit{Шаг 3:}} Проектная sc-конструкция переносится в ``message triple''. Преобразованный ``message triple'' состоит из файлов (sc-узел с содержимым), содержащих единицы сегментаций, написанные обученными носителями китайского языка и проверенной другими. Содержимое некоторых файлов (например \begin{CJK}{UTF8}{gbsn} «临界图 (критический граф)» \end{CJK}) соответствует идентификатору sc-элементов sc-конструкций, а содержимое некоторых файлов добавляется при построении ``message triple''. (рисунок \textit{\nameref{fig:message-triple}}).
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.7]{images/part4/chapter_chinese/message_triple.png}
+	\includegraphics[scale=0.7]{images/part4/chapter_chinese/message_triple}
 	\caption{Перевод проектной sc-конструкции в ``message triple''}
 	\label{fig:message-triple}
 \end{figure}
@@ -1182,7 +1165,7 @@ depedent).
 \textbf{\textit{Шаг 4:}} файлы объединяются для генерации результирующего повествовательного предложения китайского языка в соответствии с допустимыми упорядоченностями на шаблоне для ``message triple'' с отношением «включение» (рисунок \textit{\nameref{fig:sentence-generated}}). При генерации результирующих текстов для некоторых естественных языков Формы слов изменяются в соответствии с правилами (например, заглавная буква первого слова в предложении, согласование сказуемого с подлежащим), а затем добавляются в результирующие тексты. \textit{ссылающееся выражение*} -- квазибинарное отношение, связывающее слово с её комбинаторными вариантами.
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.7]{images/part4/chapter_chinese/chinese_sentence_generated.png}
+	\includegraphics[scale=0.7]{images/part4/chapter_chinese/chinese_sentence_generated}
 	\caption{Генерация предложения китайского языка, соответствующего sc-структуре}
 	\label{fig:sentence-generated}
 \end{figure}
@@ -1194,7 +1177,7 @@ depedent).
 Для бесконечных доменно-зависимых отношений в различных предметных областей модель нейронной сети интегрирована в решатель задач к генерации текстов китайского языка.
 На рисунке \textit{\nameref{fig:pre-training-model}} показан процесс использовании формы предварительной подготовки и тонкой настройки для решения задач генерации текстов китайского языка из фрагментов базы знаний.
 \begin{figure}[H]
-	\includegraphics[scale=0.8,width=1.0\textwidth]{images/part4/chapter_chinese/promptCLUE4SC.png}
+	\includegraphics[scale=0.8,width=1.0\textwidth]{images/part4/chapter_chinese/promptCLUE4SC}
 	\caption{Диаграмма для генерации текстов на основе модели предварительной подготовки PromptCLUE}
 	\label{fig:pre-training-model}
 \end{figure}
