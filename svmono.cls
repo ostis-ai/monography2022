@@ -1891,11 +1891,11 @@ to\z@{\kern0.55\wd0\vrule\@height0.45\ht0\hss}\box0}}}}
    {\LARGE\ignorespaces\@subtitle \par}
    \vskip 1cm                % Vertical space after subtitle.
   \fi
-  \if!\@date!\else
-    {\large \@date}%          % Date set in \large size.
-    \par
-    \vskip 1.5em               % Vertical space after date.
-  \fi
+  %\if!\@date!\else
+%    {\large \@date}%          % Date set in \large size.
+%    \par
+%    \vskip 1.5em               % Vertical space after date.
+%  \fi
  \vfill
 % {\Large Springer Nature\par}
 %\vskip 5\p@
