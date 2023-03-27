@@ -1,14 +1,16 @@
 \input{latex_bibliography}
 
-\chapter*{\LARGE Библиография OSTIS}
-\label{chap_biblio}
+\begin{partbacktext}
+\part*{Библиография OSTIS}
+\markboth{БИБЛИОГРАФИЯ OSTIS}{БИБЛИОГРАФИЯ OSTIS}
+\label{part_biblio}
 \addcontentsline{toc}{part}{Библиография OSTIS}
 
 В \textit{Библиографии OSTIS} приводится список библиографических источников в алфавитном порядке их идентификаторов, при этом вначале перечисляются русскоязычные источники, а затем --- англоязычные.
 
 Каждый библиографический источник имеет соответствующий уникальный идентификатор, а также формальную спецификацию.
 
-\underline{Идентификаторы} статей, книг и других печатных работ строятся следующим образом:
+\myuline{Идентификаторы} статей, книг и других печатных работ строятся следующим образом:
 
 \begin{textitemize}
 	\item Пишется фамилия первого автора на том языке, на котором опубликована данная работа. Затем через пробел ставятся инициал(-ы) первого автора
@@ -26,13 +28,13 @@
 
 Идентификаторы электронных и прочих ресурсов формируются аналогичным образом, с учетом того, что опускается год издания и фамилии авторов, а также ставится буквенный код \textit{эл} для обозначения электронного ресурса. Например, \scncite{IMS}, \scncite{CYPHER}.
 
-При \underline{спецификации} конкретного библиографического источника в разделе библиографии указываются:
+При \myuline{спецификации} конкретного библиографического источника в разделе библиографии указываются:
 
 \begin{textitemize}
 	\item Идентификатор библиографического источника, составленный в соответствии с указанными выше правилами.
 	\item Его библиографическое описание (библиографический идентификатор), составленное в соответствии с каким-либо общепринятым стандартом (ГОСТ, IEEE, ACM и т.д.).
 	\item Указывается аннотация данного библиографического источника.
-	\item Перечисляются ключевые знаки (понятия или конкретные сущности) для описываемого библиографического источника. При этом подразумевается, что и имя (термин), и трактовка данного ключевого знака в описываемом источнике и в рамках Стандарта OSTIS совпадают. В противном случае имя такой ключевой сущности описывается как \uline{ключевой термин}.
+	\item Перечисляются ключевые знаки (понятия или конкретные сущности) для описываемого библиографического источника. При этом подразумевается, что и имя (термин), и трактовка данного ключевого знака в описываемом источнике и в рамках Стандарта OSTIS совпадают. В противном случае имя такой ключевой сущности описывается как \myuline{ключевой термин}.
 	\item Перечисляются ключевые термины для описываемого библиографического источника. При этом для каждого термина желательно при возможности указывать соответствующие понятие или конкретную сущность (ключевой знак), описываемые в рамках Стандарта OSTIS, для которых данный термин может рассматриваться как синонимичный идентификатор. Примеры использования ключевых терминов и ключевых знаков можно найти в спецификации источников \scncite{Pospelov1986} и \scncite{Golenkov2018}.
 	\item Указываются разделы Стандарта OSTIS (Монографии OSTIS), для которых данный библиографический источник является важным.
 	\item Приводятся цитаты из данного библиографического источника. При необходимости указывается часть источника, из которой непосредственно взята цитата. Примеры указания цитат можно найти в спецификации источников \scncite{Barinov2021} и \scncite{Pospelov1986}.
@@ -46,8 +48,7 @@
 	\item ``Основные принципы многоагентных систем рассматриваются в ряде работ (\scncite{Wooldridge2009}, \scncite{Tarasov2002}).''
 \end{textitemize}
 
-\bigskip
-\bigskip
+\end{partbacktext}
 
 \begin{SCn}
 %Русскоязычные издания
@@ -72,6 +73,13 @@
 \scnciteannotation{Arshinskiy2020}
 \begin{scnreltolist}{библиографическая ссылка}
 	\scnitem{\ref{sec_kb_design_contradiction} \nameref{sec_kb_design_contradiction}}
+\end{scnreltolist}
+
+\scnciteheader{Arp2015}
+\scnfullcite{Arp2015}
+\scnciteannotation{Arp2015}
+\begin{scnreltolist}{библиографическая ссылка}
+	\scnitem{\ref{sec_top_level_ontologies} \nameref{sec_top_level_ontologies}}
 \end{scnreltolist}
 
 
@@ -107,6 +115,13 @@
 \begin{scnreltolist}{библиографическая ссылка}
 	\scnitem{\ref{sec_mas} \nameref{sec_mas}}
 	\scnitem{\ref{sec_ps_problems} \nameref{sec_ps_problems}}
+\end{scnreltolist}
+
+\scnciteheader{BFO}
+\scnfullcite{BFO}
+\scnciteannotation{BFO}
+\begin{scnreltolist}{библиографическая ссылка}
+	\scnitem{\ref{sec_top_level_ontologies} \nameref{sec_top_level_ontologies}}
 \end{scnreltolist}
 
 \scnciteheader{Borisov2014}
@@ -175,6 +190,7 @@
 \end{scnrelfromlist}
 \begin{scnreltolist}{библиографическая ссылка}
 	\scnitem{Глава \ref{chapter_new_generation_systems} \nameref{chapter_new_generation_systems}}
+	\scnitem{Глава \ref{chapter_logic_productions} \nameref{chapter_logic_productions}}
 \end{scnreltolist}
 
 \scnciteheader{Golenkov2004}
@@ -213,6 +229,13 @@
 	\scnitem{\ref{ostis_library_introduction} \nameref{ostis_library_introduction}}
 \end{scnreltolist}
 
+\scnciteheader{Golenkov2015}
+\scnfullcite{Golenkov2015}
+\scnciteannotation{Golenkov2015}
+\begin{scnreltolist}{библиографическая ссылка}
+	\scnitem{\ref{ostis_library_introduction} \nameref{ostis_library_introduction}}
+\end{scnreltolist}
+
 \scnciteheader{Golenkov2018}
 \scnfullcite{Golenkov2018}
 \scnciteannotation{Golenkov2018}
@@ -231,6 +254,20 @@
 \scnfullcite{Standart2021}
 \begin{scnreltolist}{библиографическая ссылка}
 	\scnitem{Глава \ref{chapter_new_generation_systems} \nameref{chapter_new_generation_systems}}
+\end{scnreltolist}
+
+\scnciteheader{Golenkov2022a}
+\scnfullcite{Golenkov2022a}
+\scnciteannotation{Golenkov2022a}
+\begin{scnreltolist}{библиографическая ссылка}
+	\scnitem{\ref{part_conclusion} \nameref{part_conclusion}}
+\end{scnreltolist}
+
+\scnciteheader{Golenkov2022b}
+\scnfullcite{Golenkov2022b}
+\scnciteannotation{Golenkov2022b}
+\begin{scnreltolist}{библиографическая ссылка}
+	\scnitem{\ref{part_conclusion} \nameref{part_conclusion}}
 \end{scnreltolist}
 
 \scnciteannotation{Halavataya2019}
@@ -290,6 +327,41 @@
 \scnciteheader{Davydenko2013}
 \scnfullcite{Davydenko2013}
 \scnciteannotation{Davydenko2013}
+\begin{scnreltolist}{библиографическая ссылка}
+	\scnitem{Глава \ref{chapter_library} \nameref{chapter_library}}
+\end{scnreltolist}
+
+\scnciteheader{Davydenko2011}
+\scnfullcite{Davydenko2011}
+\scnciteannotation{Davydenko2011}
+\begin{scnreltolist}{библиографическая ссылка}
+	\scnitem{Глава \ref{chapter_library} \nameref{chapter_library}}
+\end{scnreltolist}
+
+\scnciteheader{Davydenko2016a}
+\scnfullcite{Davydenko2016a}
+\scnciteannotation{Davydenko2016a}
+\begin{scnreltolist}{библиографическая ссылка}
+	\scnitem{Глава \ref{chapter_kb} \nameref{chapter_kb}}
+\end{scnreltolist}
+
+\scnciteheader{Davydenko2017}
+\scnfullcite{Davydenko2017}
+\scnciteannotation{Davydenko2017}
+\begin{scnreltolist}{библиографическая ссылка}
+	\scnitem{Глава \ref{chapter_library} \nameref{chapter_library}}
+\end{scnreltolist}
+
+\scnciteheader{Davydenko2017a}
+\scnfullcite{Davydenko2017a}
+\scnciteannotation{Davydenko2017a}
+\begin{scnreltolist}{библиографическая ссылка}
+	\scnitem{Глава \ref{chapter_kb} \nameref{chapter_kb}}
+\end{scnreltolist}
+
+\scnciteheader{Davydenko2018}
+\scnfullcite{Davydenko2018}
+\scnciteannotation{Davydenko2018}
 \begin{scnreltolist}{библиографическая ссылка}
 	\scnitem{Глава \ref{chapter_library} \nameref{chapter_library}}
 \end{scnreltolist}
@@ -438,6 +510,13 @@
 	\scnitem{\ref{ostis_library_section} \nameref{ostis_library_section}}
 \end{scnreltolist}
 
+\scnciteheader{Koronchik2012}
+\scnfullcite{Koronchik2012}
+\scnciteannotation{Koronchik2012}
+\begin{scnreltolist}{библиографическая ссылка}
+	\scnitem{Глава \ref{chapter_library} \nameref{chapter_library}}
+\end{scnreltolist}
+
 \scnciteheader{Koronchik2013}
 \scnfullcite{Koronchik2013}
 \scnciteannotation{Koronchik2013}
@@ -525,7 +604,13 @@
 %Оо = O, o
 
 %Пп = P, p
-\scnciteheader{Podkholzyn2008}
+\scnciteheader{Pivovarchik2015}
+\scnfullcite{Pivovarchik2015}
+\scnciteannotation{Pivovarchik2015}
+\begin{scnreltolist}{библиографическая ссылка}
+	\scnitem{\ref{ostis_library_section} \nameref{ostis_library_section}}
+\end{scnreltolist}
+
 \scnfullcite{Podkholzyn2008}
 \scnciteannotation{Podkholzyn2008}
 \begin{scnreltolist}{библиографическая ссылка}
@@ -689,6 +774,14 @@
 \scnciteannotation{Shunkevich2015}
 \begin{scnreltolist}{библиографическая ссылка}
 	\scnitem{\ref{section_semantic_model_and_knowledge_control} \nameref{section_semantic_model_and_knowledge_control}}
+	\scnitem{Глава \ref{chapter_library} \nameref{chapter_library}}
+\end{scnreltolist}
+
+\scnciteheader{Shunkevich2015a}
+\scnfullcite{Shunkevich2015a}
+\scnciteannotation{Shunkevich2015a}
+\begin{scnreltolist}{библиографическая ссылка}
+	\scnitem{\ref{reusable_component_section} \nameref{reusable_component_section}}
 \end{scnreltolist}
 
 %Ъъ = ##, #,tvz
@@ -773,6 +866,13 @@
 \scnciteannotation{Bellegarda2014}
 \begin{scnreltolist}{библиографическая ссылка}
 \scnitem{Глава \ref{chapter_audio_interfaces} \nameref{chapter_audio_interfaces}}
+\end{scnreltolist}
+
+\scnciteheader{Benjamins1999}
+\scnfullcite{Benjamins1999}
+\scnciteannotation{Benjamins1999}
+\begin{scnreltolist}{библиографическая ссылка}
+	\scnitem{Глава \ref{chapter_library} \nameref{chapter_library}}
 \end{scnreltolist}
 
 \scnciteheader{Blahser2021}
@@ -936,6 +1036,13 @@
 \scnciteannotation{Dorri2018}
 \begin{scnreltolist}{библиографическая ссылка}
 	\scnitem{\ref{sec_mas} \nameref{sec_mas}}
+\end{scnreltolist}
+
+\scnciteheader{DOLCE}
+\scnfullcite{DOLCE}
+\scnciteannotation{DOLCE}
+\begin{scnreltolist}{библиографическая ссылка}
+	\scnitem{\ref{sec_top_level_ontologies} \nameref{sec_top_level_ontologies}}
 \end{scnreltolist}
 
 \scnciteheader{Dutta1993}
@@ -1239,6 +1346,13 @@
 	\scnitem{Глава \ref{chapter_new_generation_systems} \nameref{chapter_new_generation_systems}}
 \end{scnreltolist}
 
+\scnciteheader{ISO21838-1}
+\scnfullcite{ISO21838-1}
+\scnciteannotation{ISO21838-1}
+\begin{scnreltolist}{библиографическая ссылка}
+	\scnitem{\ref{sec_top_level_ontologies} \nameref{sec_top_level_ontologies}}
+\end{scnreltolist}
+
 \scnciteheader{ISO23003-3}
 \scnfullcite{ISO23003-3}
 \scnciteannotation{ISO23003-3}
@@ -1361,6 +1475,13 @@
 \scnciteannotation{Lanzenberger2008}
 \begin{scnreltolist}{библиографическая ссылка}
 	\scnitem{Глава \ref{chapter_new_generation_systems} \nameref{chapter_new_generation_systems}}
+\end{scnreltolist}
+
+\scnciteheader{Lawan2019}
+\scnfullcite{Lawan2019}
+\scnciteannotation{Lawan2019}
+\begin{scnreltolist}{библиографическая ссылка}
+	\scnitem{\ref{logic_lang_os} \nameref{logic_lang_os}}
 \end{scnreltolist}
 
 \scnciteheader{Lemley2017}
@@ -1871,6 +1992,13 @@
 	\scnitem{Глава \ref{chapter_logic_productions} \nameref{chapter_logic_productions}}
 \end{scnreltolist}
 
+\scnciteheader{Sowa1995}
+\scnfullcite{Sowa1995}
+\scnciteannotation{Sowa1995}
+\begin{scnreltolist}{библиографическая ссылка}
+	\scnitem{Глава \ref{chapter_kb} \nameref{chapter_kb}}
+\end{scnreltolist}
+
 \scnciteheader{SPARQL}
 \scnfullcite{SPARQL}
 \scnciteannotation{SPARQL}
@@ -1879,11 +2007,25 @@
 	\scnitem{\ref{sec_ps_problems} \nameref{sec_ps_problems}}
 \end{scnreltolist}
 
+\scnciteheader{Studer1996}
+\scnfullcite{Studer1996}
+\scnciteannotation{Studer1996}
+\begin{scnreltolist}{библиографическая ссылка}
+	\scnitem{Глава \ref{chapter_library} \nameref{chapter_library}}
+\end{scnreltolist}
+
 \scnciteheader{Sun2020}
 \scnfullcite{Sun2020}
 \scnciteannotation{Sun2020}
 \begin{scnreltolist}{библиографическая ссылка}
 	\scnitem{\ref{section_semantic_model_and_knowledge_control} \nameref{section_semantic_model_and_knowledge_control}}
+\end{scnreltolist}
+
+\scnciteheader{SUMO}
+\scnfullcite{SUMO}
+\scnciteannotation{SUMO}
+\begin{scnreltolist}{библиографическая ссылка}
+	\scnitem{\ref{sec_top_level_ontologies} \nameref{sec_top_level_ontologies}}
 \end{scnreltolist}
 
 %T t
@@ -1899,6 +2041,13 @@
 \scnciteannotation{Tseng2014}
 \begin{scnreltolist}{библиографическая ссылка}
 	\scnitem{\ref{section_chinese_interfaces} \nameref{section_chinese_interfaces}}
+\end{scnreltolist}
+
+\scnciteheader{Tu1995}
+\scnfullcite{Tu1995}
+\scnciteannotation{Tu1995}
+\begin{scnreltolist}{библиографическая ссылка}
+	\scnitem{Глава \ref{chapter_library} \nameref{chapter_library}}
 \end{scnreltolist}
 
 %U u
