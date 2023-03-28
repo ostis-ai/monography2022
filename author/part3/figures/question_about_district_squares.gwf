@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GWF version="2.0">
+    <staticSector>
+        <node type="node/const/perm/super_group" idtf="площадь" shapeColor="0" id="93893070915600" parent="93893065590656" left="0" top="0" right="58.0781" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="262" y="657" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/perm/relation" idtf="" shapeColor="0" id="93893075930544" parent="93893065590656" x="257" y="567" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/perm/group" idtf="" shapeColor="0" id="93893063620816" parent="93893065590656" x="166" y="608" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/perm/group" idtf="" shapeColor="0" id="93893064039056" parent="93893065590656" x="347" y="606" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/group" idtf="количественное отношение" shapeColor="0" id="93893073939776" parent="93893065590656" left="0" top="0" right="170.813" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="331" y="566" haveBus="false" idtf_pos="2">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/perm/general" idtf="_область_y" shapeColor="0" id="93893067249888" parent="93893065590656" left="0" top="0" right="74.3906" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="349.423" y="671.5" haveBus="false" idtf_pos="1">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/perm/general" idtf="_область_x" shapeColor="0" id="93893073770288" parent="93893065590656" left="0" top="0" right="75.125" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="168.607" y="672.872" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893075494880" parent="93893065590656" id_b="93893070915600" id_e="93893063620816" b_x="262" b_y="657" e_x="166" e_y="608" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893076307200" parent="93893065590656" id_b="93893070915600" id_e="93893064039056" b_x="262" b_y="657" e_x="347" e_y="606" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893075190592" parent="93893065590656" id_b="93893075930544" id_e="93893077742672" b_x="257" b_y="567" e_x="82" e_y="43" dotBBalance="0" dotEBalance="0.506796">
+            <points/>
+        </pair>
+        <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893064935504" parent="93893065590656" id_b="93893063620816" id_e="93893073770288" b_x="166" b_y="608" e_x="168.607" e_y="672.872" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893077831776" parent="93893065590656" id_b="93893064039056" id_e="93893067249888" b_x="347" b_y="606" e_x="349.423" e_y="671.5" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/-/-/-/noorient" idtf="" shapeColor="0" id="93893077742672" parent="93893065590656" id_b="93893063620816" id_e="93893064039056" b_x="166" b_y="608" e_x="347" e_y="606" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893070688688" parent="93893065590656" id_b="93893073939776" id_e="93893075930544" b_x="331" b_y="566" e_x="257" e_y="567" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <contour type="contour/const/perm" idtf="" shapeColor="0" id="93893065590656" parent="93893070051264">
+            <points>
+                <point x="142.423" y="540.5"/>
+                <point x="372.423" y="539.5"/>
+                <point x="373.423" y="712.5"/>
+                <point x="144.423" y="713.5"/>
+            </points>
+        </contour>
+        <node type="node/var/perm/general" idtf="_область_y" shapeColor="0" id="93893076277376" parent="93893060073040" left="0" top="0" right="74.3906" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="339.5" y="443.5" haveBus="false" idtf_pos="1">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/perm/general" idtf="_область_x" shapeColor="0" id="93893072543728" parent="93893060073040" left="0" top="0" right="75.125" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="243.423" y="465.5" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/group" idtf="область" shapeColor="0" id="93893064788752" parent="93893060073040" left="0" top="0" right="55.625" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="288.423" y="389.5" haveBus="false" idtf_pos="4">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893075443408" parent="93893060073040" id_b="93893064788752" id_e="93893076277376" b_x="288.423" b_y="389.5" e_x="339.5" e_y="443.5" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893065595216" parent="93893060073040" id_b="93893064788752" id_e="93893072543728" b_x="288.423" b_y="389.5" e_x="243.423" e_y="465.5" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <contour type="contour/const/perm" idtf="" shapeColor="0" id="93893060073040" parent="93893070051264">
+            <points>
+                <point x="208.423" y="497.5"/>
+                <point x="206.423" y="370.5"/>
+                <point x="362.423" y="369.5"/>
+                <point x="362.423" y="496.5"/>
+            </points>
+        </contour>
+        <node type="node/const/perm/group" idtf="действие. площадь какого объекта &#13;&#10;местности больше" shapeColor="0" id="93893065336272" parent="93893070051264" left="0" top="0" right="213.313" bottom="38" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="398.923" y="323" haveBus="false" idtf_pos="1">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/group" idtf="действие. поиск ответа на вопрос, требующий раскрытия &#13;&#10;в ответе качественного отношения основного знака" shapeColor="0" id="93893077430096" parent="93893070051264" left="0" top="0" right="354.766" bottom="38" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="538.423" y="287.5" haveBus="false" idtf_pos="4">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/general" idtf="Брестская область" shapeColor="0" id="93893064507216" parent="93893070051264" left="0" top="0" right="120.297" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="563.5" y="517.5" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/general" idtf="Минская область" shapeColor="0" id="93893070091056" parent="93893070051264" left="0" top="0" right="110.047" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="565.423" y="456.5" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/struct" idtf="Действие. Территория какой административной &#13;&#10;области больше: Минской или Брестской" shapeColor="0" id="93893077723712" parent="93893070051264" left="0" top="0" right="299.984" bottom="38" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="468.423" y="328.5" haveBus="true" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/role" idtf="1'" shapeColor="0" id="93893076078000" parent="93893070051264" left="0" top="0" right="19.1094" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="511.423" y="411" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/temp/general" idtf="Петр Петров" shapeColor="0" id="93893075910384" parent="93893070051264" left="0" top="0" right="88.1719" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="567.423" y="583.5" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/role" idtf="2'" shapeColor="0" id="93893069597984" parent="93893070051264" left="0" top="0" right="19.1094" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="510.5" y="478.5" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/relation" idtf="целевая ситуация*" shapeColor="0" id="93893076658032" parent="93893070051264" left="0" top="0" right="117.875" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="419.607" y="733.872" haveBus="false" idtf_pos="1">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/group" idtf="действие" shapeColor="0" id="93893064037328" parent="93893070051264" left="0" top="0" right="62.0781" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="578.423" y="311.5" haveBus="false" idtf_pos="5">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/relation" idtf="начальная ситуация*" shapeColor="0" id="93893062593648" parent="93893070051264" left="0" top="0" right="133.734" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="419.423" y="504.5" haveBus="false" idtf_pos="1">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/role" idtf="субъект'" shapeColor="0" id="93893064572928" parent="93893070051264" left="0" top="0" right="59.3281" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="511.423" y="653" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893072547088" parent="93893070051264" id_b="93893069597984" id_e="93893064763392" b_x="510.5" b_y="478.5" e_x="81" e_y="36" dotBBalance="0" dotEBalance="0.483813">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893073109904" parent="93893070051264" id_b="93893076078000" id_e="93893064764288" b_x="511.423" b_y="411" e_x="81" e_y="36" dotBBalance="0" dotEBalance="0.503124">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893064764288" parent="93893070051264" id_b="93893076076624" id_e="93893070091056" b_x="81" b_y="36" e_x="565.423" e_y="456.5" dotBBalance="0.288692" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="93893062644576" parent="93893070051264" id_b="93893076076624" id_e="93893060073040" b_x="81" b_y="36" e_x="284.423" e_y="433.5" dotBBalance="0.227811" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893062514176" parent="93893070051264" id_b="93893076658032" id_e="93893076965536" b_x="419.607" b_y="733.872" e_x="81" e_y="36" dotBBalance="0" dotEBalance="0.533703">
+            <points/>
+        </pair>
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="93893076965536" parent="93893070051264" id_b="93893076076624" id_e="93893065590656" b_x="81" b_y="36" e_x="257.923" e_y="626.5" dotBBalance="0.695544" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893074169488" parent="93893070051264" id_b="93893064037328" id_e="93893077723712" b_x="578.423" b_y="311.5" e_x="468.423" e_y="328.5" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893064763392" parent="93893070051264" id_b="93893076076624" id_e="93893064507216" b_x="81" b_y="36" e_x="563.5" e_y="517.5" dotBBalance="0.436093" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893075699584" parent="93893070051264" id_b="93893065336272" id_e="93893077723712" b_x="398.923" b_y="323" e_x="468.423" e_y="328.5" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893073110896" parent="93893070051264" id_b="93893076076624" id_e="93893075910384" b_x="81" b_y="36" e_x="567.423" e_y="583.5" dotBBalance="0.59802" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893072546144" parent="93893070051264" id_b="93893062593648" id_e="93893062644576" b_x="419.423" b_y="504.5" e_x="81" e_y="36" dotBBalance="0" dotEBalance="0.468242">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893076584576" parent="93893070051264" id_b="93893064572928" id_e="93893073110896" b_x="511.423" b_y="653" e_x="81" e_y="36" dotBBalance="0" dotEBalance="0.458253">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893075444432" parent="93893070051264" id_b="93893077430096" id_e="93893077723712" b_x="538.423" b_y="287.5" e_x="468.423" e_y="328.5" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <bus type="" idtf="" shapeColor="0" id="93893076076624" parent="93893070051264" owner="93893077723712" b_x="468.491" b_y="338" e_x="471.423" e_y="748.5">
+            <points/>
+        </bus>
+        <contour type="contour/const/perm" idtf="Вопрос. Территория какой административной области больше: Минской или Брестской" shapeColor="0" id="93893070051264" parent="0" left="0" top="0" right="526.922" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" idtf_pos_x="-266" idtf_pos_y="268">
+            <points>
+                <point x="114.423" y="778.5"/>
+                <point x="112.423" y="261.5"/>
+                <point x="769.423" y="262.5"/>
+                <point x="772.423" y="781.5"/>
+            </points>
+        </contour>
+        <node type="node/const/perm/struct" idtf="Действие. Территория какой административной &#13;&#10;области больше: Минской или Брестской" shapeColor="0" id="93893063763616" parent="0" left="0" top="0" right="299.984" bottom="38" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="434.423" y="163.5" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/relation" idtf="задача*" shapeColor="0" id="93893064644784" parent="0" left="0" top="0" right="52.1406" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="332.423" y="216.5" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/group" idtf="вопрос" shapeColor="0" id="93893076595680" parent="0" left="0" top="0" right="46.1094" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="266.423" y="170.5" haveBus="false" idtf_pos="1">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893076585632" parent="0" id_b="93893076595680" id_e="93893070051264" b_x="266.423" b_y="170.5" e_x="442.423" e_y="521.5" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="93893069780208" parent="0" id_b="93893063763616" id_e="93893070051264" b_x="434.423" b_y="163.5" e_x="442.423" e_y="521.5" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893077839504" parent="0" id_b="93893064644784" id_e="93893069780208" b_x="332.423" b_y="216.5" e_x="81" e_y="36" dotBBalance="0" dotEBalance="0.494314">
+            <points/>
+        </pair>
+    </staticSector>
+</GWF>
