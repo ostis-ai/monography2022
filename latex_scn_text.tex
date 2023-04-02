@@ -1,6 +1,76 @@
 \section*{Правила оформления scn-текста}
 \markboth{Правила оформления scn-текста}{Правила оформления scn-текста}
 
+Унификация спецификации глав и параграфов.
+
+\begin{SCn}
+	\scnidtf{синонимичный заголовок при необходимости}
+	
+	\bigskip
+	
+	\scntext{эпиграф}{текст эпиграфа}
+	
+	\bigskip
+	
+	\begin{scnrelfromlist}{автор}
+		\scnitem{Автор1}
+		\scnitem{Автор2}
+	\end{scnrelfromlist}
+	
+	\bigskip
+	
+	\scntext{аннотация}{текст аннотации}
+	
+	\bigskip
+	
+	\begin{scnrelfromlist}{подраздел}
+		\scnitem{\ref{chap_intro}~\nameref{chap_intro}}
+		\scnitem{\ref{chapter_new_generation_systems}~\nameref{chapter_new_generation_systems}}
+	\end{scnrelfromlist}
+
+	\bigskip
+
+	\begin{scnrelfromlist}{ключевой знак}
+		\scnitem{ключевой знак 1}
+		\scnitem{ключевой знак 2}
+	\end{scnrelfromlist}
+	
+	\bigskip
+	
+	\begin{scnrelfromlist}{ключевой понятие}
+		\scnitem{ключевое понятие 1}
+		\scnitem{ключевое понятие 2}
+	\end{scnrelfromlist}
+	
+	\bigskip
+	
+	\begin{scnrelfromlist}{ключевое отношение}
+		\scnitem{ключевое отношение 1}
+		\scnitem{ключевое отношение 2}
+	\end{scnrelfromlist}
+	
+	\bigskip
+	
+	\begin{scnrelfromlist}{ключевой параметр}
+		\scnitem{ключевой параметр 1}
+		\scnitem{ключевой параметр 2}
+	\end{scnrelfromlist}
+	
+	\bigskip
+	
+	\begin{scnrelfromlist}{ключевое знание}
+		\scnitem{ключевое знание 1}
+		\scnitem{ключевое знание 2}
+	\end{scnrelfromlist}
+
+	\bigskip
+	
+	\begin{scnrelfromlist}{библиографическая ссылка}
+		\scnitem{\scncite{Standart2021}}
+	\end{scnrelfromlist}
+	
+\end{SCn}
+
 Для оформления списков внутри естественно-языкового файла, находящегося в рамках формального sc.n-текста, необходимо использовать окружение scnitemize:
 \begin{lstlisting}              
 \begin{scnitemize}
