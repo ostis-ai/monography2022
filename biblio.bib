@@ -257,7 +257,7 @@
 	doi = {10.1613/jair.4017},
 	url = {https://doi.org/10.1613/jair.4017},
 	year = {2013},
-	month = {Nov.},
+	month = Nov,
 	publisher = {{AI} Access Foundation},
 	volume = {48},
 	pages = {671--715},
@@ -268,7 +268,7 @@
 	annotation = {We present NaturalOWL, a natural language generation system that produces texts describing individuals or classes of OWL ontologies. Unlike simpler OWL verbalizers, which typically express a single axiom at a time in controlled, often not entirely fluent natural language primarily for the benefit of domain experts, we aim to generate fluent and coherent multi-sentence texts for end-users. With a system like NaturalOWL, one can publish information in OWL on the Web, along with automatically produced corresponding texts in multiple languages, making the information accessible not only to computer programs and domain experts, but also end-users. We discuss the processing stages of NaturalOWL, the optional domain-dependent linguistic resources that the system can use at each stage, and why they are useful. We also present trials showing that when the domain-dependent llinguistic resources are available, NaturalOWL produces significantly better texts compared to a simpler verbalizer, and that the resources can be created with relatively light effort.}
 }
 
-@inproceedings{ann_ostis2018,
+@inproceedings{Golovko2018,
 	title        = {Integration of artificial neural networks and knowledge bases},
 	author       = {V. A. Golovko and V. V. Golenkov and V. P. Ivashenko and V. V. Taberko and D. S. Ivaniuk and A. A. Kroshchanka and M. V. Kovalev},
 	year         = 2018,
@@ -278,7 +278,31 @@
 	pages        = {133--145},
 	language     = {english},
 	editor       = {V. Golenkov},
-	shorthand    = {Golovko V..IntegANNKB-2018art}
+	shorthand    = {Golovko V..Integ oANNaKB-2018art},
+	annotation   = {Integration of artificial neural networks and knowledge bases}
+}
+
+@article{Glorot2010,
+author = {X. Glorot and Y. Bengio},
+year = {2010},
+month = {01},
+pages = {249-256},
+title = {Understanding the difficulty of training deep feedforward neural networks},
+volume = {9},
+journal = {Journal of Machine Learning Research - Proceedings Track},
+shorthand = {Glorot X..Under tDoTDF-2010art},
+annotation = {The text discusses the successful training of deep neural networks with new initialization or training mechanisms since 2006, showing the superiority of deeper architectures. The author's objective is to understand why standard gradient descent from random initialization performs poorly with deep neural networks and to design better algorithms in the future. The text examines the influence of non-linear activation functions, finding that the logistic sigmoid activation is unsuitable for deep networks with random initialization due to saturation. The text proposes a new non-linearity that saturates less and a new initialization scheme that brings faster convergence. The author also studies how activations and gradients vary across layers and during training, suggesting that training may be more difficult when the singular values of the Jacobian associated with each layer are far from 1} 
+}
+
+@misc{He2015,
+      title={Delving Deep into Rectifiers: Surpassing Human-Level Performance on ImageNet Classification}, 
+      author={Kaiming He and Xiangyu Zhang and Shaoqing Ren and Jian Sun},
+      year={2015},
+      eprint={1502.01852},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      shorthand = {He K..DelviDiRSHP-2015art},
+      annotation = {This text discusses the use of rectified activation units, or rectifiers, in neural networks for image classification. The authors propose a Parametric Rectified Linear Unit (PReLU) that generalizes the traditional rectified unit and improves model fitting without added computational cost or overfitting risk. They also derive a robust initialization method that considers rectifier nonlinearities, enabling the training of extremely deep rectified models directly from scratch. The authors achieve a 4.94\% top-5 test error on the ImageNet 2012 classification dataset with their PReLU networks, a 26\% relative improvement over the previous ILSVRC 2014 winner, and the first to surpass human-level performance on this visual recognition challenge.} 
 }
 
 @article{Ansari2018,
@@ -468,6 +492,37 @@
 	shorthand    = {Ballinger C.tTeradSS-2009art}
 }
 
+@Article{OntologySummit2020,
+	author   = {К. Баклавски and М. Беннет and Г. Берг-Кросс and Т. Шнайдер and Р. Шарма and Д. Сингер},
+	journal  = {Онтология проектирования},
+	language = {russian},
+	title    = {Онтологический Саммит 2020. Коммюнике: Графы знаний},
+	year     = {2020},
+	note     = {Перевод с англ. Д. Боргест},
+	number   = {4 (38)},
+	pages    = {540-555},
+	volume   = {10},
+	doi      = {10.18287/2223-9537-2020-10-4-540-555.},
+	keywords = {граф знаний, архитектура графа знаний, онтология, семантика, семантическиесети},
+	shorthand= {Баклавски К..ОнтолС2020.К:ГЗ-2020ст},
+}
+
+@inproceedings{Bantsevich2022,
+	title        = {Metasystem of the OSTIS Technology and the Standard of the OSTIS Technology},
+	author       = {K. Bantsevich},
+	year         = 2022,
+	booktitle    = {Open semantic technologies for intelligent systems},
+	publisher    = {BSUIR, Minsk},
+	series       = {Iss. 6},
+	pages        = {357--368},
+	editor       = {V. Golenkov},
+	language     = {english},
+	hyphenation  = {english},
+	shorthand    = {Bantsevich K.A.METASotOTatSotOT-2022art},
+	annotation   = {In the article, an approach to automating the processes of creation, development, and application of standards based on the OSTIS Technology is proposed. The general problems related to the development and usage of modern standards in various fields are considered. Standardization of intelligent computer systems is proposed, as well as standardization of methods and means of their design within the proposed approach.}
+}
+
+
 @article{Barinov2021,
 	title        = {Формирование стратегии развития Комитета по искусственному интеллекту в Научно-образовательном центре <<Инженерия будущего>>},
 	author       = {И.И. Баринов and Н.М. Боргест and С.Ю. Боровик and О.Н. Граничин and С.П. Грачев and Ю.В. Громыко, Р.И. Доронин and С.Н. Зинченко and А.Б. Иванов and В.М. Кизеев and Р.И. Кутлахметов and В.Б. Ларюхин and С.П. Левашкин and А.Н. Мочалкин and М.Г. Пантелеев and С.Б. Попов and Е.М. Севастьянов and П.О. Скобелев and А.Г. Чернявский and В.В. Шишкин and С.И. Шляев},
@@ -588,6 +643,16 @@
 	pages        = {3--14}
 }
 
+@Book{Belkin1982,
+	author    = {Е. Л. Белкин},
+	language  = {russian},
+	pages     = {107},
+	publisher = {Ярославль: Верхне-Волжское книжное издательство},
+	title     = {Дидактические основы управления познавательной деятельностью в условиях применениятехнических средств обучения},
+	year      = {1982},
+	shorthand = {Белкин Е.Л.ДидакОУПДвУ..-1982кн},
+}
+
 @article{Benavides2018,
 	title        = {{An ontology-based approach to knowledge representation for computer-aided control system design}},
 	author       = {Carmen Benavides and Isa{\'{\i}}as Garc{\'{\i}}a and H{\'{e}}ctor Alaiz and Luis Quesada},
@@ -631,7 +696,7 @@
 	annotation   = {В работе говорится о важности повторного использования онтологий и методов решения задач как компонентов систем, основанных на знаниях.\par Приводится обзор сущствующих определений понятия онтология и актуальных подходов к их разработке на момент публикации работы. Рассматриваются методологии построения онтологий, проекты по их разработке, а также известные приложения, использующие онтологии. Делается попытка описать архитектуру метода решения задач (МРЗ), отмечается взаимосвзяь МРЗ с классом задач и предметной областью. Рассматриваются основные существующие на тот момент МРЗ, однако не делается попытки их унификации или хотя бы классификации. Кратко рассматриваются подходы к разработке библиотек МРЗ. Делается вывод о необходимости интеграции МРЗ и онтологий, специфицирующих знания предметной области.}
 }
 
-@article{Berestneva2022,
+@article{Berestneva,
   	doi          = {10.18287/2223-9537-2022-12-2-218-230},
   	url          = {https://doi.org/10.18287/2223-9537-2022-12-2-218-230},
   	year         = {2022},
@@ -696,10 +761,10 @@
 @electronic{BFO,
 	title        = {Basic Formal Ontology (BFO)},
 	year         = 2021,
-	month        = {Apr},
+	month        = Apr,
 	url          = {https://github.com/BFO-ontology/BFO},
 	language     = {english},
-	shorthand    = {BasicFormalOntology-el}
+	shorthand    = {BasicFormalOntology-el},
 	annotation   = {The Basic Formal Ontology (BFO) is a small, upper-level ontology that is designed for use in supporting information retrieval, analysis and integration in scientific and other domains.}
 }
 
@@ -711,6 +776,15 @@
 	shorthand    = {Bhumij G..aOverv oWStFoRTC-2018art},
 	annotation   = {As the development and implementation of HTML 5 (Hypertext Markup Language 5), it has opened a new range of possibilities for real-time communication between client and server. Currently, vastly used methods for asynchronous realtime communication are HTTP Polling and HTTP Long Polling. But a new protocol is recently introduced called Web sockets(WS) and Web sockets secure(WSS). Web Sockets allow full-duplex communication in HTML5 compliant browser over a single socket. This paper will cover the basic overview of
 	Web sockets, and see if it is a better option than its competitors.}
+}
+
+@phdthesis{Black1993,
+	title        = {An approach to computational situation semantics},
+	author       = {Black, AW},
+	year         = {1993},
+	school       = {PhD thesis, Department of Artificial Intelligence, University of Edinburgh~…},
+	shorthand    = {Black A.aAppro tCSS-1993ds},
+	annotation   = {***}
 }
 
 @inproceedings{Blahser2021,
@@ -843,6 +917,26 @@
 	annotation   = {В работе рассматривается семантическая классификация действий для вывода знаний.}
 }
 
+@article{Bradley2022,
+	title        = {An enriched category theory of language: from syntax to semantics},
+	author       = {Bradley, Tai-Danae and Terilla, John and Vlassopoulos, Yiannis},
+	journal      = {La Matematica},
+	pages        = {1--30},
+	year         = {2022},
+	publisher    = {Springer},
+	shorthand    = {Bradley T..aEnricCToLfStS-2022art},
+	annotation   = {***}
+}
+
+@book{Brooks2021,
+	title        = {Мифический человеко-месяц, или Как создаются программные системы},
+	author       = {Фредерик, Брукс},
+	year         = {2020},
+	publisher    = {Питер},
+	shorthand    = {Брукс Ф.МифичЧМиКСПС-2020кн},
+	annotation   = {***}
+}
+
 @misc{Brown2020,
 	doi = {10.48550/ARXIV.2005.14165},
 	url = {https://arxiv.org/abs/2005.14165},
@@ -964,6 +1058,17 @@
 	annotation   = {Существенно расширенная версия работы \scncite{Chandrasekaran1998}. В работе говорится о важности повторного использования онтологий и методов решения задач. В общих чертах описываются необходимые составляющие метода решения задач, такие как цель, состояние процесса решения задачи,  факты из предметной области, знания о том, как решать задачу. Процесс решения задачи, как и во многих других работах, рассматривается как декомпозиция на более простые подзадачи до тех пор, пока не будет существовать способ решения таких подзадач.}
 }
 
+@inproceedings{Chaparro2014,
+	title        = {On the impact of refactoring operations on code quality metrics},
+	author       = {Chaparro, Oscar and Bavota, Gabriele and Marcus, Andrian and Di Penta, Massimiliano},
+	booktitle    = {2014 IEEE International Conference on Software Maintenance and Evolution},
+	pages        = {456--460},
+	year         = {2014},
+	organization = {IEEE},
+	shorthand    = {Chaparro O..otImpac oROoCQM-2014art},
+	annotation   = {Refactorings are behavior-preserving source code transformations. While tool support exists for (semi) automatically identifying refactoring solutions, applying or not a recommended refactoring is usually up to the software developers, who have to assess the impact that the transformation will have on their system. Evaluating the pros (e.g., the bad smell removal) and cons (e.g., side effects of the change) of a refactoring is far from trivial. We present RIPE (Refactoring Impact Prediction), a technique that estimates the impact of refactoring operations on source code quality metrics. RIPE supports 12 refactoring operations and 11 metrics and it can be used together with any refactoring recommendation tool. RIPE was used to estimate the impact on 8,103 metric values, for 504 refactorings from 15 open source systems. 38\% of the estimates are correct, whereas the median deviation of the estimates from the actual values is 5\% (with a 31\% average).}
+}
+
 @inproceedings{Chatterjee2022,
 	title        = {Non-Blocking Dynamic Unbounded Graphs with Worst-Case Amortized Bounds},
 	author       = {Chatterjee,  Bapi and Peri,  Sathya and Sa,  Muktikanta and Manogna,  Komma},
@@ -1042,7 +1147,7 @@
 	title        = {STRAM: Measuring the Trustworthiness of Computer-Based Systems},
 	author       = {Cho, Jin-Hee and Xu, Shouhuai and Hurley, Patrick M. and Mackay, Matthew and Benjamin, Trevor and Beaumont, Mark},
 	year         = 2019,
-	month        = {feb},
+	month        = Feb,
 	journal      = {ACM Comput. Surv.},
 	publisher    = {Association for Computing Machinery},
 	address      = {New York, NY, USA},
@@ -1151,6 +1256,32 @@
 	language     = {russian},
 	shorthand    = {Давыденко.И.Т..ТехнологияКПБЗнОУСС-2013ст},
 	annotation   = {В работе рассматривается состав семантической технологии проектирования баз знаний интеллектуальных систем. Данная технология ориентирована на семантическое представление знаний, расширение контингента разработчиков баз знаний и сокращение сроков проектирования.}
+}
+
+@inproceedings{Davydenko2013b,
+	title        = {Разработка интеллектуальных обучающих систем на основе технологии OSTIS},
+	author       = {Давыденко И.Т.},
+	year         = 2013,
+	booktitle    = {Дистанционное обучение – образовательная среда XXI века: материалы VIII международной научно-методической конференции. (Минск, 5–6 декабря 2013 года)},
+	publisher    = {Минск},
+	pages        = {196--197},
+	organization = {БГУИР},
+	language     = {russian},
+	shorthand    = {Давыденко И.Т.РазраИОСнОТ..-2013ст},
+	annotation   = {В работе рассматривается принципы разработки интеллектуальных обучающих систем на основе открытой семантической технологии проектирования интеллектуальных систем OSTIS (Open Semantic Technology for intelligent systems), использующей в качестве способа кодирования информации семантическую сеть с базовой теоретико-множественной интерпретацией. Основными принципами данного подхода являются поэтапное эволюционное проектирование баз знаний на основе быстрого прототипирования, модульное проектирование на основе библиотек типовых многократно используемых компонентов, ориентация на семантическое представление знаний.}
+}
+
+@inproceedings{Davydenko2015,
+	title        = {Семантическая структуризация базы знаний интеллектуальной справочной системы по геометрии},
+	author       = {И. Т. Давыденко and Е. А. Дюбина},
+	year         = 2015,
+	booktitle    = {Дистанционное обучение – образовательная среда XXI века : материалы IX международной научно-методической конференции (Минск, 3-4 декабря 2015 года)},
+	publisher    = {Минск},
+	pages        = {153--154},
+	organization = {БГУИР},
+	language     = {russian},
+	shorthand    = {Давыденко И.Т..СеманСБЗИ..-2015ст},
+	annotation   = {В статье рассматривается семантический подход к структурированию базы знаний интеллектуальных систем на примере интеллектуальной системы по геометрии.}
 }
 
 @inproceedings{Davydenko2016,
@@ -1285,6 +1416,16 @@
 	number       = {},
 	pages        = {1--5},
 	doi          = {10.1109/i-PACT52855.2021.9697005}
+}
+
+@book{Deikstra1978,
+	author       = {Dijkstra E.},
+	publisher    = {M.: Mir},
+	title        = {Programming Discipline},
+	year         = {1978},
+	pages        = {277},
+	shorthand    = {Dijkstra E.ProgrD-1978bk},
+	annotation   = {***}
 }
 
 @article{Degottex2013mixed,
@@ -1463,7 +1604,8 @@
 	author       = {Duchi, J. and Hazan, E. and Singer, Y.},
 	year         = 2011,
 	journal      = {Journal of Machine Learning Research},
-	shorthand    = {Duchi J..AdaptSMfOLaSO-2011art}
+	shorthand    = {Duchi J..AdaptSMfOL-2011art},
+	annotation   = {The paper presents a new family of subgradient methods that incorporate knowledge of the data's geometry observed in earlier iterations for more informative gradient-based learning. The authors describe an apparatus for adaptively modifying the proximal function and give several efficient algorithms for empirical risk minimization problems with common regularization functions and domain constraints. They show through experimental studies that the adaptive subgradient methods outperform state-of-the-art, non-adaptive subgradient algorithms. The text concludes that their paradigm allows for finding predictive but rarely seen features and simplifies setting a learning rate, resulting in regret guarantees as good as the best proximal function chosen in hindsight}
 }
 
 @book{Dutta1993,
@@ -1475,6 +1617,19 @@
 	language     = {english},
 	shorthand    = {Dutta S.KnowlPaAAI-1993bk},
 	annotation   = {В данной книге представлены обсуждения бизнес потенциала обработки знаний и рассматриваются аспекты прикладной технологии искусственого интеллекта.}
+}
+
+@article{Eden2007,
+	title        = {Problems in the ontology of computer programs},
+	author       = {Eden, Amnon H and Turner, Raymond},
+	journal      = {Applied Ontology},
+	volume       = {2},
+	number       = {1},
+	pages        = {13--36},
+	year         = {2007},
+	publisher    = {IOS Press},
+	shorthand    = {Eden A..Probl itOoCP-2007art},
+	annotation   = {As a first step in the larger project of charting the ontology of computer programs, we pose three central questions: (1) Can programs, hardware, and metaprograms be organized into a meaningful taxonomy? (2) To what ontology are computer programs committed? (3) What explains the proliferation of programming languages and how do they come about? Taking the complementary perspectives software engineering and mathematical logic, we take inventory of programs and related objects and conclude that the notions of abstraction and concretization take a central role in this investigation.}
 }
 
 @book{Efimenko2011,
@@ -1836,6 +1991,21 @@
 	annotation   = {***}
 }
 
+@article{Flotyski2017,
+	title        = {Ontology-Based Representation and Modelling of Synthetic 3D Content: A State-of-the-Art Review},
+	author       = {J. Floty{\'{n}}ski and K. Walczak},
+	doi          = {10.1111/cgf.13083},
+	year         = 2017,
+	journal      = {Computer Graphics Forum},
+	publisher    = {Wiley},
+	pages        = {329--353},
+	volume       = {36},
+	number       = {8},
+	url          = {https://doi.org/10.4324/9781315210551-7},
+	language     = {english},
+	shorthand    = {Flotyski J..OntolBRaMoS3DCaSotAR-2017art}
+}
+
 @incollection{Fritzson2014,
 	title        = {Modelica Library Overview},
 	author       = {Peter Fritzson},
@@ -1929,14 +2099,16 @@
 	annotation = {The WebNLG challenge consists in mapping sets of RDF triples to text. It provides a common benchmark on which to train, evaluate and compare “microplanners”, i.e. generation systems that verbalise a given content by making a range of complex interacting choices including referring expression generation, aggregation, lexicalisation, surface realisation and sentence segmentation. In this paper, we introduce the microplanning task, describe data preparation, introduce our evaluation methodology, analyse participant results and provide a brief description of the participating systems.}
 }
 
-@article{gastelvecchi2016,
+@article{Castelvecchi2016,
 	title        = {Can we open the black box of AI?},
 	author       = {Davide Castelvecchi},
-	year         = {Oct 2016.},
+	month		 = Oct,
+	year         = 2016,
 	journal      = {Nature News},
-	volume       = 538,
-	number       = 7623,
-	shorthand    = {Castelvecchi.В.AIBlackBox-2016}
+	volume       = {538},
+	number       = {7623},
+	shorthand    = {Castelvecchi В.CanWOtBB-2016art},
+	annotation   = {Machine learning is becoming ubiquitous in basic research as well as in industry. But for scientists to trust it, they first need to understand what the machines are doing}
 }
 
 @article{Gatt2017,
@@ -2005,7 +2177,7 @@
 	number       = 1,
 	pages        = {15--21},
 	language     = {russian},
-	shorthand    = {Гаврилова.Т.А..ВизуальныеМРЗ-2008ст},
+	shorthand    = {Гаврилова Т.А..ВизуаМРсЗ:ПО-2008ст},
 	annotation   = {Работа содержит описание визуальных методов работы со знаниями: попытка обзора.}
 }
 
@@ -2020,6 +2192,19 @@
 	shorthand    = {Гаврилова.Т.А..ОценкаКЭООАГ-2009ст},
 	annotation   = {В работе рассматривается оценка когнитивной эргономичности онтологии на основе анализа графа.}
 }
+
+@InProceedings{Gavrilova2009b,
+	author    = {T. Gavrilova and N. Goulyakina},
+	booktitle = {Proceeding of rhe 11th International Workhop on Computer Science and Information Technologies SCIT-2009},
+	title     = {Visual Atlases as a Research Framework},
+	year      = {2009},
+	pages     = {70-75},
+	publisher = {Crete, Greece},
+	volume    = {1},
+	language  = {english},
+	shorthand = {Gavrilova T..VisuaAaaRF-2009art},
+}
+
 
 @book{Gavrilova2016,
 	title        = {Инженерия знаний: модели и методы : учебник},
@@ -2260,6 +2445,19 @@
 	annotation   = {Рассмотрены графодинамические ассоциативные модели представления и обработки знаний в системах искусственного интеллекта. В основе этих моделей лежит, во-первых, представление всевозможных знаний в виде однородных семантических сетей, имеющих базовую теоретико-множественную интерпретацию, и, во-вторых, трактовка обработки знаний как графодинамического процесса, т.е. как процесса изменения конфигурации семантических сетей.}
 }
 
+@book{Golenkov2001b,
+	title        = {Интеллектуальные обучающие системы и виртуальные учебные организации: Монография},
+	author       = {В.В. Голенков and В.Б. Тарасов and О.Е. Елисеева and Н.А. Гулякина and Т.Л. Лемешева and Н.В. Беззубенок and В.П. Ивашенко and Т.А. Гаврилова and Е.И. Васильева and В.В. Емельянов and Р.Е. Сердюков and С.И. Акулич and О.А. Лубневский and Ю.Ф. Тельнов},
+	year         = 2001,
+	publisher    = {БГУИР},
+	address      = {Мн.},
+	numpages     = 488,
+	editor		 = {В.В. Голенков and В.Б. Тарасов},
+	language     = {russian},
+	shorthand    = {Голенков В.В..ИнтелОСиВУО-2001кн},
+	annotation   = {Рассмотрены графодинамические ассоциативные модели представления и обработки знаний в системах искусственного интеллекта. В основе этих моделей лежит, во-первых, представление всевозможных знаний в виде однородных семантических сетей, имеющих базовую теоретико-множественную интерпретацию, и, во-вторых, трактовка обработки знаний как графодинамического процесса, т.е. как процесса изменения конфигурации семантических сетей.}
+}
+
 @article{Golenkov2004,
 	title        = {Графодинамические ассоциативные модели и средства параллельной обработки информации в системах искусственного интеллекта},
 	author       = {В. В. Голенков and Н. А. Гулякина},
@@ -2384,6 +2582,23 @@
 	language     = {russian},
 	shorthand    = {Голенков В.В..оОбучеИСкОСиР-2018ст},
 	annotation   = {Работа содержит описание обучения интеллектуальных систем и их средств разработки}
+}
+
+@inproceedings{Golenkov2018a,
+	title        = {The standardization of intelligent computer systems as a key challenge of the current stage of development of artificial intelligence
+	technologies},
+	author       = {V. Golenkov and N. Guliakina and Golovko V. and Eremeev V.},
+	year         = 2018,
+	booktitle    = {Open semantic technologies for intelligent systems},
+	publisher    = {BSUIR, Minsk},
+	series       = 4,
+	pages        = {73--88},
+	editor       = {V. Golenkov},
+	language     = {english},
+	hyphenation  = {english},
+	shorthand    = {Golenkov V.V..tStandOICSKCCS-2018ст},
+	annotation   = {This work is devoted to the consideration of the most important factor providing semantic compatibility of intelligent computer systems and their components – standardization of intelligent computer systems, as well as
+	standardization of methods and tools of their design.}
 }
 
 @article{Golenkov2018a,
@@ -2541,7 +2756,7 @@
 	numpages     = 263,
 	language     = {russian},
 	shorthand    = {Головко В.А..НейроТОД-2017кн},
-	annotation   = {Изложены математические и алгоритмические аспекты функционирования искусственных нейронных сетей}
+	annotation   = {Изложены математические и алгоритмические аспекты функционирования искусственных нейронных сетей. Детально проанализированы как конвенциальные модели нейтронных сетей, так и глубокие нейтронные сети. Рассмотрены парадигмы обучения нейтронных сетей. Большое внимание уделено применению нейтронных сетей для решения различного рода задач}
 }
 
 @inproceedings{Golovko2019,
@@ -2553,11 +2768,10 @@
 	series       = {Вып. 3},
 	pages        = {91--102},
 	language     = {russian},
-	shorthand    = {Головко.В.А..ИнтеграцияИНСБЗ-2019ст},
-	annotation   = {В работе описываются принципы построения систем принятия решений на основе интеграции нейросетевых и семантических моделей.}
+	shorthand    = {Головко В.А..ПринцПСПР-2019ст},
+	annotation   = {В работе описываются принципы построения систем принятия решений на основе интеграции нейросетевых и семантических моделей}
 }
 
-$91$
 @inproceedings{Gomez1996,
 	title        = {Towards a Method to Conceptualize Domain Ontologies},
 	author       = {A. Gomez-Perez and M. Fernandez-Lopez and A. de Vicente},
@@ -2587,13 +2801,13 @@ $91$
 @book{Goodfellow2017,
 	title        = {Глубокое обучение},
 	author       = {Гудфеллоу, Я. and Бенджио, И. and Курвилль, А.},
-	year         = 2017,
+	year         = {2017},
 	publisher    = {ДМК Пресс},
 	address      = {Москва\space},
-	isbn         = 9785970605547,
-	numpages     = 652,
+	isbn         = {9785970605547},
+	numpages     = {652},
 	language     = {russian},
-	shorthand    = {Гудфеллоу.Я..ГлубОбуч-2017кн},
+	shorthand    = {Гудфеллоу Я..ГлубоО-2017кн},
 	annotation   = {Рассмотрены основы дисциплин, необходимых для понимания глубокого обучения. Описываются различные приложения глубокого обучения, а также основные приемы глубокого обучения}
 }
 
@@ -2697,6 +2911,19 @@ $91$
 	language     = {russian},
 	shorthand    = {Гракова.Н.В..БазаЗИМППИС-2014ст},
 	annotation   = {Работа содержит описание базы знаний интеллектуальной Метасистемы поддержки проектирования интеллектуальных систем}
+}
+
+@inproceedings{Grakova2015,
+	title        = {Модель структуры описания курсового и дипломного проектирования, представленная на языке семантических сетей},
+	author       = {Н. В. Гракова and Д. И. Коновал and В. С. Семенов},
+	year         = 2015,
+	booktitle    = {Дистанционное обучение – образовательная среда XXI века : материалы IX международной научно-методической конференции (Минск, 3-4 декабря 2015 года)},
+	publisher    = {Минск},
+	pages        = {155--156},
+	organization = {БГУИР},
+	language     = {russian},
+	shorthand    = {Гракова Н.В..МоделСОКиДП..-2015ст},
+	annotation   = {В статье рассматривается модель организации управления курсовым и дипломным проектированием студентов вуза.}
 }
 
 @article{Gribova2011,
@@ -2928,7 +3155,7 @@ $91$
 	volume       = {46},
 	number       = {2},
 	year         = {2022},
-	month        = {mar},
+	month        = Mar,
 	pages        = {246--251},
 	language     = {english},
 	shorthand    = {Halavataya K..AdjusV3DRRUTD-2022art},
@@ -2941,7 +3168,7 @@ $91$
 	booktitle    = {Open semantic technologies for intelligent systems},
 	publisher    = {Minsk : BSUIR},
 	year         = {2022},
-	month        = {nov},
+	month        = Nov,
 	pages        = {251--260},
 	language     = {english},
 	shorthand    = {Halavataya K..3DRep oOiNGICS-2022art},
@@ -3125,7 +3352,7 @@ $91$
 	isbn         = 5845908906,
 	numpages     = 1104,
 	language     = {russian},
-	shorthand    = {Хайкин.С.НейрСети-2006кн},
+	shorthand    = {Хайкин С.НейроСПК-2006кн},
 	annotation   = {Рассмотрены основные парадигмы искусственных нейронных сетей. Дается строгое математическое обоснование всех нейросетевых парадигм, примеры множества практических задач}
 }
 
@@ -3212,7 +3439,7 @@ $91$
 	title        = {Communicating Sequential Processes},
 	author       = {Hoare, C. A. R.},
 	year         = 1983,
-	month        = {jan},
+	month        = Jan,
 	journal      = {Commun. ACM},
 	publisher    = {Association for Computing Machinery},
 	address      = {New York, NY, USA},
@@ -3400,7 +3627,6 @@ $91$
 	annotation   = {***}
 }
 
-$100$
 @article{Iqbal2013,
 	title        = {An analysis of ontology engineering methodologies : a lit. rev.},
 	author       = {R. Iqbal and A. Murad and A. Mustapha},
@@ -3422,6 +3648,13 @@ $100$
 	language     = {english},
 	shorthand    = {ISA88BC-1995эл},
 	annotation   = {Официальный сайт, описывающий ISA88.}
+}
+
+@misc{ISA88,
+	key             = {ISA-88},
+	title           = "{ISA-88} standard",
+	howpublished    = "\url{https://www.isa.org/standards-and-publications/isa-standards/isa-standards-committees/isa88/}",
+	note            = "(accessed 2022, October)"
 }
 
 @inproceedings{Iskra2019,
@@ -3678,7 +3911,7 @@ $100$
 	title = {Text-to-Text Pre-Training for Data-to-Text Tasks},
 	author = {Kale, Mihir and Rastogi, Abhinav},
 	booktitle = {Proceedings of the 13th International Conference on Natural Language Generation},
-	month = {Dec.},
+	month = Dec,
 	year = {2020},
 	address = {Dublin, Ireland},
 	publisher = {Association for Computational Linguistics},
@@ -3736,6 +3969,15 @@ $100$
 	language     = {english},
 	shorthand    = {Karray.M.N..FormalOIM-2012ст},
 	annotation   = {Быстрое развитие информационных и коммуникационных технологий привело к появлению множества систем и инструментов поддержки технического обслуживания, охватывающих все области обслуживания.}
+}
+
+@article{Kasyanov2003,
+	title        = {Графы в программировании: обработка, визуализация и применение},
+	author       = {Касьянов, Виктор Николаевич and Евстигнеев, Владимир Анатольевич},
+	year         = {2003},
+	publisher    = {БХВ-Петербург},
+	shorthand    = {Касьянов В.Н..Графы вПОВиП-2003кн},
+	annotation   = {***}
 }
 
 @inproceedings{Kawahara2009development,
@@ -3882,7 +4124,8 @@ $100$
 	year         = 2014,
 	url          = {https://arxiv.org/pdf/1412.6980.pdf},
 	language     = {english},
-	shorthand    = {Kingma.D.Adam-2014ст}
+	shorthand    = {Kingma D..Adam aMfSO-2014art},
+	annotation   = {The text introduces Adam, an algorithm for first-order gradient-based optimization of stochastic objective functions based on adaptive estimates of lower-order moments. Adam is computationally efficient, has low memory requirements, is invariant to diagonal rescaling of the gradients, and is suitable for problems that are large in terms of data and/or parameters. The algorithm is also appropriate for non-stationary objectives and problems with very noisy and/or sparse gradients. The hyperparameters require little tuning and have intuitive interpretations. The authors discuss connections to related algorithms, analyze the theoretical convergence properties of the algorithm, and provide a regret bound on the convergence rate that is comparable to the best-known results. Empirical results demonstrate that Adam works well in practice and compares favorably to other stochastic optimization methods. The text also discusses AdaMax, a variant of Adam based on the infinity norm}
 }
 
 @article{Kleschev2001,
@@ -3920,6 +4163,27 @@ $100$
 	annotation   = {***}
 }
 
+@misc{Knowledge-base-editor2022,
+	title        = {Knowledge Base Editor - specialized tool for knowledge base creation. [{E}lectronic resource]},
+	note         = {Mode of access: \url{https://github.com/ostis-ai/kbe}. --- Date of access: 20.03.2023},
+	language     = {english},
+	shorthand    = {KnowlBESTKBC-el},
+	annotation   = {***}
+}
+
+@inproceedings{Kolb2011,
+	title        = {Web-ориентированная реализация семантических моделей интеллектуальных систем для систем дистанционного обучения},
+	author       = {Колб Д. Г.},
+	year         = 2011,
+	booktitle    = {Дистанционное обучение - образовательная среда ХХІ века : материалы VII Международной научно-методической конференции},
+	publisher    = {Минск},
+	pages        = {258--260},
+	organization = {БГУИР},
+	language     = {russian},
+	shorthand    = {Колб Д.Г.Web-ОРСМИ..-2011ст},
+	annotation   = {Подход к построению семантически структурированных веб-сайтов разного уровня интеллекта для систем дистанционного обучения. Предлагаемый подход заключается в использовании однородных семантических сетей с базовой теоретико-множественной интерпретацией.}
+}
+
 @phdthesis{Kolb_diss,
 	title        = {Модели, методы и средства разработки сайтов с переносимым сложноструктурированным контентом на базе семантических сетей\space},
 	author       = {Д. Г. Колб},
@@ -3929,8 +4193,21 @@ $100$
 	type         = {автореф. дис. ... канд. техн. наук : 05.13.11},
 	language     = {russian},
 	numpages     = 25,
-	shorthand    = {Колб.Д.Г.МоделиМСРСПСКБСС-2012дс},
+	shorthand    = {Колб.Д.Г.МоделМСРСП..-2012дс},
 	annotation   = {Цель работы: разработка моделей, методов и средств, обеспечивающих построение сайтов, которые имеют сложноструктурированный контент и обладают свойством переносимости контента при переходе на новые технические платформы реализации сайта.}
+}
+
+@inproceedings{Kolb2013,
+	title        = {Проблемы обеспечения мультимедийного поиска на основе семантических сетей в системах дистанционного обучения},
+	author       = {Колб Д. Г.},
+	year         = 2013,
+	booktitle    = {Дистанционное обучение – образовательная среда XXI века: материалы VIII международной научно-методической конференции. (Минск, 5–6 декабря 2013 года)},
+	publisher    = {Минск},
+	pages        = {188--189},
+	organization = {БГУИР},
+	language     = {russian},
+	shorthand    = {Колб Д.Г.ПроблОМПнОС..-2013ст},
+	annotation   = {Приводятся подходы к организации поиска мультимедийных данных с использованием баз знаний и методов искусственного интеллекта, которые можно использовать в системах дистанционного обучения. Перечислены основные проблемы существующих методов поиска мультимедийных данных, в основе которых лежат онтологии. Сформулированы требования к модели поиска, которая, по мнению автора, должна обеспечить решение ряда существующих проблем мультимедийного поиска.}
 }
 
 @book{Kolesnikov2001,
@@ -3985,12 +4262,14 @@ $100$
 	annotation   = {В работе рассматриваются особенности процесса верификации онтологий, которые построены на основе визуальных графоаналитических моделей предметных областей в терминах системно-объектного подхода (Узел-Функция-Объект).}
 }
 
+%	annotation   = {This article applies a cross-layer design, which considers the adaptation from the perspectives of the interaction context, available system resources, and QoS requirements. The article approach supports human-centric adaptation.}
 @article{Kong2011,
 	title        = {Design of human-centric adaptive multimodal interfaces},
-	author       = {Kong, Jun and Zhang, Weiyi and Yu, Nan and Xia, X.J.},
+	author       = {Jun Kong and Weiyi Zhang and Nan Yu and X. J. Xia},
 	year         = 2011,
 	month        = 12,
-	journal      = {Int. J. Hum.-Comput. Stud.},
+	journal      = {International Journal of Human-Computer Studies},
+	publisher    = {Elsevier {BV}},
 	volume       = 69,
 	pages        = {854--869},
 	doi          = {10.1016/j.ijhcs.2011.07.006},
@@ -4009,6 +4288,16 @@ $100$
 	shorthand    = {Kong J..DesignHCAdaptMI-2011art},
 	annotation   = {This article applies a cross-layer design, which considers the adaptation from the perspectives of the interaction context, available system resources, and QoS requirements. The article approach supports human-centric adaptation.}
 }
+
+@inproceedings{Kontakis2014,
+	title        = {DEC-O: an ontology framework and interactive 3D interface for interior decoration applications in the web},
+	author       = {K. Kontakis and M. Steiakaki and K. Kapetanakis and A. G. Malamos},
+	year         = 2014,
+	doi          = {10.1145/2628588.2628596},
+	booktitle    = {Proceedings of the 19th International {ACM} Conference on 3D Web Technologies},
+	publisher    = {{ACM}},
+	shorthand    = {Kontakis K..DECOaOFaI3DIfIDAitW-2014art},
+	}
 
 @inproceedings{Koronchik2011,
 	title        = {Семантическая технология компонентного проектирования пользовательских интерфейсов интеллектуальных систем},
@@ -4062,7 +4351,6 @@ $100$
 	annotation   = {В работе описана одна из возможных реализаций хранилища унифицированных семантических сетей. Приводится описание принципов хранения элементов семантической сети и связей между этими элементами.}
 }
 
-}
 @inproceedings{Koronchik2013platfrom,
 	title        = {Реализация хранилища унифицированных семантических сетей},
 	author       = {Д. Н. Корончик},
@@ -4231,6 +4519,27 @@ $100$
 	shorthand    = {Laird J.E..Claim aCiEHIS-2009art}
 }
 
+@inproceedings{Lando2007,
+	title        = {TOWARDS A GENERAL ONTOLOGY OF COMPUTER PROGRAMS},
+	author       = {Lando, Pascal and Lapujade, Anne and Kassel, Gilles and F{\"u}rst, Fr{\'e}d{\'e}ric},
+	booktitle    = {International Conference on Software and Data Technologies},
+	volume       = {2},
+	pages        = {163--170},
+	year         = {2007},
+	organization = {SCITEPRESS},
+	shorthand    = {Lando P..Towar aGOoCP-2007art}
+}
+
+@incollection{Lando2007a,
+	title        = {An ontological investigation in the field of computer programs},
+	author       = {Lando, Pascal and Lapujade, Anne and Kassel, Gilles and F{\"u}rst, Fr{\'e}d{\'e}ric},
+	booktitle    = {Software and Data Technologies},
+	pages        = {371--383},
+	year         = {2007},
+	publisher    = {Springer},
+	shorthand    = {Lando P..aOntolIitFoCP-2007art}
+}
+
 @article{Lanzenberger2008,
 	title        = {Making Ontologies Talk: Knowledge Interoperability in the Semantic Web},
 	author       = {{Lanzenberger, Monika and Sampson, Jennifer and Kargl, Horst and Wimmer, Manuel and Conroy, Colm and O'Sullivan, Declan and Lewis, David and Brennan, Rob and Ramos-Gargantilla, José Ángel and Gómez-Pérez, Asunción and Fürst, Frédéric and Trichet, Francky and Euzenat, Jérôme and Polleres, Axel and Scharffe, François and Kotis, Konstantinos}},
@@ -4277,7 +4586,7 @@ $100$
 }
 
 @inproceedings{Lawan2019,
-	title 		 = {The Semantic Web Rule Language Expressiveness Extensions-A Survey}
+	title 		 = {The Semantic Web Rule Language Expressiveness Extensions-A Survey},
 	author 		 = {Lawan Abba and Rakib Abdur},
 	year 		 = 2019,
 	language     = {english},
@@ -4285,7 +4594,7 @@ $100$
 	annotation	 = {Semantic Web Rule Language (SWRL) является прямым расширением OWL 2 DL с подмножеством RuleML и предназначен для использования в качестве языка правил Semantic Web. В данной статье исследуется современное состояние расширений выразительности SWRL, предложенных с течением времени. В качестве мотивации обсуждается эффективность комбинации SWRL/OWL в моделировании фактов предметной области, а также выделяются некоторые общие выразительные ограничения комбинации. Затем в документе классифицируются и представляются соответствующие языковые расширения SWRL и их дополнительные выразительные возможности для исходного определения SWRL. Кроме того, он обеспечивает сравнительный анализ синтаксиса и семантики предлагаемых расширений. В заключение оцениваются требования разрешимости и удобство использования каждого расширения выразительности для эффективного включения в онтологии OWL.}
 }
 
-$105    In Proc. of On the Move to Meaningful Internet Systems 2008: OTM Workshops - ORM (ORM 2008)$
+%105    In Proc. of On the Move to Meaningful Internet Systems 2008: OTM Workshops - ORM (ORM 2008)
 @inproceedings{Leenheer2009,
 	title        = {DOGMA-MESS: A Tool for Fact-Oriented Collaborative Ontology Evolution},
 	author       = {P. De Leenheer and С. Debruyne},
@@ -4417,6 +4726,19 @@ $105    In Proc. of On the Move to Meaningful Internet Systems 2008: OTM Worksho
 	annotation   = {Работа содержит описание вопросов генерации с использованием DL}
 }
 
+@inproceedings{Li2019,
+	title        = {Онтологическая модель генерации вопросов для интеллектуальных обучающих систем},
+	author       = {Ли Вэньцзу and Цянь Лунвэй},
+	year         = 2021,
+	booktitle    = {Дистанционное обучение – образовательная среда XXI века : материалы XI Международной научно-методической конференции, Минск, 12-13 декабря 2019 г.},
+	address      = {Минск},
+	publisher    = {БГУИР},
+	pages        = {184--185},
+	language     = {russian},
+	shorthand    = {Ли В..ОнтолМГВдИО..-2019ст},
+	annotation   = {В этой статье представлены некоторые методы автоматической генерации вопросов в системе обучения искусственному интеллекту.}
+}
+
 @incollection{Li2020,
 	title        = {Ontological Approach for Question Generation and Knowledge Control},
 	author       = {Wenzu Li and Natalia Grakova and Longwei Qian},
@@ -4457,6 +4779,19 @@ $105    In Proc. of On the Move to Meaningful Internet Systems 2008: OTM Worksho
 	annotation   = {A semantic approach to develop a problem solver for automatic verification of user answers in intelligent tutoring systems built on OSTIS Technology is proposed in this article.}
 }
 
+@misc{Ribeiro2016,
+    doi = {10.48550/ARXIV.1602.04938},
+    url = {https://arxiv.org/abs/1602.04938},
+    author = {Ribeiro, Marco Tulio and Singh, Sameer and Guestrin, Carlos},
+    keywords = {Machine Learning (cs.LG), Artificial Intelligence (cs.AI), Machine Learning (stat.ML), FOS: Computer and information sciences, FOS: Computer and information sciences},
+    title = {{W}hy {S}hould {I} {T}rust {Y}ou?: {E}xplaining the {P}redictions of {A}ny {C}lassifier},
+    publisher = {arXiv},
+    year = {2016},
+    copyright = {arXiv.org perpetual, non-exclusive license},
+    shorthand    = {Ribeiro M.T..WhySITY-2016art},
+    annotation = {In this work, we propose LIME, a novel explanation technique that explains the predictions of any classifier in an interpretable and faithful manner, by learning an interpretable model locally around the prediction. We also propose a method to explain models by presenting representative individual predictions and their explanations in a non-redundant way, framing the task as a submodular optimization problem. We demonstrate the flexibility of these methods by explaining different models for text (e.g. random forests) and image classification (e.g. neural networks)} 
+}
+
 @article{Lim2015,
 	title        = {Ontology in design engineering: status and challenges},
 	author       = {Lim, Soon Chong Johnson and Liu, Ying and Chen, Yong and others},
@@ -4464,17 +4799,6 @@ $105    In Proc. of On the Move to Meaningful Internet Systems 2008: OTM Worksho
 	language     = {english},
 	shorthand    = {Lim S..Ontol iDESaC-2015art},
 	annotation   = {Nowadays, the wide adoption of affordable ICT hardware and software solutions has fundamentally changed how product design information is being created, shared, stored and retrieved. Due to numerous issues related to heterogeneous system implementation and design information retrieval, ontology has been identified as a feasible modeling solution for rich design information and knowledge representation. From the literature, ontology has been widely applied in various areas of design engineering, both in the academia and industry applications. In line with the latest development in both fields, this paper attempt to provide the status quo on ontology applications for design information and knowledge management. We report our reviews and findings in a number of perspectives, that includes ontology engineering, major applications of ontology in design engineering and the state of ontology adoption in the industry. Based on these outcomes, a number of challenges, research issues and potential directions of research concerning the application of ontology in design engineering have been discussed and suggested.}
-}
-
-@misc{lime,
-	title        = {{W}hy {S}hould {I} {T}rust {Y}ou?: {E}xplaining the {P}redictions of {A}ny {C}lassifier},
-	author       = {Ribeiro, Marco Tulio and Singh, Sameer and Guestrin, Carlos},
-	year         = 2016,
-	publisher    = {arXiv},
-	doi          = {10.48550/ARXIV.1602.04938},
-	url          = {https://arxiv.org/abs/1602.04938},
-	copyright    = {arXiv.org perpetual, non-exclusive license},
-	keywords     = {Machine Learning (cs.LG), Artificial Intelligence (cs.AI), Machine Learning (stat.ML), FOS: Computer and information sciences, FOS: Computer and information sciences}
 }
 
 @article{Liu2006,
@@ -4698,6 +5022,15 @@ $105    In Proc. of On the Move to Meaningful Internet Systems 2008: OTM Worksho
 	language     = {english},
 	shorthand    = {Marrs T.Json aWPDIftW-2017bk},
 	annotation   = {***}
+}
+
+@book{Martin2013,
+	title        = {Чистый код: создание, анализ и рефакторинг. Библиотека программиста},
+	author       = {Мартин, Роберт},
+	year         = {2013},
+	publisher    = {" Издательский дом"" Питер"""},
+	shorthand    = {Мартин Р.ЧистыКСАиР-2021кн},
+	annotation   = {***}	
 }
 
 @book{Martynov,
@@ -4996,7 +5329,7 @@ $105    In Proc. of On the Move to Meaningful Internet Systems 2008: OTM Worksho
 	title        = {{S}tep-by-Step: {S}eparating Planning from Realization in Neural Data-to-Text Generation},
 	author       = {Moryossef, Amit  and Goldberg, Yoav  and Dagan, Ido},
 	year         = 2019,
-	month        = {jun.},
+	month        = Jun,
 	booktitle    = {Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)},
 	publisher    = {Association for Computational Linguistics},
 	address      = {Minneapolis, Minnesota},
@@ -5032,7 +5365,19 @@ $105    In Proc. of On the Move to Meaningful Internet Systems 2008: OTM Worksho
 	annotation   = {Работа содержит описания интеллектуальных обучающих систем}
 }
 
-$88$
+@Article{Muromtsev2020,
+	author   = {Д. И. Муромцев},
+	journal  = {Онтология проектирования},
+	language = {russian},
+	title    = {Модели и методы индивидуализации электронного обучения в контексте онтологическогоподхода},
+	year     = {2020},
+	number   = {1 (35)},
+	pages    = {34-49},
+	volume   = {10},
+	doi      = {10.18287/2223-9537-2020-10-1-34-49},
+	shorthand= {Муромцев Д.И.МоделиМИЭОвК..-2020ст},
+}
+
 @article{N-aryRelations2006,
 	title        = {{D}efining {N}-ary relations on the semantic web [{E}lectronic resource]},
 	journal      = {World Wide Web Consortium},
@@ -5104,39 +5449,44 @@ $88$
 @electronic{Neo4j,
 	title        = {Graph {D}atabase {P}latform | {G}raph {D}atabase {M}anagement {S}ystem | {N}eo4j},
 	year         = 2023,
-	month        = {Sep},
+	month        = Sep,
 	url          = {https://neo4j.com/},
 	language     = {english},
 	shorthand    = {Neo4j-2023el}
 }
 
-@article{nesy1,
+@article{Besold2017,
 	title        = {Neural-Symbolic Learning and Reasoning: A Survey and Interpretation},
-	author       = {Tarek R. Besold and Artur d'Avila Garcez and Sebastian Bader and Howard Bowman and Pedro Domingos and Pascal Hitzler and Kai-Uwe Kuehnberger and Luis C. Lamb and Daniel Lowd and Priscila Machado Vieira Lima and Leo de Penning and Gadi Pinkas and Hoifung Poon and Gerson Zaverucha},
+	author       = {Besold, Tarek R. and Garcez, Artur d'Avila and Bader, Sebastian and Bowman, Howard and Domingos, Pedro and Hitzler, Pascal and Kuehnberger, Kai-Uwe and Lamb, Luis C. and Lowd, Daniel and Lima, Priscila Machado Vieira and de Penning, Leo and Pinkas, Gadi and Poon, Hoifung and Zaverucha, Gerson},
 	year         = 2017,
 	month        = nov,
 	url          = {https://arxiv.org/pdf/1711.03902.pdf},
 	note         = {(accessed 2020, Jun)},
-	shorthand    = {Tarek.R..NeuralSymbolic-2017}
+	shorthand    = {Besold T.R..NeuraLaRaS-2017art},
+	annotation   = {This joint survey reviews the personal ideas and views of several researchers on neural-symbolic learning and reasoning}
 }
 
-@article{nesy2,
-	title        = {Neuralsymbolic learning and reasoning: Contributions and challenges},
-	author       = {Artur d'Avila Garcez and Tarek R. Besold and Luc de Raedt and Peter Földiak and Pascal Hitzler and Thomas Icard and Kai-Uwe Kühnberger and Luis C. Lamb and Risto Miikkulainen and Daniel L. Silver},
-	year         = 2015,
-	journal      = {In: McCallum, A., Gabrilovich, E., Guha, R., Murphy, K. (eds.) Proceedings of the AAAI 2015 Propositional Rule Extraction under Background Knowledge 11 Spring Symposium on Knowledge Representation and Reasoning: Integrating Symbolic and Neural Approaches. AAAI Press Technical Report},
-	volume       = {SS-15-03}
+@article{Garcez2015,
+    author = {Garcez, Artur d'Avila and Besold, Tarek R. and de Raedt, Luc and Földiak, Peter and Hitzler, Pascal and Icard, Thomas and Kühnberger, Kai-Uwe and Lamb, Luis C. and Miikkulainen, Risto and Silver, Daniel L.},
+    title = {Neuralsymbolic learning and reasoning: Contributions and challenges},
+    journal = {In: McCallum, A., Gabrilovich, E., Guha, R., Murphy, K. (eds.) Proceedings of the AAAI 2015 Propositional Rule Extraction under Background Knowledge 11 Spring Symposium on Knowledge Representation and Reasoning: Integrating Symbolic and Neural Approaches. AAAI Press Technical Report},
+    volume = {SS-15-03},
+    year = {2015},
+    shorthand    = {Garcez A..NeuraLaRCaC-2015art},
+    annotation = {Neural-symbolic computation aims at integrating robust connectionist learning algorithms with sound symbolic reasoning. The recent impact of neural learning, in particular of deep networks, has led to the creation of new representations that have, so far, not really been used for reasoning. Results on neural-symbolic computation have shown to offer powerful alternatives for knowledge representation, learning and inference in neural computation. This paper presents key challenges and contributions of neural-symbolic computation to this area} 
 }
 
-@inproceedings{nesy3,
-	title        = {{A} {N}eural-{S}ymbolic {A}pproach to {C}omputer {V}ision},
-	author       = {Kroshchanka, Aliaksandr and Golovko, Vladimir and Mikhno, Egor and Kovalev, Mikhail and Zahariev, Vadim and Zagorskij, Aleksandr},
-	year         = 2022,
-	booktitle    = {Open Semantic Technologies for Intelligent Systems},
-	publisher    = {Springer International Publishing},
-	address      = {Cham},
-	pages        = {282--309},
-	editor       = {Golenkov, Vladimir and Krasnoproshin, Viktor and Golovko, Vladimir and Shunkevich, Daniil}
+@InProceedings{Kroshchanka2022,
+    author = {Kroshchanka, Aliaksandr and Golovko, Vladimir and Mikhno, Egor and Kovalev, Mikhail and Zahariev, Vadim and Zagorskij, Aleksandr},
+    editor = {Golenkov, Vladimir and Krasnoproshin, Viktor and Golovko, Vladimir and Shunkevich, Daniil},
+    title = {{A} {N}eural-{S}ymbolic {A}pproach to {C}omputer {V}ision},
+    booktitle = {Open Semantic Technologies for Intelligent Systems},
+    year = {2022},
+    publisher = {Springer International Publishing},
+    address = {Cham},
+    pages = {282--309},
+    shorthand = {Kroshchanka A..aNeuraAtCV-2022art},
+    annotation = {The paper presents a general computer vision model based on neural-symbolic artificial intelligence capable of performing semantic analysis of a video stream. The proposed approach integrates artificial neural networks (ANN) with the knowledge base on the basis of an ontological approach. In this case, the knowledge base interacts with the neural networks as with agents and the results of their functioning are used for further semantic analysis. The problems of object detection and recognition of images, as well as emotions, are considered as tasks of computer vision. The features, advantages and prospects of using this model are described. Its implementation is considered on the example of an intelligent module that includes the FaceNet and eXnet neural network models for face identification and emotion recognition in the conversational modeling system} 
 }
 
 @article{NeumanMachine,
@@ -5248,11 +5598,50 @@ $88$
 	timestamp    = {2022.09.17}
 }
 
+@article{Olteanu2022,
+	title        = {Programming, mathematical reasoning and sense-making},
+	author       = {Olteanu, Constanta},
+	journal      = {International Journal of Mathematical Education in Science and Technology},
+	volume       = {53},
+	number       = {8},
+	pages        = {2046--2064},
+	year         = {2022},
+	publisher    = {Taylor \& Francis},
+	shorthand    = {Olteanu C.ProgrMRaSM-2022art},
+	annotation   = {This article explores the features of students’ reasoning and sense-making when computer programming and mathematics interact, specifically, using the exterior angle concept to make different regular polygons with Scratch as a programming tool. At the end of the 2019 spring term in a public elementary school, data were obtained from a pretest, a posttest, programming tasks, surveys, audio recordings, and research field notes. Fifty-six students aged 13–14 years participated in the study. Concepts from variation theory in combination with a post-structuralist philosophical perspective were used to analyse what features of tasks allow students to experience reasoning and sense-making and what features are discerned in students’ reasoning and sense-making. The results illustrate the features of tasks as well as how connections are created during task construction between different concepts from mathematics and programming to promote sense-making and reasoning. The results also indicate that the features discerned in students’ reasoning and sense-making consist of a flow of lines that are diverse in form and are distributed across the task assemblage. The use of repetition as difference at the level of idea is powerful in order to create a close connection between reasoning and sense-making and to support differences and heterogeneities.}	
+}
+
+@inproceedings{Orlov2022a,
+	title        = {Comprehensive library of reusable semantically compatible components of next-generation intelligent computer systems},
+	author       = {M. K. Orlov},
+	year         = 2022,
+	booktitle    = {Open semantic technologies for intelligent systems},
+	publisher    = {Minsk : BSUIR},
+	series       = {Iss. 6},
+	pages        = {261--272},
+	language     = {english},
+	shorthand    = {Orlov M.K.ComprLoRSCCoNGICS-2022art},
+	annotation   = {В работе рассматривается подход к проектированию систем, управляемых знаниями, ориентированный на использование совместимых многократно используемых компонентов, что существенно сокращает трудоемкость разработки таких систем.}
+}
+
+@inproceedings{Orlov2022b,
+	title        = {Non-procedural problem-solving models in next-generation intelligent computer systems},
+	author       = {M. K. Orlov and A. P. Vasilevskaya},
+	year         = 2022,
+	booktitle    = {Open semantic technologies for intelligent systems},
+	publisher    = {Minsk : BSUIR},
+	series       = {Iss. 6},
+	pages        = {161--172},
+	language     = {english},
+	shorthand    = {Orlov M.K..NonprPSMiNGICS-2022art},
+	annotation   = {В работе рассматривается подход к проектированию решателей задач интеллектуальных систем на основе непроцедурных моделей. Разрабатываемый подход позволяет интегрировать любые модели решения задач, в том числе принципы логического вывода, для решения задач на основе общей формальной модели.}
+}
+
 @article{Omicini1999,
 	title        = {Coordination for Internet Application Development},
 	author       = {Omicini, A. and Zambonelli, F.},
 	year         = 1999,
-	month        = {June},
+	month        = Jun,
 	journal      = {Autonomous Agents a. Multi-Agent Systems},
 	volume       = 2,
 	number       = 2,
@@ -5367,6 +5756,25 @@ $88$
 	shorthand    = {OrientDB-эл}
 }
 
+@book{Orlov2021,
+	title        = {Теория и практика языков программирования. Учебник для вузов. Стандарт 3-го поколения},
+	author       = {Орлов, Сергей Александрович},
+	year         = {2021},
+	publisher    = {" Издательский дом"" Питер"""},
+	shorthand    = {Орлов С.А.Теори иПЯЗП-2013кн},
+	annotation   = {***}
+}
+
+@Book{Osin2004,
+	author    = {А. В. Осин},
+	language  = {russian},
+	pages     = {420},
+	publisher = {М.: Агентство «Издательский сервис»},
+	title     = {Мультимедиа в образовании: контекст информатизации},
+	year      = {2004},
+	shorthand = {Осин А.В.МультвО:КИ-2004кн},
+}
+
 @book{Osipov1997,
 	title        = {Приобретение знаний интеллектуальными системами: основы теории и технологии},
 	author       = {Г. С. Осипов},
@@ -5404,7 +5812,7 @@ $88$
 	title        = {Semantic Interoperability in Global Information Systems},
 	author       = {Ouksel, A. M. and Sheth, A.},
 	year         = 1999,
-	month        = {mar},
+	month        = mar,
 	journal      = {SIGMOD Rec.},
 	publisher    = {Association for Computing Machinery},
 	address      = {New York, NY, USA},
@@ -5438,7 +5846,6 @@ $88$
 	annotation   = {Официальный сайт, описывающий язык OWL 2}
 }
 
-$120$
 @article{OWL2012,
 	title        = {{OWL} 2 web ontology language document overview [{E}lectronic resource]},
 	journal      = {World Wide Web Consortium},
@@ -5448,7 +5855,6 @@ $120$
 	annotation   = {Официальный сайт, описывающий язык веб-онтологий OWL 2.}
 }
 
-$121$
 @article{OWL2016,
 	title        = {{OWL/I}mplementations [{E}lectronic resource]},
 	journal      = {World Wide Web Consortium},
@@ -5555,6 +5961,16 @@ $121$
 	publisher    = {O'Reilly Media, Inc.}
 }
 
+@inproceedings{Penta2020,
+	title        = {On the relationship between refactoring actions and bugs: a differentiated replication},
+	author       = {Di Penta, Massimiliano and Bavota, Gabriele and Zampetti, Fiorella},
+	booktitle    = {Proceedings of the 28th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
+	pages        = {556--567},
+	year         = {2020},
+	shorthand    = {Penta D..otRelatBRAaBaDR-2020art},
+	abstract     = {Software refactoring aims at improving code quality while preserving the system's external behavior. Although in principle refactoring is a behavior-preserving activity, a study presented by Bavota etal in 2012 reported the proneness of some refactoring actions (eg pull up method) to induce faults. The study was performed by mining refactoring activities and bugs from three systems. Taking profit of the advances made in the mining software repositories field (eg better tools to detect refactoring actions at commit-level granularity), we present a differentiated replication of the work by Bavota etal in which we (i) overcome some of the weaknesses that affect their experimental design, (ii) answer the same research questions of the original study on a much larger dataset (3 vs 103 systems), and (iii) complement the quantitative analysis of the relationship between refactoring and bugs with a qualitative, manual inspection of commits aimed at verifying the extent to which refactoring actions trigger bug-fixing activities. The results of our quantitative analysis confirm the findings of the replicated study, while the qualitative analysis partially demystifies the role played by refactoring actions in the bug introduction.}
+}
+
 @inproceedings{Perkuhn1997,
 	title        = {Reuse of problem-solving methods and family resemblances},
 	author       = {Perkuhn, Rainer},
@@ -5567,6 +5983,22 @@ $121$
 	editor       = {Plaza, Enric and Benjamins, Richard},
 	shorthand    = {Perkuhn.R.ReusePSMFM-1997art},
 	abstract     = {In the last years a common notion of a Problem-Solving Method (PSM) emerged from different knowledge engineering frameworks. As a generic description of the dynamic behaviour of knowledge based systems PSMs are favored subjects of reuse. Up to now, most investigations on the reuse of PSMs focus on static features and methods as objects of reuse. By this, they ignore a lot of information of how the PSM was developed that is, in principle, entailed in the different parts of a conceptual model of a PSM.}
+}
+
+@article{Petrov1978,
+	title        = {Графовые грамматики и автоматы (обзор)},
+	author       = {Петров, Сергей Владимирович},
+	journal      = {Автоматика и телемеханика},
+	number       = {7},
+	pages        = {116--136},
+	year         = {1978},
+	publisher    = {Российская академия наук, Отделение энергетики, машиностроения, механики и~…},
+	shorthand    = {Петров С.В.ГрафоГиАО-1978ст},
+	annotation   = {Рассматриваются различные модели графовых грамматик и соответствующие им
+	модели автоматов на графах. Описываются области применения таких грамматик,
+	приводится сводка результатов о реберных грамматиках, порождающих гиперграфы, и
+	сводка результатов, относящихся к вершинным графовым грамматикам, грамматикам
+	деревьев и соответствующим автоматным моделям.}
 }
 
 @article{Petrovsky2011hybrid,
@@ -5849,6 +6281,38 @@ $121$
 	annotation   = {Основная ссылка для проекта PROTEGE II (ее используют в других работах сами авторы.)}
 }
 
+@Book{Solovov2006,
+	author    = {А. В. Соловов},
+	language  = {russian},
+	pages     = {464},
+	publisher = {Самара: Новая техника},
+	title     = {Электронное обучение: проблематика, дидактика, технология},
+	year      = {2006},
+	shorthand = {Соловов А.В.ЭлектО:ПДТ-2006кн},
+}
+
+@Article{Solovov2007,
+	author   = {А. В. Соловов},
+	journal  = {Информационные технологии},
+	language = {russian},
+	title    = {Моделирование структуры электронных образовательных ресурсов},
+	year     = {2007},
+	number   = {3},
+	pages    = {43-48},
+	shorthand = {Соловов А.В.МоделСЭОР-2007ст},
+}
+
+@Article{Solovov2021,
+	author   = {А. В. Соловов and А. А. Меньшикова},
+	journal  = {Информационные технологии},
+	language = {russian},
+	title    = {Дискретные математические модели в исследовании процессов автоматизированного обучения},
+	year     = {2021},
+	number   = {12},
+	pages    = {43-48},
+	shorthand = {Соловов А.В.ДискрММвИПА..-2021ст},
+}
+
 @inproceedings{Qian2020,
 	title        = {Ontological Approach for Chinese Language Interface Design},
 	author       = {Qian, Longwei and Sadouski, Mikhail and Li, Wenzu},
@@ -5908,7 +6372,6 @@ $121$
 	shorthand    = {Rajabi.Z..EnterpriseADBEO-2013art}
 }
 
-$126$
 @article{Raman2006,
 	title        = {Wiki technology as a <<free>> collaborative tool within an organizational setting},
 	author       = {M. Raman},
@@ -5922,7 +6385,6 @@ $126$
 	annotation   = {Эта статья содержит краткое руководство по технологии Wiki в качестве инструмента для совместной работы.}
 }
 
-$60$
 @book{Rassel2006,
 	title        = {Искусственный интеллект: современный подход},
 	author       = {С. Рассел and П. Норвиг},
@@ -6108,6 +6570,19 @@ $60$
 	annotation   = {Feature matching is at the base of many computer vision problems, such as object recognition or structure from motion. Current methods rely on costly descriptors for detection and matching. In this paper, we propose a very fast binary descriptor based on BRIEF, called ORB, which is rotation invariant and resistant to noise. We demonstrate through experiments how ORB is at two orders of magnitude faster than SIFT, while performing as well in many situations. The efficiency is tested on several real-world applications, including object detection and patch-tracking on a smart phone.}
 }
 
+@inproceedings{Rusetski2013,
+	title        = {Лингвистическая база знаний интеллектуальной обучающей системы по естественному языку},
+	author       = {К. В. Русецкий},
+	year         = 2013,
+	booktitle    = {Дистанционное обучение --- образовательная среда XXI века: материалы VIII международной научно-методической конференции. (Минск, 5-6 декабря 2013 года)},
+	publisher    = {Минск},
+	pages        = {198--199},
+	organization = {БГУИР},
+	language     = {russian},
+	shorthand    = {Русецкий К.В.ЛингвБЗИОС..-2013ст},
+	annotation   = {Интенсивное развитие информационных технологий в последние несколько десятилетий делает возможным создание интеллектуальных помощников в изучении языков. Такие помощники помогали бы пользователям осваивать язык в удобном для них темпе, открывая новые возможности для карьеры и саморазвития. В данной работе описывается подход к построению лингвистической базы знаний интеллектуального образовательного ресурса, который является основой для создания интеллектуальных помощников по изучению языков.}
+}
+
 @article{Rujiang2011,
 	title        = {Review on Concepts, Processes, Tools and Methods of Ontology Integration},
 	author       = {Rujiang, Wang Xiaoyue Hu Zewen Bai and Yuping, Li},
@@ -6124,7 +6599,7 @@ $60$
 	title        = {Emotions in autonomous agents: comparative analysis of mechanisms and functions},
 	author       = {Rumbell, T. and Barnden, J. and Denham, S. and Wennekers, T.},
 	year         = 2012,
-	month        = {June},
+	month        = Jun,
 	journal      = {Autonomous Agents a. Multi-Agent Systems},
 	volume       = 25,
 	number       = 1,
@@ -6371,13 +6846,6 @@ $60$
 	abstract     = {This article provides an review of the current situation of ontology use the techniques of creation, development and practice standards and digital twins with help of OSTIS Technology, examines in more detail the issues of current approaches to standards evolution, maintenance and application, with particular consideration to standards in the field of Industry 4.0, such as ISA-88, ISA-95 and ISA 5.1. Current standards-specific issues in this area are taken into account.}
 }
 
-@misc{ISA88,
-	key             = {ISA-88},
-	title           = "{ISA-88} standard",
-	howpublished    = "\url{https://www.isa.org/standards-and-publications/isa-standards/isa-standards-committees/isa88/}",
-	note            = "(accessed 2022, October)"
-}
-
 @misc{ISA95,
 	key             = {ISA-95},
 	title           = "{ISA-95} standard",
@@ -6420,6 +6888,17 @@ $60$
 	note            = "(accessed 2022, Jun)"
 }
 
+@inproceedings{Scalabrino2016,
+	title         = {Improving code readability models with textual features},
+	author        = {Scalabrino, Simone and Linares-Vasquez, Mario and Poshyvanyk, Denys and Oliveto, Rocco},
+	booktitle     = {2016 IEEE 24th International Conference on Program Comprehension (ICPC)},
+	pages         = {1--10},
+	year          = {2016},
+	organization  = {IEEE},
+	shorthand     = {Scalabrino S..ImproCRMwTF-2016art},
+	annotation    = {Code reading is one of the most frequent activities in software maintenance; before implementing changes, it is necessary to fully understand source code often written by other developers. Thus, readability is a crucial aspect of source code that may significantly influence program comprehension effort. In general, models used to estimate software readability take into account only structural aspects of source code, e.g., line length and a number of comments. However, source code is a particular form of text; therefore, a code readability model should not ignore the textual aspects of source code encapsulated in identifiers and comments. In this paper, we propose a set of textual features aimed at measuring code readability. We evaluated the proposed textual features on 600 code snippets manually evaluated (in terms of readability) by 5K+ people. The results demonstrate that the proposed features complement classic structural features when predicting code readability judgments. Consequently, a code readability model based on a richer set of features, including the ones proposed in this paper, achieves a significantly higher accuracy as compared to all of the state-of-the-art readability models.}
+}
+
 @inbook{Schedrovitski1984,
 	title        = {Синтез знаний: проблемы и методы},
 	author       = {Г. П. Щедровицкий},
@@ -6454,6 +6933,35 @@ $60$
 	annotation   = {В книге излагается формальная теория обработки и понимания текстов на естественном языке.}
 }
 
+@article{Schiitze1991,
+	title        = {The PROSIT Language v0. 4},
+	author       = {Schiitze, H},
+	journal      = {Manuscript, Center for the Study of Language and Information, Stanford University, Stanford, CA},
+	year         = {1991},
+	shorthand    = {Schiitze H.tPrositL-1991art},
+	annotation   = {***}
+}
+
+@book{Scott2006,
+	author       = {Scott, M. L.},
+	publisher    = {Morgan Kaufmann publications}, 
+	title        = {Programming Language Pragmatics}, 
+	year         = {2006},
+	pages        = {856},
+	shorthand    = {Scott M.L.ProgrLP-2006bk},
+	annotation   = {***}
+}
+
+@book{Scott1972,
+	author       = {Scott, D.},
+	publisher    = {Prentice-Hall, Englewood Cliffs, NJ}, 
+	title        = {Lattice Theory, Data Types and Formal Semantics, Formal Semantics of Programming Languages}, 
+	year         = {1972},
+	pages        = {65--106},
+	shorthand    = {Scott D..LattiTDTaFSFSoPL-1972art},
+	annotation   = {***}
+}
+
 @article{Scrypkin2016,
 	title        = {Концептуальное моделирование энергетических систем на основе интеграции агентно-базированных платформ},
 	author       = {Скрипкин, С. К.},
@@ -6464,6 +6972,26 @@ $60$
 	language     = {russian},
 	shorthand    = {Скрипкин.С.К.КонцептМЭСОИАБП-2016ст},
 	annotation   = {В данной работе исследуются варианты конструкции ядра промежуточного программного обеспечения, основанного на семиотических мета-агентах, которые могут использоваться для расширения функциональных возможностей интегрированных агентных платформ, необходимых для моделирования энергетических систем}
+}
+
+@book{Sebesta2012,
+	author       = {Sebesta, R. W},
+	publisher    = {10th ed. — Pearson/Addison-Wesley}, 
+	title        = {Concepts of Programming Languages}, 
+	year         = {2012},
+	pages        = {814},
+	shorthand    = {Sebesta R.W.Conce oPL-2012bk},
+	annotation   = {***}
+}
+
+@inproceedings{Sellitto2022,
+	title        = {Toward Understanding the Impact of Refactoring on Program Comprehension},
+	author       = {Sellitto, Giulia and Iannone, Emanuele and Codabux, Zadia and Lenarduzzi, Valentina and De Lucia, Andrea and Palomba, Fabio and Ferrucci, Filomena},
+	booktitle    = {29th International Conference on Software Analysis, Evolution, and Reengineering (SANER)},
+	pages        = {1--12},
+	year         = {2022},
+	shorthand    = {Sellitto G.tUnder tIoRoPC-2020art},
+	annotation   = {Software refactoring is the activity associated with developers changing the internal structure of source code without modifying its external behavior. The literature argues that refactoring might have beneficial and harmful implications for software maintainability, primarily when performed without the support of automated tools. This paper continues the narrative on the effects of refactoring by exploring the dimension of program comprehension, namely the property that describes how easy it is for developers to understand source code. We start our investigation by assessing the basic unit of program comprehension, namely program readability. Next, we set up a large-scale empirical investigation – conducted on 156 open-source projects – to quantify the impact of refactoring on program readability. First, we mine refactoring data and, for each commit involving a refactoring, we compute (i) the amount and type(s) of refactoring actions performed and (ii) eight state-of-the-art program comprehension metrics. Afterwards, we build statistical models relating the various refactoring operations to each of the readability metrics considered to quantify the extent to which each refactoring impacts the metrics in either a positive or negative manner. The key results are that refactoring has a notable impact on most of the readability metrics considered.}
 }
 
 @article{Semantics,
@@ -6589,15 +7117,17 @@ $60$
 	shorthand    = {Shahzad.S.K..OntologyDSHSI-art}
 }
 
-@inproceedings{shap,
-	title        = {{A} {U}nified {A}pproach to {I}nterpreting {M}odel {P}redictions},
-	author       = {Lundberg, Scott M and Lee, Su-In},
-	year         = 2017,
-	booktitle    = {Advances in Neural Information Processing Systems},
-	publisher    = {Curran Associates, Inc.},
-	volume       = 30,
-	url          = {https://proceedings.neurips.cc/paper/2017/file/ 8a20a8621978632d76c43dfd28b67767-Paper.pdf},
-	editor       = {I. Guyon and U. Von Luxburg and S. Bengio and H. Wallach and R. Fergus and S. Vishwanathan and R. Garnett}
+@inproceedings{Lundberg2017,
+    author = {Lundberg, Scott M and Lee, Su-In},
+    booktitle = {Advances in Neural Information Processing Systems},
+    editor = {I. Guyon and U. Von Luxburg and S. Bengio and H. Wallach and R. Fergus and S. Vishwanathan and R. Garnett},
+    publisher = {Curran Associates, Inc.},
+    title = {{A} {U}nified {A}pproach to {I}nterpreting {M}odel {P}redictions},
+    url = {https://proceedings.neurips.cc/paper/2017/file/ 8a20a8621978632d76c43dfd28b67767-Paper.pdf},
+    volume = {30},
+    year = {2017},
+    shorthand = {Lundberg S.M..aUnifiAtIMP-2017art},
+    annotation = {We present a unified framework for interpreting predictions, SHAP (SHapley Additive exPlanations). SHAP assigns each feature an importance value for a particular prediction. Its novel components include: (1) the identification of a new class of additive feature importance measures, and (2) theoretical results showing there is a unique solution in this class with a set of desirable properties. The new class unifies six existing methods, notable because several recent methods in the class lack the proposed desirable properties. Based on insights from this unification, we present new methods that show improved computational performance and/or better consistency with human intuition than previous approaches} 
 }
 
 @article{Sherif1988,
@@ -6635,6 +7165,19 @@ $60$
 	shorthand    = {Шункевич Д.В.Модели СКПМОЗнОСС-2013ст},
 	annotation   = {В данной работе рассматриваются проблемы существующих методов, средств и технологий построения машин обработки знаний и ставится проблема отсутствия средств, позволяющих относительно неподготовленному разработчику в удовлетворительные сроки проектировать машины обработки знаний для прикладных интеллектуальных систем различного назначения. Далее рассматривается технология, призванная решить поставленную проблему путем интеграции различных методов и способов решения задач на общей
 	формальной основе.}
+}
+
+@inproceedings{Shunkevich2013b,
+	title        = {Базовые понятия технологии компонентного проектирования машин обработки знаний систем дистанционного  обучения},
+	author       = {Д. В. Шункевич},
+	year         = 2013,
+	booktitle    = {Дистанционное обучение – образовательная среда XXI века: материалы VIII международной научно-методической конференции. (Минск, 5–6 декабря 2013 года)},
+	publisher    = {Минск},
+	pages        = {186--187},
+	organization = {БГУИР},
+	language     = {russian},
+	shorthand    = {Шункевич Д.В.БазовПТКПМ..-2013ст},
+	annotation   = {В данной статье описаны некоторые основные концепции технологии проектирования машин обработки знаний в рамках проекта OSTIS, такие как стратегия решения задач и операции логического вывода. Также рассмотрены координационные агенты и алгоритмы их работы.}
 }
 
 @inproceedings{Shunkevich2014,
@@ -6756,7 +7299,7 @@ $60$
 	title        = {Automated organization design for multi-agent systems},
 	author       = {Sims, M. and Corkill, D. and Lesser, V.},
 	year         = 2008,
-	month        = {June},
+	month        = Jun,
 	journal      = {Autonomous Agents a. Multi-Agent Systems},
 	volume       = 16,
 	number       = 2,
@@ -6934,7 +7477,8 @@ $60$
 	pages        = 690,
 	editor       = {В.В. Голенков},
 	language     = {russian},
-	shorthand    = {Голенков В.В..СтандОТОППиЭССГИКС-2021кн}
+	shorthand    = {Голенков В.В..СтандОТОПП-2021кн},
+	annotation   = {В книге представлена документация текущей версии стандарта открытой технологии онтологического проектирования, производства и эксплуатации семантически совместимых гибридных интеллектуальных компьютерных систем (Технологии OSTIS). Описание Технологии OSTIS (Open Semantic Technology for Intelligent Systems) представлено в виде раздела базы знаний ostis-системы (системы, построенной по Технологии OSTIS) на внутреннем языке ostis-системы и обладает достаточной полнотой для использования этой технологии разработчиками интеллектуальных компьютерных систем. Предложена стандартизация интеллектуальных компьютерных систем, а также стандартизация методов и средств их проектирования, что является важнейшим фактором, обеспечивающим семантическую совместимость интеллектуальных компьютерных систем и их компонентов}
 }
 
 @article{Stanley2002,
@@ -7084,6 +7628,19 @@ $60$
 	annotation   = {В работе описаны новые возможности и рекомендации применения технологий Wolfram Research для создания и сопровождения интеллектуальных обучающих систем. Приведены примеры из практики подготовки учебных материалов дисциплины «Компьютерная графика»}
 }
 
+@inproceedings{Taranchuk2019,
+	title        = {Методические и технические решения, примеры создания интеллектуальных образовательных ресурсов},
+	author       = {В. Б. Таранчук},
+	year         = 2019,
+	booktitle    = {Дистанционное обучение – образовательная среда XXI века : материалы XI Международной научно-методической конференции, Минск, 12-13 декабря 2019 г.},
+	publisher    = {Минск},
+	pages        = {312--313},
+	organization = {БГУИР},
+	language     = {russian},
+	shorthand    = {Таранчук В.Б.МетодиТРПСИ..-2019ст},
+	annotation   = {Рассмотрены новые обоснованные и апробированные методические и технические решения, примеры формирования умной информационно-образовательной среды, основанные на модификации и расширении основных инструментов концепции электронного обучения. Приведены примеры реализации в системе управления обучением Moodle путем включения интерактивных ресурсов Computable Document Format.}
+}
+
 @inproceedings{Tarasov1997,
 	title        = {Эволюционная семиотика -- новое синергетическое направление в искусственном интеллекте},
 	author       = {В.Б. Тарасов},
@@ -7152,6 +7709,19 @@ $60$
 	language     = {English},
 	shorthand    = {Tartir.S..OntologicalEV-2008ст},
 	annotation   = {В последние несколько лет Семантическая паутина получила научное признание как средство обмена знаниями в разных областях, и краеугольным камнем семантической паутины являются онтологии.В настоящее время пользователи, пытающиеся внедрить онтологии в свои приложения, должны полагаться на свой опыт, чтобы попытаться найти подходящую онтологию для своих приложений.}
+}
+
+@article{Tin1995,
+	title        = {Towards situation-oriented programming languages},
+	author       = {Tin, Erkan and Akman, Varol and Ersan, Murat},
+	journal      = {ACM Sigplan Notices},
+	volume       = {30},
+	number       = {1},
+	pages        = {27--36},
+	year         = {1995},
+	publisher    = {ACM New York, NY, USA},
+	shorthand    = {Tin E..TowarSOPL-1995art},
+	annotation   = {Recently, there have been some attempts towards developing programming languages based on situation theory. These languages employ situation-theoretic constructs with varying degrees of divergence from the ontology of the theory. In this paper, we review three of these programming languages.}
 }
 
 @inproceedings{Titenkov2017,
@@ -7226,7 +7796,7 @@ $60$
 	title        = {{C}hinese Open Relation Extraction for Knowledge Acquisition},
 	author       = {Tseng, Yuen-Hsien  and Lee, Lung-Hao  and Lin, Shu-Yen  and Liao, Bo-Shun  and Liu, Mei-Jun  and Chen, Hsin-Hsi  and Etzioni, Oren  and Fader, Anthony},
 	year         = 2014,
-	month        = {apr.},
+	month        = Apr,
 	booktitle    = {Proceedings of the 14th Conference of the {E}uropean Chapter of the Association for Computational Linguistics, volume 2: Short Papers},
 	publisher    = {Association for Computational Linguistics},
 	address      = {Gothenburg, Sweden},
@@ -7303,7 +7873,28 @@ $60$
 	annotation   = {Работа содерджит описание модели и системы накопления, представления и использования знаний и данных Knowledge Net}
 }
 
-$70$
+@book{Turner2007,
+	title        = {Towards a programming language ontology},
+	author       = {Turner, Raymond and Eden, Amnon H},
+	year         = {2007},
+	publisher    = {na},
+	shorthand    = {Turner R..Towar aPLO-2007bk},
+	annotation   = {We examine the role of semantic theory in determining the ontology of programming languages. We explore how different semantic perspectives result in different ontologies. In particular, we compare the ontological implications of set-theoretic versus type-theoretic semantics.}
+}
+
+@article{Turner2014,
+	title        = {Programming languages as technical artifacts},
+	author       = {Turner, Raymond},
+	journal      = {Philosophy \& technology},
+	volume       = {27},
+	number       = {3},
+	pages        = {377--397},
+	year         = {2014},
+	publisher    = {Springer},
+	shorthand    = {Turner R.ProgrLaTA-2014art},
+	annotation   = {Taken at face value, a programming language is defined by a formal grammar. But, clearly, there is more to it. By themselves, the naked strings of the language do not determine when a program is correct relative to some specification. For this, the constructs of the language must be given some semantic content. Moreover, to be employed to generate physical computations, a programming language must have a physical implementation. How are we to conceptualize this complex package? Ontologically, what kind of thing is it? In this paper, we shall argue that an appropriate conceptualization is furnished by the notion of a technical artifact.}
+}
+
 @article{TuzovskiIntegration2011,
 	title        = {Интеграция информации с использованием технологий {S}emantic {W}eb},
 	author       = {А. Ф. Тузовский and В. З. Ямпольский},
@@ -7316,7 +7907,6 @@ $70$
 	annotation   = {Описан подход к разработке систем виртуальной интеграции на основе использования технологий Semantic Web.}
 }
 
-$69$
 @article{TuzovskiSystem2011,
 	title        = {Система коллективной поддержки онтологических моделей},
 	author       = {А. Ф. Тузовский and И. А. Заикин and В. З. Ямпольский},
@@ -7370,7 +7960,7 @@ $69$
 @electronic{USB_Accelerator,
 	title        = {{USB A}ccelerator | {C}oral},
 	year         = 2022,
-	month        = {Dec},
+	month        = Dec,
 	url          = {https://coral.ai/products/accelerator/},
 	language     = {english},
 	shorthand    = {USBAccel-2022el},
@@ -7453,7 +8043,7 @@ $69$
 	title        = {Normative conflict resolution in multi-agent systems},
 	author       = {Vasconcelos, W. W. and Kollingbaum, M. J. and Norman, T. J.},
 	year         = 2009,
-	month        = {June},
+	month        = Jun,
 	journal      = {Autonomous Agents a. Multi-Agent Systems},
 	volume       = 19,
 	number       = 2,
@@ -7467,7 +8057,7 @@ $69$
 	title        = {TILDE: A Temporally Invariant Learned DEtector},
 	author       = {Y. Verdie and  Kwang Moo Yi and P. Fua and V. Lepetit},
 	year         = 2015,
-	month        = {jun},
+	month        = Jun,
 	booktitle    = {2015 {IEEE} Conference on Computer Vision and Pattern Recognition CVPR},
 	doi          = {10.1109/cvpr.2015.7299165},
 	shorthand    = {Verdie Y..TILDE aTILD-2015art},
@@ -7688,7 +8278,7 @@ $69$
 	title        = {Environment as a first class abstraction in multiagent systems},
 	author       = {Weyns, D. and Omicini, A. and Odell, J.},
 	year         = 2007,
-	month        = {February},
+	month        = Feb,
 	journal      = {Autonomous Agents a. Multi-Agent Systems},
 	volume       = 14,
 	number       = 1,
@@ -7799,7 +8389,7 @@ $69$
 	title        = {Research on intelligent tutoring system},
 	author       = {Xu, G. P. and Zeng, W. H. and Huang, C. L.},
 	year         = 2009,
-	month        = {November},
+	month        = Nov,
 	journal      = {Application research of computers},
 	volume       = 26,
 	number       = 11,
@@ -7998,8 +8588,21 @@ $69$
 	pages        = {265--286},
 	organization = {Белорус. гос. ун-т информатики и радиоэлектроники ; редкол.: В. В. Голенков (отв. ред.) [и др.]},
 	language     = {russian},
-	shorthand    = {Заливако.С.С..СемантическаяТКПИРЗ-2011ст},
+	shorthand    = {Заливако.С.С..СеманТКПИР..-2011ст},
 	annotation   = {В работе приводится описание открытой семантической технологии проектирования интеллектуальных решателей задач. Отдельное внимание уделяется методике проектирования решателей и операций, являющихся составными частями таких решателей.}
+}
+
+@inproceedings{Zalivako2011b,
+	title        = {Применение семантической технологии компонентного проектирования интеллектуальных решателей задач в дистанционном обучении},
+	author       = {С. С. Заливако and С. С. Старцев and Д. В. Шункевич},
+	year         = 2011,
+	booktitle    = {Дистанционное обучение --- образовательная среда ХХІ века : материалы VII Международной научно-методической конференции},
+	publisher    = {Минск},
+	pages        = {247--249},
+	organization = {БГУИР},
+	language     = {russian},
+	shorthand    = {Заливако С.С..ПримеСТКПИРЗвДО-2011ст},
+	annotation   = {В данной статье описывается применение технологии проектирования интеллектуальных решателей задач в дистанционном обучении. Также описывается общая модель решателя задач, библиотеки, состоящей из совместимых логических интеллектуальных агентов, процедура проектирования решателя задач и технологическая инфраструктура.}
 }
 
 @inproceedings{Zalivako2012,
@@ -8017,9 +8620,9 @@ $69$
 
 @article{Zapata2010,
 	title        = {Ontologies in software engineering: approaching two great knowledge areas},
-	author       = {Zapata Jaramillo, Carlos Mario and Giraldo, Gloria L and Urrego Giraldo, Germ{\'a}n A},
+	author       = {Zapata Jaramillo, Carlos Mario and Giraldo, Gloria L and Urrego Giraldo, German A},
 	year         = 2010,
-	journal      = {Revista Ingenier{\'\i}as Universidad de Medell{\'\i}n},
+	journal      = {Revista Ingenierias Universidad de Medellin},
 	volume       = 9,
 	number       = 16,
 	pages        = {91--99},
@@ -8182,6 +8785,28 @@ $69$
 	annotation   = {В данной работе рассматривается семантическая технология проектирования естественно-языковоыхх интерфейсов для интеллектуальных вопросно-ответных систем. Также рассматривается библиотека компонентов проектирования естественно-языкового интерфейса, её пополнение, как сторонними компонентами, так и создание новых компонентов.}
 }
 
+@article{Zhong2022,
+	title        = {Does semantics aid syntax? An empirical study on named entity recognition and classification},
+	author       = {Zhong, Xiaoshi and Cambria, Erik and Hussain, Amir},
+	journal      = {Neural Computing and Applications},
+	volume       = {34},
+	number       = {11},
+	pages        = {8373--8384},
+	year         = {2022},
+	publisher    = {Springer},
+	shorthand    = {Zhong X..dSemanASaESoNERaC-2022art},
+	annotation   = {***}
+}
+
+@article{Zhou2022,
+	title        = {Cognitive Semantic Communication Systems Driven by Knowledge Graph},
+	author       = {Zhou, Fuhui and Li, Yihao and Zhang, Xinyuan and Wu, Qihui and Lei, Xianfu and Hu, Rose Qingyang},
+	journal      = {arXiv preprint arXiv:2202.11958},
+	year         = {2022},
+	shorthand    = {Zhou F..CSCSDbKG-2022art},
+	annotation   = {***}
+}
+
 @inproceedings{Zhukov2014,
 	title        = {Система управления проектированием интеллекуальных систем},
 	author       = {И. И. Жуков and Н. В. Гракова},
@@ -8222,4 +8847,11 @@ $69$
 	annotation   = {Для наблюдения за техническими объектами на них устанавливается множество датчиков, которые позволяют собирать данные о состоянии этих объектов. В зависимости от свойств собираемых данных и решаемых практических задач определяются процессы их обработки. При изменении данных или требований к результатам их обработки процессы перестраиваются. Для обеспечения эффективной обработки предложены метод и модель трансформации данных. Они предусматривают формальное описание последовательностей трансформаций в общем виде, а также их представление в виде процессов обработки. Для практической реализации метода предложено представлять трансформации в виде связанных онтологических моделей, включающих функциональную, информационную и процессно-сервисные модели. Построение моделей осуществляется с использованием правил, множество которых представляется в виде управляющей модели. Приводится онтологическая модель для трансформации данных, представленных в виде временных рядов. Структуру её классов определяют классификаторы, определённые для исходных временных рядов и их представлений, а также методов, алгоритмов и процедур их обработки и оценки результатов. Приводится пример обработки результатов измерений значений параметров давления технического объекта космического назначения при проведении технического контроля его состояния}
 }
 
-
+@Book{Zimin2016,
+	author    = {И. В. Зимин},
+	language  = {russian},
+	pages     = {102},
+	publisher = {Национальный Открытый Университет "ИНТУИТ"},
+	title     = {Рекомендации по подготовке содержания и структурирования электронного обучающего ресурса},
+	year      = {2016},
+	shorthand = {Зимин И.В.РекомпПСиСЭО..-2016кн},
