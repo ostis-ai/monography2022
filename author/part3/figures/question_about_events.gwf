@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GWF version="2.0">
+    <staticSector>
+        <node type="node/const/perm/group" idtf="событие" shapeColor="0" id="93893076528448" parent="93893068834768" left="0" top="0" right="58.5313" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="207.423" y="353.5" haveBus="false" idtf_pos="4">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/perm/general" idtf="_событие_x" shapeColor="0" id="93893076067632" parent="93893068834768" left="0" top="0" right="78.0313" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="162.423" y="429.5" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/perm/general" idtf="_событие_y" shapeColor="0" id="93893075941984" parent="93893068834768" left="0" top="0" right="77.2969" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="258.5" y="407.5" haveBus="false" idtf_pos="1">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <pair type="pair/var/pos/temp/orient/membership" idtf="" shapeColor="0" id="93893077073088" parent="93893068834768" id_b="93893076528448" id_e="93893076067632" b_x="207.423" b_y="353.5" e_x="162.423" e_y="429.5" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/var/pos/temp/orient/membership" idtf="" shapeColor="0" id="93893079031040" parent="93893068834768" id_b="93893076528448" id_e="93893075941984" b_x="207.423" b_y="353.5" e_x="258.5" e_y="407.5" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <contour type="contour/const/perm" idtf="" shapeColor="0" id="93893068834768" parent="93893076853040">
+            <points>
+                <point x="127.423" y="461.5"/>
+                <point x="125.423" y="334.5"/>
+                <point x="281.423" y="333.5"/>
+                <point x="281.423" y="460.5"/>
+            </points>
+        </contour>
+        <node type="node/var/perm/relation" idtf="" shapeColor="0" id="93893064557824" parent="93893074523904" x="179" y="579" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/perm/general" idtf="_событие_x" shapeColor="0" id="93893071016832" parent="93893074523904" left="0" top="0" right="78.0313" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="87.607" y="636.872" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/perm/general" idtf="_событие_y" shapeColor="0" id="93893071521408" parent="93893074523904" left="0" top="0" right="77.2969" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="268.423" y="635.5" haveBus="false" idtf_pos="1">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/group" idtf="темпоральное отношение" shapeColor="0" id="93893077553968" parent="93893074523904" left="0" top="0" right="161.391" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="248" y="542" haveBus="false" idtf_pos="2">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893068682944" parent="93893074523904" id_b="93893077553968" id_e="93893064557824" b_x="248" b_y="542" e_x="179" e_y="579" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/var/pos/temp/orient/membership" idtf="" shapeColor="0" id="93893075453808" parent="93893074523904" id_b="93893064557824" id_e="93893068176384" b_x="179" b_y="579" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.506796">
+            <points/>
+        </pair>
+        <pair type="pair/-/-/-/noorient" idtf="" shapeColor="0" id="93893068176384" parent="93893074523904" id_b="93893071016832" id_e="93893071521408" b_x="87.607" b_y="636.872" e_x="268.423" e_y="635.5" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <contour type="contour/const/perm" idtf="" shapeColor="0" id="93893074523904" parent="93893076853040">
+            <points>
+                <point x="61.4226" y="504.5"/>
+                <point x="291.423" y="503.5"/>
+                <point x="292.423" y="676.5"/>
+                <point x="63.4226" y="677.5"/>
+            </points>
+        </contour>
+        <node type="node/const/perm/struct" idtf="Действие. Какое событие произошло раньше: &#13;&#10;Первый раздел Речи Посполитой или &#13;&#10;Бородинское сражение" shapeColor="0" id="93893069722544" parent="93893076853040" left="0" top="0" right="278.078" bottom="53" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="387.423" y="292.5" haveBus="true" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/relation" idtf="целевая ситуация*" shapeColor="0" id="93893077548592" parent="93893076853040" left="0" top="0" right="117.875" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="338.607" y="697.872" haveBus="false" idtf_pos="1">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/role" idtf="субъект'" shapeColor="0" id="93893075486768" parent="93893076853040" left="0" top="0" right="59.3281" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="430.423" y="617" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/group" idtf="действие. поиск ответа на вопрос, требующий раскрытия &#13;&#10;в ответе темпорального отношения основного знака" shapeColor="0" id="93893061862576" parent="93893076853040" left="0" top="0" right="354.766" bottom="38" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="457.423" y="251.5" haveBus="false" idtf_pos="4">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/group" idtf="действие. какое событие было раньше" shapeColor="0" id="93893076832368" parent="93893076853040" left="0" top="0" right="231.344" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="317.923" y="287" haveBus="false" idtf_pos="1">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/temp/general" idtf="Событие. Первый раздел &#13;&#10;Речи Посполитой" shapeColor="0" id="93893076059136" parent="93893076853040" left="0" top="0" right="155.656" bottom="38" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="482.5" y="481.5" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/temp/general" idtf="Событие. Бородинское сражение" shapeColor="0" id="93893076962288" parent="93893076853040" left="0" top="0" right="201.047" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="484.423" y="420.5" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/role" idtf="2'" shapeColor="0" id="93893070566960" parent="93893076853040" left="0" top="0" right="19.1094" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="429.5" y="442.5" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/relation" idtf="начальная ситуация*" shapeColor="0" id="93893075941392" parent="93893076853040" left="0" top="0" right="133.734" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="338.423" y="468.5" haveBus="false" idtf_pos="1">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/group" idtf="действие" shapeColor="0" id="93893075736064" parent="93893076853040" left="0" top="0" right="62.0781" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="497.423" y="275.5" haveBus="false" idtf_pos="5">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/temp/general" idtf="Петр Петров" shapeColor="0" id="93893069921936" parent="93893076853040" left="0" top="0" right="88.1719" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="486.423" y="547.5" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/role" idtf="1'" shapeColor="0" id="93893075596384" parent="93893076853040" left="0" top="0" right="19.1094" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="430.423" y="375" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893068246576" parent="93893076853040" id_b="93893076832368" id_e="93893069722544" b_x="317.923" b_y="287" e_x="387.423" e_y="292.5" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893069644752" parent="93893076853040" id_b="93893075596384" id_e="93893068277264" b_x="430.423" b_y="375" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.503124">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893064400064" parent="93893076853040" id_b="93893075941392" id_e="93893067362816" b_x="338.423" b_y="468.5" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.468242">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893068828672" parent="93893076853040" id_b="93893077548592" id_e="93893075169808" b_x="338.607" b_y="697.872" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.533703">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893067346944" parent="93893076853040" id_b="93893065530080" id_e="93893069921936" b_x="0" b_y="0" e_x="486.423" e_y="547.5" dotBBalance="0.59802" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893077160464" parent="93893076853040" id_b="93893075486768" id_e="93893067346944" b_x="430.423" b_y="617" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.458253">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893074858768" parent="93893076853040" id_b="93893065530080" id_e="93893076059136" b_x="0" b_y="0" e_x="482.5" e_y="481.5" dotBBalance="0.436093" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="93893075169808" parent="93893076853040" id_b="93893065530080" id_e="93893074523904" b_x="0" b_y="0" e_x="176.923" e_y="590.5" dotBBalance="0.695544" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893077392096" parent="93893076853040" id_b="93893061862576" id_e="93893069722544" b_x="457.423" b_y="251.5" e_x="387.423" e_y="292.5" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893068277264" parent="93893076853040" id_b="93893065530080" id_e="93893076962288" b_x="0" b_y="0" e_x="484.423" e_y="420.5" dotBBalance="0.288692" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893068805984" parent="93893076853040" id_b="93893070566960" id_e="93893074858768" b_x="429.5" b_y="442.5" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.483813">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893073536512" parent="93893076853040" id_b="93893075736064" id_e="93893069722544" b_x="497.423" b_y="275.5" e_x="387.423" e_y="292.5" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="93893067362816" parent="93893076853040" id_b="93893065530080" id_e="93893068834768" b_x="0" b_y="0" e_x="203.423" e_y="397.5" dotBBalance="0.227811" dotEBalance="0">
+            <points/>
+        </pair>
+        <bus type="" idtf="" shapeColor="0" id="93893065530080" parent="93893076853040" owner="93893069722544" b_x="387.491" b_y="302" e_x="390.423" e_y="712.5">
+            <points/>
+        </bus>
+        <contour type="contour/const/perm" idtf="Вопрос. Какое событие произошло раньше: Первый раздел Речи Посполитой или Бородинское сражение" shapeColor="0" id="93893076853040" parent="0" left="0" top="0" right="613.969" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" idtf_pos_x="-303" idtf_pos_y="266">
+            <points>
+                <point x="33.4226" y="742.5"/>
+                <point x="31.4226" y="225.5"/>
+                <point x="688.423" y="226.5"/>
+                <point x="691.423" y="745.5"/>
+            </points>
+        </contour>
+        <node type="node/const/perm/struct" idtf="Действие. Какое событие произошло раньше: &#13;&#10;Первый раздел Речи Посполитой или &#13;&#10;Бородинское сражение" shapeColor="0" id="93893077120976" parent="0" left="0" top="0" right="278.078" bottom="53" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="353.423" y="127.5" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/group" idtf="вопрос" shapeColor="0" id="93893075098640" parent="0" left="0" top="0" right="46.1094" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="185.423" y="134.5" haveBus="false" idtf_pos="1">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/relation" idtf="задача*" shapeColor="0" id="93893075272880" parent="0" left="0" top="0" right="52.1406" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="251.423" y="180.5" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893065571600" parent="0" id_b="93893075272880" id_e="93893075206144" b_x="251.423" b_y="180.5" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.494314">
+            <points/>
+        </pair>
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="93893075206144" parent="0" id_b="93893077120976" id_e="93893076853040" b_x="353.423" b_y="127.5" e_x="361.423" e_y="485.5" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893073189600" parent="0" id_b="93893075098640" id_e="93893076853040" b_x="185.423" b_y="134.5" e_x="361.423" e_y="485.5" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+    </staticSector>
+</GWF>
