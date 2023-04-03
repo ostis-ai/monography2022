@@ -1267,7 +1267,7 @@
 \subsection{Язык представления исходных текстов баз знаний на основе языка LaTeX}
 \label{sec_scn_latex}
 
-Для представления исходных текстов был выбран язык LATEX, так как:
+Для представления исходных текстов был выбран язык LaTeX, так как:
 \begin{textitemize}
 	\item Популярный общепринятый язык для записи научно-технических текстов
 	\item Мощный и легко расширяется
@@ -1304,20 +1304,215 @@
 
 Полный перечень команд можно увидеть в файле scn.sty, а примеры использования команд каждого типа - в исходных текстах стандарта.
 
-Команды из набора scn-tex сами настраивают отступы для корректного отображения SCn-текста. Они используют команду \textbackslash scnaddlevel\{x\}, где х - число уровней, на которое необходимо сместиться. Число х должно быть целым, но не обязательно положительным, как правило после смещения на определенное число уровней вправо следует смещение на то же число уровней влево. Для сброса уровня до нуля (левый край страницы) можно использовать команду \textbackslash scnresetlevel.
+Команды из набора scn-tex сами настраивают отступы для корректного отображения SCn-текста. В своей реализации они вызывают команду \textbackslash begin\{scnindent\}. После смещения на определенное число уровней вправо следует смещение на то же число уровней влево. Для сброса уровня до нуля (левый край страницы) можно использовать команду \textbackslash scnresetlevel.
 
 Пример:
 
 Исходный код:
-\begin{figure}[H]
-	\includegraphics[scale=0.3]{images/part2/chapter_lang/scn_tex.png}
-\end{figure}
+
+\begin{verbatim}
+\scnheader{кибернетическая система}
+\scnsuperset{компьютерная система}
+\begin{scnindent}
+    \scnidtf{искусственная кибернетическая система}
+    \scnsuperset{ostis-система}
+    \begin{scnindent}
+        \scnidtf{компьютерная система, построенная по технологии OSTIS на основе
+		 интерпретации спроектированной логико-семантическая sc-модель этой системы}
+    \end{scnindent}
+\end{scnindent}
+\end{verbatim}
+
 
 Результат компиляции:
-\begin{figure}[H]
-	\includegraphics[scale=0.5]{images/part2/chapter_lang/pdf_result.png}
-\end{figure}
+
+\scnheader{кибернетическая система}
+\scnsuperset{компьютерная система}
+\begin{scnindent}
+    \scnidtf{искусственная кибернетическая система}
+    \scnsuperset{ostis-система}
+    \begin{scnindent}
+        \scnidtf{компьютерная система, построенная по технологии OSTIS на основе интерпретации спроектированной логико-семантическая sc-модель этой системы}
+    \end{scnindent}
+\end{scnindent}
+
+
+Команды из набора scn-tex делятся на классы. Чаще всего используемые это списки и окружения. Окружение влияет на текст заключенный между командами начала и конца окружения и могут быть вложенными. 
+
+
+Исходный текст:
+
+
+\begin{verbatim}
+\scnheader{Логико-семантическая модель Метасистемы IMS.ostis}
+\scnrelfrom{примечание}{
+	\begin{scnset}
+	\scnfilelong{IMS.ostis}
+	\scnrelto{сокращение}{\scnfilelong{Метасистема IMS.ostis}}
+	\begin{scnindent}
+	\scnrelto{сокращение}{\scnfilelong{Intelligent MetaSystem of Open Semantic Technology
+	 for Intelligent Systems}}
+	\end{scnindent}
+	\end{scnset}
+	}
+\scnidtf{Логико-семантическая модель интеллектуального ostis-портала научно-технических
+ знаний по Технологии OSTIS}
+\end{verbatim}
+
+
+Результат компиляции:
+
+
+\scnheader{Логико-семантическая модель Метасистемы IMS.ostis}
+\scnrelfrom{примечание}{
+	\begin{scnset}
+	\scnfilelong{IMS.ostis}
+	\scnrelto{сокращение}{\scnfilelong{Метасистема IMS.ostis}}
+	\begin{scnindent}
+	\scnrelto{сокращение}{\scnfilelong{Intelligent MetaSystem of Open Semantic Technology for Intelligent Systems}}
+	\end{scnindent}
+	\end{scnset}
+	}
+\scnidtf{Логико-семантическая модель интеллектуального ostis-портала научно-технических знаний по Технологии OSTIS}
+
+
+Таким образом scn-tex позволяет записать практически любую конструкцию SCn-кода.
 
 Для трансляции исходного текста в базу знаний был разработан tex2scs-translator. Каждой scn-tex команде соответствует семантическая структура, транслятор переводит текст из файлов .tex в .scs. Таким образом весь формальный исходный текст Стандарта OSTIS может быть протранслирован в базу знаний любой ostis-системы.
+
+
+Текст для трансляции:
+
+
+\begin{verbatim}
+\scnstructheader{Описание подсистемы взаимодействия c sc-памятью на основе языка JSON}
+\begin{scnsubstruct}
+
+\begin{scnrelfromset}{декомпозиция программной системы}
+		\scnitem{Серверная система на основе Websocket, обеспечивающая доступ к sc-памяти платформы
+		 интерпретации sc-моделей при помощи команд SC-JSON-кода}
+		\scnitem{Множество клиентских систем, подключаемых и взаимодействующих с \textit{Серверной системой
+		 на основе Websocket, обеспечивающей доступ к sc-памяти платформы интерпретации sc-моделей при помощи
+		  команд SC-JSON-кода}}
+		\begin{scnindent}
+			\begin{scnrelfromset}{декомпозиция программной системы}
+				\scnitem{Клиентская система, подключаемая и взаимодействующая с \textit{SC-сервером},
+				 реализованная на языке программирования Python}
+				\scnitem{Клиентская система, подключаемая и взаимодействующая с \textit{SC-сервером},
+				 реализованная на языке программирования TypeScript}
+				\scnitem{Клиентская система, подключаемая и взаимодействующая с \textit{SC-сервером},
+				 реализованная на языке программирования C\#}
+				\scnitem{Клиентская система, подключаемая и взаимодействующая с \textit{SC-сервером},
+				 реализованная на языке программирования Java}
+			\end{scnrelfromset}
+		\end{scnindent}
+    \end{scnrelfromset}
+
+\end{scnsubstruct}
+\end{verbatim}
+
+
+Результат трансляции:
+
+
+\begin{verbatim}
+	.system_element_0
+	=> nrel_inclusion: [*
+		=> .system_element_1: {
+			.system_element_2;
+			.system_element_3
+			(*
+				=> .system_element_1: {
+					.system_element_4;
+					.system_element_5;
+					.system_element_6;
+					.system_element_7
+				};;
+			*)
+		};;
+	*];;
+	
+	.system_element_7 => nrel_main_idtf: [Клиентская система, подключаемая и взаимодействующая
+	 с <i>SC-сервером</i>, реализованная на языке программирования Java] (* <- lang_ru;; => 
+	 nrel_format: format_html;; *);;
+	.system_element_7 <- sc_node;;
+	
+	.system_element_6 => nrel_main_idtf: [Клиентская система, подключаемая и взаимодействующая
+	 с <i>SC-сервером</i>, реализованная на языке программирования C#] (* <- lang_ru;; => 
+	 nrel_format: format_html;; *);;
+	.system_element_6 <- sc_node;;
+	
+	.system_element_5 => nrel_main_idtf: [Клиентская система, подключаемая и взаимодействующая
+	 с <i>SC-сервером</i>, реализованная на языке программирования TypeScript] (* <- lang_ru;;
+	  => nrel_format: format_html;; *);;
+	.system_element_5 <- sc_node;;
+	
+	.system_element_4 => nrel_main_idtf: [Клиентская система, подключаемая и взаимодействующая
+	 с <i>SC-сервером</i>, реализованная на языке программирования Python] (* <- lang_ru;;
+	  => nrel_format: format_html;; *);;
+	.system_element_4 <- sc_node;;
+	
+	.system_element_3 => nrel_main_idtf: [Множество клиентских систем, подключаемых и
+	 взаимодействующих с <i>Серверной системой на основе Websocket, обеспечивающей доступ
+	  к sc-памяти платформы интерпретации sc-моделей при помощи команд SC-JSON-кода</i>]
+	  (* <- lang_ru;; => nrel_format: format_html;; *);;
+	.system_element_3 <- sc_node;;
+	
+	nrel_note => nrel_main_idtf: [примечание*] (* <- lang_ru;; => nrel_format:
+	 format_html;; *);;
+	nrel_note <- sc_node_norole_relation;;
+	
+	rrel_maximum_studied_object_class => nrel_main_idtf: [максимальный класс объектов
+	 исследования*] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	rrel_maximum_studied_object_class <- sc_node_role_relation;;
+	
+	.system_element_0 => nrel_main_idtf: [Описание подсистемы взаимодействия c sc-памятью
+	 на основе языка JSON] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	.system_element_0 <- sc_node_struct;;
+	
+	.system_element_2 => nrel_main_idtf: [Серверная система на основе Websocket,
+	 обеспечивающая доступ к sc-памяти платформы интерпретации sc-моделей при помощи
+	  команд SC-JSON-кода] (* <- lang_ru;; => nrel_format: format_html;; *);;
+	.system_element_2 <- sc_node;;
+	
+	nrel_epigraph => nrel_main_idtf: [эпиграф*] (* <- lang_ru;; => nrel_format:
+	 format_html;; *);;
+	nrel_epigraph <- sc_node_norole_relation;;
+	
+	nrel_inclusion => nrel_main_idtf: [включение*] (* <- lang_ru;; => nrel_format:
+	 format_html;; *);;
+	nrel_inclusion <- sc_node_norole_relation;;
+	
+	nrel_idtf => nrel_main_idtf: [идентификатор*] (* <- lang_ru;; => nrel_format:
+	 format_html;; *);;
+	nrel_idtf <- sc_node_norole_relation;;
+	
+	nrel_subdividing => nrel_main_idtf: [разбиение*] (* <- lang_ru;; => nrel_format:
+	 format_html;; *);;
+	nrel_subdividing <- sc_node_norole_relation;;
+	
+	nrel_summary => nrel_main_idtf: [аннотация*] (* <- lang_ru;; => nrel_format:
+	 format_html;; *);;
+	nrel_summary <- sc_node_norole_relation;;
+	
+	rrel_studied_object_class => nrel_main_idtf: [класс объектов исследования*]
+	 (* <- lang_ru;; => nrel_format: format_html;; *);;
+	rrel_studied_object_class <- sc_node_role_relation;;
+	
+	rrel_explored_relation => nrel_main_idtf: [исследуемое отношение*]
+	(* <- lang_ru;; => nrel_format: format_html;; *);;
+	rrel_explored_relation <- sc_node_role_relation;;
+	
+	nrel_explanation => nrel_main_idtf: [пояснение*] (* <- lang_ru;; => 
+	nrel_format: format_html;; *);;
+	nrel_explanation <- sc_node_norole_relation;;
+	
+	.system_element_1 => nrel_main_idtf: [декомпозиция программной системы*]
+	(* <- lang_ru;; => nrel_format: format_html;; *);;
+	.system_element_1 <- sc_node_norole_relation;;
+	
+	
+	\end{verbatim}
+
 \label{subsec_latex}
 %\input{author/references}
