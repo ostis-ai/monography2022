@@ -1402,23 +1402,11 @@
 Текст для трансляции в формате scn-tex:
 
 \begin{verbatim}
-\scnstructheader{Описание подсистемы взаимодействия c sc-памятью на основе языка JSON}
-\begin{scnsubstruct}
-
-\begin{scnrelfromset}{декомпозиция программной системы}
-		\scnitem{Серверная система на основе Websocket, обеспечивающая доступ к sc-памяти платформы интерпретации sc-моделей при помощи команд SC-JSON-кода}
-		\scnitem{Множество клиентских систем, подключаемых и взаимодействующих с \textit{Серверной системой на основе Websocket, обеспечивающей доступ к sc-памяти платформы интерпретации sc-моделей при помощи команд SC-JSON-кода}}
-		\begin{scnindent}
-			\begin{scnrelfromset}{декомпозиция программной системы}
-				\scnitem{Клиентская система, подключаемая и взаимодействующая с \textit{SC-сервером}, реализованная на языке программирования Python}
-				\scnitem{Клиентская система, подключаемая и взаимодействующая с \textit{SC-сервером}, реализованная на языке программирования TypeScript}
-				\scnitem{Клиентская система, подключаемая и взаимодействующая с \textit{SC-сервером}, реализованная на языке программирования C\#}\\
-				\scnitem{Клиентская система, подключаемая и взаимодействующая с \textit{SC-сервером}, реализованная на языке программирования Java}
-			\end{scnrelfromset}
-		\end{scnindent}
-    \end{scnrelfromset}
-
-\end{scnsubstruct}
+	\scnheader{множество}
+	\begin{scnrelfromset}{разбиение}
+	\scnitem{конечное множество}
+	\scnitem{бесконечное множество}
+	\end{scnrelfromset}
 \end{verbatim}
 
 \bigskip
@@ -1427,98 +1415,26 @@
 
 \begin{verbatim}
 	.system_element_0
-	=> nrel_inclusion: [*
-		=> .system_element_1: {
-			.system_element_2;
-			.system_element_3
-			(*
-				=> .system_element_1: {
-					.system_element_4;
-					.system_element_5;
-					.system_element_6;
-					.system_element_7
-				};;
-			*)
-		};;
-	*];;
-	
-	.system_element_7 => nrel_main_idtf: [Клиентская система, подключаемая и взаимодействующая
-	 с <i>SC-сервером</i>, реализованная на языке программирования Java] (* <- lang_ru;; => 
-	 nrel_format: format_html;; *);;
-	.system_element_7 <- sc_node;;
-	
-	.system_element_6 => nrel_main_idtf: [Клиентская система, подключаемая и взаимодействующая
-	 с <i>SC-сервером</i>, реализованная на языке программирования C#] (* <- lang_ru;; => 
-	 nrel_format: format_html;; *);;
-	.system_element_6 <- sc_node;;
-	
-	.system_element_5 => nrel_main_idtf: [Клиентская система, подключаемая и взаимодействующая
-	 с <i>SC-сервером</i>, реализованная на языке программирования TypeScript] (* <- lang_ru;;
-	  => nrel_format: format_html;; *);;
-	.system_element_5 <- sc_node;;
-	
-	.system_element_4 => nrel_main_idtf: [Клиентская система, подключаемая и взаимодействующая
-	 с <i>SC-сервером</i>, реализованная на языке программирования Python] (* <- lang_ru;;
-	  => nrel_format: format_html;; *);;
-	.system_element_4 <- sc_node;;
-	
-	.system_element_3 => nrel_main_idtf: [Множество клиентских систем, подключаемых и
-	 взаимодействующих с <i>Серверной системой на основе Websocket, обеспечивающей доступ
-	  к sc-памяти платформы интерпретации sc-моделей при помощи команд SC-JSON-кода</i>]
-	  (* <- lang_ru;; => nrel_format: format_html;; *);;
-	.system_element_3 <- sc_node;;
-	
-	nrel_note => nrel_main_idtf: [примечание*] (* <- lang_ru;; => nrel_format:
-	 format_html;; *);;
-	nrel_note <- sc_node_norole_relation;;
-	
-	rrel_maximum_studied_object_class => nrel_main_idtf: [максимальный класс объектов
-	 исследования*] (* <- lang_ru;; => nrel_format: format_html;; *);;
-	rrel_maximum_studied_object_class <- sc_node_role_relation;;
-	
-	.system_element_0 => nrel_main_idtf: [Описание подсистемы взаимодействия c sc-памятью
-	 на основе языка JSON] (* <- lang_ru;; => nrel_format: format_html;; *);;
-	.system_element_0 <- sc_node_struct;;
-	
-	.system_element_2 => nrel_main_idtf: [Серверная система на основе Websocket,
-	 обеспечивающая доступ к sc-памяти платформы интерпретации sc-моделей при помощи
-	  команд SC-JSON-кода] (* <- lang_ru;; => nrel_format: format_html;; *);;
-	.system_element_2 <- sc_node;;
-	
-	nrel_epigraph => nrel_main_idtf: [эпиграф*] (* <- lang_ru;; => nrel_format:
-	 format_html;; *);;
-	nrel_epigraph <- sc_node_norole_relation;;
-	
-	nrel_inclusion => nrel_main_idtf: [включение*] (* <- lang_ru;; => nrel_format:
-	 format_html;; *);;
-	nrel_inclusion <- sc_node_norole_relation;;
-	
-	nrel_idtf => nrel_main_idtf: [идентификатор*] (* <- lang_ru;; => nrel_format:
-	 format_html;; *);;
-	nrel_idtf <- sc_node_norole_relation;;
-	
-	nrel_subdividing => nrel_main_idtf: [разбиение*] (* <- lang_ru;; => nrel_format:
-	 format_html;; *);;
-	nrel_subdividing <- sc_node_norole_relation;;
-	
-	nrel_summary => nrel_main_idtf: [аннотация*] (* <- lang_ru;; => nrel_format:
-	 format_html;; *);;
-	nrel_summary <- sc_node_norole_relation;;
-	
-	rrel_studied_object_class => nrel_main_idtf: [класс объектов исследования*]
-	 (* <- lang_ru;; => nrel_format: format_html;; *);;
-	rrel_studied_object_class <- sc_node_role_relation;;
-	
-	rrel_explored_relation => nrel_main_idtf: [исследуемое отношение*]
-	(* <- lang_ru;; => nrel_format: format_html;; *);;
-	rrel_explored_relation <- sc_node_role_relation;;
-	
-	nrel_explanation => nrel_main_idtf: [пояснение*] (* <- lang_ru;; => 
-	nrel_format: format_html;; *);;
-	nrel_explanation <- sc_node_norole_relation;;
-	
-	.system_element_1 => nrel_main_idtf: [декомпозиция программной системы*]
-	(* <- lang_ru;; => nrel_format: format_html;; *);;
-	.system_element_1 <- sc_node_norole_relation;;
+=> nrel_subdividing: {
+	.system_element_1;
+	.system_element_2
+};;
+
+.system_element_1 => nrel_main_idtf: [конечное множество] (* <- lang_ru;;
+ => nrel_format: format_html;; *);;
+.system_element_1 <- sc_node;;
+
+nrel_subdividing => nrel_main_idtf: [разбиение*] (* <- lang_ru;; => 
+nrel_format: format_html;; *);;
+nrel_subdividing <- sc_node_norole_relation;;
+
+.system_element_2 => nrel_main_idtf: [бесконечное множество] (* <- lang_ru;;
+ => nrel_format: format_html;; *);;
+.system_element_2 <- sc_node;;
+
+.system_element_0 => nrel_main_idtf: [множество] (* <- lang_ru;; => nrel_format:
+ format_html;; *);;
+.system_element_0 <- sc_node;;
+
 	\end{verbatim}
 %\input{author/references}
