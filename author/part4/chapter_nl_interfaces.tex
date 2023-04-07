@@ -1,6 +1,6 @@
-\chapauthor{Никифоров С.А.\\Гойло А.А.\\Крощенко А.А.\\Захарьев В.А.\\Цянь Л.}
+\chapauthor{Никифоров С.А.\\Гойло А.А.\\Цянь Л.}
 \chapter{Естественно-языковые интерфейсы ostis-систем}
-\chapauthortoc{Никифоров С.~А.\\Гойло А.~А.\\Крощенко А.~А.\\Захарьев В.~А.\\Цянь Л.}
+\chapauthortoc{Никифоров С.~А.\\Гойло А.~А.\\Цянь Л.}
 \label{chapter_nl_interfaces}
 
 \vspace{-7\baselineskip}
@@ -9,8 +9,6 @@
     \begin{scnrelfromlist}{автор}
         \scnitem{Никифоров С.А.}
         \scnitem{Гойло А.А.}
-        \scnitem{Крощенко А.А.}
-        \scnitem{Захарьев В.А.}
         \scnitem{Цянь Л.}
     \end{scnrelfromlist}
 \end{SCn}
@@ -65,36 +63,22 @@
 
     \bigskip
 
-    %todo: тут то, что добавил Цянь. нужно пресомтреть и подописсыаать наши
 	\begin{scnrelfromlist}{библиографическая ссылка}
-		\scnitem{\scncite{Wu2019}}
-		\scnitem{\scncite{Liu2020}}
-		\scnitem{\scncite{Abu2020}}
-		\scnitem{\scncite{Xu2016}}
-		\scnitem{\scncite{Liu2020}}
-		\scnitem{\scncite{Tseng2014}}
-		\scnitem{\scncite{Gatt2017}}
-		\scnitem{\scncite{Androutsopoulos2013}}
-		\scnitem{\scncite{Devlin2018}}
-		\scnitem{\scncite{Brown2020}}
-		\scnitem{\scncite{Moryossef2019}}
-		\scnitem{\scncite{Gardent2017}}
-		\scnitem{\scncite{Lehmann2015}}
-		\scnitem{\scncite{Xu2017}}
-		\scnitem{\scncite{Niu2011}}
-		\scnitem{\scncite{Golenkov2014a}}
-		\scnitem{\scncite{Hardzei2022}}
-		\scnitem{\scncite{Liu2006}}
-		\scnitem{\scncite{Wang2006}}
-		\scnitem{\scncite{Shunkevich2017}}
-		\scnitem{\scncite{Qian2022}}
-		\scnitem{\scncite{Davydenko2018}}
-		\scnitem{\scncite{Shunkevich2018}}
-		\scnitem{\scncite{Davydenko2017}}
-		\scnitem{\scncite{IMS}}
-		\scnitem{\scncite{Li2022}}
-		\scnitem{\scncite{Trisedya2018}}
-		\scnitem{\scncite{Kale2020}}
+		\scnitem{\scncite{GlobalMarket}}
+        \scnitem{\scncite{Pais2022}}
+        \scnitem{\scncite{Trajanov2022}}
+        \scnitem{\scncite{Khurana2022}}
+        \scnitem{\scncite{Strubell2019}}
+        \scnitem{\scncite{LLM}}
+        \scnitem{\scncite{Alexa}}
+        \scnitem{\scncite{Siri}}
+        \scnitem{\scncite{GoogleAssistant}}
+        \scnitem{\scncite{Cortana}}
+        \scnitem{\scncite{Hoy2018}}
+        \scnitem{\scncite{Jackendoff1977}}
+        \scnitem{\scncite{Davydenko2018}}
+        \scnitem{\scncite{Shunkevich2018}}
+        \scnitem{\scncite{Davydenko2017}}
 	\end{scnrelfromlist}
 \end{SCn}
 
@@ -123,18 +107,18 @@
 	\item методы машинного обучения, основанные на математической статистике и теории информации.
 \end{textitemize}
 
-В основе большинства подходов к обработке и пониманию \textit{естественного языка} лежит машинное обучение\scncite{NLP_as_a_service},\scncite{NLP_in_pharmacology}.
+В основе большинства подходов к обработке и пониманию \textit{естественного языка} лежит машинное обучение\scncite{Pais2022},\scncite{Trajanov2022}.
 Несомненно, для большинства широко распространенных \textit{языков} модели для обработки естественного языка работают очень хорошо и совершенствуются с каждым днем, но несмотря на успехи в данной области, данный подход имеет ряд недостатков:
 \begin{textitemize}
     \item проблемы при работе с различными областями, например, значения слов или предложений могут быть различными в зависимости от \textit{предметной области}.
-    Таким образом, модели для NLP могут хорошо работать для отдельной \textit{предметной области}, но не подходить для широкого применения\scncite{NLPOverview};
-    \item создание новой модели модели требует наличия большого объема данных, а качество таких данных напрямую влияет на качество получаемой модели, что ведет к большим затратам на ее обучение\scncite{strubell2019energy}\scncite{large_language_models};
+    Таким образом, модели для NLP могут хорошо работать для отдельной \textit{предметной области}, но не подходить для широкого применения\scncite{Khurana2022};
+    \item создание новой модели модели требует наличия большого объема данных, а качество таких данных напрямую влияет на качество получаемой модели, что ведет к большим затратам на ее обучение\scncite{Strubell2019}\scncite{large_language_models};
     \item данные модели представляют собой "черный ящик"{}, т. к. данные модели не обладают средствами для обоснования своего вывода;
-    \item каждая такая модель решает только свой узкий класс задач, отсутствует общий подход к обработке естественного языка.\scncite{NLPOverview}
+    \item каждая такая модель решает только свой узкий класс задач, отсутствует общий подход к обработке естественного языка.\scncite{Khurana2022}
 \end{textitemize}
 
-Данные недостатки используемых методов являются причиной части недостатков современных систем, реализующих \textit{естественно-языковой интерфейс}, так, несмотря на то, что сейчас существует большое количество речевых ассистентов, создаваемых разными компаниями\scncite{site_url_alexa},\scncite{site_url_siri},\scncite{site_url_gassist},\scncite{site_url_cortana}, они обладают схожими недостатками, например, исключительно распределенной реализацией, в силу недостаточной для запуска ресурсоемких моделей производительности устройств конечных пользователей.
-Это в свою очередь ведет к проблемам с приватностью\scncite{PVA}.
+Данные недостатки используемых методов являются причиной части недостатков современных систем, реализующих \textit{естественно-языковой интерфейс}, так, несмотря на то, что сейчас существует большое количество речевых ассистентов, создаваемых разными компаниями\scncite{Alexa},\scncite{Siri},\scncite{GoogleAssistant},\scncite{Cortana}, они обладают схожими недостатками, например, исключительно распределенной реализацией, в силу недостаточной для запуска ресурсоемких моделей производительности устройств конечных пользователей.
+Это в свою очередь ведет к проблемам с приватностью\scncite{Hoy2018}.
 
 Подмодуль понимания речи данных систем формирует конструкцию, отражающую смысл сообщения используя \textit{фреймовую модель}.
 Упрощенный пример такой конструкции приведен на рисунке \textit{\nameref{fig:message_intents}}.
