@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GWF version="2.0">
+    <staticSector>
+        <node type="node/const/perm/relation" idtf="район города*" shapeColor="0" id="93893077604352" parent="93893064883680" left="0" top="0" right="88.7344" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="258" y="256" haveBus="false" idtf_pos="4">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/general" idtf="Октябрьский район Города Витебск" shapeColor="0" id="93893064501504" parent="93893064883680" left="0" top="0" right="219.594" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="304.5" y="339.5" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/group" idtf="город" shapeColor="0" id="93893076154224" parent="93893064883680" left="0" top="0" right="39.5625" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="155.99" y="418" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/general" idtf="Город Витебск" shapeColor="0" id="93893065511504" parent="93893064883680" left="0" top="0" right="94.2344" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="202" y="339" haveBus="false" idtf_pos="2">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/general" idtf="Первомайский район Города Витебск" shapeColor="0" id="93893069965408" parent="93893064883680" left="0" top="0" right="224.547" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="304" y="410" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/general" idtf="Железнодорожный район Города Витебск" shapeColor="0" id="93893070666496" parent="93893064883680" left="0" top="0" right="250.781" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="302" y="262" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893077236752" parent="93893064883680" id_b="93893077604352" id_e="93893072460448" b_x="258" b_y="256" e_x="331.99" e_y="347.5" dotBBalance="0" dotEBalance="0.368635">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893069684192" parent="93893064883680" id_b="93893077604352" id_e="93893063519392" b_x="258" b_y="256" e_x="331.99" e_y="347.5" dotBBalance="0" dotEBalance="0.468138">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893076029264" parent="93893064883680" id_b="93893077604352" id_e="93893075082000" b_x="258" b_y="256" e_x="331.99" e_y="347.5" dotBBalance="0" dotEBalance="0.63401">
+            <points/>
+        </pair>
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="93893075082000" parent="93893064883680" id_b="93893065511504" id_e="93893069965408" b_x="202" b_y="339" e_x="304" e_y="410" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="93893063519392" parent="93893064883680" id_b="93893065511504" id_e="93893064501504" b_x="202" b_y="339" e_x="304.5" e_y="339.5" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="93893072460448" parent="93893064883680" id_b="93893065511504" id_e="93893070666496" b_x="202" b_y="339" e_x="302" e_y="262" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893071012752" parent="93893064883680" id_b="93893076154224" id_e="93893065511504" b_x="155.99" b_y="418" e_x="202" e_y="339" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <contour type="contour/const/perm" idtf="{Железнодорожный район Города Витебск, Октябрьский район Города Витебск, &#13;&#10;&#9;      Первомайский район Города Витебск}" shapeColor="193" id="93893064883680" parent="0" left="0" top="0" right="479.891" bottom="38" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" idtf_pos_x="-235" idtf_pos_y="129">
+            <points>
+                <point x="106.99" y="463"/>
+                <point x="104.99" y="235"/>
+                <point x="556.99" y="230"/>
+                <point x="556.99" y="463"/>
+            </points>
+        </contour>
+        <node type="node/const/perm/struct" idtf="Действие. Какие административные районы &#13;&#10;входят в состав Города Витебск" shapeColor="0" id="93893070142000" parent="0" left="0" top="0" right="276.031" bottom="38" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="324.413" y="132.5" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/relation" idtf="конечная ситуация*" shapeColor="0" id="93893062370896" parent="0" left="0" top="0" right="126.484" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="410.413" y="197.5" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/group" idtf="ответ на вопрос" shapeColor="0" id="93893068532800" parent="0" left="0" top="0" right="104.25" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="241.413" y="174.5" haveBus="false" idtf_pos="1">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <pair type="pair/const/-/perm/orient" idtf="" shapeColor="0" id="93893076549408" parent="0" id_b="93893070142000" id_e="93893064883680" b_x="324.413" b_y="132.5" e_x="331.99" e_y="347.5" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893077777920" parent="0" id_b="93893062370896" id_e="93893076549408" b_x="410.413" b_y="197.5" e_x="12.6947" e_y="-40" dotBBalance="0" dotEBalance="0.638995">
+            <points/>
+        </pair>
+        <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="0" id="93893076949600" parent="0" id_b="93893068532800" id_e="93893064883680" b_x="241.413" b_y="174.5" e_x="331.99" e_y="347.5" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+    </staticSector>
+</GWF>
