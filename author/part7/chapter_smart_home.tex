@@ -22,10 +22,6 @@
 		\scnitem{\ref{sec_multicomponent_SH_model}~\nameref{sec_multicomponent_SH_model}}
 		\scnitem{\ref{sec_SH_subsystems}~\nameref{sec_SH_subsystems}}
 		\scnitem{\ref{sec_SH_tec_impl}~\nameref{sec_SH_tec_impl}}
-<<<<<<< HEAD
-		\scnitem{\ref{sec_SH_plans_and_tasks}~\nameref{sec_SH_plans_and_tasks}}
-=======
->>>>>>> aac06025ac92f11ea403cee87354d87244c661c9
 	\end{scnrelfromlist}
 	
 	\bigskip
@@ -423,7 +419,6 @@
 Для обмена MQTT-сообщениями между устройствами и реестрами в IoT Core предусмотрен MQTT-брокер, который отвечает за получение, обработку и доставку сообщений. Node-RED поддерживает соединение с MQTT-брокером через специальные узлы MQTT Input и MQTT Output. Обычно реестрам соответствуют узлы MQTT Input, поскольку этот узел позволяет подписаться на сообщения какой-либо темы ("топики"{}) и таким образом его данные можно передать на обработку. Устройствам же чаще соответствуют узлы MQTT Output. Чтобы подключить эти узлы к объектам Yandex IoT Core, требуется указать идентификаторы, а также созданные пароли. Наконец, MQTT-узлы необходимо подписать на нужные топики, чтобы верно передавать сообщения.
 
 \section*{Заключение к Главе~\ref{chapter_smart_home}}
-\label{sec_SH_plans_and_tasks}
 
 В главе рассмотрен подход к описанию предметной области в приложениях интернета вещей на примере умного дома на основе Технологии OSTIS.
 
