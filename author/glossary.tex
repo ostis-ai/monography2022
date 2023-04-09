@@ -8,43 +8,102 @@
 
 В рамках внутреннего языка \textit{ostis-систем} (в рамках \textit{SC-кода}) указанные основные термины называются \textit{основными sc-идентификаторами} (основными внешними идентификаторами sc-элементов --- элементов рафинированных семантических сетей).
 
-В данный предметный указатель включаются как русскоязычные, так и англоязычные термины (если нет аналогичного русскоязычного), непереводимые интернациональные названия (например, названия различных программных систем, такие как \textit{Neo4j}, \textit{MySQL} и т.д.), а также различные используемые сокращения.
+%В данный предметный указатель включаются как русскоязычные, так и англоязычные термины (если нет аналогичного русскоязычного), непереводимые интернациональные названия (например, названия различных программных систем, такие как \textit{Neo4j}, \textit{MySQL} и т.д.), а также различные используемые сокращения.
 
-При этом для каждого \myuline{основного} русскоязычного термина указывается синонимичный ему \myuline{основной} англоязычный термин, например:
+В данном предметном указателе в алфавитном порядке перечислены:
+\begin{textitemize}
+	\item все русскоязычные \myuline{основные} термины описываемых в монографии сущностей с указанием
+	\begin{textitemize}
+		\item их англоязычных эквивалентов;
+		\item тех разделов монографии, в которых эти термины являются ключевыми знаками;
+	\end{textitemize}
+	\item все \myuline{интернациональные} основные термины (например, названия различных программных систем, такие как \textit{Neo4j}, \textit{MySQL} и так далее), используемые в монографии с указанием
+	\begin{textitemize}
+		\item соответствующих разделов монографии, где эти термины являются ключевыми знаками.
+	\end{textitemize}
+\end{textitemize}
+
+При этом для каждого \myuline{основного} русскоязычного термина указывается синонимичный ему \myuline{основной} англоязычный термин. Полужирным курсивом выделяются только \myuline{основные} sc-идентификаторы. Например:
 
 \begin{SCn}
+	\scnheader{sc-идентификатор}
+	\scnidtf{строка символов или пиктограмма, взаимно однозначно представляющая соответствующий sc-элемент, хранимый в sc-памяти}
+	\scnidtf{внешний идентификатор sc-элемента}
+	\begin{scnsubdividing}
+		\scnitem{основной sc-идентификатор}
+		\scnitem{неосновной sc-идентификатор}
+		\begin{scnindent}
+			\scnsuperset{часто используемый неосновной sc-идентификатор}
+		\end{scnindent} 
+	\end{scnsubdividing}
 
-\scnheader{sc-идентификатор}
-\scnidtf{строка символов или пиктограмма, взаимно однозначно представляющая соответствующий sc-элемент, хранимый в sc-памяти}
-\scnidtf{внешний идентификатор sc-элемента}
+	\begin{scnsubdividing}
+		\scnitem{русскоязычный sc-идентификатор}
+		\scnitem{англоязычный sc-идентификатор}
+		\scnitem{интернациональный sc-идентификатор}
+	\end{scnsubdividing}
 
-\begin{scnset}
-\vspace{-\baselineskip}
-\scnheader{sc-элемент}
-\scnidtf{\textit{sc-element}}
-\begin{scnindent}
-	\scniselement{основной англоязычный sc-идентификатор}
+	\begin{scnset}
+	\vspace{-\baselineskip}
+	\scnheader{sc-элемент}
+	\scnidtf{\textit{sc-element}}
 	\begin{scnindent}
-		\scnidtf{основной sc-идентификатор для англоязычного режима}
+		\scniselement{основной англоязычный sc-идентификатор}
+		\begin{scnindent}
+			\scnidtf{основной sc-идентификатор для англоязычного режима}
+		\end{scnindent}
 	\end{scnindent}
-\end{scnindent}
-\scnidtf{\textit{sc-элемент}}
-\begin{scnindent}
-	\scniselement{основной русскоязычный sc-идентификатор}
+	\scnidtf{\textit{sc-элемент}}
 	\begin{scnindent}
-		\scnidtf{основной sc-идентификатор для русскоязычного режима}
+		\scniselement{основной русскоязычный sc-идентификатор}
+		\begin{scnindent}
+			\scnidtf{основной sc-идентификатор для русскоязычного режима}
+		\end{scnindent}
 	\end{scnindent}
-\end{scnindent}
-\end{scnset}
-\scnexplanation{Для каждого ключевого термина в предметном указателе указывается его основной русскоязычный идентификатор и основной англоязычный идентификатор. При этом по умолчанию считается, что русскоязычный термин является \myuline{основным} русскоязычным идентификатором, а соответствующий ему англоязычный --- \myuline{основным} англоязычным идентификатором.}
+	\end{scnset}
+	\scnexplanation{Для каждого ключевого термина в предметном указателе указывается его основной русскоязычный идентификатор и основной англоязычный идентификатор. При этом по умолчанию считается, что русскоязычный термин является \myuline{основным} русскоязычным идентификатором, а соответствующий ему англоязычный --- \myuline{основным} англоязычным идентификатором.}
 \end{SCn}
 
 \bigskip
 
 Для каждого неосновного, но часто используемого русскоязычного термина указывается синонимичный ему основной русскоязычный термин. Кроме того, для каждого основного русскоязычного термина указывается ссылка на соответствующую главу, параграф или пункт монографии, где сущность, обозначаемая этим термином, является ключевым знаком.
+
+Данный предметный указатель представляет собой перечень кратких спецификаций всех используемых в монографии терминов. Эти спецификации упорядочены по алфавиту специфицируемых терминов. Используемые в монографии термины с формальной точки зрения представляют собой имена (идентификаторы) соответствующих им (именуемых) sc-элементов (элементов рафинированной семантической сети).
+
+Класс все таких терминов разбивается на следующие подклассы:
+\begin{textitemize}
+	\item основные русскоязычные термины, используемые \myuline{только} для русскоязычного режима отображения элементов рафинированной семантической сети;
+	\item основные англоязычные термины.
+\end{textitemize}
+
+\begin{SCn}
+	\scnheader{Предметный указатель OSTIS}
+	\scnidtf{Терминологический указатель}
+	\begin{scnitemize}
+		\item Спецификация ключевых знаков (основных sc-идентификаторов)
+		\begin{scnitemize}
+			\item основной русскоязычный;
+			\item часто используемый русскоязычный;
+			\item основной англоязычный;
+			\item ссылка на главы и/или параграфы и/или пункты;
+			\item сравнение.
+		\end{scnitemize}
+	\end{scnitemize}
+\end{SCn}
 \end{partbacktext}
 
 \begin{SCn}
+
+\scnheader{абстрактная сущность}
+\scntext{трактовка}{трактовка этого термина имеет два аспекта:
+	\begin{textitemize}
+		\item вымышленная (придуманная, реально несуществующая) сущность в отличие оо реальной (материальной) сущности, например, множество, пространственная точка;
+		\item сущность, имеющая неоднозначную спецификацию описывающую только те свойства, которые важны (существенны) только для некоторой точки зрения. Например, абстрактная (виртуальная) машина, абстрактный (виртуальный) пациент.
+	\end{textitemize}
+}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{chapter_sc_code}~\nameref{chapter_sc_code}}
+\end{scnreltolist}
 
 \scnheader{Абстрактная scp-машина}
 \scnidtf{\textit{Abstract scp-machine}}
@@ -110,6 +169,21 @@
 \scnidtf{\textit{arity}}
 \begin{scnreltolist}{ключевое понятие}
 	\scnitem{\ref{chapter_top_ontologies}~\nameref{chapter_top_ontologies}}
+\end{scnreltolist}
+
+\scnheader{антисимметричное неслотовое бинарное отношение}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
+\scnheader{антисимметричное слотовое бинарное отношение}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
+\scnheader{архитектура вычислительной системы}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_comp_archs}~\nameref{sec_comp_archs}}
 \end{scnreltolist}
 
 \scnheader{архитектура вычислительной системы}
@@ -194,11 +268,15 @@
 	\scnitem{Глава \ref{chapter_library}~\nameref{chapter_library}}
 \end{scnreltolist}
 
-
 \scnheader{бинарное отношение}
 \scnidtf{\textit{binary relation}}
 \begin{scnreltolist}{ключевое понятие}
 	\scnitem{Глава \ref{chapter_top_ontologies}~\nameref{chapter_top_ontologies}}
+\end{scnreltolist}
+
+\scnheader{бинарное sc-отношение}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
 \end{scnreltolist}
 
 \scnheader{блокировка*}
@@ -207,10 +285,26 @@
 	\scnitem{\ref{sec_ps_sync}~\nameref{sec_ps_sync}}
 \end{scnreltolist}
 
+\scnheader{веб вещей}
+\scnidtf{\textit{web of things}}
+\begin{scnreltolist}{ключевое понятие}
+	\scnitem{Глава \ref{chapter_smart_home}~\nameref{chapter_smart_home}}
+\end{scnreltolist}
+
 \scnheader{величина}
 \scnidtf{\textit{value}}
 \begin{scnreltolist}{ключевое понятие}
 	\scnitem{Глава \ref{chapter_top_ontologies}~\nameref{chapter_top_ontologies}}
+\end{scnreltolist}
+
+\scnheader{верное высказывание*}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_nonclass_logic}~\nameref{sec_nonclass_logic}}
+\end{scnreltolist}
+
+\scnheader{выводимое множество}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_nonclass_logic}~\nameref{sec_nonclass_logic}}
 \end{scnreltolist}
 
 \scnheader{вид деятельности}
@@ -389,6 +483,11 @@
 	\scnitem{\ref{chapter_top_ontologies}~\nameref{chapter_top_ontologies}}
 \end{scnreltolist}
 
+\scnheader{жизненный цикл}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{Часть \ref{part1}~\nameref{part1}}
+\end{scnreltolist}
+
 \scnheader{завершение\scnsupergroupsign}
 \scnidtf{\textit{completion\scnsupergroupsign}}
 \begin{scnreltolist}{ключевой параметр}
@@ -432,6 +531,11 @@
 	\scnitem{Глава \ref{chapter_top_ontologies}~\nameref{chapter_top_ontologies}}
 \end{scnreltolist}
 
+\scnheader{индивидуальная кибернетическая система}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{Глава \ref{chap_intro}~\nameref{chap_intro}}
+\end{scnreltolist}
+
 \scnheader{интеллектуальная геоинформационная система}
 \scnidtf{\textit{intelligent geoinformation system}}
 \begin{scnreltolist}{ключевое понятие}
@@ -442,6 +546,11 @@
 \scnidtf{\textit{intelligent geoinformation ostis-system}}
 \begin{scnreltolist}{ключевое понятие}
 	\scnitem{Глава \ref{chapter_gis}~\nameref{chapter_gis}}
+\end{scnreltolist}
+
+\scnheader{интеллектуальная кибернетическая система}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{Глава \ref{chap_intro}~\nameref{chap_intro}}
 \end{scnreltolist}
 
 \scnheader{интеллектуальная компьютерная система нового поколения}
@@ -457,6 +566,33 @@
 	\scnitem{Глава~\ref{chapter_new_generation_systems}~\nameref{chapter_new_generation_systems}}
 \end{scnreltolist}
 
+\scnheader{интернет вещей}
+\scnidtf{\textit{internet of things}}
+\begin{scnreltolist}{ключевое понятие}
+	\scnitem{Глава \ref{chapter_smart_home}~\nameref{chapter_smart_home}}
+\end{scnreltolist}
+
+\scnheader{интроспективный ключевой элемент\scnrolesign}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
+\end{scnreltolist}
+
+\scnheader{иррефлексивное неслотовое бинарное отношение}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
+\scnheader{иррефлексивное слотовое бинарное отношение}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
+\scnheader{ИСС}
+\scnidtftext{сокращение основного sc-идентификатора}{интеллектуальная справочная система}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{chapter_learning_systems}~\nameref{chapter_learning_systems}}
+\end{scnreltolist}
+
 \scnheader{инициируемое пользовательским интерфейсом действие*}
 \scnidtf{\textit{action initiated by the user interface}}
 \begin{scnreltolist}{ключевое отношение}
@@ -467,6 +603,15 @@
 \scnidtf{\textit{integration}}
 \begin{scnreltolist}{ключевое понятие}
     \scnitem{Глава \ref{chapter_integration}~\nameref{chapter_integration}}
+\end{scnreltolist}
+
+\scnheader{интеллект\scnsupergroupsign}
+\scnidtf{\textit{intelligence\scnsupergroupsign}}
+\scnidtf{уровень интеллекта\scnsupergroupsign}
+\scniselement{параметр}
+\scnrelfrom{область определения}{кибернетическая система}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{Глава \ref{chap_intro}~\nameref{chap_intro}}
 \end{scnreltolist}
 
 \scnheader{интеллектуальный интерфейс}
@@ -530,6 +675,12 @@
     \scnitem{Глава \ref{chapter_integration}~\nameref{chapter_integration}}
 \end{scnreltolist}
 
+\scnheader{искусственный интеллект}
+\scnidtf{\textit{artificial intelligence}}
+\begin{scnreltolist}{ключевое понятие}
+	\scnitem{Глава \ref{chap_intro}~\nameref{chap_intro}}
+\end{scnreltolist}
+
 \scnheader{картографический интерфейс}
 \scnidtf{\textit{cartographic interface}}
 \begin{scnreltolist}{ключевое понятие}
@@ -546,6 +697,27 @@
 \scnidtf{\textit{quasybinary relation}}
 \begin{scnreltolist}{ключевое понятие}
 	\scnitem{\ref{chapter_top_ontologies}~\nameref{chapter_top_ontologies}}
+\end{scnreltolist}
+
+\scnheader{кибернетическая система}
+\scnsuperset{компьютерная система}
+\begin{scnindent}
+	\scnidtf{искусственная кибернетическая система}
+	\scnsuperset{интеллектуальная компьютерная система}
+	\begin{scnindent}
+		\scnsuperset{интеллектуальная компьютерная система нового поколения}
+		\begin{scnindent}
+			\scneq{\textup{(} самообучаемая компьютерная система $\cap$ интероперабельная компьютерная система \textup{)}}
+			\scnsuperset{ostis-система}
+			\begin{scnindent}
+				\scnidtf{предлагаемое уточнение (вариант реализации) интеллектуальной компьютерной системы нового поколения}
+			\end{scnindent}
+		\end{scnindent} 
+	\end{scnindent} 
+\end{scnindent} 
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{Часть \ref{part1}~\nameref{part1}}
+	\scnitem{Глава \ref{chap_intro}~\nameref{chap_intro}}
 \end{scnreltolist}
 
 \scnheader{класс}
@@ -588,6 +760,11 @@
 \scnidtf{\textit{class of method}}
 \begin{scnreltolist}{ключевое понятие}
 	\scnitem{\ref{sec_method_lang_concept}~\nameref{sec_method_lang_concept}}
+\end{scnreltolist}
+
+\scnheader{ключевой запрос\scnrolesign}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
 \end{scnreltolist}
 
 \scnheader{количественный метод оценки пользовательских интерфейсов}
@@ -638,16 +815,33 @@
 	\scnitem{Глава \ref{reusable_component_section}~\nameref{reusable_component_section}}
 \end{scnreltolist}
 
+\scnheader{компьютерная алгебра}	
+\scnidtf{\textit{computer algebra}}
+\begin{scnreltolist}{ключевое понятие}
+	\scnitem{\ref{sec_integration_algebra}~\nameref{sec_integration_algebra}}
+\end{scnreltolist}
+
 \scnheader{компьютерное зрение}	
 \scnidtf{\textit{computer vision}}
 \begin{scnreltolist}{ключевое понятие}
 	\scnitem{\ref{sec_3d_models_computervision}~\nameref{sec_3d_models_computervision}}
 \end{scnreltolist}
 
+\scnheader{конструктивно истинное высказывание*}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_nonclass_logic}~\nameref{sec_nonclass_logic}}
+\end{scnreltolist}
+
 \scnheader{контекст*}
 \scnidtf{\textit{context*}}
 \begin{scnreltolist}{ключевое отношение}
 	\scnitem{\ref{sec_activity_and_technology}~\nameref{sec_activity_and_technology}}
+\end{scnreltolist}
+
+\scnheader{контекстно-зависимая система}
+\scnidtf{\textit{context-dependent system}}
+\begin{scnreltolist}{ключевое понятие}
+	\scnitem{Глава \ref{chapter_smart_home}~\nameref{chapter_smart_home}}
 \end{scnreltolist}
 
 \scnheader{корпоративная система}
@@ -691,6 +885,31 @@
 \scnidtf{\textit{meta-method}}
 \begin{scnreltolist}{ключевое понятие}
 	\scnitem{Глава \ref{chapter_programs}~\nameref{chapter_programs}}
+\end{scnreltolist}
+
+\scnheader{метаструктура}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
+\scnheader{метрика}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
+\end{scnreltolist}
+
+\scnheader{метрическое пространство}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
+\end{scnreltolist}
+
+\scnheader{метрическое конечное синтаксическое пространство}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
+\end{scnreltolist}
+
+\scnheader{метрическое конечное семантическое пространство}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
 \end{scnreltolist}
 
 \scnheader{метод}
@@ -739,6 +958,39 @@
 	\scnitem{Глава \ref{chapter_computers}~\nameref{chapter_computers}}
 \end{scnreltolist}
 
+\scnheader{Метасистема OSTIS}
+\scnidtftext{сокращение основного sc-идентификатора}{Intelligent MetaSystem}
+\scnidtf{интеллектуальная метасистема поддержки проектирования интеллектуальных систем}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{chapter_ims_standard}~\nameref{chapter_ims_standard}}
+\end{scnreltolist}
+
+\scnheader{многоагентная система}
+\scnidtf{\textit{multiagent system}}
+\scnidtf{кибернетическая система, представляющая собой коллектив взаимодействующих кибернетических систем, являющихся агентами (членами) этого коллектива}
+\scnidtf{коллективная кибернетическая система}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{Глава \ref{chap_intro}~\nameref{chap_intro}}
+\end{scnreltolist}
+
+\scnheader{многоагентная модель решения задач}
+\scnidtf{\textit{subject area}}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{Глава \ref{chapter_new_generation_systems}~\nameref{chapter_new_generation_systems}}
+\end{scnreltolist}
+
+\scnheader{многоагентный интерфейс интеллектуальной компьютерной системы нового поколения}
+\scnidtf{\textit{subject area}}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{Глава \ref{chapter_new_generation_systems}~\nameref{chapter_new_generation_systems}}
+\end{scnreltolist}
+
+\scnheader{многоагентный решатель задач}
+\scnidtf{\textit{subject area}}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{Глава \ref{chapter_new_generation_systems}~\nameref{chapter_new_generation_systems}}
+\end{scnreltolist}
+
 \scnheader{модель решения задач}
 \scnidtf{\textit{problem solving model}}
 \begin{scnreltolist}{ключевое понятие}
@@ -751,10 +1003,15 @@
 	\scnitem{\ref{chapter_top_ontologies}~\nameref{chapter_top_ontologies}}
 \end{scnreltolist}
 
-\scnheader{мощность множеств}
+\scnheader{мощность множества}
 \scnidtf{\textit{power of set}}
 \begin{scnreltolist}{ключевое понятие}
 	\scnitem{\ref{chapter_top_ontologies}~\nameref{chapter_top_ontologies}}
+\end{scnreltolist}
+
+\scnheader{минимальный ключевой запрос\scnrolesign}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
 \end{scnreltolist}
 
 \scnheader{многократно используемый компонент ostis-систем}
@@ -812,6 +1069,36 @@
 	\scnitem{Глава \ref{chapter_computers}~\nameref{chapter_computers}}
 \end{scnreltolist}
 
+\scnheader{модальный оператор}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
+\scnheader{модальное правило вывода}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
+\scnheader{монотонное бинарное отношение*}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
+\scnheader{монотонное бинарное отношение\scnrolesign}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
+\scnheader{монотонное слотовое бинарное отношение*}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
+\scnheader{монотонное неслотовое бинарное отношение*}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
 \scnheader{неатомарное действие}
 \scnidtf{\textit{non-atomic action}}
 \begin{scnreltolist}{ключевое отношение}
@@ -849,6 +1136,9 @@
 \end{scnreltolist}
 
 \scnheader{нейросетевой метод решения задач}
+\scnidtf{\textit{и.н.с.}}
+\scnidtf{\textit{искусственная нейронная сеть}}
+\scnidtf{\textit{artificial neural network}}
 \scnidtf{\textit{artificial neural network method for solving problems}}
 \begin{scnreltolist}{ключевой знак}
 	\scnitem{Глава \ref{chapter_ann}~\nameref{chapter_ann}}
@@ -917,6 +1207,7 @@
 \scnheader{онтология}
 \scnidtf{\textit{ontology}}
 \begin{scnreltolist}{ключевой понятие}
+%	\scnitem{Глава \ref{chapter_new_generation_systems}~\nameref{chapter_new_generation_systems}}
 	\scnitem{\ref{chapter_top_ontologies}~\nameref{chapter_top_ontologies}}
 	\scnitem{\ref{sec_ontology}~\nameref{sec_ontology}}
 \end{scnreltolist}
@@ -996,10 +1287,103 @@
 	\scnitem{\ref{ostis_library_analysis}~\nameref{ostis_library_analysis}}
 \end{scnreltolist}
 
+\scnheader{неискажённое высказывание*}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_nonclass_logic}~\nameref{sec_nonclass_logic}}
+\end{scnreltolist}
+
+\scnheader{немонотонный вывод на конечном sc-множестве посылок}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_nonclass_logic}~\nameref{sec_nonclass_logic}}
+\end{scnreltolist}
+
+\scnheader{неслотовое бинарное отношение}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
+\scnheader{неслотовое отношение нестрогого порядка}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
+\scnheader{неслотовое отношение эквивалентности}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
+\scnheader{нечёткая истинность*}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_nonclass_logic}~\nameref{sec_nonclass_logic}}
+\end{scnreltolist}
+
+\scnheader{обобщённое sc-отношение}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
+\end{scnreltolist}
+
+\scnheader{обобщённая sc-связка}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
+\end{scnreltolist}
+
+\scnheader{Обобщенный жизненный цикл ostis-систем}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{Глава \ref{chapter_ostis_tech}~\nameref{chapter_ostis_tech}}
+\end{scnreltolist}
+
+\scnheader{Отношение выводимости}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
+\scnheader{Отношение выводимости на конечных множествах}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
+\scnheader{Отношение выводимости на конечных множествах полносвязно представленных множеств}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
+\scnheader{Отношение выводимости на секвенциях}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
+\scnheader{отношение порядка монотонного отношения\scnrolesign}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
+\scnheader{отношение становления структур}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
 \scnheader{параметр}
 \scnidtf{\textit{parameter}}
 \begin{scnreltolist}{ключевое понятие}
-	\scnitem{Глава \ref{chapter_top_ontologies}~\nameref{chapter_top_ontologies}}
+	\scnitem{Глава \ref{chap_intro}~\nameref{chap_intro}}
+\end{scnreltolist}
+
+\scnheader{параметр, заданный на множестве кибернетических систем}
+%\scnidtf{\textit{parameter}}
+\scnhaselement{качество физической оболочки кибернетической системы\scnsupergroupsign}
+\scnhaselement{качество хранимой информации\scnsupergroupsign}
+\begin{scnindent}
+	\scnidtf{качество информации, хранимой в памяти кибернетической системы\scnsupergroupsign}
+\end{scnindent} 
+\scnhaselement{качество решателя задач\scnsupergroupsign}
+\scnhaselement{качество интерфейса\scnsupergroupsign}
+\scnhaselement{обучаемость\scnsupergroupsign}
+\scnhaselement{гибкость кибернетической системы\scnsupergroupsign}
+\scnhaselement{стратифицированность кибернетической системы\scnsupergroupsign}
+\scnhaselement{рефлексивность кибернетической системы\scnsupergroupsign}
+\scnhaselement{уровень эволюционных ограничений\scnsupergroupsign}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{Глава \ref{chap_intro}~\nameref{chap_intro}}
 \end{scnreltolist}
 
 \scnheader{параметр scp-программы\scnrolesign}
@@ -1093,6 +1477,63 @@
 	\scnitem{\ref{sec_sd}~\nameref{sec_sd}}
 \end{scnreltolist}
 
+
+\scnheader{полная семантическая окрестность элемента*}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
+\end{scnreltolist}
+
+\scnheader{полносвязно представленный элемент\scnrolesign}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
+\end{scnreltolist}
+
+\scnheader{полностью представленный элемент\scnrolesign}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
+\end{scnreltolist}
+
+\scnheader{последовательность мышления}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
+\scnheader{последовательность иррационального мышления}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
+\scnheader{последовательность классического рационального дедуктивного познания}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
+\scnheader{последовательность рационального мышления}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
+\scnheader{последовательность рационального мышления классической логики}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
+\scnheader{последовательность рационального дедуктивного мышления классической 	логики}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
+\scnheader{последовательность рационального дедуктивного мышления классической логики на конечных sc-множествах}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
+\scnheader{приложение умного дома}
+\scnidtf{\textit{smart home application}}
+\begin{scnreltolist}{ключевое понятие}
+	\scnitem{Глава \ref{chapter_smart_home}~\nameref{chapter_smart_home}}
+\end{scnreltolist}
+
 \scnheader{приоритет блокировки*}
 \scnidtf{\textit{lock priority*}}
 \begin{scnreltolist}{ключевой знак}
@@ -1103,6 +1544,17 @@
 \scnidtf{\textit{belonging*}}
 \begin{scnreltolist}{ключевое отношение}
 	\scnitem{Глава \ref{chapter_top_ontologies}~\nameref{chapter_top_ontologies}}
+\end{scnreltolist}
+
+\scnheader{Принципы, лежащие в основе Технологии OSTIS}
+\begin{scnreltolist}{ключевое отношение}
+	\scnitem{Глава \ref{chapter_ostis_tech}~\nameref{chapter_ostis_tech}}
+\end{scnreltolist}
+
+\scnheader{предметная область}
+\scnidtf{\textit{subject area}}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{Глава \ref{chapter_kb}~\nameref{chapter_kb}}
 \end{scnreltolist}
 
 \scnheader{программный вариант ostis-платформы}
@@ -1190,6 +1642,21 @@
 	\scnitem{\ref{sec_activity_and_technology}~\nameref{sec_activity_and_technology}}
 \end{scnreltolist}
 
+\scnheader{псевдометрика}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
+\end{scnreltolist}
+
+\scnheader{псевдометрическое пространство}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
+\end{scnreltolist}
+
+\scnheader{псевдометрическое конечное семантическое пространство}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
+\end{scnreltolist}
+
 \scnheader{расширенная ostis-платформа}
 \scnidtf{\textit{extended ostis-platform}}
 \begin{scnreltolist}{ключевой знак}
@@ -1199,7 +1666,7 @@
 \scnheader{распределенная система}
 \scnidtf{\textit{distributed system}}
 \begin{scnreltolist}{ключевой знак}
-	\scnitem{Глава \ref{sec_ecosystem_analysis}~\nameref{sec_ecosystem_analysis}}
+	\scnitem{Глава \ref{sec_ecosystem_structure}~\nameref{sec_ecosystem_structure}}
 \end{scnreltolist}
 
 \scnheader{реинжиниринг}
@@ -1212,6 +1679,16 @@
 \scnidtf{\textit{receptor action}}
 \begin{scnreltolist}{ключевое отношение}
 	\scnitem{\ref{sec_action_concept}~\nameref{sec_action_concept}}
+\end{scnreltolist}
+
+\scnheader{рефлексивное неслотовое бинарное отношение}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
+\scnheader{рефлексивное слотовое бинарное отношение}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
 \end{scnreltolist}
 
 \scnheader{решатель задач пользовательского интерфейса ostis-систем}
@@ -1227,6 +1704,11 @@
 	\scnitem{Глава \ref{chapter_ps_design}~\nameref{chapter_ps_design}}
 \end{scnreltolist}
 
+\scnheader{РЗ}
+\scnidtftext{сокращение основного sc-идентификатора}{решатель задач}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{chapter_situation_management}~\nameref{chapter_situation_management}}
+\end{scnreltolist}
 
 \scnheader{ролевое отношение}
 \scnidtf{\textit{role relation}}
@@ -1236,8 +1718,22 @@
 
 \scnheader{самостоятельная ostis-система}
 \scnidtf{\textit{independent ostis-system}}
-\begin{scnreltolist}{ключевое отношение}
+\begin{scnreltolist}{ключевое понятие}
     \scnitem{Глава \ref{sec_ecosystem_structure}~\nameref{sec_ecosystem_structure}}
+\end{scnreltolist}
+
+\scnheader{система компьютерной алгебры}
+\scnidtf{\textit{c.к.а.}}
+\scnidtf{\textit{computer algebra system}}
+\begin{scnreltolist}{ключевое понятие}
+	\scnitem{\ref{sec_integration_algebra}~\nameref{sec_integration_algebra}}
+\end{scnreltolist}
+
+\scnheader{система компьютерной математики}
+\scnidtf{\textit{c.к.м.}}
+\scnidtf{\textit{computer mathematics system}}
+\begin{scnreltolist}{ключевое понятие}
+	\scnitem{\ref{sec_integration_algebra}~\nameref{sec_integration_algebra}}
 \end{scnreltolist}
 
 \scnheader{связь}
@@ -1264,6 +1760,17 @@
 	\scnitem{\ref{sec_sem_neighborhood}~\nameref{sec_sem_neighborhood}}
 \end{scnreltolist}
 
+\scnheader{семантическая сеть}
+\scnidtf{\textit{semantic network}}
+\scnsuperset{рафинированная семантическая сеть}
+\scnsuperset{иерархическая семантическая сеть}
+\begin{scnindent}
+	\scnidtf{семантическая сеть, являющаяся метаграфовой}
+\end{scnindent} 
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{Глава \ref{chapter_new_generation_systems}~\nameref{chapter_new_generation_systems}}
+\end{scnreltolist}
+
 \scnheader{Семантическая теория программ для ostis-систем}
 \scnidtf{\textit{Semantic program theory for ostis-systems}}
 \begin{scnreltolist}{ключевой знак}
@@ -1282,12 +1789,6 @@
     \scnitem{Глава \ref{chapter_integration}~\nameref{chapter_integration}}
 \end{scnreltolist}
 
-\scnheader{сеть}
-\scnidtf{\textit{net}}
-\begin{scnreltolist}{ключевое понятие}
-	\scnitem{Глава \ref{sec_ecosystem_analysis}~\nameref{sec_ecosystem_analysis}}
-\end{scnreltolist}
-
 \scnheader{синтаксис метода*}
 \scnidtf{\textit{method syntax*}}
 \begin{scnreltolist}{ключевое отношение}
@@ -1298,6 +1799,17 @@
 \scnidtf{\textit{real-time locating system}}
 \begin{scnreltolist}{ключевое понятие}
 	\scnitem{\ref{sec_3d_models_positioning}~\nameref{sec_3d_models_positioning}}
+\end{scnreltolist}
+
+\scnheader{ситуация}	
+\scnidtf{\textit{situation}}
+\begin{scnreltolist}{ключевое понятие}
+	\scnitem{\ref{chapter_top_ontologies}~\nameref{chapter_top_ontologies}}
+\end{scnreltolist}
+
+\scnheader{смысловое представление информации}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{Глава \ref{chapter_new_generation_systems}~\nameref{chapter_new_generation_systems}}
 \end{scnreltolist}
 
 \scnheader{событие в sc-памяти}
@@ -1316,6 +1828,72 @@
 \scnidtf{\textit{mapping*}}
 \begin{scnreltolist}{ключевое отношение}
 	\scnitem{\ref{chapter_top_ontologies}~\nameref{chapter_top_ontologies}}
+\end{scnreltolist}
+
+\scnheader{связная sc-структура*}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
+\end{scnreltolist}
+
+\scnheader{секвенция}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
+\scnheader{семантическая метрика}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
+\end{scnreltolist}
+
+\scnheader{семантическое сходство sc-структур*}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
+\end{scnreltolist}
+
+\scnheader{семантическое непрерывное сходство sc-структур*}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
+\end{scnreltolist}
+
+\scnheader{симметричное неслотовое бинарное отношение}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
+\scnheader{симметричное слотовое бинарное отношение}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
+\scnheader{система локального позиционирования}
+\scnidtf{\textit{local positioning system}}
+\begin{scnreltolist}{ключевое понятие}
+	\scnitem{\ref{sec_3d_models_positioning}~\nameref{sec_3d_models_positioning}}
+\end{scnreltolist}
+
+\scnheader{слотовое бинарное отношение}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
+\scnheader{слотовое отношение нестрогого порядка}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
+\scnheader{слотовое отношение эквивалентности}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
+\scnheader{слотовое sc-отношение}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
+\end{scnreltolist}
+
+\scnheader{содержательное замыкание*}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
 \end{scnreltolist}
 
 \scnheader{специализированная ostis-платформа}
@@ -1378,10 +1956,23 @@
 	\scnitem{Глава \ref{chapter_top_ontologies}~\nameref{chapter_top_ontologies}}
 \end{scnreltolist}
 
+\scnheader{сущностное замыкание*}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
+\end{scnreltolist}
+
 \scnheader{Стандарт Технологии OSTIS}
+\scnidtf{\textit{Стандарт OSTIS}}
 \scnidtf{\textit{Standard of the OSTIS Technology}}
 \begin{scnreltolist}{ключевое понятие}
+	\scnitem{Глава \ref{chapter_ostis_tech}~\nameref{chapter_ostis_tech}}
 	\scnitem{\ref{sec_standard}~\nameref{sec_standard}}
+\end{scnreltolist}
+
+\scnheader{Стандарт ostis-систем}
+\scnidtf{\textit{Standard of ostis-systems}}
+\begin{scnreltolist}{ключевое понятие}
+	\scnitem{Глава \ref{chapter_ostis_tech}~\nameref{chapter_ostis_tech}}
 \end{scnreltolist}
 
 \scnheader{сцена в трехмерном представлении}
@@ -1410,7 +2001,22 @@
 
 \scnheader{технология}
 \scnidtf{\textit{technology}}
+\scnidtf{комплекс моделей, методик, методов и средств, обеспечивающих выполнение соответствующего вида деятельности}
+\scnsuperset{технология поддержки жизненного цикла}
+\begin{scnindent}
+	\scnsuperset{технология комплексной поддержки жизненного цикла}
+	\begin{scnindent}
+		\scnsuperset{технология комплексной поддержки жизненного цикла интеллектуальных компьютерных систем нового поколения}
+		\begin{scnindent}
+			\scnhaselement{Технология OSTIS}
+			\begin{scnindent}
+				\scnidtf{Технология комплексной поддержки жизненного цикла ostis-систем}
+			\end{scnindent}
+		\end{scnindent} 
+	\end{scnindent} 
+\end{scnindent} 
 \begin{scnreltolist}{ключевой знак}
+	\scnitem{Часть \ref{part1}~\nameref{part1}}
 	\scnitem{Глава \ref{chapter_actions}~\nameref{chapter_actions}}
 \end{scnreltolist}
 
@@ -1418,6 +2024,11 @@
 \scnidtf{\textit{technology*}}
 \begin{scnreltolist}{ключевое отношение}
 	\scnitem{\ref{sec_activity_and_technology}~\nameref{sec_activity_and_technology}}
+\end{scnreltolist}
+
+\scnheader{Технология OSTIS}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{Глава \ref{chapter_ostis_tech}~\nameref{chapter_ostis_tech}}
 \end{scnreltolist}
 
 \scnheader{технология проектирования интеллектуальных систем}
@@ -1456,10 +2067,45 @@
 	\scnitem{Глава \ref{chapter_top_ontologies}~\nameref{chapter_top_ontologies}}
 \end{scnreltolist}
 
+\scnheader{топологическое пространство}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
+\end{scnreltolist}
+
+\scnheader{топологическое пространство замыкания инцидентности коннекторов}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
+\end{scnreltolist}
+
+\scnheader{топологическое пространство синтаксического замыкания}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
+\end{scnreltolist}
+
+\scnheader{топологическое пространство содержательного замыкания}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
+\end{scnreltolist}
+
+\scnheader{топологическое пространство сущностного замыкания}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
+\end{scnreltolist}
+
 \scnheader{транзакция в sc-памяти}	
 \scnidtf{\textit{transaction in sc-memory}}
 \begin{scnreltolist}{ключевой знак}
 	\scnitem{\ref{sec_ps_sync}~\nameref{sec_ps_sync}}
+\end{scnreltolist}
+
+\scnheader{транзитивное неслотовое бинарное отношение}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
+\end{scnreltolist}
+
+\scnheader{транзитивное слотовое бинарное отношение}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_applied_logic}~\nameref{sec_applied_logic}}
 \end{scnreltolist}
 
 \scnheader{трехмерная модель объекта}	
@@ -1484,6 +2130,47 @@
 \scnidtf{\textit{sc-elements to be deleted*}}
 \begin{scnreltolist}{ключевой знак}
 	\scnitem{\ref{sec_ps_sync}~\nameref{sec_ps_sync}}
+\end{scnreltolist}
+
+\scnheader{умная больница}
+\scnidtf{smart-больница}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{chapter_ostis_tech}~\nameref{chapter_ostis_tech}}
+\end{scnreltolist}
+
+\scnheader{Умное общество}
+\scnidtf{smart-общество}
+\scnidtf{Общество 5.0}
+\scnidtf{Интеллектуальное общество}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{chapter_ostis_tech}~\nameref{chapter_ostis_tech}}
+\end{scnreltolist}
+
+\scnheader{умное предприятие}
+\scnidtf{smart-предприятие}
+\scnidtf{предприятие 5.0}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{chapter_ostis_tech}~\nameref{chapter_ostis_tech}}
+	\scnitem{\ref{chapter_enterprise}~\nameref{chapter_enterprise}}
+\end{scnreltolist}
+
+\scnheader{умный город}
+\scnidtf{smart-город}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{chapter_ostis_tech}~\nameref{chapter_ostis_tech}}
+\end{scnreltolist}
+
+\scnheader{умный дом}
+\scnidtf{smart home}
+\begin{scnreltolist}{ключевое понятие}
+	\scnitem{Глава \ref{chapter_smart_home}~\nameref{chapter_smart_home}}
+\end{scnreltolist}
+
+\scnheader{УСК}
+\scnidtftext{сокращение основного sc-идентификатора}{универсальный семантический код}
+\scnidtf{универсальный семантический код, разработанный В.~В. Мартыновым}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_ngics_sense_principles}~\nameref{sec_ngics_sense_principles}}
 \end{scnreltolist}
 
 \scnheader{физический интерфейс}
@@ -1513,7 +2200,7 @@
 \scnheader{цифровая экосистема}
 \scnidtf{\textit{digital ecosystem}}
 \begin{scnreltolist}{ключевое понятие}
-    \scnitem{\ref{sec_ecosystem_analysis}~\nameref{sec_ecosystem_analysis}}
+    \scnitem{\ref{sec_ecosystem_structure}~\nameref{sec_ecosystem_structure}}
 \end{scnreltolist}
 
 \scnheader{число}
@@ -1543,6 +2230,7 @@
 \scnheader{Экосистема OSTIS}
 \scnidtf{\textit{OSTIS ecosystem}}
 \begin{scnreltolist}{ключевой знак}
+	\scnitem{Глава \ref{chapter_ostis_tech}~\nameref{chapter_ostis_tech}}
 	\scnitem{Глава \ref{chapter_ecosystem}~\nameref{chapter_ecosystem}}
 \end{scnreltolist}
 
@@ -1559,7 +2247,13 @@
 	\scnitem{Глава \ref{chapter_integration}~\nameref{chapter_integration}}
 \end{scnreltolist}
 
+\scnheader{элементарно представленный элемент\scnrolesign}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
+\end{scnreltolist}
+
 \scnheader{язык представления методов}
+\scnidtf{я.п.м.}
 \scnidtf{язык программирования}
 \scnidtf{\textit{method representation language}}
 \begin{scnreltolist}{ключевое понятие}
@@ -1571,6 +2265,12 @@
 \scnidtf{\textit{representation language of neural network methods for solving problems}}
 \begin{scnreltolist}{ключевой знак}
 	\scnitem{Глава \ref{chapter_ann}~\nameref{chapter_ann}}
+\end{scnreltolist}
+
+\scnheader{Ядро базы знаний ostis-системы}
+\scnidtf{\textit{Knowledge base core of ostis-system}}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{Глава \ref{chapter_requests}~\nameref{chapter_requests}}
 \end{scnreltolist}
 
 \scnheader{Язык вопросов для ostis-систем}
@@ -1591,6 +2291,65 @@
 	\scnitem{\ref{sec_ps_scp}~\nameref{sec_ps_scp}}
 \end{scnreltolist}
 
+\scnheader{ambient assisted living}
+\begin{scnreltolist}{ключевое понятие}
+	\scnitem{Глава \ref{chapter_smart_home}~\nameref{chapter_smart_home}}
+\end{scnreltolist}
+
+\scnheader{help-система}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{Глава \ref{chapter_learning_systems}~\nameref{chapter_learning_systems}}
+\end{scnreltolist}
+
+\scnheader{MQTT}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{Глава \ref{chapter_smart_home}~\nameref{chapter_smart_home}}
+\end{scnreltolist}
+
+\scnheader{Maple}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_integration_algebra}~\nameref{sec_integration_algebra}}
+\end{scnreltolist}
+
+\scnheader{Mathematica}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_integration_algebra}~\nameref{sec_integration_algebra}}
+\end{scnreltolist}
+
+\scnheader{MATLAB}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_integration_algebra}~\nameref{sec_integration_algebra}}
+\end{scnreltolist}
+
+\scnheader{Maxima}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_integration_algebra}~\nameref{sec_integration_algebra}}
+\end{scnreltolist}
+
+\scnheader{Node-RED}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{Глава \ref{chapter_smart_home}~\nameref{chapter_smart_home}}
+\end{scnreltolist}
+
+\scnheader{OSTIS}
+\scnidtftext{сокращение основного sc-идентификатора}{Open Semantic Technology for Intelligent Systems}
+\scnidtftext{сокращение основного sc-идентификатора}{Открытая семантическая технология проектирования интеллектуальных систем}
+
+\scnheader{ostis-}
+\scnidtftext{сокращение основного sc-идентификатора}{for open semantic technology for intelligent systems}
+\scntext{пример применения}{
+	\begin{scnitemize}
+		\item ostis-система
+		\item ostis-платформа
+		\item ostis-сообщество
+	\end{scnitemize}
+}
+
+\scnheader{ostis-ассистент}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{Глава \ref{sec_ostis_assistant}~\nameref{sec_ostis_assistant}}
+\end{scnreltolist}
+
 \scnheader{ostis-платформа}
 \scnidtf{\textit{ostis-platform}}
 \begin{scnreltolist}{ключевой знак}
@@ -1606,6 +2365,7 @@
 \scnheader{ostis-система}
 \scnidtf{\textit{ostis-system}}
 \begin{scnreltolist}{ключевой знак}
+	\scnitem{Глава \ref{chapter_ostis_tech}~\nameref{chapter_ostis_tech}}
 	\scnitem{\ref{sec_ecosystem_structure}~\nameref{sec_ecosystem_structure}}
 \end{scnreltolist}
 
@@ -1614,6 +2374,43 @@
 \begin{scnreltolist}{ключевой знак}
 	\scnitem{\ref{sec_ecosystem_structure_description}~\nameref{sec_ecosystem_structure_description}}
 \end{scnreltolist}
+
+\scnheader{ostis-технология}
+\scnidtf{частная технология, входящая в состав комплексной Технологии OSTIS}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{Глава \ref{chapter_ostis_tech}~\nameref{chapter_ostis_tech}}
+\end{scnreltolist}
+
+\scnheader{OWL}
+\scnidtftext{сокращение основного sc-идентификатора}{Web Ontology Language}
+\scnidtf{Язык описания онтологий для семантической паутины}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{chapter_kb}~\nameref{chapter_kb}}
+\end{scnreltolist}
+
+\scnheader{RDF}
+\scnidtftext{сокращение основного sc-идентификатора}{Resource Description Framework}
+\scnidtf{Разработанная Консорциумом Всемирной паутины модель для представления данных}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{chapter_kb}~\nameref{chapter_kb}}
+\end{scnreltolist}
+
+\scnheader{REST API}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{Глава \ref{chapter_smart_home}~\nameref{chapter_smart_home}}
+\end{scnreltolist}
+
+\scnheader{SC-}
+\scnidtftext{сокращение основного sc-идентификатора}{Semantic Code}
+\scnidtftext{сокращение основного sc-идентификатора}{Semantic Computer}
+\scntext{пример применения}{
+	\begin{scnitemize}
+		\item SC-код
+		\item sc-элемент
+		\item sc-множество
+		\item sc-модель
+	\end{scnitemize}
+}
 
 \scnheader{sc-агент}
 \scnidtf{\textit{sc-agent}}
@@ -1629,12 +2426,47 @@
 
 \scnheader{SCg-код}
 \scnidtf{\textit{SCg-code}}
+\scnidtftext{сокращение основного sc-идентификатора}{Semantic Code graphic}
+\scnidtf{Графический нелинейный вариант визуализации текстов SC-кода}
 \begin{scnreltolist}{ключевой знак}
-	\scnitem{\nameref{chapter_ext_lang}}
+%	\scnitem{\nameref{chapter_ext_lang}}
+	\scnitem{Глава \ref{chapter_soft_platform}~\nameref{chapter_soft_platform}}
+\end{scnreltolist}
+
+\scnheader{SСfin-код}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{Глава \ref{chapter_soft_platform}~\nameref{chapter_soft_platform}}
+\end{scnreltolist}
+
+\scnheader{SСin-код}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{Глава \ref{chapter_soft_platform}~\nameref{chapter_soft_platform}}
+\end{scnreltolist}
+
+\scnheader{SC-JSON}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{Глава \ref{chapter_soft_platform}~\nameref{chapter_soft_platform}}
+\end{scnreltolist}
+
+\scnheader{\scnfilelong{\textbf{\textit{SC-код}}}}
+\scnidtf{\textit{SC-code}}
+\scnidtftext{сокращение основного sc-идентификатора}{Semantic Code}
+\scnidtf{Универсальный базовый способ смыслового представления знаний в виде семантических сетей с базовой теоретикомножественной интерпретацией}
+\scnrelto{часто используемый sc-идентификатор}{sc-структура}
+\scniselement{часто используемый sc-идентификатор}
+\scniselement{имя собственное}
+\scnidtf{sc-конструкция}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{Глава \ref{chapter_new_generation_systems}~\nameref{chapter_new_generation_systems}}
+\end{scnreltolist}
+\begin{scnreltolist}{ключевой термин}
+	\scnitem{Параграф \ref{sec_external_information_constructs_external_lang}~\nameref{sec_external_information_constructs_external_lang}}
 \end{scnreltolist}
 
 \scnheader{SCn-код}
 \scnidtf{\textit{SCn-code}}
+\scnidtftext{сокращение основного sc-идентификатора}{Semantic Code natural}
+\scnidtf{Гипертекстовый вариант визуализации текстов \textit{SC-кода}}
 \begin{scnreltolist}{ключевой знак}
 	\scnitem{\nameref{chapter_ext_lang}}
 \end{scnreltolist}
@@ -1665,6 +2497,66 @@
 	\scnitem{Глава \ref{chapter_interpreter}~\nameref{chapter_interpreter}}
 \end{scnreltolist}
 
+\scnheader{sc-память}
+\scnidtf{\textit{sc-memory}}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{Глава \ref{chapter_interpreter}~\nameref{chapter_interpreter}}
+\end{scnreltolist}
+
+\scnheader{sc-класс\scnrolesign}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
+\end{scnreltolist}
+
+\scnheader{sc-отношение\scnrolesign}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
+\end{scnreltolist}
+
+\scnheader{sc-отношение семантического сходства по слотовым отношениям*}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
+\end{scnreltolist}
+
+\scnheader{sc-отношение сходства по слотовым отношениям*}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
+\end{scnreltolist}
+
+\scnheader{sc-связка\scnrolesign}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
+\end{scnreltolist}
+
+\scnheader{sc-структура*}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_sr_semspace}~\nameref{sec_sr_semspace}}
+\end{scnreltolist}
+
+\scnheader{sc-элемент}
+\scnidtf{\textit{sc-element}}
+\scnrelto{часто используемый sc-идентификатор}{сущность}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{Глава \ref{chapter_new_generation_systems}~\nameref{chapter_new_generation_systems}}
+	\scnitem{Глава \ref{chapter_top_ontologies}~\nameref{chapter_top_ontologies}}
+	\scnitem{Глава \ref{chapter_sc_code}~\nameref{chapter_sc_code}}
+	\scnitem{Глава \ref{chapter_situation_management}~\nameref{chapter_situation_management}}
+\end{scnreltolist}
+
+\scnheader{sc-язык}
+\scnidtf{\textit{sc-language}}
+\scnidtf{подъязык \textit{SC-кода}}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{Глава \ref{chapter_kb}~\nameref{chapter_kb}}
+\end{scnreltolist}
+
+\scnheader{SCP}
+\scnidtftext{сокращение основного sc-идентификатора}{Semantic Code Programming}
+\scnidtf{Графовый процедурный язык программирования, построенный на базе \textit{SC-кода}}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{chapter_situation_management}~\nameref{chapter_situation_management}}
+\end{scnreltolist}
+
 \scnheader{scp-операнд\scnrolesign}
 \scnidtf{\textit{scp-operand\scnrolesign}}
 \begin{scnreltolist}{ключевой знак}
@@ -1677,11 +2569,39 @@
 	\scnitem{\ref{sec_ps_scp}~\nameref{sec_ps_scp}}
 \end{scnreltolist}
 
-\scnheader{sc-элемент}
-\scnidtf{\textit{sc-element}}
+\scnheader{Yandex Cloud}
 \begin{scnreltolist}{ключевой знак}
-	\scnitem{Глава \ref{chapter_new_generation_systems}~\nameref{chapter_new_generation_systems}}
-	\scnitem{Глава \ref{chapter_top_ontologies}~\nameref{chapter_top_ontologies}}
+	\scnitem{Глава \ref{chapter_smart_home}~\nameref{chapter_smart_home}}
+\end{scnreltolist}
+
+\scnheader{Yandex IoT Core}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{Глава \ref{chapter_smart_home}~\nameref{chapter_smart_home}}
+\end{scnreltolist}
+
+\scnheader{WebSocket}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{Глава \ref{chapter_soft_platform}~\nameref{chapter_soft_platform}}
+\end{scnreltolist}
+
+\scnheader{Wolfram}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_integration_algebra}~\nameref{sec_integration_algebra}}
+\end{scnreltolist}
+
+\scnheader{Wolfram Mathematica}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_integration_algebra}~\nameref{sec_integration_algebra}}
+\end{scnreltolist}
+
+\scnheader{Wolfram Alpha}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_integration_algebra}~\nameref{sec_integration_algebra}}
+\end{scnreltolist}
+
+\scnheader{Wolfram Language}
+\begin{scnreltolist}{ключевой знак}
+	\scnitem{\ref{sec_integration_algebra}~\nameref{sec_integration_algebra}}
 \end{scnreltolist}
 
 \end{SCn}
