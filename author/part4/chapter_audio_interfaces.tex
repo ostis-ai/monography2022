@@ -70,10 +70,9 @@
 Большинство существующих систем, как правило, рассчитаны на решение определенного круга задач и сложно совместимы друг с другом. Данный факт в особенности остро проявляется при проектировании сложных систем, наподобие интеллектуальных персональных диалоговых ассистентов (см. \textit{\nameref{fig:speech-hmi-components}}), требующих использования многообразия различных видов обрабатываемой информации и различных \textit{моделей решения задач}. Такие системы, кроме стандартных модулей распознавания (ASR, automatic speech recognition) и синтеза (TTS, text to speech), на уровне аудиоинтерфейса также должны содержать модели, определяющие наличие/отсутствие речи в аудиосигнале в сложной акустической обстановке, классификации звуков окружающей среды, распознавание диктора и пр. Помимо этого элементы речевого интерфейса должны быть совместимы с более высокоуровневыми модулями обработки естественно-языковой информации, такими как модули понимания (SLU, spoken language understanding) и генерации речи (SLG, spoken language generation), управления диалогом (DM, dialog manager) (см. \scncite{Delic2019speech}). 
 
 \begin{figure}[H]
-    \centerline{
-        \includegraphics[scale=0.6, width=0.6\textwidth]{author/part4/figures/ch43_fig01_speech-hmi-components.png}
-    }
     \caption{Компоненты системы человеко-машинного речевого диалога \cite{Delic2019speech}}
+    \includegraphics[scale=0.6, width=0.6\textwidth]{author/part4/figures/ch43_fig01_speech-hmi-components.png}
+    
     \label{fig:speech-hmi-components}
 \end{figure}
 
@@ -189,10 +188,8 @@
 \end{textitemize}
 
 \begin{figure}[H]
-    \centerline{
-        \includegraphics[scale=0.8, width=1.0\textwidth]{author/part4/figures/ch43_fig02_speech-structure-segment-suprasegment.png}
-    }
     \caption{Сегментные и надсегментные характеристики речевого сигнала \cite{Okko2022}}
+        \includegraphics[scale=0.8, width=1.0\textwidth]{author/part4/figures/ch43_fig02_speech-structure-segment-suprasegment.png}
     \label{fig:speech-structure-segment-suprasegment}
 \end{figure}
 
@@ -246,10 +243,8 @@
 Поскольку для построения \textit{интеллектуальных компьютерных систем нового поколения} в фокусе лежат именно задачи, связанные с обработкой речевых сигналов, решение которых необходимо в первую очередь для построения речевого интерфейса, акцент при формализации постараемся сделать на особенности данной предметной области.
 
 \begin{figure}[H]
-    \centerline{
-        \includegraphics[scale=0.8, width=1.0\textwidth]{author/part4/figures/ch43_fig03_speech-signal-inf-structure-ru.png}
-    }
     \caption{Информационная структура речевого сигнала \cite{Lobanov2006}}
+        \includegraphics[scale=0.8, width=1.0\textwidth]{author/part4/figures/ch43_fig03_speech-signal-inf-structure-ru.png}
     \label{fig:speech-signal-inf-structure-ru}
 \end{figure}
 
@@ -363,10 +358,8 @@
 Важным аспектом в процессе проектирования является формализация \textit{классов задач} аудиоинтерфейса, поскольку благодаря этим знаниям в интеллектуальной системе могут (и должны) применяться соответствующие методы обработки, в зависимости от типа решаемой задачи. Фрагмент онтологии верхнего уровня типовых \textit{задач} решаемых \textit{интеллектуальной компьютерной системой} в области обработки аудио- и речевых сигналов представлено на \textit{\nameref{fig:audio-and-speech-tasks-formalization-ru}} 
 
 \begin{figure}[H]
-    \centerline{
-        \includegraphics[scale=1.0, width=1.0\textwidth]{author/part4/figures/ch43_fig04_audio-and-speech-tasks-formalization-ru.png}
-    }
     \caption{Фрагмент онтологии верхнего уровня задач аудио- и речевых интерфейсов для \textit{интеллектуальных компьютерных систем нового поколения}}
+    \includegraphics[scale=1.0, width=1.0\textwidth]{author/part4/figures/ch43_fig04_audio-and-speech-tasks-formalization-ru.png}
     \label{fig:audio-and-speech-tasks-formalization-ru}
 \end{figure}
 
@@ -466,10 +459,8 @@
 К первым двум уровням относятся широко известные в цифровой обработке речевых сигналов модели на основе линейного предсказания, кепстральных коэффициентов и синусоидальных параметров. Отличительные особенности основных типов моделей представлены на рисунке \textit{\nameref{fig:signal-model-types-ru}} 
 
 \begin{figure}[H]
-    \centerline{
-        \includegraphics[scale=1.0, width=1.0\textwidth]{author/part4/figures/ch43_fig05_signal-model-types-ru.png}
-    }
     \caption{Отличительные особенности  основных типов моделей параметрического представления сигнала}
+    \includegraphics[scale=1.0, width=1.0\textwidth]{author/part4/figures/ch43_fig05_signal-model-types-ru.png}
     \label{fig:signal-model-types-ru}
 \end{figure}
 
@@ -488,10 +479,8 @@
 Использование кепстральных коэффициентов для моделирования речевых сигналов также является классическим подходом. Наиболее хорошо разработанной системой моделирования речевых сигналов, использующей кепстральные коэффициенты, является \textit{TANDEM–STRAIGHT} (см. \scncite{Kawahara2010exploration}, \scncite{Kawahara2009development}). Так же как и для классических способов анализа на основе линейного предсказания, при оценке кепстральных коэффициентов предполагается стационарность сигнала на протяжении интервала наблюдения. Оценка огибающей амплитудного спектра требует сглаживания и также недостаточно точна по сравнению с моделями на основе синусоидальных   \textit{\nameref{fig:straight-spectrum}}.
 
 \begin{figure}[H]
-    \centerline{
-        \includegraphics[scale=1.0, width=1.0\textwidth]{author/part4/figures/ch43_fig06_straight-spectrum.png}
-    }
     \caption{Спектрограмма сигнала на основе ДПФ (слева) и спектрограмма TANDEM-STRAIGHT (справа)}
+    \includegraphics[scale=1.0, width=1.0\textwidth]{author/part4/figures/ch43_fig06_straight-spectrum.png}
     \label{fig:straight-spectrum}
 \end{figure}
 
