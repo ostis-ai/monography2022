@@ -633,8 +633,8 @@
 К описанному варианту реализации \textit{ассоциативных семантических компьютеров} с крупнозернистой архитектурой относится и упомянутая ранее мультитранспьютерная реализация  (см. \scncite{Golenkov1994g}, \scncite{Golenkov1996}). В основу указанной реализация были положены ПК IBM PC 386 (486, Pentium) и 8 транспьютеров T805. На рисунке \textit{\nameref{fig:coarse-grained-architecture}} схематично показан такой вариант реализации на 8 транспьютерах, где каждый транспьютер одновременно выполняет роль узла коммутации (``УК'') и процессорного модуля (``ПМ'') или накопительного модуля (``НМ''). Вся система при этом взаимодействует с внешней средой посредством терминального модуля (``ТМ'').
 
 \begin{figure}[H]
-	\includegraphics[scale=0.7]{images/part6/chapter_computer/coarse-grained architecture.pdf}
 	\caption{Рисунок. Пример реализации крупнозернистой архитектуры}
+	\includegraphics[scale=0.7]{images/part6/chapter_computer/coarse-grained architecture.pdf}
 	\label{fig:coarse-grained-architecture}
 \end{figure}
 
@@ -767,24 +767,24 @@
 На рисунке \textit{\nameref{fig:computer-graph1}} показана запись некоторой \textit{пятиэлементной sc-конструкции} в SCg-коде.
 
 \begin{figure}[H]
-	\includegraphics[scale=0.8]{images/part6/chapter_computer/computer graph1.png}
 	\caption{SCg-текст. Пример \textit{пятиэлементной sc-конструкции}}
+	\includegraphics[scale=0.8]{images/part6/chapter_computer/computer graph1.png}
 	\label{fig:computer-graph1}
 \end{figure}
 
 На рисунке \textit{\nameref{fig:incidence-example}} показан граф инцидентности для той же \textit{пятиэлементной sc-конструкции}, который позволяет свести sc-конструкцию к классическому графу с двумя типами связей. Для наглядности синтаксические типы соответствующих sc-элементов на рисунке не показаны.
 
 \begin{figure}[H]
-	\includegraphics[scale=1]{images/part6/chapter_computer/incidence example.pdf}
 	\caption{Рисунок. Граф инцидентности для \textit{пятиэлементной sc-конструкции}}
+	\includegraphics[scale=1]{images/part6/chapter_computer/incidence example.pdf}
 	\label{fig:incidence-example}
 \end{figure}
 
 На рисунке \textit{\nameref{fig:fine-grained-architecture}} показан один из возможных оптимальных вариантов записи полученного графа инцидентности в процессоро-память. Пунктирными линиями показаны \textit{физические каналы связи} между процессорными элементами, сплошными --- \textit{физические каналы связи}, соответствующие \textit{логическим каналам связи}. Отметим, что элемент \textbf{\textit{R1}} целесообразно записать в \textit{процессорный элемент}, соседний с \textit{процессорным элементом}, хранящим элемент \textbf{\textit{e1}} или элемент \textbf{\textit{e2}}, как и показано на рисунке. Благодаря этому процессорные элементы, хранящие указанные sc-элементы, оказываются непосредственно связаны \textit{физическим каналом связи}, что упрощает коммуникацию в случае рассылки сообщений по \textit{физическим каналам связи} без учета \textit{логических каналов связи}.
 
 \begin{figure}[H]
-	\includegraphics[scale=1]{images/part6/chapter_computer/fine-grained architecture.pdf}
 	\caption{Рисунок. Пример укладки sc-конструкции в процессоро-память}
+	\includegraphics[scale=1]{images/part6/chapter_computer/fine-grained architecture.pdf}
 	\label{fig:fine-grained-architecture}
 \end{figure}
 
