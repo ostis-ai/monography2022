@@ -151,7 +151,7 @@
 \end{textitemize}
 
 \begin{figure}[H]
-    \caption{Описание основных этапов процесса \textit{трехмерной реконструкции} и их связи с \textit{базой знаний} \textit{ostis-системы трехмерного представления объектов}}
+    \caption{Рисунок. Описание основных этапов процесса \textit{трехмерной реконструкции} и их связи с \textit{базой знаний} \textit{ostis-системы трехмерного представления объектов}}
     \includegraphics[scale=0.3]{author/part4/figures/schema3D.png}
     \label{fig:schema-3d-reconstruction}
 \end{figure}
@@ -264,13 +264,13 @@
 Пример описания \textit{сцены в трехмерном представлении}, включающий \textit{наблюдение сцены в трехмерном представлении} с точки зрения взаимного расположения объектов, представлен на рисунках \textit{\nameref{fig:scene-example}} и \textit{\nameref{fig:scene-description}}.
 
 \begin{figure}[H]
-    \caption{Пример трехмерной сцены, визуализированной в виде двумерной проекции с определенного положения камеры}
+    \caption{Рисунок. Пример трехмерной сцены, визуализированной в виде двумерной проекции с определенного положения камеры}
     \includegraphics[scale=0.8, width=0.4\textwidth]{author/part4/figures/scene-example.png}
     \label{fig:scene-example}
 \end{figure}
 
 \begin{figure}[H]
-    \caption{Семантическое описание некоторых связей взаимного расположения объектов в сцене с положения наблюдателя}
+    \caption{SCg-текст. Семантическое описание некоторых связей взаимного расположения объектов в сцене с положения наблюдателя}
     \includegraphics[scale=0.8, width=1.0\textwidth]{author/part4/figures/scene-description.png}
     \label{fig:scene-description}
 \end{figure}
@@ -585,11 +585,12 @@
 
 \section{Базовые понятия компьютерного зрения в задаче трехмерной реконструкции}
 \label{sec_3d_models_computervision}
-
-\begin{scnrelfromlist}{подраздел}
-    \scnitem{\ref{sec_3d_models_computervision_opt_systems}~\nameref{sec_3d_models_computervision_opt_systems}}
-    \scnitem{\ref{sec_3d_models_computervision_local_features}~\nameref{sec_3d_models_computervision_local_features}}
-\end{scnrelfromlist}
+\begin{SCn}
+	\begin{scnrelfromlist}{подраздел}
+		\scnitem{\ref{sec_3d_models_computervision_opt_systems}~\nameref{sec_3d_models_computervision_opt_systems}}
+		\scnitem{\ref{sec_3d_models_computervision_local_features}~\nameref{sec_3d_models_computervision_local_features}}
+	\end{scnrelfromlist}
+\end{SCn}
 
 \textit{компьютерное (техническое) зрение} как отдельная область исследований начала формироваться еще в 1960-х годах как попытка имитировать зрительную систему человека в робототехнике. Данное направление изначально основывалось на достижениях в области цифровой обработки изображений, однако в дальнейшем расширило перечень рассматриваемых задач, в том числе засчет попытки извлечения трехмерной структуры изображений с целью более полного понимания сцены. Понимание в этом контексте означает преобразование визуальных образов в описания мира, которые могут взаимодействовать с другими процессами и вызывать соответствующие действия. Считается, что в область \textit{компьютерного зрения} входят задачи распознавания образов, наблюдения, роботизированного управления, сегментации и интерпретации медицинских изображений, автоматического осмотра и сборки в заводских условиях, распознавания отпечатков пальцев и лиц, интерпретации жестов и многие другие (см. \scncite{Davies2021}).
 
@@ -807,13 +808,13 @@
 
 \section{Онтология действий, выполняемых в предметной области трехмерной реконструкции}
 \label{sec_3d_models_actions}
-
+\begin{SCn}
 \begin{scnrelfromlist}{подраздел}
     \scnitem{\ref{sec_3d_models_actions_interm}~\nameref{sec_3d_models_actions_interm}}
     \scnitem{\ref{sec_3d_models_actions_final}~\nameref{sec_3d_models_actions_final}}
     \scnitem{\ref{sec_3d_models_actions_gen}~\nameref{sec_3d_models_actions_gen}}
 \end{scnrelfromlist}
-
+\end{SCn}
 На верхнем уровне любой метод \textit{трехмерной реконструкции} может быть представлен в виде процедурного знания, например, в виде последовательности этапов, в соответствии с которыми входные данные для \textit{трехмерной реконструкции} преобразовываются в итоговое \textit{трехмерное представление объекта}.
 
 Общая черта многих методов \textit{трехмерной реконструкции} --- использование промежуточного (или конечного) представления об объектах окружающего мира в трех координатах. Другими словами, метод \textit{трехмерной реконструкции} можно представить в виде последовательности действий по формированию набора элементов, характеризующихся координатами в общем трехмерном пространстве, которые в дальнейшем, при необходимости, могут быть достроены до поверхностей, скомбинированы с двумерными представлениями и так далее для формирования нужного выходного представления:
@@ -900,13 +901,13 @@
 Онтологическое описание представленной последовательности действий, а также пример конкретного алгоритма, реализованного по этой последовательности действий в рамках \textit{ostis-системы}, представлены на рисунках \textit{\nameref{fig:reconstruction}} и \textit{\nameref{fig:reconstruction-example}}.
 
 \begin{figure}[H]
-    \caption{Онтологическое описание последовательности действий по построению промежуточного \textit{трехмерного представления} в виде разреженного облака точек}
+    \caption{SCg-текст. Онтологическое описание последовательности действий по построению промежуточного \textit{трехмерного представления} в виде разреженного облака точек}
     \includegraphics[scale=0.8, width=1.0\textwidth]{author/part4/figures/reconstruction.png}
     \label{fig:reconstruction}
 \end{figure}
 
 \begin{figure}[H]
-    \caption{Пример алгоритма построения разреженного облака точек на основе представленного описания}
+    \caption{SCg-текст. Пример алгоритма построения разреженного облака точек на основе представленного описания}
     \includegraphics[scale=0.8, width=1.0\textwidth]{author/part4/figures/reconstruction-example.png}
     \label{fig:reconstruction-example}
 \end{figure}
