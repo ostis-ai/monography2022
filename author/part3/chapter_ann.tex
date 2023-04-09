@@ -35,6 +35,8 @@
 		\scnitem{Язык представления нейросетевых методов решения задач в базах знаний}
 	\end{scnrelfromlist}
 
+	\bigskip
+
 	\begin{scnrelfromlist}{библиографическая ссылка}
 		\scnitem{\scncite{Standart2021}}
 		\scnitem{\scncite{Castelvecchi2016}}
@@ -98,6 +100,8 @@
 		\scnitem{\nameref{subsec_ann_oper}~\nameref{subsec_ann_oper}}
 	\end{scnrelfromlist}
 
+	\bigskip
+
 	\begin{scnrelfromlist}{ключевое понятие}
 		\scnitem{нейросетевой метод решения задач}
 		\scnitem{навык решения задач с помощью искусственных нейронных сетей}
@@ -119,7 +123,7 @@
 	\end{scnrelfromlist}
 \end{SCn}
 
-Как уже было описано в главе \nameref{chapter_actions}, \textit{решатель задач} занимается обработкой фрагментов базы знаний. На операционном уровне обработка сводится к добавлению, поиску, редактированию и удалению sc-узлов и sc-коннекторов \textit{базы знаний}. На семантическом же уровне такая операция является \textit{действием, выполняемым в памяти субъекта действия}, где, в общем случае, субъектом является \textit{ostis-система}, а \textit{база знаний} --- ею памятью. \textit{действие} определяется как процесс воздействия одной сущности (или некоторого множества сущностей) на другую сущность (или на некоторое множество других сущностей) в соответствии с некоторой целью (см. \textit{Главу \ref{chapter_actions}~\nameref{chapter_actions}}).
+Как уже было описано в \textit{Главе \ref{chapter_actions} \nameref{chapter_actions}}, \textit{решатель задач} занимается обработкой фрагментов базы знаний. На операционном уровне обработка сводится к добавлению, поиску, редактированию и удалению sc-узлов и sc-коннекторов \textit{базы знаний}. На семантическом же уровне такая операция является \textit{действием, выполняемым в памяти субъекта действия}, где, в общем случае, субъектом является \textit{ostis-система}, а \textit{база знаний} --- ею памятью. \textit{действие} определяется как процесс воздействия одной сущности (или некоторого множества сущностей) на другую сущность (или на некоторое множество других сущностей) в соответствии с некоторой целью (см. \textit{Главу \ref{chapter_actions}~\nameref{chapter_actions}}).
 
 Схожие задачи объединены в классы, для которых заданы обобщенные формулировки задач. Для \textit{и.н.с.} выделены следующие классы задач:
 \begin{textitemize}
@@ -157,8 +161,7 @@
 \end{textitemize}
 
 \begin{figure}[H]
-	\centering
-	\caption{Фрагмент теоретико-множественной онтологии и.н.с.}
+	\caption{SCg-текст. Фрагмент теоретико-множественной онтологии и.н.с.}
 	\includegraphics[scale=0.5]{author/part3/figures/actions_concepts.png}
 	\label{fig:actions_concepts}
 \end{figure}
@@ -188,8 +191,7 @@
 Пример архитектуры \textit{и.н.с.} представлен на рисунке \textit{\nameref{fig:nn_example}}.
 
 \begin{figure}[H]
-	\centering
-	\caption{Пример архитектуры и.н.с.}
+	\caption{Рисунок. Пример архитектуры и.н.с.}
 	\includegraphics[scale=0.3]{author/part3/figures/neural_network.png}
 	\label{fig:nn_example}
 \end{figure}
@@ -267,8 +269,7 @@
 Схематически \textit{формальный нейрон} можно представить в виде следующей модели (рисунок \textit{\nameref{fig:formal_neuron}}).
 
 \begin{figure}[H]
-	\centering
-	\caption{Формальный нейрон}
+	\caption{SCg-текст. Формальный нейрон}
 	\includegraphics[scale=0.4]{author/part3/figures/formal_neuron.png}
 	\label{fig:formal_neuron}
 \end{figure}
@@ -480,8 +481,7 @@
 С помощью выделенных понятий становится возможна формализация в \textit{базе знаний} архитектуры конкретных \textit{и.н.с.} В качестве примера, на рисунке \textit{\nameref{fig:neural_network_scg}} представлен пример формализации полносвязной двухслойной \textit{и.н.с.} с двумя нейронами на входном слое и одном нейроне на обрабатывающем слоев.
 
 \begin{figure}
-	\centering
-	\caption{Пример формализации архитектуры искусственной нейронной сети в базе знаний}
+	\caption{SCg-текст. Пример формализации архитектуры искусственной нейронной сети в базе знаний}
 	\includegraphics[width=0.8\linewidth]{author/part3/figures/neural_network_scg.png}
 	\label{fig:neural_network_scg}
 \end{figure}
@@ -555,8 +555,7 @@
 Пример спецификации действия вычисления взвешенной суммы всех нейронов слоя для слоя с двумя нейронами и входным вектором размерностью 2 приведен на рисунке \textit{\nameref{fig:action_weighted_sum}}.
 
 \begin{figure}
-	\centering
-	\caption{Пример действия вычисления взвешенной суммы всех нейронов слоя}
+	\caption{SCg-текст. Пример действия вычисления взвешенной суммы всех нейронов слоя}
 	\includegraphics[width=0.95\linewidth]{author/part3/figures/action_weighted_sum.png}
 	\label{fig:action_weighted_sum}
 \end{figure}
@@ -632,8 +631,7 @@
 Рассмотрим пример описания на \textit{нейросетевого метода}, решающего задачу, которая формулируется следующим образом: вычислить результат логической операции ``ИСКЛЮЧАЮЩЕЕ ИЛИ'' для значений двух логических переменных. На рисунке \textit{\nameref{fig:strong_or_graphic}} представлено решение этой задачи с помощью сигнальной функции.
 
 \begin{figure}
-	\centering
-	\caption{Решение задачи \scnqq{ИСКЛЮЧАЮЩЕЕ ИЛИ}}
+	\caption{Рисунок. Решение задачи \scnqq{ИСКЛЮЧАЮЩЕЕ ИЛИ}}
 	\includegraphics[width=0.5\linewidth]{author/part3/figures/strong_or_graphic.png}
 	\label{fig:strong_or_graphic}
 \end{figure}
@@ -650,8 +648,7 @@
 Весовые коэффициенты синапсов входного слоя равны 1. На рисунке \textit{\nameref{fig:strong_or_ann}} представлена схема персептрона.
 
 \begin{figure}
-	\centering
-	\caption{Схема однослойного персептрона, решающего задачу \scnqq{ИСКЛЮЧАЮЩЕЕ ИЛИ}}
+	\caption{Рисунок. Схема однослойного персептрона, решающего задачу \scnqq{ИСКЛЮЧАЮЩЕЕ ИЛИ}}
 	\includegraphics[width=0.5\linewidth]{author/part3/figures/strong_or_ann.png}
 	\label{fig:strong_or_ann}
 \end{figure}
@@ -659,8 +656,7 @@
 Данному персептрону соответствует метод, представленный в базе знаний ostis-системы на описанном в этой главе языке представления нейросетевых методов SCP. Данный метод представлен на рисунке \textit{\nameref{fig:exclusive_or_ann_scp}}.
 
 \begin{figure}
-	\centering
-	\caption{Метод, решающий задачу \scnqq{ИСКЛЮЧАЮЩЕЕ ИЛИ}, представленный с помощью языка представления нейросетевых методов SCP}
+	\caption{Рисунок. Метод, решающий задачу \scnqq{ИСКЛЮЧАЮЩЕЕ ИЛИ}, представленный с помощью языка представления нейросетевых методов SCP}
 	\includegraphics[width=0.95\linewidth]{author/part3/figures/exclusive_or_ann_scp.png}
 	\label{fig:exclusive_or_ann_scp}
 \end{figure}
@@ -670,8 +666,7 @@
 Сигнальная функция активации, использующаяся в персептроне, в памяти ostis-системы определяется логической формулой, представленной на рисунке \textit{\nameref{fig:signal_function_def}}.
 
 \begin{figure}
-	\centering
-	\caption{Представление сигнальной функции активации в памяти ostis-системы}
+	\caption{SCg-текст. Представление сигнальной функции активации в памяти ostis-системы}
 	\includegraphics[width=0.5\linewidth]{author/part3/figures/signal_function_def.png}
 	\label{fig:signal_function_def}
 \end{figure}
@@ -1029,8 +1024,7 @@ $\mu(x)$ --- выборочное среднее отдельного призн
 Действие обучения \textit{и.н.с.} можно проиллюстрировать следующим изображением \textit{\nameref{fig:ann_training_nn_scg}}.
 
 \begin{figure}[H]
-	\centering
-	\caption{Действие обучения и.н.с.}
+	\caption{SCg-текст. Действие обучения и.н.с.}
 	\includegraphics[scale=0.7]{author/part3/figures/ann_training_nn_scg.png}
 	\label{fig:ann_training_nn_scg}
 \end{figure}
@@ -1041,11 +1035,10 @@ $\mu(x)$ --- выборочное среднее отдельного призн
 
 Далее результат оценки может быть визуализирован с помощью матрицы ошибок (confusion matrix) и ROC-кривой.
 
-Матрица ошибок представляется собой матрицу (рис. \nameref{fig:conf_matrix}), в которую помещены сведения о числе истинно-положительных, истинно-отрицательных, ложно-положительных и ложно-отрицательных предсказаниях классификатора.
+Матрица ошибок представляется собой матрицу (см. \nameref{fig:conf_matrix}), в которую помещены сведения о числе истинно-положительных, истинно-отрицательных, ложно-положительных и ложно-отрицательных предсказаниях классификатора.
 
 \begin{figure}[H]
-	\centering
-	\caption{Матрица ошибок}
+	\caption{Рисунок. Матрица ошибок}
 	\includegraphics[width=0.4\textwidth]{author/part3/figures/conf_matrix.png}
 	\label{fig:conf_matrix}
 \end{figure}
@@ -1083,11 +1076,10 @@ $\mu(x)$ --- выборочное среднее отдельного призн
 
 \item На предыдущих этапах было определено, что для решения задачи будет использоваться сверточная нейронная сеть. При использовании one-hot кодирования в последнем полносвязном слое будет 10 нейронов по числу классов в задаче.
 
-Для упрощения будем использовать архитектуру, изображенную на рис. \nameref{fig:model}, не содержащую промежуточные слои.
+Для упрощения будем использовать архитектуру, изображенную на \textit{\nameref{fig:model}}, не содержащую промежуточные слои.
 
 \begin{figure}[H]
-	\centering
-	\caption{Архитектура и.н.с., решающая задачу классификации цифр}
+	\caption{Рисунок. Архитектура и.н.с., решающая задачу классификации цифр}
 	\includegraphics[width=0.4\textwidth]{author/part3/figures/model.png}
 	\label{fig:model}
 \end{figure}
@@ -1106,7 +1098,7 @@ $\mu(x)$ --- выборочное среднее отдельного призн
 После определения данных параметров и оценки эффективности работы алгоритма, получим следующую таблицу:
 
 \begin{table}[ht]
-	\caption{Результаты решения задачи \\(используемые сокращения: mbs --- mini-batch size, ks --- kernel size, lr --- learning rate, cnc --- convolutional neurons count, acc --- accuracy, it --- iterations count)}
+	\caption{Таблица. Результаты решения задачи \\(используемые сокращения: mbs --- mini-batch size, ks --- kernel size, lr --- learning rate, cnc --- convolutional neurons count, acc --- accuracy, it --- iterations count)}
 	\centering
 	\begin{tabular}{c c c c c c c c}
 		\hline\hline
@@ -1154,8 +1146,7 @@ $\mu(x)$ --- выборочное среднее отдельного призн
 \item Построив матрицу ошибок на основании обученной модели и тестовой выборки, получим результат, проиллюстрированный на рис. \nameref{fig:conf_matrix_result}
 
 \begin{figure}[H]
-	\centering
-	\caption{Матрица ошибок для задачи MNIST}
+	\caption{Рисунок. Матрица ошибок для задачи MNIST}
 	\includegraphics[width=0.55\textwidth]{author/part3/figures/conf_matrix_result.png}
 	\label{fig:conf_matrix_result}
 \end{figure}
@@ -1203,8 +1194,7 @@ $\mu(x)$ --- выборочное среднее отдельного призн
 Общие для всех версий знания описываются для \textit{и.н.с.}, являющейся темпоральным объединением всех версий (рисунок \nameref{fig:temporal_neural_network_scg})
 
 \begin{figure}[H]
-	\centering
-	\caption{Темпоральность нейронной сети}
+	\caption{SCg-текст. Темпоральность нейронной сети}
 	\includegraphics[scale=0.8]{author/part3/figures/temporal_neural_network_scg.png}
 	\label{fig:temporal_neural_network_scg}
 \end{figure}
