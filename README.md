@@ -35,3 +35,9 @@ Unfortunately, a lot of IDEs has their own configuration systems for LaTeX so th
 * `scn.sty` not found
   + If you get such error message, please ensure that you have submodule content in `./scn` directory (run `git submodule update --init --recursive`)
   + Ensure that compiler and `TEXINPUTS` are configured correctly ([guide is there](#choosing-compiler))
+
+### Useful scripts
+
+To automate your work you can use some scripts.
+
+They can be found here: <https://github.com/SHtress/check_monography_script>
